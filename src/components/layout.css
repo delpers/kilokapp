@@ -906,6 +906,8 @@ background-position: bottom;
 	}.recipesList-mobile {
 		display: block;
 
+	}.b-solid-b {
+		border: 0;
 	}
 	
 	
