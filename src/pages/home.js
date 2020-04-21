@@ -75,6 +75,7 @@ const HomePage = () => {
             title
           }
           titleBreakfast
+          breakfastDescription
           titleEntrances
           titleDishes
           titleDesserts
@@ -128,14 +129,14 @@ const HomePage = () => {
 
 <div className="i-t">
   <h3 className="mb-0">{data.contentfulHome.titleBreakfast}</h3>
-  <span className="fs-14 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
+  <span className="fs-14 text-gray">{data.contentfulHome.breakfastDescription}</span>
 </div>
 <div className="sr-cards">
   {data.allContentfulCookingB.edges.map(edge => {
     return (
       <div className="mr-32" key={edge.node.id}>
         <div
-        
+
           className="media"
           style={{
             backgroundImage:
