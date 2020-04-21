@@ -883,14 +883,11 @@ height: 70px;
   display: flex;
   margin: 0 auto;
   margin-top: 24px;
-  margin-bottom: 60;
+  margin-bottom: 60px;
   padding-bottom: 10px;
   overflow-x: scroll;
   scrollbar-width: thin;
-  @media only screen and (max-width: 480px) {
-    padding: 0;
-    grid-gap: 0;
-  }
+ 
 }
 @media only screen and (max-width: 480px) {
 	html {
