@@ -51,7 +51,7 @@ const eRecipes = props => {
 
       <div>
         <div>
-          <div className="rl rl-mobile m-w p-i">
+          <div className="rl rl-mobile m-w p-i bg-w">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
                 <div id={edge.id} className="mb-32">
@@ -78,34 +78,36 @@ style={{
 
 
                   <div className="mt-10">
-                    <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
+                    <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
 
-                    <div>
-                    <div className="t-d ">
-                        <span class="fs-14 text-gray "> {edge.ingredientsNumbers} </span>
+                    <div> 
+
+                    <div className="t-d fl-r mb-15">
+
+<span class="fs-14 bg-g"> <i class="fas fa-check-circle"></i>  {edge.time} </span>
+
+
+
+
+</div>
+                    <div className="bg-w-c">
+                        <span class="fs-14 text-gray "> <i class="fas fa-shopping-basket mr-5"></i> {edge.ingredientsNumbers} </span>
                       </div>
 
                      
 
 
-                      <div className="t-d fl-r mb-15">
-
-                        <span class="fs-14 bg-g"> <i class="fas fa-check-circle"></i>  {edge.time} </span>
-                        
-
-
-                        <span class="fs-14 bg-w">                        <i class="fas fa-certificate c-w"></i> </span>
-
-                      </div>
+                  
                     
                     
                     </div>
                  
 
                     <div className="b-solid-top">
-                      <div>
+                      <div  className="pt-15 ">
+                      <i class="fas fa-file-medical-alt c-g mr-15"></i>
                         {edge.for.map(dataFor => (
-                          <span  class="fs-14 text-gray" key={dataFor.instructions}>
+                          <span  class="fs-14 text-gray pr-15" key={dataFor.instructions}>
                             {dataFor}
                           </span>
                         ))}
