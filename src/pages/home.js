@@ -105,7 +105,7 @@ const HomePage = () => {
       </div>
 
 
-      <div className="mb-32 b-solid-b sticky">      
+      <div className="mb-32 sticky">      
         <nav className="pt-15 m-w p-i">
         {data.contentfulHome.pages.map(Pages => (
               <a
@@ -124,7 +124,7 @@ const HomePage = () => {
 
 
 
-<div className="m-w p-i pb-0">
+<div className="m-w p-i pb-0 bg-w ">
 
 <div className="i-t">
   <h3 className="mb-0">{data.contentfulHome.titleBreakfast}</h3>
