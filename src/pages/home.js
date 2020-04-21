@@ -133,7 +133,7 @@ const HomePage = () => {
 <div className="sr-cards">
   {data.allContentfulCookingB.edges.map(edge => {
     return (
-      <div className="" key={edge.node.id}>
+      <div className="mr-32" key={edge.node.id}>
         <div
           className="media"
           style={{

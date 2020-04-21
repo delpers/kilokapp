@@ -916,6 +916,8 @@ background-position: bottom;
 		height: 160px !important;
 		width: 260px !important;
 		border-radius: 0px;
+	  }.mr-32 {
+		  margin-right: 32px;
 	  }
 	
 	
