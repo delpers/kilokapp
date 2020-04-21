@@ -816,7 +816,7 @@ pre tt:after {
 .rl {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 42px;
+    grid-gap: 60px;
 }
 .ingredientsList {
     display: grid;
@@ -846,8 +846,7 @@ pre tt:after {
 }
 
 .shadow-sm {
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05) !important;
 }
 
 .rounded {
@@ -857,9 +856,11 @@ pre tt:after {
 .p-i {
   padding: 20px;
 }
-
+.p-15 {
+	padding: 15px;
+}
 .m-w {
-  max-width: 1024px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 .i-t {
