@@ -145,22 +145,29 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "187px",
-            width: "317px",
+            height: "200px",
+            width: "320px",
             borderRadius: "0",
           }}
         >
         
         </div>
         <span className="">
-            <span className="">
+            <span className="mt-10-b">
               <Link
-                className=""
+                className="i-link fs-16 b-b-g mr-15 font-bold"
                 to={`/breakfast/recettes/${edge.node.slug}/`}
               >
                 {edge.node.title}
               </Link>
+              <span className="fs-14 text-gray">Grossesse - Cétogène - (d) Type 1</span>
+
             </span>
+            <div className="t-d"> 
+            <span className="font-bold fs-14 bg-g">12 - 25min</span>
+            
+            
+            </div>
           </span>
       </div>
     )
@@ -199,8 +206,10 @@ const HomePage = () => {
 
         <div className="m-w p-i pb-0">
 
-        <div className="">
-          <h3>{data.contentfulHome.titleEntrances}</h3>
+        <div className="i-t">
+          <h3 className="mb-0">{data.contentfulHome.titleEntrances}</h3>
+          <span className="fs-14 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
+
         </div>
         <div className="sr-cards">
           {data.allContentfulCookingE.edges.map(edge => {
@@ -225,7 +234,7 @@ const HomePage = () => {
                   <span className="">
                     <span className="">
                       <Link
-                        className=""
+                        className="i-link fs-16 b-b-g mr-15 font-bold"
                         to={`/recettes/${edge.node.slug}/`}
                       >
                         {edge.node.title}
