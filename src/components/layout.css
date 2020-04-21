@@ -724,7 +724,9 @@ pre tt:after {
 .size-16 {
 	font-size: 16px;
 }
-
+.fs-14 {
+	font-size: 14px;
+}
 .p-32 {
 	padding: 32px;
 }
@@ -805,7 +807,7 @@ pre tt:after {
 }
 
 .text-gray {
-	color: #4a5568 !important;
+	color: #5f6d86 !important;
 }
 
 .justify {
@@ -829,9 +831,12 @@ pre tt:after {
   max-width: 1240px;
   margin: 0 auto;
 }
-
+.i-t {
+    border-bottom: 1px solid rgba(217,219,224,0.5);
+    padding-bottom: 16px;
+}
 .w-screen {
-  background-color: #fed7e2;
+  background-color: #80cd63;
 background-size: cover;
 background-position: bottom;
 }
@@ -841,6 +846,9 @@ background-position: bottom;
   width: 100%;
   background-color: white;
   z-index: 1000;
+  background-color: #fff;
+border-bottom: 1px solid rgba(217,219,224,0.5);
+height: 70px;
 }
 
 .nav {

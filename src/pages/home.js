@@ -109,7 +109,7 @@ const HomePage = () => {
         <nav className="pt-15 m-w p-i">
         {data.contentfulHome.pages.map(Pages => (
               <a
-                className="i-link font-bold mr-15"
+                className="i-link fs-14 b-b-g mr-15 font-bold"
                 href={Pages.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,8 +126,9 @@ const HomePage = () => {
 
 <div className="m-w p-i pb-0">
 
-<div className="">
-  <h3>{data.contentfulHome.titleBreakfast}</h3>
+<div className="i-t">
+  <h3 className="mb-0">{data.contentfulHome.titleBreakfast}</h3>
+  <span className="fs-14 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
 </div>
 <div className="sr-cards">
   {data.allContentfulCookingB.edges.map(edge => {
@@ -144,12 +145,14 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "200px",
-            width: "320px",
+            height: "187px",
+            width: "317px",
             borderRadius: "0",
           }}
         >
-          <span className="">
+        
+        </div>
+        <span className="">
             <span className="">
               <Link
                 className=""
@@ -159,7 +162,6 @@ const HomePage = () => {
               </Link>
             </span>
           </span>
-        </div>
       </div>
     )
   })}
