@@ -908,7 +908,15 @@ background-position: bottom;
 
 	}.b-solid-b {
 		border: 0;
-	}
+	}.sr-cards {
+		grid-gap: 32px !important;
+
+	   
+	  }.media {
+		height: 160px !important;
+		width: 260px !important;
+		border-radius: 0px;
+	  }
 	
 	
 	

@@ -135,7 +135,7 @@ const HomePage = () => {
     return (
       <div className="" key={edge.node.id}>
         <div
-          className=""
+          className="media"
           style={{
             backgroundImage:
               "url(" +
