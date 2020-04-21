@@ -746,7 +746,12 @@ pre tt:after {
 .mb-32 {
 	margin-bottom: 32px !important;
 }
-
+.mb-15 {
+	margin-bottom: 15px !important;
+}
+.align-right {
+	text-align: right;
+}
 .pb-0 {
   padding-bottom: 0;
 }
@@ -759,6 +764,12 @@ pre tt:after {
 .p-160-0 {
   padding: 160px 0;
 }
+.p-100-0 {
+	padding: 100px 0;
+  }
+  
+
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -784,10 +795,10 @@ pre tt:after {
 	grid-gap: 32px;
 }
 
-.recipesList {
+.rl {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 42px;
 }
 .ingredientsList {
     display: grid;
@@ -801,7 +812,9 @@ pre tt:after {
 	overflow-x: scroll;
 	scrollbar-width: thin;
 }
-
+.b-5rem {
+	border-radius: 5rem;
+}
 .text-base {
 	font-size: 16px !important;
 }
@@ -828,7 +841,7 @@ pre tt:after {
 }
 
 .m-w {
-  max-width: 1240px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .i-t {
@@ -843,15 +856,30 @@ pre tt:after {
     margin-top: 10px;
     display: grid;
 }
+.mt-10 {
+    margin-top: 10px;
+    display: grid;
+}
 .bg-g {
-    border: 1px solid #009985;
-    padding: 4px 10px;
-    float: left;
+    padding: 6px 12px;
+	float: left;
+	
+    background: #e5f5f2;
+    border-radius: 0;
+}
+.bg-w {
+    padding: 6px 12px;
+	float: left;
+    background: white;
+    border-radius: 0;
 }
 .w-screen {
-  background-color: #f6e05e;
+  background-color: #bccbde;
 background-size: cover;
 background-position: bottom;
+}
+.c-w {
+	color:#fed928;
 }
 .bg-w {
 	background: white;
@@ -864,7 +892,9 @@ background-position: bottom;
   z-index: 1000;
   background-color: #fff;
 }
-
+.fl-r {
+	float: right;
+}
 .nav {
   max-width: 1205px;
   padding-left: 24px;
@@ -900,10 +930,10 @@ background-position: bottom;
 
 	.blogPost-mobile {
 		display: block;
-	}.recipesList-mobile {
+	}.rl-mobile {
 		display: block;
 
-	}.recipesList-mobile {
+	}.rl-mobile {
 		display: block;
 
 	}.b-solid-b {
@@ -915,6 +945,11 @@ background-position: bottom;
 	  }.media {
 		height: 170px !important;
 		width: 280px !important;
+		border-radius: 0px;
+	  }.mediaLR {
+		width: auto !important;
+		height: 230px !important;
+		border-radius: 2px;
 		border-radius: 0px;
 	  }.mr-32 {
 		  margin-right: 32px;

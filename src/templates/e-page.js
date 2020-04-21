@@ -32,46 +32,80 @@ const eRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
-      <div className="m-w p-i">
-          <div id={props.data.CLE.slug}>
-            <h3>{props.data.CLE.title}</h3>
-            <div>
-              {
+
+
+
+      <div className="w-screen p-100-0"> 
+      <div className="m-w p-i pb-0">
+        <section>
+          <h1>{props.data.CLE.title}</h1>
+          <p className="mb-0"> {
                 props.data.CLE.childContentfulCookingEDescriptionTextNode
                   .description
-              }
-            </div>
-          </div>
+              }</p>
+        </section>
       </div>
+
+      </div>
+
 
       <div>
         <div>
-          <div className="recipesList recipesList-mobile m-w p-i">
+          <div className="rl rl-mobile m-w p-i">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
-                <div id={edge.id} className="shadow-sm rounded mb-32">
+                <div id={edge.id} className="mb-32">
                
+               <div
 
-<img
-                className="featured"
-                src={edge.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url}
-                alt={edge.title}
-              />
+className="mediaLR"
+style={{
+  backgroundImage:
+    "url(" +
+    edge.childContentfulCookingRecipeFeaturedImageJsonNode
+      .secure_url +
+    ")",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  height: "200px",
+  width: "320px",
+  borderRadius: "0",
+}}
+>
 
-                  <div>
-                    <Link to={`/recette/${edge.slug}/`}>{edge.title}</Link>
+</div>
+
+
+                  <div className="mt-10">
+                    <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
 
                     <div>
-                      <div> {edge.ingredientsNumbers}</div>
-
-                      <div>
-                        <i class="far fa-clock cClock"></i> {edge.time}
+                    <div className="t-d ">
+                        <span class="fs-14 text-gray "> {edge.ingredientsNumbers} </span>
                       </div>
+
+                     
+
+
+                      <div className="t-d fl-r mb-15">
+
+                        <span class="fs-14 bg-g"> <i class="fas fa-check-circle"></i>  {edge.time} </span>
+                        
+
+
+                        <span class="fs-14 bg-w">                        <i class="fas fa-certificate c-w"></i> </span>
+
+                      </div>
+                    
+                    
                     </div>
-                    <div>
+                 
+
+                    <div className="b-solid-top">
                       <div>
                         {edge.for.map(dataFor => (
-                          <span key={dataFor.instructions}>
+                          <span  class="fs-14 text-gray" key={dataFor.instructions}>
                             {dataFor}
                           </span>
                         ))}
