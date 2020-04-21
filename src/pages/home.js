@@ -135,6 +135,7 @@ const HomePage = () => {
     return (
       <div className="mr-32" key={edge.node.id}>
         <div
+        
           className="media"
           style={{
             backgroundImage:
