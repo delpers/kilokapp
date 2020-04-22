@@ -76,6 +76,7 @@ const HomePage = () => {
           }
           titleBreakfast
           breakfastDescription
+          descriptionEntrances
           titleEntrances
           titleDishes
           titleDesserts
@@ -205,7 +206,7 @@ const HomePage = () => {
 
         <div>
           <h3 className="mb-0 fs-36 pb-4">{data.contentfulHome.titleEntrances}</h3>
-          <span className="fs-18 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
+          <span className="fs-18 text-gray">{data.contentfulHome.descriptionEntrances}</span>
 
         </div>
         <div className="sr-cards">
