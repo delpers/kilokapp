@@ -32,6 +32,20 @@ const Blog = () => {
     <Layout>
       <SEO title="Blog" />
 
+
+
+      <div className="w-screen p-100-0"> 
+      <div className="m-w p-i pb-0">
+        <section>
+          <h1>Blog</h1>
+          <p className="mb-0">Retrouvez ici l'ensemble des actualités Kiloka</p>
+        </section>
+      </div>
+
+      </div>
+
+
+
       <div className="blogPost blogPost-mobile m-w p-i">
         {data.blog.edges.map(edge => {
           return (

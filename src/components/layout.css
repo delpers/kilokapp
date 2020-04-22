@@ -250,7 +250,7 @@ html {
 
 body {
 	color: #2D3138;
-	background: #f4f7f7;
+	background: #FFF;
 	font-family: europa, sans-serif;
 	font-weight: normal;
 	word-wrap: break-word;
@@ -745,6 +745,7 @@ pre tt:after {
 .mb-32 {
 	margin-bottom: 32px !important;
 }
+
 .mb-15 {
 	margin-bottom: 15px !important;
 }
@@ -752,7 +753,7 @@ pre tt:after {
 	text-align: right;
 }
 .c-g {
-	color: #9dd0d4;
+	color: #00758d;
 }
 .pt-15 {
 	padding-top: 15px;
@@ -904,6 +905,9 @@ background-position: bottom;
 .c-w {
 	color:#fed928;
 }
+.pl-0 {
+	padding-left: 0 !important;
+}
 .bg-w {
 	background: white;
 }
@@ -977,7 +981,9 @@ background-position: bottom;
 	  }.mr-32 {
 		  margin-right: 32px;
 	  }
-	
+	  .mb-20 {
+		margin-bottom: 20px !important;
+	}
 	
 	
 	

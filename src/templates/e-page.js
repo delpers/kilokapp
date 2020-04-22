@@ -16,6 +16,7 @@ export const query = graphql`
         id
         title
         time
+        numberOfPersons
         for
         ingredientsNumbers
         slug
@@ -54,11 +55,11 @@ const eRecipes = props => {
           <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
-                <div id={edge.id} className="mb-32 shadow-sm  bg-fc">
+                <div id={edge.id} className="mb-20 bg-fc rounded">
                
                <div
 
-className="mediaLR shadow-sm"
+className="mediaLR"
 style={{
   backgroundImage:
     "url(" +
@@ -90,8 +91,8 @@ style={{
 
 
 </div>
-                    <div className="bg-w-c">
-                        <span class="fs-14 text-gray "> <i class="fas fa-shopping-basket mr-5"></i> {edge.ingredientsNumbers} </span>
+                    <div className="bg-w-c pl-0">
+                        <span class="fs-14 text-gray "> <i class="far fa-user mr-5"></i> {edge.numberOfPersons} </span>
                       </div>
 
                      

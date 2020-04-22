@@ -162,7 +162,6 @@ const HomePage = () => {
               >
                 {edge.node.title}
               </Link>
-              <span className="fs-14 text-gray">Grossesse - Cétogène - (d) Type 1</span>
 
             </span>
             <div className="t-d"> 
@@ -206,7 +205,7 @@ const HomePage = () => {
 
 
 
-        <div className="m-w p-i pb-0">
+        <div className="m-w p-i pb-0 bg-w ">
 
         <div className="i-t">
           <h3 className="mb-0">{data.contentfulHome.titleEntrances}</h3>
@@ -258,7 +257,7 @@ const HomePage = () => {
 
 
 
-        <div className="m-w p-i pb-0">
+        <div className="m-w p-i pb-0 bg-w ">
 
 
         <div className="">
@@ -308,7 +307,7 @@ const HomePage = () => {
 
 
 
-        <div className="m-w p-i pb-0">
+        <div className="m-w p-i pb-0 bg-w ">
 
 
         <div className="">
@@ -354,7 +353,7 @@ const HomePage = () => {
 
 
 
-        <div className="m-w p-i pb-0">
+        <div className="m-w p-i pb-0 bg-w ">
 
 
         <div className="">

@@ -28,11 +28,14 @@ const bRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
-      <div className="m-w p-i">
-        <div>
-          <h3>Boosters</h3>
-          <h3 id={props.data.CLE.slug}>{props.data.CLE.title}</h3>
-        </div>
+      <div className="w-screen p-100-0"> 
+      <div className="m-w p-i pb-0">
+        <section>
+          <h1>{props.data.CLE.title}</h1>
+        
+        </section>
+      </div>
+
       </div>
 
       <div>

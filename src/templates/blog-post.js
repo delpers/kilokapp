@@ -34,8 +34,18 @@ const BlogPost = props => {
   return (
     <Layout>
       <SEO title={props.data.post.title} />
+
+      <div className="w-screen p-100-0"> 
+      <div className="m-w p-i pb-0">
+        <section>
+          <h1>{props.data.post.title}</h1>
+        </section>
+      </div>
+
+      </div>
+
+
       <div className="m-w p-i">
-        <h1 className="">{props.data.post.title}</h1>
 
         <img
           className=""
@@ -46,7 +56,7 @@ const BlogPost = props => {
         {documentToReactComponents(props.data.post.body.json, options)}
       </div>
       <div className="">
-        <div className="">
+        <div className="m-w p-i">
           <HyvorTalk.Embed websiteId={277} id={props.data.post.slug} />
         </div>
       </div>

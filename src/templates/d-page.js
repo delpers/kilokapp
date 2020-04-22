@@ -16,6 +16,7 @@ export const query = graphql`
         id
         title
         time
+        numberOfPersons
         for
         ingredientsNumbers
         slug
@@ -32,45 +33,82 @@ const dRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
-      <div className="m-w p-i">
-        <div>
-          <h3>Desserts</h3>
-          <h3 id={props.data.CLE.slug}>{props.data.CLE.title}</h3>
-          <div>
-            {
-              props.data.CLE.childContentfulCookingDDescriptionTextNode
-                .description
-            }
-          </div>
-        </div>
+     
+      <div className="w-screen p-100-0"> 
+      <div className="m-w p-i pb-0">
+        <section>
+          <h1>{props.data.CLE.title}</h1>
+          <p className="mb-0"> {
+                props.data.CLE.childContentfulCookingDDescriptionTextNode
+                  .description
+              }</p>
+        </section>
       </div>
 
+      </div>
+
+  
       <div>
         <div>
-          <div className="recipesList recipesList-mobile m-w p-i">
+          <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
-                <div id={edge.id} className="rounded shadow-sm">
-          
-<img
-                className="featured"
-                src={edge.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url}
-                alt={edge.title}
-              />
-                  <div>
-                    <Link to={`/recette/${edge.slug}/`}>{edge.title}</Link>
+                <div id={edge.id} className="mb-20 bg-fc rounded">
+               
+               <div
 
-                    <div>
-                      <div> {edge.ingredientsNumbers}</div>
+className="mediaLR"
+style={{
+  backgroundImage:
+    "url(" +
+    edge.childContentfulCookingRecipeFeaturedImageJsonNode
+      .secure_url +
+    ")",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  height: "200px",
+  width: "320px",
+  borderRadius: "0",
+}}
+>
 
-                      <div>
-                        <i class="far fa-clock cClock"></i> {edge.time}
+</div>
+
+
+                  <div className="mt-10 p-15 fs-16 ">
+                    <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
+
+                    <div> 
+
+                    <div className="t-d fl-r mb-15">
+
+<span class="fs-14 bg-g"> <i class="fas fa-check-circle"></i>  {edge.time} </span>
+
+
+
+
+</div>
+                    <div className="bg-w-c pl-0">
+                        <span class="fs-14 text-gray "> <i class="far fa-user mr-5"></i> {edge.numberOfPersons} </span>
                       </div>
+
+                     
+
+
+                  
+                    
+                    
                     </div>
-                    <div>
-                      <div>
+                 
+
+                    <div className="b-solid-top">
+                      <div  className="pt-15 ">
+                      <i class="fas fa-file-medical-alt c-g mr-15"></i>
                         {edge.for.map(dataFor => (
-                          <span key={dataFor.instructions}>{dataFor}</span>
+                          <span  class="fs-14 text-gray pr-15" key={dataFor.instructions}>
+                            {dataFor}
+                          </span>
                         ))}
                       </div>
                     </div>
