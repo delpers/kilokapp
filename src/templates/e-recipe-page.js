@@ -41,25 +41,38 @@ const cookingRecipe = props => {
     <Layout>
       <SEO title={props.data.CRE.title} />
 
-      <div className="m-w p-i">
-        <div>
-          <div id={props.data.CRE.id}>
-            <h1>{props.data.CRE.title}</h1>
-            <picture>
-                    <img
-                      src={props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url}
-                      alt={props.data.CRE.title}
-                    ></img>
-                  </picture>
-          </div>
-        </div>
+      <div className="w-screen p-100-0 pb-0"  style={{
+                backgroundImage:
+                  "url(" +
+                  props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url +
+                  ")",
+                backgroundPosition: "top",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}> 
 
-        <div>
+    <span className="mask-thumb">
+
+
+      <div className="m-w p-i ">
+        <section>
+          <h1 className="fs-6rem">{props.data.CRE.title}</h1>
+      
+        </section>
+      </div>
+      
+  </span>
+
+  </div>
+
+   
+
+        <div className="m-w p-i">
           <h4>{props.data.CRE.time}</h4>
           <h1> {props.data.CRE.ingredientsNumbers}</h1>
         </div>
 
-        <div className="ingredientsList">
+        <div className="ingredientsList m-w p-i">
           {props.data.CRE.nIngredients.map(dataIGRD => {
             return (
               <div id={dataIGRD.id} className="rounded mb-32">
@@ -77,7 +90,6 @@ const cookingRecipe = props => {
             )
           })}
         </div>
-      </div>
 
       <div className="m-w p-i">
         <div>
