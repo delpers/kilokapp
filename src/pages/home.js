@@ -98,7 +98,7 @@ const HomePage = () => {
         
       >
         <section>
-          <h1>{data.contentfulHome.titleHome}</h1>
+          <h1 className="w-50">{data.contentfulHome.titleHome}</h1>
           <p className="mb-0">{data.contentfulHome.descriptionHome}</p>
         </section>
       </div>

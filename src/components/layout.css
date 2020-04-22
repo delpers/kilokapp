@@ -787,7 +787,9 @@ pre tt:after {
 .p-100-0 {
 	padding: 100px 0;
   }
-  
+.w-50 {
+	max-width: 50%;
+}
 
 
 .mb-0 {
@@ -898,12 +900,12 @@ pre tt:after {
 	background: #fcfcfc;
 }
 .w-screen {
-  background-color: #bccbde;
+  background-color: #fcb82bcf;
 background-size: cover;
 background-position: bottom;
 }
 .c-w {
-	color:#fed928;
+	color:#fcb82bcf;
 }
 .pl-0 {
 	padding-left: 0 !important;
@@ -983,6 +985,9 @@ background-position: bottom;
 	  }
 	  .mb-20 {
 		margin-bottom: 20px !important;
+	}.w-50 {
+		font-size: 28px;
+		max-width: 100%;
 	}
 	
 	
