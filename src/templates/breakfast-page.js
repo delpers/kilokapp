@@ -24,6 +24,11 @@ export const query = graphql`
           secure_url
         }
       }
+    }contentfulHome {
+     
+      titleBreakfast
+      breakfastDescription
+    
     }
   }
 `
@@ -38,10 +43,9 @@ const eRecipes = props => {
       <div className="w-screen p-h"> 
       <div className="m-w p-i pb-0">
         <section>
-          <h1>{props.data.CLE.title}</h1>
+          <h1>{props.data.contentfulHome.titleBreakfast}</h1>
           <p className="mb-0"> {
-                props.data.CLE.childContentfulCookingBDescriptionTextNode
-                  .description
+                props.data.contentfulHome.breakfastDescription
               }</p>
         </section>
       </div>

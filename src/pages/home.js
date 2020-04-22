@@ -76,8 +76,8 @@ const HomePage = () => {
           }
           titleBreakfast
           breakfastDescription
-          descriptionEntrances
           titleEntrances
+          descriptionEntrances
           titleDishes
           titleDesserts
           titleBoosters
@@ -88,13 +88,7 @@ const HomePage = () => {
   return (
     <Layout>
       <SEO title="Accueil" />
-<div className="w-screen p-120-0" style={{
-          backgroundImage:
-            "url(" +
-            data.contentfulHome.mediaHome
-              .secure_url +
-            ")",
-        }}> 
+<div className="w-screen p-120-0"> 
       <div className="m-w p-i pb-0"
         
       >
