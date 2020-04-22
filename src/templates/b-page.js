@@ -28,7 +28,7 @@ const bRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
-      <div className="w-screen p-100-0"> 
+      <div className="w-screen p-h"> 
       <div className="m-w p-i pb-0">
         <section>
           <h1>{props.data.CLE.title}</h1>

@@ -35,7 +35,7 @@ const eRecipes = props => {
 
 
 
-      <div className="w-screen p-100-0"> 
+      <div className="w-screen p-h"> 
       <div className="m-w p-i pb-0">
         <section>
           <h1>{props.data.CLE.title}</h1>
@@ -50,7 +50,12 @@ const eRecipes = props => {
 
 
 
-
+      <div className="m-w p-i pb-0"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
+      <span class="fs-18 text-gray">{
+                props.data.CLE.childContentfulCookingBDescriptionTextNode
+                  .description
+              }</span>
+      </div>
 
       <div>
         <div>

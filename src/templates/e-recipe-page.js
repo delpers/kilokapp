@@ -41,7 +41,7 @@ const cookingRecipe = props => {
     <Layout>
       <SEO title={props.data.CRE.title} />
 
-      <div className="w-screen p-100-0 pb-0"  style={{
+      <div className="w-screen p-100-0 pb-0 p-h"  style={{
                 backgroundImage:
                   "url(" +
                   props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url +

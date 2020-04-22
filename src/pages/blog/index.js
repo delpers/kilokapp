@@ -38,7 +38,7 @@ const Blog = () => {
       <div className="m-w p-i pb-0">
         <section>
           <h1>Blog</h1>
-          <p className="mb-0">Retrouvez ici l'ensemble des actualités Kiloka</p>
+          <p className="mb-0 ">Retrouvez ici l'ensemble des actualités Kiloka</p>
         </section>
       </div>
 

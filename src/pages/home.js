@@ -87,7 +87,7 @@ const HomePage = () => {
   return (
     <Layout>
       <SEO title="Accueil" />
-<div className="w-screen p-160-0" style={{
+<div className="w-screen p-120-0" style={{
           backgroundImage:
             "url(" +
             data.contentfulHome.mediaHome
@@ -106,11 +106,11 @@ const HomePage = () => {
       </div>
 
 
-      <div className="mb-32 sticky">      
+      <div className="mb-32 sticky b-solid-b">      
         <nav className="pt-15 m-w p-i">
         {data.contentfulHome.pages.map(Pages => (
               <a
-                className="i-link fs-14 b-b-g mr-15 font-bold"
+                className="i-link fs-16 b-b-g mr-15 font-bold"
                 href={Pages.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -127,17 +127,17 @@ const HomePage = () => {
 
 <div className="m-w p-i pb-0 bg-w ">
 
-<div className="i-t">
-  <h3 className="mb-0">{data.contentfulHome.titleBreakfast}</h3>
-  <span className="fs-14 text-gray">{data.contentfulHome.breakfastDescription}</span>
+<div>
+  <h3 className="mb-0 fs-36 pb-4">{data.contentfulHome.titleBreakfast}</h3>
+  <span className="fs-18 text-gray">{data.contentfulHome.breakfastDescription}</span>
 </div>
 <div className="sr-cards">
   {data.allContentfulCookingB.edges.map(edge => {
     return (
-      <div className="mr-32" key={edge.node.id}>
+      <div className="mr-32 mr-32 shadow-sm" key={edge.node.id}>
         <div
 
-          className="media"
+          className="media shadow-sm"
           style={{
             backgroundImage:
               "url(" +
@@ -147,29 +147,25 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "200px",
-            width: "320px",
+            height: "205px",
+            width: "325px",
             borderRadius: "0",
           }}
         >
-        
-        </div>
-        <span className="">
+          <span class="mask-thumb-h">
             <span className="mt-10-b">
               <Link
-                className="i-link fs-16 b-b-g mr-15 font-bold"
+                className="i-link fs-16 b-b-g mr-15 font-bold c-t"
                 to={`/breakfast/recettes/${edge.node.slug}/`}
               >
                 {edge.node.title}
               </Link>
-
+           
             </span>
-            <div className="t-d"> 
-            <span className="font-bold fs-14 bg-g">12 - 25min</span>
-            
-            
-            </div>
+          
           </span>
+        </div>
+      
       </div>
     )
   })}
@@ -207,9 +203,9 @@ const HomePage = () => {
 
         <div className="m-w p-i pb-0 bg-w ">
 
-        <div className="i-t">
-          <h3 className="mb-0">{data.contentfulHome.titleEntrances}</h3>
-          <span className="fs-14 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
+        <div>
+          <h3 className="mb-0 fs-36 pb-4">{data.contentfulHome.titleEntrances}</h3>
+          <span className="fs-18 text-gray">Des petits déjeuners sains, rapides et équilibrés.</span>
 
         </div>
         <div className="sr-cards">
@@ -227,23 +223,30 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "200px",
-                    width: "320px",
+                    height: "205px",
+                    width: "325px",
                     borderRadius: "0",
                   }}
                 >
-                  <span className="">
-                    <span className="">
-                      <Link
-                        className="i-link fs-16 b-b-g mr-15 font-bold"
-                        to={`/recettes/${edge.node.slug}/`}
-                      >
-                        {edge.node.title}
-                      </Link>
-                    </span>
-                  </span>
-                </div>
-              </div>
+
+
+<span class="mask-thumb-h">
+            <span className="mt-10-b">
+              <Link
+                className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                to={`/recettes/${edge.node.slug}/`}
+              >
+                {edge.node.title}
+              </Link>
+           
+            </span>
+          
+          </span>
+        </div>
+      
+      </div>
+
+
             )
           })}
         </div>
@@ -261,7 +264,7 @@ const HomePage = () => {
 
 
         <div className="">
-          <h3>{data.contentfulHome.titleDishes}</h3>
+          <h3 className="mb-0 fs-36">{data.contentfulHome.titleDishes}</h3>
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingP.edges.map(edge => {
@@ -283,18 +286,25 @@ const HomePage = () => {
                     borderRadius: "0",
                   }}
                 >
-                  <span className="">
-                    <span className="">
-                      <Link
-                        className=""
-                        to={`/dishes/recettes/${edge.node.slug}/`}
-                      >
-                        {edge.node.title}
-                      </Link>
-                    </span>
-                  </span>
-                </div>
-              </div>
+
+
+<span class="mask-thumb-h rounded">
+            <span className="mt-10-b">
+              <Link
+                className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                to={`/dishes/recettes/${edge.node.slug}/`}
+                >
+                {edge.node.title}
+              </Link>
+           
+            </span>
+          
+          </span>
+        </div>
+      
+      </div>
+
+             
             )
           })}
         </div>
@@ -333,18 +343,24 @@ const HomePage = () => {
                     borderRadius: "0",
                   }}
                 >
-                  <span className="">
-                    <span className="">
-                      <Link
-                        className=""
-                        to={`/desserts/recettes/${edge.node.slug}/`}
-                      >
-                        {edge.node.title}
-                      </Link>
-                    </span>
-                  </span>
-                </div>
-              </div>
+        
+
+<span class="mask-thumb-h rounded">
+            <span className="mt-10-b">
+              <Link
+                className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                to={`/desserts/recettes/${edge.node.slug}/`}
+                >
+                {edge.node.title}
+              </Link>
+           
+            </span>
+          
+          </span>
+        </div>
+      
+      </div>
+
             )
           })}
         </div>
@@ -378,18 +394,24 @@ const HomePage = () => {
                     borderRadius: "0",
                   }}
                 >
-                  <span className="">
-                    <span className="">
-                      <Link
-                        className=""
-                        to={`/booster/${edge.node.slug}/`}
-                      >
-                        {edge.node.title}
-                      </Link>
-                    </span>
-                  </span>
-                </div>
-              </div>
+            
+
+<span class="mask-thumb-h rounded">
+            <span className="mt-10-b">
+              <Link
+                className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                to={`/booster/${edge.node.slug}/`}
+                >
+                {edge.node.title}
+              </Link>
+           
+            </span>
+          
+          </span>
+        </div>
+      
+      </div>
+
             )
           })}
         </div>
