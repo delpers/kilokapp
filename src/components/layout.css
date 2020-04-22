@@ -900,9 +900,10 @@ pre tt:after {
 	background: #fcfcfc;
 }
 .w-screen {
-  background-color: #fcb82bcf;
+  background-color: #348f90;
 background-size: cover;
 background-position: bottom;
+color: white;
 }
 .c-w {
 	color:#fcb82bcf;

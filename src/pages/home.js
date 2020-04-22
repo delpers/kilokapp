@@ -106,7 +106,7 @@ const HomePage = () => {
       </div>
 
 
-      <div className="mb-32 b-solid-b sticky">      
+      <div className="mb-32 sticky">      
         <nav className="pt-15 m-w p-i">
         {data.contentfulHome.pages.map(Pages => (
               <a
