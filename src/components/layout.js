@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
 
-      <footer className="b-solid-top p-32 size-16">
+      <footer className="b-solid-top p-32 fs-16">
         © {new Date().getFullYear()}, {` `}
         <a className="i-link font-bold" href="https://kiloka.io/">Kiloka France</a>  
       </footer>
