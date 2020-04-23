@@ -76,8 +76,6 @@ const cookingRecipe = props => {
     <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-g">
       <i class="fas fa-check-circle"></i> {props.data.CRE.time} </span></div>
 
-    
-
     </div>
     </div>
     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédient(s).</h3>
@@ -109,7 +107,6 @@ const cookingRecipe = props => {
             )
           })}
         </div>
-        
       <div className="m-w p-i bg-w">
         <div>
           <div>
