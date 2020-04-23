@@ -964,6 +964,12 @@ color: white;
 .pb-0 {
 	padding-bottom: 0;
 }
+.mt-1 {
+	margin-top: 1px !important;
+}
+.mt_i5 {
+	margin-top: -5px;
+}
 .sticky {
   position: sticky;
   top: 0;
@@ -1048,3 +1054,32 @@ color: white;
     padding: 60px 0;
 }
 }
+
+/* override styles when printing */
+@media print {
+
+	footer {
+	  display: none !important;
+	}header {
+		display: none !important;
+	  }.fs-6rem {
+		  font-size: 24px;
+		  margin: 0;
+		  padding: 0;
+	  }.p-h {
+		  padding: 0;
+	  }.direction {
+		  font-size: 14px;
+	  }.ingr_media {
+		  display: none;
+	  }.boosters {
+		  display: none;
+	  }.ingr_mediap {
+		display: none;
+
+	  }._print_w {
+min-width: 160px;
+margin-bottom: 0;
+	  }
+  
+  }
