@@ -83,7 +83,7 @@ const cookingRecipe = props => {
         <div className="sr-cards m-w p-i mt-1 bg-w">
           {props.data.CRE.nIngredients.map(dataIGRD => {
             return (
-              <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm bg-w-c">
+              <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm bg-w-c mr-32">
                 <div  className="ingr_mediap" style={{
                 backgroundImage:
                   "url(" +
