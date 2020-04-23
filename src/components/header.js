@@ -20,12 +20,13 @@ const Header = ({ siteTitle }) => (
       <h1 style={{ margin: 0 }} className="text-xl font-bold">
         <Link
           to="/"
+          className="icon"
           style={{
-            color: `white`,
+            color: `initial`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          K
         </Link>
       </h1>
     </div>

@@ -113,9 +113,10 @@ const HomePage = () => {
                 {Pages.title}
               </a>
             ))}
-            <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-spotify"></i></a>
+            <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
 
         </nav>
         
@@ -127,7 +128,7 @@ const HomePage = () => {
 <div className="m-w p-i pb-0 bg-w ">
 
 <div>
-  <h3 className="mb-0 fs-36 pb-4">{data.contentfulHome.titleBreakfast}</h3>
+  <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleBreakfast}</h3>
   <span className="fs-18 text-gray">{data.contentfulHome.breakfastDescription}</span>
 </div>
 <div className="sr-cards">
@@ -203,7 +204,7 @@ const HomePage = () => {
         <div className="m-w p-i pb-0 bg-w ">
 
         <div>
-          <h3 className="mb-0 fs-36 pb-4">{data.contentfulHome.titleEntrances}</h3>
+          <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleEntrances}</h3>
           <span className="fs-18 text-gray">{data.contentfulHome.descriptionEntrances}</span>
 
         </div>
@@ -263,7 +264,7 @@ const HomePage = () => {
 
 
         <div className="">
-          <h3 className="mb-0 fs-36">{data.contentfulHome.titleDishes}</h3>
+          <h3 className="mb-0 fs-32">{data.contentfulHome.titleDishes}</h3>
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingP.edges.map(edge => {

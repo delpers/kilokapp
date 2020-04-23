@@ -845,13 +845,19 @@ pre tt:after {
 }
 
 .text-gray {
-	color: #636771 !important;
+	color: rgb(143, 149, 161) !important;
 }
 
 .justify {
 	text-align: justify;
 }
-
+.icon {
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 0 12px;
+    border-radius: 0;
+}
 .shadow-sm {
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05) !important;
 }
@@ -904,6 +910,10 @@ pre tt:after {
 }
 .fs-36 {
 	font-size: 36px;
+
+}
+.fs-32 {
+	font-size: 32px;
 
 }
 .fs-18 {
