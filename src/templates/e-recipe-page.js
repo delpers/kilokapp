@@ -11,6 +11,7 @@ export const query = graphql`
       slug
       time
       ingredientsNumbers
+      numberOfPersons
       instructions
       childContentfulCookingRecipeFeaturedImageJsonNode {
         secure_url
@@ -65,12 +66,21 @@ const cookingRecipe = props => {
 
   </div>
 
-   
 
-        <div className="m-w p-i">
-          <h4>{props.data.CRE.time}</h4>
-          <h1> {props.data.CRE.ingredientsNumbers}</h1>
-        </div>
+<div className="mb-32 sticky b-solid-b">
+
+
+  <div class="m-w p-i pb-0">
+    <span class="i-link fs-16 b-b-g mr-15 font-bold">{props.data.CRE.ingredientsNumbers} Ing(s).</span>
+    <span class="i-link fs-16 b-b-g mr-15 font-bold">{props.data.CRE.numberOfPersons}</span>
+
+    <div class="t-d fl-r mb-15"><span class="fs-14 bg-g">
+      <i class="fas fa-check-circle"></i> {props.data.CRE.time} </span></div>
+
+    
+
+    </div>
+    </div>
 
         <div className="ingredientsList m-w p-i">
           {props.data.CRE.nIngredients.map(dataIGRD => {

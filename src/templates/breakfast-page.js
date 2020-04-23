@@ -89,6 +89,10 @@ style={{
 </div>
 
 
+
+
+
+
                   <div className="mt-10 p-15 fs-16 ">
                     <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
 
