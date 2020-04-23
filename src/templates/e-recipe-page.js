@@ -121,31 +121,53 @@ const cookingRecipe = props => {
         </div>
       </div>
 
-      <div className="m-w p-i boosters">
+      <div className="m-w p-i boosters bg-w rounded">
         <div className="getBoosters getBoosters-mobile m-w p-i">
           {props.data.CRE.boosters.map(dataFLC => {
             return (
               <div className="mb-20 bg-w rounded shadow-sm">
-                <div>
-                  <picture>
-                    <img
-                      src={dataFLC.ImageFL.secure_url}
-                      alt={dataFLC.title}
-                    ></img>
-                  </picture>
+                <div className="p-15">
 
-                  <div>{dataFLC.title}</div>
+
+
+
+
+                <div  className="ingr_mediap" style={{
+                backgroundImage:
+                  "url(" +
+                  dataFLC.ImageFL.secure_url +
+                  ")",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                height: "200px",
+                width: "200px",
+                margin: "20px",
+              }}>
+            
+                </div>
+
+
+
+
+
+
+
+
+
+
+                  <h3 className="i-link fs-16 b-b-g font-bold mb-0 nowrap p-15">{dataFLC.title}</h3>
                   <Link
                     to={`/recettes/base/${dataFLC.slug}/`}
                     alt="Découvrez"
-                    className="notunder"
+                    className="i-link fs-16 b-b-g font-bold mb-0 nowrap"
                   >
-                    <button>Découvrez</button>
+                    <button className="orange-btn">Découvrez</button>
                   </Link>
 
-                  <div>
+                  <div className="tfd">
                     {dataFLC.getBoosters.map(datafl => (
-                      <span key={dataFLC.getBoosters}>{datafl}</span>
+                      <span className="p-10" key={dataFLC.getBoosters}>{datafl}</span>
                     ))}
                   </div>
                 </div>

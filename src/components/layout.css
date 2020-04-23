@@ -250,7 +250,7 @@ html {
 
 body {
 	color: #1a2b49;
-	background: #FFF;
+	background: #f4f7f7;
 	font-family: europa, sans-serif;
 	font-weight: normal;
 	word-wrap: break-word;
@@ -872,6 +872,9 @@ pre tt:after {
 .p-15 {
 	padding: 15px;
 }
+.p-10 {
+	padding: 10px;
+}
 .m-w {
   max-width: 1120px;
   margin: 0 auto;
@@ -929,6 +932,19 @@ pre tt:after {
     color: white;
     font-size: 24px;
     padding: 32px;
+}
+.orange-btn {
+	background: #f29d52;
+		color: white;
+		border: transparent;
+		width: 100%;
+		padding: 10px 16px;
+		border-radius: 2px;
+}
+.tfd {
+    text-align: center;
+    font-size: 16px;
+    display: grid;
 }
 .w-screen {
   background-color: #F29D52;
