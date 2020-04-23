@@ -793,13 +793,18 @@ pre tt:after {
 .w-50 {
 	max-width: 50%;
 }
-
+.mt-32 {
+	margin-top: 32px !important;
+}
 
 .mb-0 {
   margin-bottom: 0;
 }
 .mr-15 {
   margin-right: 15px;
+}
+.ml-15 {
+	margin-left: 15px;
 }
 .i-link {
 	color: initial;
@@ -858,6 +863,7 @@ pre tt:after {
     padding: 0 12px;
     border-radius: 0;
 }
+
 .shadow-sm {
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05) !important;
 }
@@ -993,6 +999,9 @@ color: white;
   background-color: white;
   z-index: 1000;
   background-color: #fff;
+}
+.link a {
+	color: black;
 }
 .fl-r {
 	float: right;

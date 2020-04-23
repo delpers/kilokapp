@@ -32,12 +32,22 @@ const BlogPage = props => {
     <Layout>
       <SEO title={props.data.contentfulPage.title} />
 
-      <div className="content">
-        <h1>{props.data.contentfulPage.title}</h1>
-        <span className="meta">
-          Posted on {props.data.contentfulPage.publishedDate}
-        </span>
 
+
+      <div className="w-screen p-h"> 
+      <div className="m-w p-i pb-0">
+        <section>
+        <h1>{props.data.contentfulPage.title}</h1>
+          <p className="mb-0"> {props.data.contentfulPage.publishedDate}</p>
+        </section>
+      </div>
+
+      </div>
+
+
+
+      <div className="m-w p-i pb-0 bg-w fs-14 link justify mt-32">
+    
         {documentToReactComponents(
           props.data.contentfulPage.body.json,
           options
