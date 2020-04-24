@@ -28,6 +28,7 @@ summary {
 
 footer {
 	bottom: 0;
+	background: white;
 	position: relative;
 	width: 100%;
 }
@@ -940,7 +941,7 @@ pre tt:after {
     padding: 32px;
 }
 .orange-btn {
-	background: #f29d52;
+	background: #ef7044;
 		color: white;
 		border: transparent;
 		width: 100%;
@@ -951,6 +952,10 @@ pre tt:after {
     text-align: center;
     font-size: 16px;
     display: grid;
+}
+.p-0-32 {
+	padding: 32px 0;
+
 }
 .w-screen {
   background-color: #F29D52;
@@ -1006,6 +1011,9 @@ color: white;
 .fl-r {
 	float: right;
 }
+.dn {
+	display: none;
+}
 .nav {
   max-width: 1205px;
   padding-left: 24px;
@@ -1035,8 +1043,11 @@ color: white;
 	html {
 		font-size: 100%;
 	}
+	.p-0-32 {
+		padding: 0;
+	}
 	body {
-		background: #f4f7f7;
+		background: #eef1f2;
 	}
 
 	.blogPost-mobile {
@@ -1082,7 +1093,10 @@ color: white;
 
 /* override styles when printing */
 @media print {
-
+	body {
+		margin: 0;
+		padding: 0;
+	}
 	footer {
 	  display: none !important;
 	}header {
@@ -1105,6 +1119,31 @@ color: white;
 	  }._print_w {
 min-width: 160px;
 margin-bottom: 0;
-	  }
+padding: 0;
+	  }.p-0-32 {
+		padding: 0;
+	}.dn {
+		display: grid;
+		max-width: 250px;
+		float: right;
+	}.sticky {
+		background: transparent;
+		
+	}.b-solid-b {
+		border: 0;
+	}.mr-p {
+		margin-right: 50px;
+	}.m-w {
+		width: 100%;
+	}.sr-cards {
+		padding: 0;
+		margin: 0;
+	}.p-i {
+		padding: 0;
+	}.bg-w-c {
+		padding: 0;
+	}.sr-cards {
+		display: flow-root;
+	}
   
   }

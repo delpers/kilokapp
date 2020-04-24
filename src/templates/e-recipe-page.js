@@ -57,6 +57,8 @@ const cookingRecipe = props => {
 
       <div className="m-w p-i ">
         <section>
+        <img className="dn w_print" src={props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url}></img>
+
           <h1 className="fs-6rem">{props.data.CRE.title}</h1>
       
         </section>
@@ -67,13 +69,19 @@ const cookingRecipe = props => {
   </div>
 
 
+
+
+
+
+
+
 <div className="mb-32 sticky b-solid-b">
 
 
   <div class="m-w p-i ">
     <span class="i-link fs-16 b-b-g mr-15 font-bold text-gray">{props.data.CRE.numberOfPersons}</span>
 
-    <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-g">
+    <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-g mr-p">
       <i class="fas fa-check-circle"></i> {props.data.CRE.time} </span></div>
 
     </div>
@@ -98,6 +106,10 @@ const cookingRecipe = props => {
               }}>
             
                 </div>
+
+
+
+
                      <div className="mt-10 p-15 fs-16 _print_w">
                 <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">{dataIGRD.title}</h3>
                   <span class="fs-16 text-gray pr-15">{dataIGRD.amount}</span>
@@ -109,30 +121,30 @@ const cookingRecipe = props => {
         </div>
       <div className="m-w p-i bg-w">
         <div>
-          <div>
+          <ol className="">
             {props.data.CRE.instructions.map(dataIST => (
-              <div className="rounded mb-32 mb-32 sticky b-solid-b direction" key={dataIST.instructions}>
+              <li className="rounded mb-32 mb-32 b-solid-b direction p-0-32" key={dataIST.instructions}>
                 {dataIST}
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
 
           
         </div>
       </div>
 
-      <div className="m-w p-i boosters bg-w rounded">
+      <div className="m-w p-i boosters bg-w rounded mb-32">
         <div className="getBoosters getBoosters-mobile m-w p-i">
           {props.data.CRE.boosters.map(dataFLC => {
             return (
               <div className="mb-20 bg-w rounded shadow-sm">
-                <div className="p-15">
+                <div className="p-15 shadow-sm">
 
 
 
 
 
-                <div  className="ingr_mediap" style={{
+                <div  className="ingr_mediap " style={{
                 backgroundImage:
                   "url(" +
                   dataFLC.ImageFL.secure_url +
@@ -140,8 +152,8 @@ const cookingRecipe = props => {
                 backgroundPosition: "center",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
-                height: "200px",
-                width: "200px",
+                height: "255px",
+                width: "255px",
                 margin: "20px",
               }}>
             
