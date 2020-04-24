@@ -1039,6 +1039,11 @@ color: white;
   scrollbar-width: thin;
  
 }
+::marker {
+	color: #ef7044;
+	font-weight: bold;
+	font-size: 18px;
+}
 @media only screen and (max-width: 480px) {
 	html {
 		font-size: 100%;
