@@ -264,7 +264,7 @@ const HomePage = () => {
 
 
         <div className="">
-          <h3 className="mb-0 fs-32">{data.contentfulHome.titleDishes}</h3>
+          <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleDishes}</h3>
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingP.edges.map(edge => {
@@ -281,8 +281,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "200px",
-                    width: "320px",
+                    height: "205px",
+                    width: "325px",
                     borderRadius: "0",
                   }}
                 >
@@ -321,7 +321,7 @@ const HomePage = () => {
 
 
         <div className="">
-          <h3>{data.contentfulHome.titleDesserts}</h3>
+          <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleDesserts}</h3>
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingD.edges.map(edge => {
@@ -338,8 +338,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "200px",
-                    width: "320px",
+                    height: "205px",
+                    width: "325px",
                     borderRadius: "0",
                   }}
                 >
@@ -373,7 +373,7 @@ const HomePage = () => {
 
 
         <div className="">
-          <h3>{data.contentfulHome.titleBoosters}</h3>
+          <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleBoosters}</h3>
         </div>
         <div className="sr-cards">
         {data.allContentfulBooster.edges.map(edge => {
@@ -389,8 +389,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "200px",
-                    width: "320px",
+                    height: "205px",
+                    width: "325px",
                     borderRadius: "0",
                   }}
                 >

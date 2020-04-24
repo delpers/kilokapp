@@ -120,7 +120,7 @@ const cookingRecipe = props => {
           })}
         </div>
       <div className="m-w p-i bg-w">
-        <div>
+        <div className="mt-32">
           <ol className="">
             {props.data.CRE.instructions.map(dataIST => (
               <li className="rounded mb-32 mb-32 b-solid-b direction p-0-32" key={dataIST.instructions}>
