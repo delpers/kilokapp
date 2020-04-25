@@ -75,13 +75,13 @@ const cookingRecipe = props => {
 
 
 
-<div className="mb-32 sticky b-solid-b">
+<div className="mb-32 sticky b-solid-b blue">
 
 
   <div class="m-w p-i ">
     <span class="i-link fs-16 b-b-g mr-15 font-bold text-gray">{props.data.CRE.numberOfPersons}</span>
 
-    <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-g mr-p">
+    <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-blue mr-p">
       <i class="fas fa-check-circle"></i> {props.data.CRE.time} </span></div>
 
     </div>

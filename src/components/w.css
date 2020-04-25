@@ -196,6 +196,13 @@
     background: #e5f5f2;
     border-radius: 0;
   }
+  .bg-blue {
+    padding: 6px 12px;
+    float: left;
+    background: #268b9a !important;
+    border-radius: 2px;
+    color: white !important;
+}
   .bg-w-c {
     padding: 6px 12px;
     float: left;
@@ -242,10 +249,13 @@
     padding: 32px 0;
   }
   .w-screen {
-    background-color: #f29d52;
+    background-color: #006d7d;
     background-size: cover;
     background-position: bottom;
     color: white;
+  }
+  .blue {
+    background: #006d7d !important;
   }
   .c-w {
     color: #fcb82bcf;
