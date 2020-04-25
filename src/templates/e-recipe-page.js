@@ -75,7 +75,7 @@ const cookingRecipe = props => {
 
 
 
-<div className="mb-32 sticky b-solid-b blue">
+<div className="mb-32 sticky blue b-b-blue">
 
 
   <div class="m-w p-i ">

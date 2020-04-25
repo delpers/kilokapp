@@ -203,6 +203,9 @@
     border-radius: 2px;
     color: white !important;
 }
+.b-b-blue {
+  border-bottom: 1px solid #006d7d !important;
+}
   .bg-w-c {
     padding: 6px 12px;
     float: left;
