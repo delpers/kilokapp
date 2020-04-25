@@ -40,18 +40,43 @@ const bRecipes = props => {
 
       <div>
         <div>
-          <div className="recipesList recipesList-mobile m-w p-i">
+        <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.bList.map(edge => {
               return (
                 <div className="rounded shadow-sm">
-           
-<img
-                className="featured"
-                src={edge.childContentfulFruitsVegetablesImageJsonNode.secure_url}
-                alt={edge.title}
-              />
+
+
+
+             <div
+
+className="mediaLR"
+style={{
+  backgroundImage:
+    "url(" +
+    edge.childContentfulFruitsVegetablesImageJsonNode
+      .secure_url +
+    ")",
+  backgroundPosition: "center",
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
+  height: "200px",
+  width: "320px",
+  borderRadius: "0",
+}}
+>
+
+</div>
+
+
+
+
+
+
+
+
+
                   <div>
-                    <Link to={`/recettes/base/${edge.slug}/`}>
+                    <Link class="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap" to={`/recettes/base/${edge.slug}/`}>
                       {edge.title}
                     </Link>
 

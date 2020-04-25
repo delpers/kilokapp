@@ -288,7 +288,7 @@ const HomePage = () => {
                 >
 
 
-<span class="mask-thumb-h rounded">
+<span class="mask-thumb-h ">
             <span className="mt-10-b">
               <Link
                 className="i-link fs-16 b-b-g mr-15 font-bold c-t"
@@ -345,7 +345,7 @@ const HomePage = () => {
                 >
         
 
-<span class="mask-thumb-h rounded">
+<span class="mask-thumb-h ">
             <span className="mt-10-b">
               <Link
                 className="i-link fs-16 b-b-g mr-15 font-bold c-t"

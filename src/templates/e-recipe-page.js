@@ -42,7 +42,7 @@ const cookingRecipe = props => {
     <Layout>
       <SEO title={props.data.CRE.title} />
 
-      <div className="w-screen p-100-0 pb-0 p-h"  style={{
+      <div className="w-screen p-100-0 pb-0 p-h ml-i-8"  style={{
                 backgroundImage:
                   "url(" +
                   props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url +
@@ -88,10 +88,10 @@ const cookingRecipe = props => {
     </div>
     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédient(s).</h3>
 
-        <div className="sr-cards m-w p-i mt-1 bg-w">
+        <div className="sr-cards m-w p-i mt-1 bg-w ns-print">
           {props.data.CRE.nIngredients.map(dataIGRD => {
             return (
-              <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm bg-w-c mr-32">
+              <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm ns-print bg-w-c mr-32">
                 <div  className="ingr_mediap" style={{
                 backgroundImage:
                   "url(" +
@@ -110,7 +110,7 @@ const cookingRecipe = props => {
 
 
 
-                     <div className="mt-10 p-15 fs-16 _print_w">
+                     <div className="mt-10 p-15 fs-16 _print_w ns-print">
                 <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">{dataIGRD.title}</h3>
                   <span class="fs-16 text-gray pr-15">{dataIGRD.amount}</span>
               </div>
