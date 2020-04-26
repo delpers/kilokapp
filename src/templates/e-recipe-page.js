@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
+import styled from "@emotion/styled"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
@@ -20,25 +20,23 @@ export const query = graphql`
         id
         title
         amount
-        iMg: childContentfulIngredientsImageJsonNode {
-          secure_url
-        }
       }
       boosters {
         id
         title
         slug
-        ImageFL: childContentfulFruitsVegetablesImageJsonNode {
-          secure_url
-        }
         getBoosters
       }
     }
   }
 `
+const Background = styled.div`
+background: #f2f1eb;
 
+`
 const cookingRecipe = props => {
   return (
+    <Background>
     <Layout>
       <SEO title={props.data.CRE.title} />
 
@@ -79,33 +77,26 @@ const cookingRecipe = props => {
 
 
   <div class="m-w p-i ">
-    <span class="i-link fs-16 b-b-g mr-15 font-bold text-gray">{props.data.CRE.numberOfPersons}</span>
+    <span class="i-link fs-16 b-b-g mr-15 font-bold text-white">{props.data.CRE.numberOfPersons}</span>
 
+
+
+    
     <div class="t-d fl-r mb-15 mt_i5"><span class="fs-14 bg-blue mr-p">
       <i class="fas fa-check-circle"></i> {props.data.CRE.time} </span></div>
 
     </div>
     </div>
+
+
+
     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédient(s).</h3>
 
         <div className="sr-cards m-w p-i mt-1 bg-w ns-print">
           {props.data.CRE.nIngredients.map(dataIGRD => {
             return (
               <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm ns-print bg-w-c mr-32">
-                <div  className="ingr_mediap" style={{
-                backgroundImage:
-                  "url(" +
-                  dataIGRD.iMg.secure_url +
-                  ")",
-                backgroundPosition: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                height: "160px",
-                width: "160px",
-                margin: "20px",
-              }}>
             
-                </div>
 
 
 
@@ -144,20 +135,7 @@ const cookingRecipe = props => {
 
 
 
-                <div  className="ingr_mediap " style={{
-                backgroundImage:
-                  "url(" +
-                  dataFLC.ImageFL.secure_url +
-                  ")",
-                backgroundPosition: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                height: "255px",
-                width: "255px",
-                margin: "20px",
-              }}>
-            
-                </div>
+        
 
 
 
@@ -174,7 +152,7 @@ const cookingRecipe = props => {
                     alt="Découvrez"
                     className="i-link fs-16 b-b-g font-bold mb-0 nowrap"
                   >
-                    <button className="orange-btn">Découvrez</button>
+                    <button className="sd-btn">Afficher la liste complète</button>
                   </Link>
 
                   <div className="tfd">
@@ -188,7 +166,10 @@ const cookingRecipe = props => {
           })}
         </div>
       </div>
+
     </Layout>
+    </Background>
+    
   )
 }
 

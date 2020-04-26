@@ -70,7 +70,7 @@ const eRecipes = props => {
           <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
-                <div id={edge.id} className="mb-20 bg-fc rounded">
+                <div id={edge.id} className="mb-20 bg-fc ">
                
                <div
 
@@ -93,7 +93,7 @@ style={{
 </div>
 
 
-                  <div className="mt-10 p-15 fs-16 ">
+                  <div className="mt-10 p-15 fs-16">
                     <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
 
                     <div> 

@@ -202,9 +202,18 @@
     background: #268b9a !important;
     border-radius: 2px;
     color: white !important;
+}.border-c {
+
+  border: 1px solid rgba(217, 219, 224, 0.5);
+
+}.text-white {
+  color: white;
+}
+.rounded-8 {
+  border-radius: 8px 8px 0 0;
 }
 .b-b-blue {
-  border-bottom: 1px solid #006d7d !important;
+  border-bottom: 1px solid #007788 !important;
 }
   .bg-w-c {
     padding: 6px 12px;
@@ -243,6 +252,16 @@
     padding: 10px 16px;
     border-radius: 2px;
   }
+  .sd-btn {
+    background: #007b73;
+    color: white;
+    border: transparent;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 2px;
+  }
+
+  
   .tfd {
     text-align: center;
     font-size: 16px;
@@ -252,13 +271,13 @@
     padding: 32px 0;
   }
   .w-screen {
-    background-color: #006d7d;
+    background-color: #007788;
     background-size: cover;
     background-position: bottom;
     color: white;
   }
   .blue {
-    background: #006d7d !important;
+    background: #007788 !important;
   }
   .c-w {
     color: #fcb82bcf;

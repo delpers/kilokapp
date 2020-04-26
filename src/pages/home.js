@@ -58,9 +58,7 @@ const HomePage = () => {
             node {
               title
               slug
-              childContentfulBoosterImageJsonNode {
-                secure_url
-              }
+            
             }
           }
         }
@@ -381,18 +379,7 @@ const HomePage = () => {
               <div className="" key={edge.node.id}>
                 <div
                   className=""
-                  style={{
-                    backgroundImage:
-                      "url(" +
-                      edge.node.childContentfulBoosterImageJsonNode.secure_url +
-                      ")",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    height: "205px",
-                    width: "325px",
-                    borderRadius: "0",
-                  }}
+                 
                 >
             
 

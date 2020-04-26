@@ -9,15 +9,11 @@ export const query = graphql`
     CLE: contentfulBooster(slug: { eq: $slug }) {
       title
       slug
-      childContentfulBoosterImageJsonNode {
-        secure_url
-      }
+   
       bList {
         title
         slug
-        childContentfulFruitsVegetablesImageJsonNode {
-          secure_url
-        }
+       
       }
     }
   }
@@ -46,26 +42,6 @@ const bRecipes = props => {
                 <div className="rounded shadow-sm">
 
 
-
-             <div
-
-className="mediaLR"
-style={{
-  backgroundImage:
-    "url(" +
-    edge.childContentfulFruitsVegetablesImageJsonNode
-      .secure_url +
-    ")",
-  backgroundPosition: "center",
-  backgroundSize: "contain",
-  backgroundRepeat: "no-repeat",
-  height: "200px",
-  width: "320px",
-  borderRadius: "0",
-}}
->
-
-</div>
 
 
 
