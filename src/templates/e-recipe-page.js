@@ -25,6 +25,7 @@ export const query = graphql`
         id
         title
         slug
+        calories
         getBoosters
       }
     }
@@ -129,7 +130,7 @@ const cookingRecipe = props => {
           {props.data.CRE.boosters.map(dataFLC => {
             return (
               <div className="mb-20 bg-w rounded shadow-sm">
-                <div className="p-15 shadow-sm">
+                <div className="">
 
 
 
@@ -146,18 +147,19 @@ const cookingRecipe = props => {
 
 
 
-                  <h3 className="i-link fs-16 b-b-g font-bold mb-0 nowrap p-15">{dataFLC.title}</h3>
+                  <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-15">{dataFLC.title}</h3>
+                 <div class="t-d p-15 fs-14"><span className=""><i class="fas fa-burn"></i> {dataFLC.calories}</span></div> 
                   <Link
                     to={`/recettes/base/${dataFLC.slug}/`}
                     alt="Découvrez"
-                    className="i-link fs-16 b-b-g font-bold mb-0 nowrap"
+                    className="i-link fs-16 b-b-g font-bold mb-0 p-15 db nowrap"
                   >
                     <button className="sd-btn">Afficher la liste complète</button>
                   </Link>
 
-                  <div className="tfd">
+                  <div className="tfd w-325">
                     {dataFLC.getBoosters.map(datafl => (
-                      <span className="p-10" key={dataFLC.getBoosters}>{datafl}</span>
+                      <span className="p-15 align-left" key={dataFLC.getBoosters}>{datafl}</span>
                     ))}
                   </div>
                 </div>

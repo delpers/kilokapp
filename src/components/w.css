@@ -260,8 +260,16 @@
     padding: 10px 16px;
     border-radius: 2px;
   }
-
-  
+.align-left {
+  text-align: left;
+}
+.w-325 {
+  width: 300px;
+}
+  .db {
+    display: block;
+    width: 100%;
+  }
   .tfd {
     text-align: center;
     font-size: 16px;
