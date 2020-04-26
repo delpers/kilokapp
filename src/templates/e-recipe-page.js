@@ -26,13 +26,14 @@ export const query = graphql`
         title
         slug
         calories
+        stockage
         getBoosters
       }
     }
   }
 `
 const Background = styled.div`
-background: #f2f1eb;
+background: #fafafa;
 
 `
 const cookingRecipe = props => {
@@ -91,7 +92,7 @@ const cookingRecipe = props => {
 
 
 
-    <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédient(s).</h3>
+    <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédients.</h3>
 
         <div className="sr-cards m-w p-i mt-1 bg-w ns-print">
           {props.data.CRE.nIngredients.map(dataIGRD => {
@@ -113,9 +114,9 @@ const cookingRecipe = props => {
         </div>
       <div className="m-w p-i bg-w">
         <div className="mt-32">
-          <ol className="">
+          <ol class="recipe__directions" itemprop="recipeInstructions">
             {props.data.CRE.instructions.map(dataIST => (
-              <li className="rounded mb-32 mb-32 b-solid-b direction p-0-32" key={dataIST.instructions}>
+              <li className="mb-32 mb-32  direction p-0-32" key={dataIST.instructions}>
                 {dataIST}
               </li>
             ))}
@@ -126,7 +127,9 @@ const cookingRecipe = props => {
       </div>
 
       <div className="m-w p-i boosters bg-w rounded mb-32">
-        <div className="getBoosters getBoosters-mobile m-w p-i">
+      <h3 class="i-link b-b-g mr-15 font-bold m-w p-15 bg-w">Nutriments</h3>
+        <div className="getBoosters getBoosters-mobile m-w">
+          
           {props.data.CRE.boosters.map(dataFLC => {
             return (
               <div className="mb-20 bg-w rounded shadow-sm">
@@ -148,13 +151,17 @@ const cookingRecipe = props => {
 
 
                   <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-15">{dataFLC.title}</h3>
-                 <div class="t-d p-15 fs-14"><span className=""><i class="fas fa-burn"></i> {dataFLC.calories}</span></div> 
+                 <div class=" p-15 fs-14"><span className=""><i class="fas fa-burn mr-5" ></i> {dataFLC.calories} / 100 grammes.</span></div> 
+                 <div class=" p-15 fs-14"><span className="color-black"><i class="fas fa-check-circle mr-5"></i>  {dataFLC.stockage}</span></div> 
+
+
+                 
                   <Link
                     to={`/recettes/base/${dataFLC.slug}/`}
                     alt="Découvrez"
                     className="i-link fs-16 b-b-g font-bold mb-0 p-15 db nowrap"
                   >
-                    <button className="sd-btn">Afficher la liste complète</button>
+                    <button className="sd-btn">Afficher la liste</button>
                   </Link>
 
                   <div className="tfd w-325">

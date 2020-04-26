@@ -263,6 +263,40 @@
 .align-left {
   text-align: left;
 }
+.recipe__directions li::before {
+  font-size: 12rem;
+  left: 0;
+  top: 33px;
+}
+.recipe__directions li::before {
+  content: counter(directions);
+  color: #ddd;
+  font-size: 4rem;
+  line-height: 0.3em;
+  width: 96px;
+  text-align: right;
+  left: -65px;
+  position: absolute;
+  top: 23px;
+}
+.recipe__directions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.recipe__directions li {
+  padding: 0 0 48px 110px;
+  min-height: 140px;
+}
+.recipe__directions li {
+  padding: 11px 7px 50px 69px;
+  counter-increment: directions;
+  position: relative;
+}
 .w-325 {
   width: 300px;
 }
@@ -421,7 +455,21 @@
   
     .p-160-0 {
       padding: 60px 0;
-    }
+    }.recipe__directions li {
+      padding: 11px 7px 50px 20px;
+      counter-increment: directions;
+      position: relative;
+  }.recipe__directions li::before {
+    content: counter(directions);
+    color: #ddd;
+    font-size: 2rem;
+    line-height: 0.3em;
+    width: 60px;
+    text-align: right;
+    left: -63px;
+    position: absolute;
+    top: 23px;
+}
   }
   
   /* override styles when printing */
@@ -497,5 +545,23 @@
     }
     .ns-print {
       box-shadow: none !important;
+    }.recipe__directions li::before {
+      content: counter(directions);
+      color: #ddd;
+      font-size: 24px;
+      line-height: 0.3em;
+      width: 96px;
+      text-align: right;
+      left: -65px;
+      position: absolute;
+      top: 23px;
+    }.recipe__directions li {
+      padding: 0 0 48px 110px;
+      min-height: 0;
+    }
+    .recipe__directions li {
+      padding: 11px 7px 50px 69px;
+      counter-increment: directions;
+      position: relative;
     }
   }
