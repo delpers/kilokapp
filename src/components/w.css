@@ -43,6 +43,9 @@
   .c-g {
     color: #00758d;
   }
+  .c-green {
+    color: #00c099;
+}
   .pt-15 {
     padding-top: 15px;
   }
@@ -170,7 +173,7 @@
     padding: 10px;
   }
   .m-w {
-    max-width: 1120px;
+    max-width: 1280px;
     margin: 0 auto;
   }
   .i-t {
@@ -213,7 +216,7 @@
   border-radius: 8px 8px 0 0;
 }
 .b-b-blue {
-  border-bottom: 1px solid #007788 !important;
+  border-bottom: 1px solid #109db9 !important;
 }
   .bg-w-c {
     padding: 6px 12px;
@@ -263,40 +266,7 @@
 .align-left {
   text-align: left;
 }
-.recipe__directions li::before {
-  font-size: 12rem;
-  left: 0;
-  top: 33px;
-}
-.recipe__directions li::before {
-  content: counter(directions);
-  color: #ddd;
-  font-size: 4rem;
-  line-height: 0.3em;
-  width: 96px;
-  text-align: right;
-  left: -65px;
-  position: absolute;
-  top: 23px;
-}
-.recipe__directions li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-.recipe__directions li {
-  padding: 0 0 48px 110px;
-  min-height: 140px;
-}
-.recipe__directions li {
-  padding: 11px 7px 50px 69px;
-  counter-increment: directions;
-  position: relative;
-}
+
 .w-325 {
   width: 300px;
 }
@@ -313,13 +283,13 @@
     padding: 32px 0;
   }
   .w-screen {
-    background-color: #007788;
+    background-color: #109db9;
     background-size: cover;
     background-position: bottom;
     color: white;
   }
   .blue {
-    background: #007788 !important;
+    background: #109db9 !important;
   }
   .c-w {
     color: #fcb82bcf;
@@ -374,6 +344,17 @@
   .dn {
     display: none;
   }
+  .bg-gray {
+    background: #FAFAFA;
+    color: initial;
+  }
+  .bg-green {
+    background: #00c099;
+    color: white;
+  }
+
+
+  
   .nav {
     max-width: 1205px;
     padding-left: 24px;
@@ -398,8 +379,21 @@
     overflow-x: scroll;
     scrollbar-width: thin;
   }
+  .m-w-780 {
+    max-width: 780px;
+
+  }
+  .m-w-100p100 {
+    width: 100%;
+    
+  }
+  .row {
+    display: flex;
+    grid-gap: 32px;
+    padding: 20px;
+}
   ::marker {
-    color: #ef7044;
+    color: initial;
     font-weight: bold;
     font-size: 18px;
   }
@@ -455,21 +449,11 @@
   
     .p-160-0 {
       padding: 60px 0;
-    }.recipe__directions li {
-      padding: 11px 7px 50px 20px;
-      counter-increment: directions;
-      position: relative;
-  }.recipe__directions li::before {
-    content: counter(directions);
-    color: #ddd;
-    font-size: 2rem;
-    line-height: 0.3em;
-    width: 60px;
-    text-align: right;
-    left: -63px;
-    position: absolute;
-    top: 23px;
-}
+    }.row {
+      display: block;
+      grid-gap: 0;
+      padding: 0;
+  }
   }
   
   /* override styles when printing */

@@ -33,7 +33,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-background: #fafafa;
+background: #f6f6f6;
 
 `
 const cookingRecipe = props => {
@@ -74,7 +74,6 @@ const cookingRecipe = props => {
 
 
 
-
 <div className="mb-32 sticky blue b-b-blue">
 
 
@@ -90,8 +89,9 @@ const cookingRecipe = props => {
     </div>
     </div>
 
+    <div className="row m-w"> 
 
-
+<div className="m-w-780">
     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédients.</h3>
 
         <div className="sr-cards m-w p-i mt-1 bg-w ns-print">
@@ -113,8 +113,9 @@ const cookingRecipe = props => {
           })}
         </div>
       <div className="m-w p-i bg-w">
+      <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">Directions.</h3>
         <div className="mt-32">
-          <ol class="recipe__directions" itemprop="recipeInstructions">
+          <ol>
             {props.data.CRE.instructions.map(dataIST => (
               <li className="mb-32 mb-32  direction p-0-32" key={dataIST.instructions}>
                 {dataIST}
@@ -174,6 +175,37 @@ const cookingRecipe = props => {
             )
           })}
         </div>
+      </div>
+      </div>
+      <div className="m-w-100p100 bg-w ml-32">
+     
+
+     <div className="nutrition">
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray">Valeur nutritive</h3>
+        <div className="total flex">
+          <strong>Calories</strong><span>480</span>
+          <strong className="text-gray">Quantité par portion</strong>
+
+          </div>
+
+     </div>
+
+
+
+
+     <div className="nutrition">
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical Number</h3>
+        <div className="total flex">
+          <strong className="text-gray bg-green">245</strong>
+
+          </div>
+
+     </div>
+
+
+
+      </div>
+
       </div>
 
     </Layout>
