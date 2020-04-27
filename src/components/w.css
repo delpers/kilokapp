@@ -46,6 +46,9 @@
   .c-green {
     color: #00c099;
 }
+.c-pink {
+  color: #fe544b;
+}
   .pt-15 {
     padding-top: 15px;
   }
@@ -202,7 +205,7 @@
   .bg-blue {
     padding: 6px 12px;
     float: left;
-    background: #268b9a !important;
+    background: #18a5c1 !important;
     border-radius: 2px;
     color: white !important;
 }.border-c {

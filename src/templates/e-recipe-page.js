@@ -181,7 +181,7 @@ const cookingRecipe = props => {
      
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray">Valeur nutritive</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b">Valeur nutritive</h3>
         <div className="total flex">
           <strong>Calories</strong><span>480</span>
           <strong className="text-gray">Quantité par portion</strong>
@@ -194,14 +194,20 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical Number</h3>
-        <div className="total flex">
-          <strong className="text-gray bg-green">245</strong>
-
-          </div>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b"><i class="fas fa-exclamation-triangle c-pink"></i> Allergène(s)</h3>
+        <div className="p-15">Lait</div>
+        <div className="p-15">Céréales</div>
+        <div className="p-15">Fruits à coques</div>
 
      </div>
 
+
+
+
+     <div className="nutrition">
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
+   
+     </div>
 
 
       </div>
