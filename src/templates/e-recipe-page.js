@@ -182,7 +182,7 @@ const cookingRecipe = props => {
      
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b">Valeur nutritive</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">Valeur nutritive</h3>
         <div className="total flex">
           <strong>Calories</strong><span>480</span>
           <strong className="text-gray">Quantité par portion</strong>
@@ -195,7 +195,7 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-gray b-solid-b">Allergène(s)</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18  b-solid-b">Allergène(s)</h3>
      <div className="db">
             {props.data.CRE.allergen.map(dataALRG => (
               <div className="p-15 fs-18 b-solid-b" key={dataALRG.allergen}>
@@ -211,7 +211,7 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w b-solid-b"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
    
      </div>
 
