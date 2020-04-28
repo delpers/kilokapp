@@ -11,6 +11,7 @@ export const query = graphql`
       slug
       time
       ingredientsNumbers
+      allergen
       numberOfPersons
       instructions
       childContentfulCookingRecipeFeaturedImageJsonNode {
@@ -47,7 +48,7 @@ const cookingRecipe = props => {
                   "url(" +
                   props.data.CRE.childContentfulCookingRecipeFeaturedImageJsonNode.secure_url +
                   ")",
-                backgroundPosition: "top",
+                backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
               }}> 
@@ -194,10 +195,15 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b"><i class="fas fa-exclamation-triangle c-pink"></i> Allergène(s)</h3>
-        <div className="p-15">Lait</div>
-        <div className="p-15">Céréales</div>
-        <div className="p-15">Fruits à coques</div>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-gray b-solid-b">Allergène(s)</h3>
+     <div className="db">
+            {props.data.CRE.allergen.map(dataALRG => (
+              <div className="p-15 fs-18 b-solid-b" key={dataALRG.allergen}>
+                <i class="fas fa-caret-right mr-5"></i> {dataALRG}
+              </div>
+            ))}
+          </div>
+
 
      </div>
 
@@ -205,10 +211,9 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-gray b-solid-b"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w b-solid-b"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
    
      </div>
-
 
       </div>
 
