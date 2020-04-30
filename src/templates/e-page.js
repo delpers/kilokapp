@@ -84,8 +84,8 @@ style={{
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "200px",
-  width: "320px",
+  height: "240px",
+  width: "374px",
   borderRadius: "0",
 }}
 >

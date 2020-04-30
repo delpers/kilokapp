@@ -9,11 +9,12 @@ export const query = graphql`
     CLE: contentfulBooster(slug: { eq: $slug }) {
       title
       slug
-   
+     
       bList {
         title
         slug
-       
+        stockage
+      calories
       }
     }
   }
@@ -36,7 +37,7 @@ const bRecipes = props => {
 
       <div>
         <div>
-        <div className="rl rl-mobile m-w p-i ">
+        <div className="rl rl-mobile m-w p-i  ">
             {props.data.CLE.bList.map(edge => {
               return (
                 <div className="rounded shadow-sm  mb-32">
@@ -52,12 +53,11 @@ const bRecipes = props => {
 
 
                   <div className="bg-w p-15 shadow-sm">
-                    <Link class="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap" to={`/recettes/base/${edge.slug}/`}>
+                    <Link class="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap p-15 pb-0" to={`/recettes/base/${edge.slug}/`}>
                       {edge.title}
                     </Link>
-
-                    <div></div>
-                    <div></div>
+                    <div class=" p-15 fs-14 pb-0"><span className=""><i class="fas fa-burn mr-5" ></i> {edge.calories} <strong>Kcal</strong> / 100 gr.</span></div> 
+                 <div class=" p-15 fs-14"><span className="color-black"><i class="fas fa-check-circle mr-5"></i>  {edge.stockage}</span></div> 
                   </div>
                 </div>
               )
