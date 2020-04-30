@@ -70,7 +70,7 @@ const eRecipes = props => {
           <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.recipesRecettes.map(edge => {
               return (
-                <div id={edge.id} className="mb-20 bg-fc ">
+                <div id={edge.id} className="mb-20 bg-fc border ">
                
                <div
 

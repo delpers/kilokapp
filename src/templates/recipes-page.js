@@ -50,7 +50,7 @@ const FVegetablesRecipes = props => {
           <div className="rl rl-mobile m-w p-i ">
             {props.data.CFV.dataRecipes.map(edge => {
               return (
-                <div id={edge.id} className="mb-20 bg-fc rounded">
+                <div id={edge.id} className="mb-20 border ">
                
                 <div
  
