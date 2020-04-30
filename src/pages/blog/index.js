@@ -35,7 +35,7 @@ const Blog = () => {
 
 
       <div className="w-screen p-100-0"> 
-      <div className="m-w p-i pb-0">
+      <div className="m-w p-i pb-0 mt-32">
         <section>
           <h1>Blog</h1>
           <p className="mb-0 ">Retrouvez ici l'ensemble des actualités Kiloka</p>

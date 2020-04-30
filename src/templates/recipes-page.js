@@ -34,7 +34,7 @@ const FVegetablesRecipes = props => {
 
 
       <div className="w-screen p-h"> 
-      <div className="m-w p-i pb-0">
+      <div className="m-w p-i pb-0 mt-32">
         <section>
           <h1 id={props.data.CFV.slug}>{props.data.CFV.title}</h1>
           <p className="mb-0"> {props.data.CFV.category}</p>

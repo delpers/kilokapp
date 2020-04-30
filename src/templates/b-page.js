@@ -33,7 +33,7 @@ const bRecipes = props => {
      
     
       <div className="w-screen p-h"> 
-      <div className="m-w p-i pb-0">
+      <div className="m-w p-i pb-0 mt-32">
         <section>
           <h1>{props.data.contentfulHome.titleBoosters}</h1>
           <p className="mb-0"> {
@@ -49,7 +49,7 @@ const bRecipes = props => {
 
 
 
-      <div className="m-w p-i pb-0"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
+      <div className="m-w p-i pb-0 mt-32"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
    
       </div>
 

@@ -36,7 +36,7 @@ const BlogPost = props => {
       <SEO title={props.data.post.title} />
 
       <div className="w-screen p-h"> 
-      <div className="m-w p-i pb-0">
+      <div className="m-w p-i pb-0 mt-32">
         <section>
           <h1>{props.data.post.title}</h1>
         </section>

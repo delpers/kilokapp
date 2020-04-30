@@ -90,7 +90,7 @@ const HomePage = () => {
     <Layout>
       <SEO title="Accueil" />
 <div className="w-screen p-120-0"> 
-      <div className="m-w p-i pb-0"
+      <div className="m-w p-i pb-0 mt-32"
         
       >
         <section>
@@ -131,6 +131,7 @@ const HomePage = () => {
 <div>
   <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleBreakfast}</h3>
   <span className="fs-18 text-gray">{data.contentfulHome.breakfastDescription}</span>
+  <span className="border_b"></span>
 </div>
 <div className="sr-cards">
   {data.allContentfulCookingB.edges.map(edge => {
@@ -148,8 +149,8 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "215px",
-            width: "335px",
+             height: "250px",
+                    width: "400px",
             borderRadius: "0",
           }}
         >
@@ -225,8 +226,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "205px",
-                    width: "325px",
+                    height: "250px",
+                    width: "400px",
                     borderRadius: "0",
                   }}
                 >
@@ -285,8 +286,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "205px",
-                    width: "325px",
+                    height: "250px",
+                    width: "400px",
                     borderRadius: "0",
                   }}
                 >
@@ -344,8 +345,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "205px",
-                    width: "325px",
+                    height: "250px",
+                    width: "400px",
                     borderRadius: "0",
                   }}
                 >
