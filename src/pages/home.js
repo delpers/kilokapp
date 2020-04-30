@@ -145,8 +145,8 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "205px",
-            width: "325px",
+            height: "215px",
+            width: "335px",
             borderRadius: "0",
           }}
         >
