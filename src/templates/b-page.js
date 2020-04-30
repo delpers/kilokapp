@@ -39,7 +39,7 @@ const bRecipes = props => {
         <div className="rl rl-mobile m-w p-i ">
             {props.data.CLE.bList.map(edge => {
               return (
-                <div className="rounded shadow-sm">
+                <div className="rounded shadow-sm  mb-32">
 
 
 
@@ -51,7 +51,7 @@ const bRecipes = props => {
 
 
 
-                  <div>
+                  <div className="bg-w p-15 shadow-sm">
                     <Link class="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap" to={`/recettes/base/${edge.slug}/`}>
                       {edge.title}
                     </Link>
