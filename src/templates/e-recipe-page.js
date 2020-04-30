@@ -10,6 +10,7 @@ export const query = graphql`
       title
       slug
       time
+      medicalNumber
       ingredientsNumbers
       allergen
       numberOfPersons
@@ -211,7 +212,7 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical 545</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical  {props.data.CRE.medicalNumber}</h3>
    
      </div>
 
