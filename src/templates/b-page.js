@@ -16,6 +16,11 @@ export const query = graphql`
         stockage
       calories
       }
+    }contentfulHome {
+     
+      titleBoosters
+       descriptionBoosters
+    
     }
   }
 `
@@ -25,15 +30,32 @@ const bRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
+     
+    
       <div className="w-screen p-h"> 
       <div className="m-w p-i pb-0">
         <section>
-          <h1>{props.data.CLE.title}</h1>
-        
+          <h1>{props.data.contentfulHome.titleBoosters}</h1>
+          <p className="mb-0"> {
+                props.data.contentfulHome.descriptionBoosters
+              }</p>
         </section>
       </div>
 
       </div>
+
+
+
+
+
+
+      <div className="m-w p-i pb-0"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
+   
+      </div>
+
+
+
+
 
       <div>
         <div>

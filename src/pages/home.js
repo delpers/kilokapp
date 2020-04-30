@@ -77,8 +77,11 @@ const HomePage = () => {
           titleEntrances
           descriptionEntrances
           titleDishes
+          descriptionDishes
           titleDesserts
+          descriptionDesserts
           titleBoosters
+          descriptionBoosters
         }
       }
     `
@@ -111,7 +114,7 @@ const HomePage = () => {
                 {Pages.title}
               </a>
             ))}
-            <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/kilokafr" alt="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-spotify"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
 
@@ -264,6 +267,8 @@ const HomePage = () => {
 
         <div className="">
           <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleDishes}</h3>
+          <span className="fs-18 text-gray">{data.contentfulHome.descriptionDishes}</span>
+
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingP.edges.map(edge => {
@@ -321,6 +326,8 @@ const HomePage = () => {
 
         <div className="">
           <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleDesserts}</h3>
+          <span className="fs-18 text-gray">{data.contentfulHome.descriptionDesserts}</span>
+
         </div>
         <div className="sr-cards">
         {data.allContentfulCookingD.edges.map(edge => {
@@ -373,6 +380,8 @@ const HomePage = () => {
 
         <div className="">
           <h3 className="mb-0 fs-32 pb-4">{data.contentfulHome.titleBoosters}</h3>
+          <span className="fs-18 text-gray">{data.contentfulHome.descriptionBoosters}</span>
+
         </div>
         <div className="sr-cards">
         {data.allContentfulBooster.edges.map(edge => {

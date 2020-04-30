@@ -154,7 +154,7 @@ const cookingRecipe = props => {
 
 
                   <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-15">{dataFLC.title}</h3>
-                 <div class=" p-15 fs-14"><span className=""><i class="fas fa-burn mr-5" ></i> {dataFLC.calories} / 100 grammes.</span></div> 
+                 <div class=" p-15 fs-14"><span className=""><i class="fas fa-burn mr-5" ></i> {dataFLC.calories} <strong>Kcal</strong>/ 100 gr.</span></div> 
                  <div class=" p-15 fs-14"><span className="color-black"><i class="fas fa-check-circle mr-5"></i>  {dataFLC.stockage}</span></div> 
 
 

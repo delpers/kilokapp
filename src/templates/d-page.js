@@ -25,6 +25,12 @@ export const query = graphql`
         }
       }
     }
+    contentfulHome {
+     
+      titleDesserts
+          descriptionDesserts
+    
+    }
   }
 `
 
@@ -34,18 +40,32 @@ const dRecipes = props => {
       <SEO title={props.data.CLE.title} />
 
      
+    
+  
       <div className="w-screen p-h"> 
       <div className="m-w p-i pb-0">
         <section>
-          <h1>{props.data.CLE.title}</h1>
+          <h1>{props.data.contentfulHome.titleDesserts}</h1>
           <p className="mb-0"> {
-                props.data.CLE.childContentfulCookingDDescriptionTextNode
-                  .description
+                props.data.contentfulHome.descriptionDesserts
               }</p>
         </section>
       </div>
 
       </div>
+
+
+
+
+
+
+      <div className="m-w p-i pb-0"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
+      <span class="fs-18 text-gray">{
+                props.data.CLE.childContentfulCookingDDescriptionTextNode
+                  .description
+              }</span>
+      </div>
+
 
   
       <div>
