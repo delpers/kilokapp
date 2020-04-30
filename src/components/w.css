@@ -514,13 +514,13 @@
       max-width: 250px;
       float: right;
     }
+    
     .sticky {
       background: transparent;
     }
     .b-solid-b {
       border: 0;
     }
-    
     .mr-p {
       margin-right: 50px;
     }
