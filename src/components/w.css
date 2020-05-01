@@ -225,6 +225,20 @@
 .rounded-8 {
   border-radius: 8px 8px 0 0;
 }
+.d-grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.tfd {
+  text-align: right;
+  float: right;
+  display: contents;
+}
+.fs-42 {
+  font-size: 42px;
+}
 .b-b-blue {
   border-bottom: 1px solid #109db9 !important;
 }
@@ -293,10 +307,10 @@
     padding: 32px 0;
   }
   .w-screen {
-    background-color: #fdd827;
+    background-color: #109db9;
     background-size: cover;
     background-position: bottom;
-    color: initial;
+    color: white;
   }
   .blue {
     background: #109db9 !important;

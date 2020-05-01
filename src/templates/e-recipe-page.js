@@ -12,6 +12,7 @@ export const query = graphql`
       time
       medicalNumber
       ingredientsNumbers
+      amountPerServingCalories
       allergen
       numberOfPersons
       instructions
@@ -184,9 +185,15 @@ const cookingRecipe = props => {
 
      <div className="nutrition">
      <h3 class="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">Valeur nutritive</h3>
-        <div className="total flex">
-          <strong>Calories</strong><span>480</span>
-          <strong className="text-gray">Quantité par portion</strong>
+        <div className="total flex p-15">
+
+        <span className="d-grid">
+        <i className="text-gray">Quantité par portion</i>
+        <i className="text-gray">Calories</i>
+        </span>
+
+        <span className="tfd"><h3 className="fs-42">{props.data.CRE.amountPerServingCalories}</h3></span>
+
 
           </div>
 
