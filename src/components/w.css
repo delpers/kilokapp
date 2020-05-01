@@ -236,14 +236,22 @@
   float: right;
   display: contents;
 }
+.ir-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
 .fs-42 {
   font-size: 42px;
+}
+.w-80 {
+  width: 80%;
 }
 .b-b-blue {
   border-bottom: 1px solid #109db9 !important;
 }
   .bg-w-c {
-    padding: 6px 12px;
+    padding: 16px 20px;
     float: left;
     background: #fcfcfc;
     border-radius: 0;
@@ -413,7 +421,12 @@
     max-width: 780px;
 
   }
-
+.mt-32 {
+  margin-top: 32px !important;
+}
+.p-20 {
+  padding: 20px !important;
+}
   .m-w-100p100 {
     width: 100%;
     height: 100%;
@@ -485,6 +498,10 @@
       display: block;
       grid-gap: 0;
       padding: 0;
+  }.ir-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
   }
   

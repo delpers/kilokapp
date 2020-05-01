@@ -97,16 +97,16 @@ const cookingRecipe = props => {
 <div className="m-w-780">
     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">{props.data.CRE.ingredientsNumbers} Ingrédients.</h3>
 
-        <div className="sr-cards m-w p-i mt-1 bg-w ns-print">
+        <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
           {props.data.CRE.nIngredients.map(dataIGRD => {
             return (
-              <div id={dataIGRD.id} className="rounded mb-32 mb-20 bg-w rounded shadow-sm ns-print bg-w-c mr-32">
+              <div id={dataIGRD.id} className="rounded bg-w ns-print bg-w-c">
             
 
 
 
 
-                     <div className="mt-10 p-15 fs-16 _print_w ns-print">
+                     <div className="mt-10 fs-16 _print_w ns-print">
                 <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">{dataIGRD.title}</h3>
                   <span class="fs-16 text-gray pr-15">{dataIGRD.amount}</span>
               </div>
@@ -187,9 +187,9 @@ const cookingRecipe = props => {
      <h3 class="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">Valeur nutritive</h3>
         <div className="total flex p-15">
 
-        <span className="d-grid">
-        <i className="text-gray">Quantité par portion</i>
-        <i className="text-gray">Calories</i>
+        <span className="d-grid w-80">
+        <i className="text-gray fs-16">Quantité par portion</i>
+        <i className="text-gray fs-16">Calories</i>
         </span>
 
         <span className="tfd"><h3 className="fs-42">{props.data.CRE.amountPerServingCalories}</h3></span>
@@ -219,7 +219,7 @@ const cookingRecipe = props => {
 
 
      <div className="nutrition">
-     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w"><i class="fas fa-file-medical-alt c-green mr-15"></i> Medical  {props.data.CRE.medicalNumber}</h3>
+     <h3 class="i-link b-b-g mr-15 font-bold m-w p-i-2 fs-18 bg-w"><i class="fas fa-file-medical-alt c-green mr-15"></i> M {props.data.CRE.medicalNumber}</h3>
    
      </div>
 
