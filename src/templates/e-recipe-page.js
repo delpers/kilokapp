@@ -106,7 +106,7 @@ const cookingRecipe = props => {
 
 
 
-                     <div className="mt-10 fs-16 _print_w ns-print">
+                     <div className="fs-16 _print_w ns-print">
                 <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">{dataIGRD.title}</h3>
                   <span class="fs-16 text-gray pr-15">{dataIGRD.amount}</span>
               </div>
@@ -115,8 +115,9 @@ const cookingRecipe = props => {
             )
           })}
         </div>
-      <div className="m-w p-i bg-w">
-      <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w">Directions.</h3>
+        <h3 class="i-link b-b-g mr-15 font-bold m-w p-i bg-w mb-32">Directions.</h3>
+
+      <div className="m-w p-i bg-w mb-32 rounded">
         <div className="mt-32">
           <ol>
             {props.data.CRE.instructions.map(dataIST => (
@@ -138,19 +139,6 @@ const cookingRecipe = props => {
             return (
               <div className="mb-20 bg-w rounded shadow-sm">
                 <div className="">
-
-
-
-
-
-        
-
-
-
-
-
-
-
 
 
 
