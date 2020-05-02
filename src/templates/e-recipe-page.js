@@ -48,7 +48,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #fff;
+  background: #FAFAFA;
 `
 const cookingRecipe = props => {
   return (
