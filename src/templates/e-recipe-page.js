@@ -18,17 +18,18 @@ export const query = graphql`
       childContentfulCookingRecipeFeaturedImageJsonNode {
         secure_url
       }
-      directionRecipe {
-        id
-        title
-        childContentfulStepsDirectionTextNode {
-          direction
-        }
-      }
       nIngredients {
         id
         title
         amount
+      }
+      directionRecipe {
+        id
+        title
+        direction {
+          id
+          direction
+        } 
       }
       nFacts {
         contentful_id
@@ -139,9 +140,9 @@ const cookingRecipe = props => {
                           <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
                             {dataDr.title}
                           </h3>
-                          <span className="fs-16 text-gray pr-15">
+                          <span className="fs-16 text-gray pr-15" id={dataDr.id}>
                             {
-                              dataDr.childContentfulStepsDirectionTextNode
+                              dataDr.direction
                                 .direction
                             }{" "}
                           </span>
