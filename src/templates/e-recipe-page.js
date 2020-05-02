@@ -48,7 +48,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #FFF;
+  background: #fff;
 `
 const cookingRecipe = props => {
   return (
@@ -96,7 +96,7 @@ const cookingRecipe = props => {
 
             <div className="t-d fl-r mb-15 mt_i5">
               <span className="fs-14 bg-blue mr-p">
-                <i className="fas fa-check-circle"></i> {props.data.CRE.time} {" "}
+                <i className="fas fa-check-circle"></i> {props.data.CRE.time}{" "}
               </span>
             </div>
           </div>
@@ -108,8 +108,6 @@ const cookingRecipe = props => {
               {props.data.CRE.ingredientsNumbers} Ingrédients.
             </h3>
 
-
-
             <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
               {props.data.CRE.nIngredients.map(dataIGRD => {
                 return (
@@ -119,42 +117,39 @@ const cookingRecipe = props => {
                         {dataIGRD.title}
                       </h3>
                       <span className="fs-16 text-gray pr-15">
-                        {dataIGRD.amount}
+                        {dataIGRD.amount}{" "}
                       </span>
                     </div>
                   </div>
                 )
               })}
             </div>
-           
 
             <div className="m-w p-i bg-w mb-32 ">
               <div className="">
-              <h3 className="i-link b-b-g font-bold m-w  bg-w mb-32">
-              Directions.
-            </h3>
+                <h3 className="i-link b-b-g font-bold m-w  bg-w mb-32">
+                  Directions.
+                </h3>
 
-
-<div>
-{props.data.CRE.dRecipe.map(dataDr => {
-                return (
-                  <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
-                    <div className="fs-16 _print_w ns-print">
-                      <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                        {dataDr.title}
-                      </h3>
-                      <span className="fs-16 text-gray pr-15">
-                        {dataDr.childContentfulStepsDirectionTextNode.direction}
-                      </span>
-                    </div>
-                  </div>
-                )
-              })}
-
-</div>
-
-
-
+                <div>
+                  {props.data.CRE.dRecipe.map(dataDr => {
+                    return (
+                      <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
+                        <div className="fs-16 _print_w ns-print">
+                          <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
+                            {dataDr.title}
+                          </h3>
+                          <span className="fs-16 text-gray pr-15">
+                            {
+                              dataDr.childContentfulStepsDirectionTextNode
+                                .direction
+                            }{" "}
+                          </span>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             </div>
 
@@ -165,15 +160,18 @@ const cookingRecipe = props => {
               <div className="getBoosters getBoosters-mobile m-w">
                 {props.data.CRE.boosters.map(dataFLC => {
                   return (
-                    <div className="mb-20 bg-w rounded shadow-sm" id={dataFLC.contentful_id}>
+                    <div
+                      className="mb-20 bg-w rounded shadow-sm"
+                      id={dataFLC.contentful_id}
+                    >
                       <div className="">
                         <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-i">
                           {dataFLC.title}
                         </h3>
                         <div className=" p-i fs-14">
                           <span className="">
-                            <i className="fas fa-burn mr-5"></i> {dataFLC.calories}{" "}
-                            <strong>Kcal</strong>/ 100 gr.
+                            <i className="fas fa-burn mr-5"></i>{" "}
+                            {dataFLC.calories} <strong>Kcal</strong>/ 100 gr.
                           </span>
                         </div>
                         <div className=" p-i fs-14">
@@ -194,11 +192,10 @@ const cookingRecipe = props => {
                         <div className="tfd w-325">
                           {dataFLC.getBoosters.map(datafl => (
                             <span
-                            id={datafl.contentful_id}
+                              id={datafl.contentful_id}
                               className="p-i align-left"
-                              
                             >
-                              {datafl}
+                              {datafl}{" "}
                             </span>
                           ))}
                         </div>
@@ -230,17 +227,22 @@ const cookingRecipe = props => {
               <div className="d-grid m-w mt-1 ns-print mt-32 mb-32">
                 {props.data.CRE.nFacts.map(facts => {
                   return (
-                    <div id={facts.contentful_id} className=" bg-w ns-print bg-w-c">
+                    <div
+                      id={facts.contentful_id}
+                      className=" bg-w ns-print bg-w-c"
+                    >
                       <div className="fs-16 _print_w ns-print">
                         <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                          {facts.title}
-
+                          {facts.title}{" "}
                         </h3>
                       </div>
                       <div>
-                        <span className="fs-16 text-gray pr-15" id={facts.contentful_id}>
-                          {facts.amount} 
-                          {facts.type} 
+                        <span
+                          className="fs-16 text-gray pr-15"
+                          id={facts.contentful_id}
+                        >
+                          {facts.amount}
+                          {facts.type}
                         </span>
                       </div>
                     </div>
@@ -255,18 +257,21 @@ const cookingRecipe = props => {
               </h3>
               <div className="db">
                 {props.data.CRE.allergen.map(dataALRG => {
-                return (
-                  <div className="p-i fs-18 b-solid-b" id={dataALRG.contentful_id}>
-                    <i className="fas fa-caret-right mr-5"></i> {dataALRG}
-                  </div>
-                   )
-                  })}
+                  return (
+                    <div
+                      className="p-i fs-18 b-solid-b"
+                      id={dataALRG.contentful_id}
+                    >
+                      <i className="fas fa-caret-right mr-5"></i> {dataALRG}
+                    </div>
+                  )
+                })}
               </div>
             </div>
 
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-5 font-bold m-w p-i fs-18 bg-w">
-                <i className="fas fa-file-medical-alt c-green mr-15"></i> M {" "}
+                <i className="fas fa-file-medical-alt c-green mr-15"></i> M{" "}
                 {props.data.CRE.medicalNumber}
               </h3>
             </div>
