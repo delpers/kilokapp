@@ -206,19 +206,19 @@ const cookingRecipe = props => {
               </div>
 
               <div className="d-grid m-w mt-1 ns-print mt-32 mb-32">
-                {props.data.CRE.nFacts.map(dataFACTS => {
+                {props.data.CRE.nFacts.map(Facts => {
                   return (
-                    <div id={dataFACTS.id} className=" bg-w ns-print bg-w-c">
+                    <div id={Facts.id} className=" bg-w ns-print bg-w-c">
                       <div className="fs-16 _print_w ns-print">
                         <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                          {dataFACTS.title}
+                          {Facts.title} {" "}
+
                         </h3>
                       </div>
                       <div>
-                        {" "}
                         <span class="fs-16 text-gray pr-15">
-                          {dataFACTS.amount}
-                          {dataFACTS.type}
+                          {Facts.amount} {" "}
+                          {Facts.type} {" "}
                         </span>
                       </div>
                     </div>
