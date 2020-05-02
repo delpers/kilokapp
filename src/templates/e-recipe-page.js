@@ -53,7 +53,7 @@ const Background = styled.div`
 const cookingRecipe = props => {
   return (
     <Background>
-      <Layout>
+      <Layout key={props.data.CRE.id}>
         <SEO title={props.data.CRE.title} />
 
         <div
@@ -111,7 +111,7 @@ const cookingRecipe = props => {
             <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
               {props.data.CRE.nIngredients.map(dataIGRD => {
                 return (
-                  <div id={dataIGRD.contentful_id} className=" bg-w ns-print bg-w-c">
+                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c">
                     <div className="fs-16 _print_w ns-print">
                       <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
                         {dataIGRD.title}
@@ -132,7 +132,8 @@ const cookingRecipe = props => {
               Directions.
             </h3>
 
-                  {props.data.CRE.dRecipe.map(dataDr => (
+                  {props.data.CRE.dRecipe.map(dataDr => {
+                return (
                     <div
                       id={dataDr.id}
                       className="direction"
@@ -140,7 +141,8 @@ const cookingRecipe = props => {
                       <h3>{dataDr.title}</h3>
                       <p className="justify fs-16 text-gray">{dataDr.childContentfulStepsDirectionTextNode.direction}</p>
                     </div>
-                  ))}
+                      )
+                    })}
               </div>
             </div>
 
@@ -240,11 +242,13 @@ const cookingRecipe = props => {
                 Allergène(s)
               </h3>
               <div className="db">
-                {props.data.CRE.allergen.map(dataALRG => (
+                {props.data.CRE.allergen.map(dataALRG => {
+                return (
                   <div className="p-i fs-18 b-solid-b" id={dataALRG.contentful_id}>
                     <i className="fas fa-caret-right mr-5"></i> {dataALRG}
                   </div>
-                ))}
+                   )
+                  })}
               </div>
             </div>
 
