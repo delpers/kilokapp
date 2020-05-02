@@ -134,17 +134,27 @@ const cookingRecipe = props => {
               Directions.
             </h3>
 
-                  {props.data.CRE.dRecipe.map(dataDr => {
+
+<div>
+{props.data.CRE.dRecipe.map(dataDr => {
                 return (
-                    <div
-                      id={dataDr.id}
-                      className="direction"
-                    >
-                      <h3>{dataDr.title}</h3>
-                      <p className="justify fs-16 text-gray">{dataDr.childContentfulStepsDirectionTextNode.direction}</p>
+                  <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
+                    <div className="fs-16 _print_w ns-print">
+                      <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
+                        {dataDr.title}
+                      </h3>
+                      <span className="fs-16 text-gray pr-15">
+                        {dataDr.childContentfulStepsDirectionTextNode.direction}
+                      </span>
                     </div>
-                      )
-                    })}
+                  </div>
+                )
+              })}
+
+</div>
+
+
+
               </div>
             </div>
 
