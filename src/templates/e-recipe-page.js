@@ -108,6 +108,8 @@ const cookingRecipe = props => {
               {props.data.CRE.ingredientsNumbers} Ingrédients.
             </h3>
 
+
+
             <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
               {props.data.CRE.nIngredients.map(dataIGRD => {
                 return (
