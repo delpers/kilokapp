@@ -97,7 +97,7 @@ const cookingRecipe = props => {
 
             <div className="t-d fl-r mb-15 mt_i5">
               <span className="fs-14 bg-blue mr-p">
-                <i className="fas fa-check-circle"></i> {props.data.contentfulCookingRecipe.time}{" "}
+                <i className="fas fa-check-circle"></i> {props.data.contentfulCookingRecipe.time}
               </span>
             </div>
           </div>
@@ -118,7 +118,7 @@ const cookingRecipe = props => {
                         {dataIGRD.title}
                       </h3>
                       <span className="fs-16 text-gray pr-15">
-                        {dataIGRD.amount}{" "}
+                        {dataIGRD.amount}
                       </span>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const cookingRecipe = props => {
                             {
                               dataDr.direction
                                 .direction
-                            }{" "}
+                            }
                           </span>
                         </div>
                       </div>
@@ -171,13 +171,13 @@ const cookingRecipe = props => {
                         </h3>
                         <div className=" p-i fs-14">
                           <span className="">
-                            <i className="fas fa-burn mr-5"></i>{" "}
+                            <i className="fas fa-burn mr-5"></i>
                             {dataFLC.calories} <strong>Kcal</strong>/ 100 gr.
                           </span>
                         </div>
                         <div className=" p-i fs-14">
                           <span className="color-black">
-                            <i className="fas fa-check-circle mr-5"></i>{" "}
+                            <i className="fas fa-check-circle mr-5"></i>
                             {dataFLC.stockage}
                           </span>
                         </div>
@@ -196,7 +196,7 @@ const cookingRecipe = props => {
                               id={datafl.contentful_id}
                               className="p-i align-left"
                             >
-                              {datafl}{" "}
+                              {datafl}
                             </span>
                           ))}
                         </div>
@@ -234,7 +234,7 @@ const cookingRecipe = props => {
                     >
                       <div className="fs-16 _print_w ns-print">
                         <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                          {facts.title}{" "}
+                          {facts.title}
                         </h3>
                       </div>
                       <div>
@@ -272,7 +272,7 @@ const cookingRecipe = props => {
 
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-5 font-bold m-w p-i fs-18 bg-w">
-                <i className="fas fa-file-medical-alt c-green mr-15"></i> M{" "}
+                <i className="fas fa-file-medical-alt c-green mr-15"></i> M
                 {props.data.contentfulCookingRecipe.medicalNumber}
               </h3>
             </div>
