@@ -18,7 +18,7 @@ export const query = graphql`
       childContentfulCookingRecipeFeaturedImageJsonNode {
         secure_url
       }
-      dRecipe {
+      directionRecipe {
         id
         title
         childContentfulStepsDirectionTextNode {
@@ -132,7 +132,7 @@ const cookingRecipe = props => {
                 </h3>
 
                 <div>
-                  {props.data.CRE.dRecipe.map(dataDr => {
+                  {props.data.CRE.directionRecipe.map(dataDr => {
                     return (
                       <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
                         <div className="fs-16 _print_w ns-print">
