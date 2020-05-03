@@ -13,6 +13,7 @@ const blogQuery = `
   allContentfulCookingRecipe {
     nodes {
       id
+      slug
       title
       for
       medicalNumber

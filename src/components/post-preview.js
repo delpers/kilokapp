@@ -8,7 +8,7 @@ const PostPreview = ({ hit }) => {
       <h3
      
       >
-        <Link style={{ boxShadow: `none` }} to={hit.id}>
+        <Link style={{ boxShadow: `none` }} to={hit.slug}>
           <Highlight hit={hit} attribute="title" tagName="mark" />
         </Link>
       </h3>
