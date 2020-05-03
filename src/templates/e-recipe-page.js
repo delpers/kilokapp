@@ -27,7 +27,6 @@ export const query = graphql`
         id
         title
         direction {
-          id
           direction
         } 
       }
@@ -148,6 +147,10 @@ const cookingRecipe = props => {
                 </h3>
 
                 <div>
+
+
+
+
                   {props.data.contentfulCookingRecipe.directionRecipe.map(dataDr => {
                     return (
                       <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
@@ -168,9 +171,6 @@ const cookingRecipe = props => {
                 </div>
               </div>
             </div>
-
-
-
 
 
 
@@ -216,14 +216,17 @@ const cookingRecipe = props => {
                         </Link>
 
                         <div className="tfd w-325">
-                          {dataFLC.getBoosters.map(datafl => (
+                          {dataFLC.getBoosters.map(datafl => {
+                  return (
+
                             <span
                               id={datafl.contentful_id}
                               className="p-i align-left"
                             >
                               {datafl}
                             </span>
-                          ))}
+                            )
+                          })}
                         </div>
                       </div>
                     </div>
@@ -259,23 +262,23 @@ const cookingRecipe = props => {
               </div>
 
               <div className="d-grid m-w mt-1 ns-print mt-32 mb-32">
-                {props.data.contentfulCookingRecipe.nFacts.map(facts => {
+                {props.data.contentfulCookingRecipe.nFacts.map(dataFACTS => {
                   return (
                     <div
-                      id={facts.id}
+                      id={dataFACTS.id}
                       className=" bg-w ns-print bg-w-c"
                     >
                       <div className="fs-16 _print_w ns-print">
                         <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                          {facts.title}
+                          {dataFACTS.title}
                         </h3>
                       </div>
                       <div>
                         <span
                           className="fs-16 text-gray pr-15"
                         >
-                          {facts.amount}
-                          {facts.type}
+                          {dataFACTS.amount}
+                          {dataFACTS.type}
                         </span>
                       </div>
                     </div>
