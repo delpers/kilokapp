@@ -4,8 +4,9 @@ require("dotenv").config({path: `.env.${process.env.NODE_ENV}`,})
 
 const blogQuery = `
 {
-  allMarkdownRemark(filter: {}) {
+  allMarkdownRemark {
     nodes {
+      id
       frontmatter {
         title
       }
@@ -15,12 +16,14 @@ const blogQuery = `
   }
   allContentfulCookingRecipe {
     nodes {
+      id
       title
       for
       medicalNumber
     }
   }
 }
+
 
 `;
 
