@@ -27,7 +27,7 @@ const blogQuery = `
 const queries = [
   {
     query: blogQuery,
-    transformer: ({ data }) => data.allMarkdownRemark.nodes, // optional
+    transformer: ({ data }) => data.allContentfulCookingRecipe.nodes, // optional
     indexName: process.env.ALGOLIA_INDEX_NAME, // overrides main index name, optional
   }
 ];
