@@ -7,11 +7,7 @@ const blogQuery = `
   allMarkdownRemark {
     nodes {
       id
-      frontmatter {
-        title
-      }
       excerpt
-      timeToRead
     }
   }
   allContentfulCookingRecipe {
@@ -23,6 +19,7 @@ const blogQuery = `
     }
   }
 }
+
 
 
 `;
