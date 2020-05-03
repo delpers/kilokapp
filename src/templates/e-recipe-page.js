@@ -126,33 +126,6 @@ const cookingRecipe = props => {
               })}
             </div>
 
-            <div className="m-w p-i bg-w mb-32 ">
-              <div className="">
-                <h3 className="i-link b-b-g font-bold m-w  bg-w mb-32">
-                  Directions.
-                </h3>
-
-                <div>
-                  {props.data.contentfulCookingRecipe.directionRecipe.map(dataDr => {
-                    return (
-                      <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
-                        <div className="fs-16 _print_w ns-print">
-                          <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
-                            {dataDr.title}
-                          </h3>
-                          <span className="fs-16 text-gray pr-15" id={dataDr.id}>
-                            {
-                              dataDr.direction
-                                .direction
-                            }
-                          </span>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-            </div>
 
             <div className="m-w p-i boosters bg-w  mb-32">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
