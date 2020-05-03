@@ -24,7 +24,7 @@ export const query = graphql`
         title
         amount
       }
-      directionRecipe {
+      dRecipe {
         id
         title
         direction {
@@ -148,9 +148,8 @@ const cookingRecipe = props => {
                 </h3>
 
 
-                <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
 
-                  {props.data.contentfulCookingRecipe.directionRecipe.map(dataDr => {
+                  {props.data.contentfulCookingRecipe.dRecipe.map(dataDr => {
                 return (
                       <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
                         <div className="fs-16 _print_w ns-print">
@@ -171,7 +170,6 @@ const cookingRecipe = props => {
                 </div>
                 </div>
 
-              </div>
 
 
 
