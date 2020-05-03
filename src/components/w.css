@@ -45,10 +45,10 @@
     text-align: right;
   }
   .c-g {
-    color: #00758d;
+    color: #00758d !important;
   }
   .c-green {
-    color: #00c099;
+    color: #00c099 ;
 }
 .c-pink {
   color: #fe544b;
@@ -315,13 +315,13 @@
     padding: 32px 0;
   }
   .w-screen {
-    background-color: #109db9;
+    background-color: #1074b9;
     background-size: cover;
     background-position: bottom;
     color: white;
   }
   .blue {
-    background: #109db9 !important;
+    background: #1074b9 !important;
   }
   .c-w {
     color: #fcb82bcf;
@@ -462,9 +462,7 @@
     .rl-mobile {
       display: block;
     }
-    .b-solid-b {
-      border: 0;
-    }
+   
     .sr-cards {
       grid-gap: 32px !important;
     }
@@ -555,9 +553,7 @@
     .sticky {
       background: transparent;
     }
-    .b-solid-b {
-      border: 0;
-    }
+ 
     .mr-p {
       margin-right: 50px;
     }
