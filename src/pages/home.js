@@ -1,9 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-
+import algoliasearch from 'algoliasearch/lite';
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
+import PostPreview from "../components/post-preview"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const searchClient = algoliasearch('ROZVIIUYQG', '0a7d5fe8113aaa7a96d869e99fbd9619');
 
 const HomePage = () => {
   const data = useStaticQuery(
@@ -89,6 +92,7 @@ const HomePage = () => {
   return (
     <Layout>
       <SEO title="Accueil" />
+   
 <div className="w-screen p-120-0"> 
       <div className="m-w p-i pb-0 mt-32"
         
@@ -116,15 +120,21 @@ const HomePage = () => {
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/kilokafr" alt="Facebook" target="_bank" ><i class="fab fa-facebook"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-spotify"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-
+         
 
         </nav>
         
         </div>
 
+<div className="m-w p-i">
+
+<InstantSearch searchClient={searchClient} indexName="KILOKA_SEARCH">
+    <SearchBox />
+    <Hits hitComponent={PostPreview} />
+  </InstantSearch>
 
 
-
+</div>
 <div className="m-w p-i pb-0 bg-w ">
 
 <div>
