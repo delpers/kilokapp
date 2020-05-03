@@ -1,5 +1,38 @@
 require("dotenv").config({path: `.env.${process.env.NODE_ENV}`,})
 
+
+
+const blogQuery = `
+{
+  allMarkdownRemark(filter: {}) {
+    nodes {
+      frontmatter {
+        title
+      }
+      excerpt
+      timeToRead
+    }
+  }
+  allContentfulCookingRecipe {
+    nodes {
+      title
+      for
+      medicalNumber
+    }
+  }
+}
+
+`;
+
+const queries = [
+  {
+    query: blogQuery,
+    transformer: ({ data }) => data.allMarkdownRemark.nodes, // optional
+    indexName: process.env.ALGOLIA_INDEX_NAME, // overrides main index name, optional
+  }
+];
+
+
 module.exports = {
   siteMetadata: {
     title: `Kiloka`,
@@ -7,6 +40,7 @@ module.exports = {
     author: `@kilokajs`,
   },
   plugins: [
+   
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -16,6 +50,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -34,6 +69,22 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,        
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    }, {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        // Careful, no not prefix this with GATSBY_, since that way users can change
+        // the data in the index.
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
+        queries,
+        chunkSize: 10000, // default: 1000
+        settings: {
+          // optional, any index settings
+        },
+        enablePartialUpdates: true, // default: false
+        matchFields: ['slug', 'modified'], // Array<String> default: ['modified']
       },
     },
   ],
