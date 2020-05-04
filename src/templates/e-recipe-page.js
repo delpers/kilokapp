@@ -118,16 +118,16 @@ const cookingRecipe = props => {
 
 
 
-        <div className="row m-w">
+        <div className="row m-w pt-0i mt-32">
           <div className="m-w-780">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
               {props.data.contentfulCookingRecipe.ingredientsNumbers} Ingrédients.
             </h3>
 
-            <div className="ir-cards m-w mt-1 ns-print mt-32 mb-32">
+            <div className="ir-cards m-w mt-1 ns-print bg-w mb-32 pt-32 pb-32">
               {props.data.contentfulCookingRecipe.nIngredients.map(dataIGRD => {
                 return (
-                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c">
+                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c pt-0">
                     <div className="fs-16 _print_w ns-print">
                       <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
                         {dataIGRD.title}
@@ -147,20 +147,19 @@ const cookingRecipe = props => {
 
 
 
-
-            <div className="m-w p-i bg-w mb-32 ">
-              <div className="">
-                <h3 className="i-link b-b-g font-bold m-w  bg-w mb-32">
+            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w ">
                   Directions.
                 </h3>
+              <div className="mt-1 mb-32">
+             
 
 
 
                   {props.data.contentfulCookingRecipe.dRecipe.map(dataDr => {
                 return (
-                      <div id={dataDr.id} className=" bg-w ns-print bg-w-c">
-                        <div className="fs-16 _print_w ns-print">
-                          <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
+                      <div id={dataDr.id} className=" bg-w ns-print bg-w-c p-20 mb-1">
+                        <div className="fs-16 _print_w ns-print  mt-1">
+                          <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap tl">
                             {dataDr.title}
                           </h3>
                           <span className="fs-16 text-gray pr-15">
@@ -175,7 +174,6 @@ const cookingRecipe = props => {
                       )
                     })}
                 </div>
-                </div>
 
 
 
@@ -183,12 +181,12 @@ const cookingRecipe = props => {
 
 
 
-
-
-            <div className="m-w p-i boosters bg-w  mb-32">
-              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
+                <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
                 Nutriments
               </h3>
+
+            <div className="m-w p-i boosters bg-w  mb-32 mt-1">
+           
               <div className="getBoosters getBoosters-mobile m-w">
                 {props.data.contentfulCookingRecipe.boosters.map(dataFLC => {
                   return (
@@ -250,6 +248,8 @@ const cookingRecipe = props => {
 
 
           <div className="m-w-100p100 bg-w ml-32">
+
+            
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Valeur nutritive
@@ -267,30 +267,34 @@ const cookingRecipe = props => {
                 </span>
               </div>
 
-              <div className="d-grid m-w mt-1 ns-print mt-32 mb-32">
+              <table className="d-grid m-w mt-1 ns-print mt-32 pb-0 p-15">
                 {props.data.contentfulCookingRecipe.nFacts.map(dataFACTS => {
                   return (
-                    <div
+
+                   
+
+                    <tbody
                       id={dataFACTS.id}
-                      className=" bg-w ns-print bg-w-c"
+                      className=" bg-w ns-print bg-w-c d-table"
                     >
-                      <div className="fs-16 _print_w ns-print">
-                        <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
+                      <tr className="fs-16 _print_w ns-print">
+                        <th className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap align-left">
                           {dataFACTS.title}
-                        </h3>
-                      </div>
-                      <div>
-                        <span
-                          className="fs-16 text-gray pr-15"
+                        </th>
+                        
+                        <th
+                          className="fs-16 text-gray pr-15 align-right"
                         >
                           {dataFACTS.amount}
-                          {dataFACTS.type}
-                        </span>
-                      </div>
-                    </div>
+                          <strong className="initial">{dataFACTS.type}</strong>
+                      </th>
+                      </tr>
+
+                     
+                    </tbody>
                   )
                 })}
-              </div>
+              </table>
             </div>
 
 
@@ -310,7 +314,7 @@ const cookingRecipe = props => {
 
 
             <div className="nutrition">
-              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i fs-18  b-solid-b">
+              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Allergène(s)
               </h3>
               <div className="db">
