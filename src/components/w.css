@@ -106,6 +106,7 @@
   }
   .w-50 {
     max-width: 50%;
+    margin-top: -4px;
   }
   .mt-32 {
     margin-top: 32px !important;
@@ -171,10 +172,9 @@
     text-align: justify;
   }
   .icon {
-    padding: 0 12px;
     border-radius: 0;
     font-family: "MyWebFont";
-    color: white !important;
+    color: initial !important;
     font-size: 36px;
 }
   
@@ -334,7 +334,17 @@
     padding: 32px 0;
   }
   .w-screen {
-    background: #2d4f73;    background-size: cover;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    background-size: cover;
     background-position: bottom;
     color: white;
   }
@@ -516,6 +526,7 @@
     .w-50 {
       font-size: 28px;
       max-width: 100%;
+      margin-top: -4px;
     }
     .fs-6rem {
       font-size: 3rem;
