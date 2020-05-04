@@ -159,10 +159,10 @@ const cookingRecipe = props => {
                 return (
                       <div id={dataDr.id} className=" bg-w ns-print bg-w-c p-20 mb-1">
                         <div className="fs-16 _print_w ns-print  mt-1">
-                          <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap tl">
+                          <h3 className="text-gray  i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap tl">
                             {dataDr.title}
                           </h3>
-                          <span className="fs-16 text-gray pr-15">
+                          <span className="fs-16 pr-15">
                             {
                               dataDr.direction
                                 .direction
@@ -185,20 +185,21 @@ const cookingRecipe = props => {
                 Nutriments
               </h3>
 
-            <div className="m-w p-i boosters bg-w  mb-32 mt-1">
+            <div className="m-w boosters bg-w  mb-32 mt-1-s">
            
               <div className="getBoosters getBoosters-mobile m-w">
                 {props.data.contentfulCookingRecipe.boosters.map(dataFLC => {
                   return (
                     <div
-                      className="mb-20 bg-w rounded shadow-sm"
+                      className="mb-32 bg-w w-391 br-1"
                       id={dataFLC.id}
                     >
                       <div className="">
-                        <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-i">
+                        <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-i pb-0">
                           {dataFLC.title}
                         </h3>
-                        <div className=" p-i fs-14">
+                        
+                        <div className=" p-i fs-14 pb-0">
                           <span className="">
                             <i className="fas fa-burn mr-5"></i>
                             {dataFLC.calories} <strong>Kcal</strong>/ 100 gr.
@@ -211,21 +212,23 @@ const cookingRecipe = props => {
                           </span>
                         </div>
 
-                        <Link
+                      <div className="b-solid-b ">
+                      <Link
                           to={`/recettes/base/${dataFLC.slug}/`}
                           alt="Découvrez"
-                          className="i-link fs-16 b-b-g font-bold mb-0 p-i db nowrap"
+                          className="g-btn td-none "
                         >
-                          <button className="sd-btn">Afficher la liste</button>
+                         <i class="fas fa-link"></i> Afficher la liste
                         </Link>
+                      </div>
 
-                        <div className="tfd w-325">
+                        <div className="tfd">
                           {dataFLC.getBoosters.map(datafl => {
                   return (
 
                             <span
                               id={datafl.contentful_id}
-                              className="p-i align-left"
+                              className="p-16-20 align-left  pb-0"
                             >
                               {datafl}
                             </span>
