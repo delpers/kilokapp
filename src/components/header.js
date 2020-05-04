@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `0`,
-      background: 'white',
+      background: '#2d4f73',
       width: `100%`,
       position: `relative`,
       boxShadow: 'inset 0 -1px 0 #f8f8f8',
@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          Kiloka
+          kiloka
         </Link>
         <Link className="fl-r i-link fs-16 b-b-g mr-15 font-bold c-green p-8" to="/search"> <i class="fas fa-search"></i> RM
 </Link>
