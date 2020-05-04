@@ -71,15 +71,17 @@
   text-decoration: none;
 }
 .g-btn {
-  background: #00909e;
-  color: white !important;
+  background: transparent;
+  color: #00909ead !important;
   margin: 0 20px;
       margin-bottom: 0px;
-  padding: 10px 18px;
+  margin-bottom: 0px;
+  padding: 9.64px 18.27px;
   display: inline-block;
   margin-bottom: 20px;
-  border-radius: 2px;
+  border-radius: 1.64px;
   font-size: 16px;
+  border: 2px solid #00909ead;
 }
 .c-pink {
   color: #fe544b;
@@ -260,7 +262,7 @@
   display: grid;
 }
 .d-table {
-  display: table;
+  display: inline-table !important;
 }
 .flex {
   display: flex;
