@@ -148,8 +148,8 @@ const HomePage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-             height: "250px",
-                    width: "400px",
+               height: "170px",
+                    width: "270px",
             borderRadius: "0",
           }}
         >
@@ -225,8 +225,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "250px",
-                    width: "400px",
+                      height: "170px",
+                    width: "270px",
                     borderRadius: "0",
                   }}
                 >
@@ -285,8 +285,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "250px",
-                    width: "400px",
+                      height: "170px",
+                    width: "270px",
                     borderRadius: "0",
                   }}
                 >
@@ -344,8 +344,8 @@ const HomePage = () => {
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    height: "250px",
-                    width: "400px",
+                      height: "170px",
+                    width: "270px",
                     borderRadius: "0",
                   }}
                 >

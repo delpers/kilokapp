@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 1275,
-        padding: `1.8rem 1.0875rem`,
+        padding: `1.6rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }} className="text-xl font-bold">
