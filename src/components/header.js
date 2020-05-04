@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
         >
           Kiloka
         </Link>
-        <Link className="fl-r i-link fs-16 b-b-g mr-15 font-bold c-green p-8" to="/search"> <i class="fas fa-search"></i> Med
+        <Link className="fl-r i-link fs-16 b-b-g mr-15 font-bold c-green p-8" to="/search"> <i class="fas fa-search"></i> RM
 </Link>
       </h1>
 

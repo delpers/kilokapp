@@ -62,6 +62,13 @@ const cookingRecipe = props => {
               {props.data.contentfulCookingRecipe.numberOfPersons}
             </span>
 
+            <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
+            <i className="fas fa-file-medical-alt c-gray mr-15"></i> M {props.data.contentfulCookingRecipe.medicalNumber}
+            </span>
+
+
+
+  
             <div className="t-d fl-r mb-15 mt_i5">
               <span className="fs-14 bg-blue mr-p">
                 <i className="fas fa-check-circle"></i> {props.data.contentfulCookingRecipe.time}
@@ -320,12 +327,7 @@ const cookingRecipe = props => {
               </div>
             </div>
 
-            <div className="nutrition">
-              <h3 className="i-link b-b-g mr-5 font-bold m-w p-i fs-18 bg-w">
-                <i className="fas fa-file-medical-alt c-green mr-15"></i> M
-                {props.data.contentfulCookingRecipe.medicalNumber}
-              </h3>
-            </div>
+          
           </div>
         </div>
 

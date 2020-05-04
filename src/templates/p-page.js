@@ -38,9 +38,8 @@ const pRecipes = props => {
     <Layout>
       <SEO title={props.data.CLE.title} />
 
-  
-      <div className="w-screen p-h"> 
-      <div className="m-w p-i pb-0 mt-32">
+      <div className="w-screen p-120-0"> 
+      <div className="m-w p-i pb-0 pt-0">
         <section>
           <h1>{props.data.contentfulHome.titleDishes}</h1>
           <p className="mb-0"> {

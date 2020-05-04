@@ -40,8 +40,8 @@ const BlogPost = props => {
       </div>
 
 
-      <div className="m-w p-i blog">
-      <div className="m-w p-i pb-0 mt-32">
+      <div className="w-screen p-120-0"> 
+      <div className="m-w p-i pb-0 pt-0">
         <section>
           <h1 className="blog-title">{props.data.post.title}</h1>
         </section>
