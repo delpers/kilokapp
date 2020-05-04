@@ -49,13 +49,26 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #FAFAFA;
+  background: #f8f8f8;
 `
 const cookingRecipe = props => {
   return (
     <Background>
       <Layout key={props.data.contentfulCookingRecipe.id}>
         <SEO title={props.data.contentfulCookingRecipe.title} />
+        <div className="sticky blue">
+          <div className="m-w p-i ">
+            <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
+              {props.data.contentfulCookingRecipe.numberOfPersons}
+            </span>
+
+            <div className="t-d fl-r mb-15 mt_i5">
+              <span className="fs-14 bg-blue mr-p">
+                <i className="fas fa-check-circle"></i> {props.data.contentfulCookingRecipe.time}
+              </span>
+            </div>
+          </div>
+        </div>
 
         <div
           className="w-screen p-100-0 pb-0 p-h ml-i-8"
@@ -89,20 +102,7 @@ const cookingRecipe = props => {
           </span>
         </div>
 
-        <div className="mb-32 sticky blue b-b-blue">
-          <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
-              {props.data.contentfulCookingRecipe.numberOfPersons}
-            </span>
-
-            <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-14 bg-blue mr-p">
-                <i className="fas fa-check-circle"></i> {props.data.contentfulCookingRecipe.time}
-              </span>
-            </div>
-          </div>
-        </div>
-
+     
 
 
 

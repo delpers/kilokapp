@@ -1,12 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
-import PostPreview from "../components/post-preview"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const searchClient = algoliasearch('ROZVIIUYQG', '0a7d5fe8113aaa7a96d869e99fbd9619');
 
 const HomePage = () => {
   const data = useStaticQuery(
@@ -93,8 +90,10 @@ const HomePage = () => {
     <Layout>
       <SEO title="Accueil" />
    
+    
+
 <div className="w-screen p-120-0"> 
-      <div className="m-w p-i pb-0 mt-32"
+      <div className="m-w p-i pb-0 pt-0"
         
       >
         <section>
@@ -105,8 +104,7 @@ const HomePage = () => {
 
       </div>
 
-
-      <div className="mb-32 sticky b-solid-b">      
+      <div className="sticky b-solid-b">      
         <nav className="pt-15 m-w p-i">
         {data.contentfulHome.pages.map(Pages => (
               <a
@@ -117,8 +115,6 @@ const HomePage = () => {
                 {Pages.title}
               </a>
             ))}
-                        <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold c-g"href="https://www.instagram.com/"> <i class="fas fa-search"></i>
-</a>
 
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/kilokafr" alt="Facebook" target="_bank" ><i class="fab fa-facebook"></i></a>
             <a className="fl-r i-link fs-16 b-b-g mr-15 font-bold"href="https://www.facebook.com/"><i class="fab fa-spotify"></i></a>
@@ -129,15 +125,6 @@ const HomePage = () => {
         
         </div>
 
-<div className="m-w p-i">
-
-<InstantSearch searchClient={searchClient} indexName="KILOKA_SEARCH">
-    <SearchBox />
-    <Hits hitComponent={PostPreview} />
-  </InstantSearch>
-
-
-</div>
 <div className="m-w p-i pb-0 bg-w ">
 
 <div>

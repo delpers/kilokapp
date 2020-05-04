@@ -6,15 +6,17 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `0`,
+      background: 'white',
       width: `100%`,
-      position: `absolute`,
+      position: `relative`,
+      boxShadow: 'inset 0 -1px 0 #f8f8f8',
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 1280,
-        padding: `1.80rem 1.0875rem`,
+        maxWidth: 1300,
+        padding: `1.4rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }} className="text-xl font-bold">
@@ -27,9 +29,10 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          K
+          Kiloka
         </Link>
-
+        <Link className="fl-r i-link fs-16 b-b-g mr-15 font-bold c-green p-8" to="/search"> <i class="fas fa-search"></i> Med
+</Link>
       </h1>
 
       
