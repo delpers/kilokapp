@@ -212,7 +212,7 @@ const cookingRecipe = props => {
                           </span>
                         </div>
 
-                      <div className="b-solid-b ">
+                      <div className="">
                       <Link
                           to={`/recettes/base/${dataFLC.slug}/`}
                           alt="Découvrez"
