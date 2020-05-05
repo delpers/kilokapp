@@ -26,7 +26,6 @@ width: "374px",
 borderRadius: "0",
 }}
 >
-
 </div>
 
 
@@ -54,7 +53,8 @@ borderRadius: "0",
 
 
            
-             
+               <span className="bg-green med-i"> <i className="fas fa-file-medical-alt c-green mr-15"></i> {hit.medicalNumber}  </span>
+
              
              </div>
           

@@ -63,7 +63,7 @@ const cookingRecipe = props => {
             </span>
 
             <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
-            <i className="fas fa-file-medical-alt c-gray mr-15"></i> M {props.data.contentfulCookingRecipe.medicalNumber}
+            <i className="fas fa-file-medical-alt c-green mr-15"></i> {props.data.contentfulCookingRecipe.medicalNumber}
             </span>
 
 
