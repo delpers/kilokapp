@@ -14,13 +14,16 @@ const blogQuery = `
     nodes {
       id
       slug
+      childContentfulCookingRecipeFeaturedImageJsonNode {
+        secure_url
+      }
       title
+      time
       for
       medicalNumber
     }
   }
 }
-
 
 
 `;
