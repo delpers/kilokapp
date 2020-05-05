@@ -283,6 +283,24 @@
 }
 .b-b-blue {
   border-bottom: 1px solid #109db9 !important;
+}table {
+  border-collapse: collapse;
+}
+ th {
+  background: #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+tr:hover {
+  background: #d1d1d1;
 }
   .bg-w-c {
     padding: 16px 20px;
