@@ -92,7 +92,20 @@ const HomePage = () => {
    
     
 
-<div className="w-screen p-120-0"> 
+<div className="w-screen p-120-0" style={{
+            backgroundImage:
+              "url(" +
+              data.contentfulHome.mediaHome
+                .secure_url +
+              ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+                    width: "100%",
+                    color: "initial",
+            borderRadius: "0",
+          }}
+        >> 
       <div className="m-w p-i pb-0 pt-0"
         
       >

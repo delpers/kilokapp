@@ -3,7 +3,11 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
 
+const Background = styled.div`
+  background: #f8f8f8;
+`
 export const query = graphql`
   query($slug: String!) {
     CLE: contentfulCookingE(slug: { eq: $slug }) {
@@ -27,17 +31,13 @@ export const query = graphql`
       }
     }
 
-      contentfulHome {
-     
-        titleEntrances
-        descriptionEntrances
-      
-      }
     }
 `
 
 const eRecipes = props => {
   return (
+    <Background>
+
     <Layout>
       <SEO title={props.data.CLE.title} />
 
@@ -47,9 +47,10 @@ const eRecipes = props => {
       <div className="w-screen p-120-0"> 
       <div className="m-w p-i pb-0 pt-0">
         <section>
-          <h1>{props.data.contentfulHome.titleEntrances}</h1>
+          <h1>{props.data.CLE.title}</h1>
           <p className="mb-0"> {
-                props.data.contentfulHome.descriptionEntrances
+                props.data.CLE.childContentfulCookingEDescriptionTextNode
+                  .description
               }</p>
         </section>
       </div>
@@ -57,12 +58,6 @@ const eRecipes = props => {
       </div>
 
 
-      <div className="m-w p-i pb-0 mt-32"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
-      <span class="fs-18 text-gray">{
-                props.data.CLE.childContentfulCookingEDescriptionTextNode
-                  .description
-              }</span>
-      </div>
 
 
       <div>
@@ -93,7 +88,7 @@ style={{
 </div>
 
 
-                  <div className="mt-10 p-15 fs-16">
+                  <div className="mt-10 p-15 fs-16 bg-w">
                     <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${edge.slug}/`}>{edge.title}</Link>
 
                     <div> 
@@ -137,6 +132,8 @@ style={{
         </div>
       </div>
     </Layout>
+    </Background>
+
   )
 }
 

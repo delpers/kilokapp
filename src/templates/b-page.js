@@ -3,7 +3,11 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
 
+const Background = styled.div`
+  background: #f8f8f8;
+`
 export const query = graphql`
   query($slug: String!) {
     CLE: contentfulBooster(slug: { eq: $slug }) {
@@ -18,7 +22,6 @@ export const query = graphql`
       }
     }contentfulHome {
      
-      titleBoosters
        descriptionBoosters
     
     }
@@ -27,6 +30,8 @@ export const query = graphql`
 
 const bRecipes = props => {
   return (
+    <Background>
+
     <Layout>
       <SEO title={props.data.CLE.title} />
 
@@ -35,7 +40,7 @@ const bRecipes = props => {
       <div className="w-screen p-120-0"> 
       <div className="m-w p-i pb-0 pt-0">
         <section>
-          <h1>{props.data.contentfulHome.titleBoosters}</h1>
+          <h1>{props.data.CLE.title}</h1>
           <p className="mb-0"> {
                 props.data.contentfulHome.descriptionBoosters
               }</p>
@@ -45,13 +50,6 @@ const bRecipes = props => {
       </div>
 
 
-
-
-
-
-      <div className="m-w p-i pb-0 mt-32"><h3 class="mb-0 fs-36 pb-4">{props.data.CLE.title}</h3>
-   
-      </div>
 
 
 
@@ -88,6 +86,8 @@ const bRecipes = props => {
         </div>
       </div>
     </Layout>
+    </Background>
+
   )
 }
 
