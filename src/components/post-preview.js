@@ -53,7 +53,7 @@ borderRadius: "0",
 
 
            
-               <span className="bg-green med-i"> <i className="fas fa-file-medical-alt c-green mr-15"></i> {hit.medicalNumber}  </span>
+               <span className="med-i"> <i className="fas fa-file-medical-alt c-green mr-8"></i> {hit.medicalNumber}  </span>
 
              
              </div>

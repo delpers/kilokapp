@@ -12,7 +12,7 @@ const Background = styled.div`
   background: #f8f8f8;
 `
 
-const NotFoundPage = () => (
+const SearchPage = () => (
   <Background>
 
   <Layout>
@@ -47,4 +47,4 @@ const NotFoundPage = () => (
 
 )
 
-export default NotFoundPage
+export default SearchPage
