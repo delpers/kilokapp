@@ -18,6 +18,7 @@ const blogQuery = `
         secure_url
       }
       title
+      numberOfPersons
       time
       for
       medicalNumber
