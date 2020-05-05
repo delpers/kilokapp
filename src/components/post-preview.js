@@ -7,7 +7,7 @@ const PostPreview = ({ hit }) => {
    
 <div>
 <div>
-  <div className="rl rl-mobile m-w p-i ">
+  <div>
         <div id={hit.id} className="mb-20 border ">
        
         <div
@@ -32,9 +32,8 @@ borderRadius: "0",
 
            <div className="mt-10 p-15 fs-16 ">
              <Link className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap" to={`/recette/${hit.slug}/`}>
-             <Link style={{ boxShadow: `none` }} to={hit.slug}>
-          <Highlight hit={hit} attribute="title" tagName="mark" />
-        </Link>
+             <Highlight hit={hit} attribute="title" tagName="mark" />
+
              </Link>
 
              <div> 

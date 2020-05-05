@@ -370,7 +370,7 @@
 
   }
   .w-screen {
-    background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);    
+    background: #1c4c74;    
     
     
     
@@ -379,6 +379,17 @@
     background-position: bottom;
     color: white;
   }
+
+  .ais-Hits-list {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 60px;
+
+margin-left: 0 !important;
+
+
+  }
+  
   .d-table {
     display: table;
     width: 100% !important;
@@ -441,8 +452,34 @@
     margin-top: 1px !important;
     display: flow-root;
   }
+  .ais-Hits-item {
+    background: white;
+  }
+.ais-SearchBox-submit {
+  background: #00758d;
+border: transparent;
+padding: 12px 39px;
+margin-left: 15px;
+font-size: 16px;
 
+color: white !important;
+}
 
+.ais-SearchBox-reset {
+  background: #fe544bcc;
+  margin-left: 15px;
+border: transparent;
+font-size: 16px;
+padding: 12px 39px;
+color: white !important;
+}
+  .ais-SearchBox-input {
+    border: 1px solid #fafafa;
+    padding: 12px 24px;
+    font-size: 16px;
+    background: white !important;
+    border-radius: 2px;
+}
   
   .mt_i5 {
     margin-top: -5px;
@@ -539,9 +576,7 @@
     padding: 20px;
 }
   ::marker {
-    color: initial;
-    font-weight: bold;
-    font-size: 18px;
+    display: none;
   }
 
 
@@ -561,6 +596,13 @@
     html {
       font-size: 100%;
     }
+    .ais-SearchBox-submit {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .ais-SearchBox-input {
+      width: 100%;
+    }
     .p-0-32 {
       padding: 0;
     }
@@ -576,7 +618,9 @@
     .rl-mobile {
       display: block;
     }
-   
+    .ais-Hits-list {
+      display: block;
+    }
     .sr-cards {
       grid-gap: 32px !important;
     }
