@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import HyvorTalk from "hyvor-talk-react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
@@ -35,17 +34,14 @@ const BlogPost = props => {
     <Layout>
       <SEO title={props.data.post.title} />
 
-      <div className="w-screen p-h"> 
- 
-      </div>
+      <div className="w-screen p-h"></div>
 
-
-      <div className="w-screen p-120-0"> 
-      <div className="m-w p-i pb-0 pt-0">
-        <section>
-          <h1 className="blog-title">{props.data.post.title}</h1>
-        </section>
-      </div>
+      <div className="w-screen p-120-0">
+        <div className="m-w p-i pb-0 pt-0">
+          <section>
+            <h1 className="blog-title">{props.data.post.title}</h1>
+          </section>
+        </div>
 
         <img
           className=""

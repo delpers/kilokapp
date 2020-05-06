@@ -1,13 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
   query($slug: String!) {
-    contentfulPage(slug: { eq: $slug }) {
+    contentfulPages(slug: { eq: $slug }) {
       title
       slug
       publishedDate(formatString: "Do MMMM, YYYY")
@@ -30,26 +29,20 @@ const BlogPage = props => {
 
   return (
     <Layout>
-      <SEO title={props.data.contentfulPage.title} />
+      <SEO title={props.data.contentfulPages.title} />
 
-
-
-      <div className="w-screen p-120-0"> 
-      <div className="m-w p-i pb-0 pt-0">
-        <section>
-        <h1>{props.data.contentfulPage.title}</h1>
-          <p className="mb-0"> {props.data.contentfulPage.publishedDate}</p>
-        </section>
+      <div className="w-screen p-120-0">
+        <div className="m-w p-i pb-0 pt-0">
+          <section>
+            <h1>{props.data.contentfulPages.title}</h1>
+            <p className="mb-0"> {props.data.contentfulPages.publishedDate}</p>
+          </section>
+        </div>
       </div>
-
-      </div>
-
-
 
       <div className="m-w p-i pb-0 bg-w fs-14 link justify mt-32">
-    
         {documentToReactComponents(
-          props.data.contentfulPage.body.json,
+          props.data.contentfulPages.body.json,
           options
         )}
       </div>

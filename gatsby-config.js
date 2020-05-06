@@ -14,7 +14,7 @@ const blogQuery = `
     nodes {
       id
       slug
-      childContentfulCookingRecipeFeaturedImageJsonNode {
+      childContentfulRecipesFeaturedImageJsonNode {
         secure_url
       }
       title

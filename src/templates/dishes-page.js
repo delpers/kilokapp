@@ -30,11 +30,11 @@ export const query = graphql`
     }
   }
 `
-const pRecipes = props => {
+const DishesRecipes = props => {
   return (
     <Background>
       <Layout>
-        <SEO title={props.data.CLE.title} />
+        <SEO title={props.data.CLE.recipesRecettes.title} />
 
         <div className="w-screen p-120-0">
           <div className="m-w p-i pb-0 pt-0">
@@ -77,13 +77,13 @@ const pRecipes = props => {
                     <div className="mt-10 p-15 fs-16 ">
                       <Link
                         className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
-                        to={`/recette/${edge.slug}/`}
+                        to={`/desserts/recette/${edge.slug}/`}
                       >
                         {edge.title}
                       </Link>
 
                       <div>
-                        <div className="t-d fl-r mb-15 ">
+                        <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
                             <i className="fas fa-check-circle"></i> {edge.time}{" "}
@@ -123,4 +123,4 @@ const pRecipes = props => {
   )
 }
 
-export default pRecipes
+export default DishesRecipes

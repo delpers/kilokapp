@@ -9,10 +9,10 @@ const Background = styled.div`
 `
 export const query = graphql`
   query($slug: String!) {
-    CLE: contentfulCookingPlats(slug: { eq: $slug }) {
+    CLE: contentfulCookingStarters(slug: { eq: $slug }) {
       title
       slug
-      childContentfulCookingPlatsDescriptionTextNode {
+      childContentfulCookingStartersDescriptionTextNode {
         description
       }
       recipesRecettes {
@@ -30,7 +30,7 @@ export const query = graphql`
     }
   }
 `
-const pRecipes = props => {
+const eRecipes = props => {
   return (
     <Background>
       <Layout>
@@ -43,7 +43,7 @@ const pRecipes = props => {
               <p className="mb-0">
                 {" "}
                 {
-                  props.data.CLE.childContentfulCookingPlatsDescriptionTextNode
+                  props.data.CLE.childContentfulCookingStartersDescriptionTextNode
                     .description
                 }
               </p>
@@ -56,7 +56,7 @@ const pRecipes = props => {
             <div className="rl rl-mobile m-w p-i ">
               {props.data.CLE.recipesRecettes.map(edge => {
                 return (
-                  <div id={edge.id} className="mb-20 border bg-w">
+                  <div id={edge.id} className="mb-20 bg-fc border ">
                     <div
                       className="mediaLR"
                       style={{
@@ -74,7 +74,7 @@ const pRecipes = props => {
                       }}
                     ></div>
 
-                    <div className="mt-10 p-15 fs-16 ">
+                    <div className="mt-10 p-15 fs-16 bg-w">
                       <Link
                         className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
                         to={`/recette/${edge.slug}/`}
@@ -83,7 +83,7 @@ const pRecipes = props => {
                       </Link>
 
                       <div>
-                        <div className="t-d fl-r mb-15 ">
+                        <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
                             <i className="fas fa-check-circle"></i> {edge.time}{" "}
@@ -123,4 +123,4 @@ const pRecipes = props => {
   )
 }
 
-export default pRecipes
+export default eRecipes
