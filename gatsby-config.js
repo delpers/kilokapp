@@ -10,7 +10,7 @@ const blogQuery = `
       excerpt
     }
   }
-  allContentfulCookingRecipe {
+  allContentfulRecipes {
     nodes {
       id
       slug
