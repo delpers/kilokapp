@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import HyvorTalk from "hyvor-talk-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import HyvorTalk from "hyvor-talk-react"
 
 export const query = graphql`
   query($slug: String!) {
@@ -13,7 +13,7 @@ export const query = graphql`
       body {
         json
       }
-      media: childContentfulBlogPostFeaturedImageJsonNode {
+      picture: childContentfulBlogPostFeaturedImageJsonNode {
         secure_url
       }
     }
@@ -45,7 +45,7 @@ const BlogPost = props => {
 
         <img
           className=""
-          src={props.data.post.media.secure_url}
+          src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
 

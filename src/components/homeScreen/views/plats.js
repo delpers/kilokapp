@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
-export default function Dishes() {
+export default function Plats() {
   return (
     <StaticQuery
       query={graphql`
         query {
-          dishes: allContentfulCookingPlats {
+          plat: allContentfulCookingPlats {
             edges {
               node {
                 title
@@ -18,21 +18,21 @@ export default function Dishes() {
             }
           }
           home: contentfulHomePage {
-            title_dishes
-            description_dishes
+            title_plats
+            description_plats
           }
         }
       `}
       render={data => (
         <div className="m-w p-i pb-0 bg-w ">
           <div>
-            <h3 className="mb-0 fs-32 pb-4">{data.home.title_dishes}</h3>
+            <h3 className="mb-0 fs-32 pb-4">{data.home.title_plats}</h3>
             <span className="fs-18 text-gray">
-              {data.home.description_dishes}
+              {data.home.description_plats}
             </span>
           </div>
           <div className="sr-cards">
-            {data.dishes.edges.map(edge => {
+            {data.plat.edges.map(edge => {
               return (
                 <div className="" key={edge.node.id}>
                   <div
@@ -52,7 +52,7 @@ export default function Dishes() {
                       <span className="mt-10-b">
                         <Link
                           className="i-link fs-16 b-b-g mr-15 font-bold c-t"
-                          to={`/dishes/recettes/${edge.node.slug}/`}
+                          to={`/plats/recettes/${edge.node.slug}/`}
                         >
                           {edge.node.title}
                         </Link>

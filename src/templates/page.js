@@ -6,7 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
   query($slug: String!) {
-    contentfulPages(slug: { eq: $slug }) {
+    page: contentfulPages(slug: { eq: $slug }) {
       title
       slug
       publishedDate(formatString: "Do MMMM, YYYY")
@@ -29,20 +29,20 @@ const BlogPage = props => {
 
   return (
     <Layout>
-      <SEO title={props.data.contentfulPages.title} />
+      <SEO title={props.data.page.title} />
 
       <div className="w-screen p-120-0">
         <div className="m-w p-i pb-0 pt-0">
           <section>
-            <h1>{props.data.contentfulPages.title}</h1>
-            <p className="mb-0"> {props.data.contentfulPages.publishedDate}</p>
+            <h1>{props.data.page.title}</h1>
+            <p className="mb-0"> {props.data.page.publishedDate}</p>
           </section>
         </div>
       </div>
 
       <div className="m-w p-i pb-0 bg-w fs-14 link justify mt-32">
         {documentToReactComponents(
-          props.data.contentfulPages.body.json,
+          props.data.page.body.json,
           options
         )}
       </div>

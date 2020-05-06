@@ -1,18 +1,15 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #f8f8f8;
-`
 export const query = graphql`
   query($slug: String!) {
-    CLE: contentfulCookingStarters(slug: { eq: $slug }) {
+    dessert: contentfulCookingDesserts(slug: { eq: $slug }) {
       title
       slug
-      childContentfulCookingStartersDescriptionTextNode {
+      childContentfulCookingDessertsDescriptionTextNode {
         description
       }
       recipesRecettes {
@@ -30,20 +27,26 @@ export const query = graphql`
     }
   }
 `
-const eRecipes = props => {
+
+const Background = styled.div`
+  background: #f8f8f8;
+`
+
+const DishesRecipes = props => {
   return (
     <Background>
       <Layout>
-        <SEO title={props.data.CLE.title} />
+        <SEO title={props.data.dessert.title} />
 
         <div className="w-screen p-120-0">
           <div className="m-w p-i pb-0 pt-0">
             <section>
-              <h1>{props.data.CLE.title}</h1>
+              <h1>{props.data.dessert.title}</h1>
               <p className="mb-0">
                 {" "}
                 {
-                  props.data.CLE.childContentfulCookingStartersDescriptionTextNode
+                  props.data.dessert
+                    .childContentfulCookingDessertsDescriptionTextNode
                     .description
                 }
               </p>
@@ -54,9 +57,9 @@ const eRecipes = props => {
         <div>
           <div>
             <div className="rl rl-mobile m-w p-i ">
-              {props.data.CLE.recipesRecettes.map(edge => {
+              {props.data.dessert.recipesRecettes.map(edge => {
                 return (
-                  <div id={edge.id} className="mb-20 bg-fc border ">
+                  <div id={edge.id} className="mb-20 border bg-w">
                     <div
                       className="mediaLR"
                       style={{
@@ -74,10 +77,10 @@ const eRecipes = props => {
                       }}
                     ></div>
 
-                    <div className="mt-10 p-15 fs-16 bg-w">
+                    <div className="mt-10 p-15 fs-16 ">
                       <Link
                         className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
-                        to={`/recette/${edge.slug}/`}
+                        to={`/desserts/recette/${edge.slug}/`}
                       >
                         {edge.title}
                       </Link>
@@ -123,4 +126,4 @@ const eRecipes = props => {
   )
 }
 
-export default eRecipes
+export default DishesRecipes

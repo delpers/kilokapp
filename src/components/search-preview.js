@@ -13,8 +13,7 @@ const SearchPreview = ({ hit }) => {
               style={{
                 backgroundImage:
                   "url(" +
-                  hit.ChildContentfulRecipesFeaturedImageJsonNode
-                    .secure_url +
+                  hit.ChildContentfulRecipesFeaturedImageJsonNode.secure_url +
                   ")",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
@@ -23,7 +22,7 @@ const SearchPreview = ({ hit }) => {
                 width: "374px",
                 borderRadius: "0",
               }}
-            ></div>
+            />
 
             <div className="mt-10 p-15 fs-16 ">
               <Link

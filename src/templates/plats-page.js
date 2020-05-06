@@ -1,15 +1,12 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #f8f8f8;
-`
 export const query = graphql`
   query($slug: String!) {
-    CLE: contentfulCookingPlats(slug: { eq: $slug }) {
+    plat: contentfulCookingPlats(slug: { eq: $slug }) {
       title
       slug
       childContentfulCookingPlatsDescriptionTextNode {
@@ -30,20 +27,24 @@ export const query = graphql`
     }
   }
 `
-const DishesRecipes = props => {
+
+const Background = styled.div`
+  background: #f8f8f8;
+`
+const pRecipes = props => {
   return (
     <Background>
       <Layout>
-        <SEO title={props.data.CLE.recipesRecettes.title} />
+        <SEO title={props.data.plat.title} />
 
         <div className="w-screen p-120-0">
           <div className="m-w p-i pb-0 pt-0">
             <section>
-              <h1>{props.data.CLE.title}</h1>
+              <h1>{props.data.plat.title}</h1>
               <p className="mb-0">
                 {" "}
                 {
-                  props.data.CLE.childContentfulCookingPlatsDescriptionTextNode
+                  props.data.plat.childContentfulCookingPlatsDescriptionTextNode
                     .description
                 }
               </p>
@@ -54,7 +55,7 @@ const DishesRecipes = props => {
         <div>
           <div>
             <div className="rl rl-mobile m-w p-i ">
-              {props.data.CLE.recipesRecettes.map(edge => {
+              {props.data.plat.recipesRecettes.map(edge => {
                 return (
                   <div id={edge.id} className="mb-20 border bg-w">
                     <div
@@ -77,13 +78,13 @@ const DishesRecipes = props => {
                     <div className="mt-10 p-15 fs-16 ">
                       <Link
                         className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
-                        to={`/desserts/recette/${edge.slug}/`}
+                        to={`/recette/${edge.slug}/`}
                       >
                         {edge.title}
                       </Link>
 
                       <div>
-                        <div className="t-d fl-r mb-15">
+                        <div className="t-d fl-r mb-15 ">
                           <span className="fs-14 bg-g">
                             {" "}
                             <i className="fas fa-check-circle"></i> {edge.time}{" "}
@@ -123,4 +124,4 @@ const DishesRecipes = props => {
   )
 }
 
-export default DishesRecipes
+export default pRecipes

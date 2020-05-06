@@ -6,7 +6,7 @@ export default function Desserts() {
     <StaticQuery
       query={graphql`
         query {
-          desserts: allContentfulCookingDesserts {
+          dessert: allContentfulCookingDesserts {
             edges {
               node {
                 title
@@ -32,7 +32,7 @@ export default function Desserts() {
             </span>
           </div>
           <div className="sr-cards">
-            {data.desserts.edges.map(edge => {
+            {data.dessert.edges.map(edge => {
               return (
                 <div className="" key={edge.node.id}>
                   <div

@@ -140,7 +140,7 @@ exports.createPages = ({ graphql, actions }) => {
                 reject(result.errors)
               }
     
-              const entryTemplate = path.resolve(`./src/templates/entry-page.js`)
+              const entryTemplate = path.resolve(`./src/templates/starters-page.js`)
               req.each(result.data.allContentfulCookingStarters.edges, edge => {
                 createPage({
                   path: `/recettes/${edge.node.slug}`,
@@ -215,11 +215,11 @@ exports.createPages = ({ graphql, actions }) => {
                 reject(result.errors)
               }
     
-              const dishesTemplate = path.resolve(`./src/templates/p-page.js`)
+              const platsTemplate = path.resolve(`./src/templates/plats-page.js`)
               req.each(result.data.allContentfulCookingPlats.edges, edge => {
                 createPage({
-                  path: `/dishes/recettes/${edge.node.slug}`,
-                  component: slash(dishesTemplate),
+                  path: `/plats/recettes/${edge.node.slug}`,
+                  component: slash(platsTemplate),
                   context: {
                     id: edge.node.id,
                     slug: edge.node.slug,
@@ -254,7 +254,7 @@ exports.createPages = ({ graphql, actions }) => {
                 reject(result.errors)
               }
     
-              const dessertsTemplate = path.resolve(`./src/templates/dishes-page.js`)
+              const dessertsTemplate = path.resolve(`./src/templates/desserts-page.js`)
               req.each(result.data.allContentfulCookingDesserts.edges, edge => {
                 createPage({
                   path: `/desserts/recettes/${edge.node.slug}`,

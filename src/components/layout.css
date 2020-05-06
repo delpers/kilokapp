@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/wfz3hti.css");
-@import './w.css';
+@import "./w.css";
 html {
   font-family: europa, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -252,7 +252,7 @@ html {
 
 body {
   color: rgb(45, 49, 56);
-  background: #FFF;
+  background: #fff;
   font-family: europa, sans-serif;
   font-weight: normal;
   word-wrap: break-word;

@@ -1,15 +1,12 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #f8f8f8;
-`
 export const query = graphql`
   query($slug: String!) {
-    CLE: contentfulBoosters(slug: { eq: $slug }) {
+    booster: contentfulBoosters(slug: { eq: $slug }) {
       title
       slug
       bList {
@@ -19,25 +16,27 @@ export const query = graphql`
         calories
       }
     }
-    contentfulHomePage {
-      descriptionBoosters
+    home: contentfulHomePage {
+      description_boosters
     }
   }
 `
-const bRecipes = props => {
+
+const Background = styled.div`
+  background: #f8f8f8;
+`
+
+const BoostersRecipes = props => {
   return (
     <Background>
       <Layout>
-        <SEO title={props.data.CLE.title} />
+        <SEO title={props.data.booster.title} />
 
         <div className="w-screen p-120-0">
           <div className="m-w p-i pb-0 pt-0">
             <section>
-              <h1>{props.data.CLE.title}</h1>
-              <p className="mb-0">
-                {" "}
-                {props.data.contentfulHomePage.descriptionBoosters}
-              </p>
+              <h1>{props.data.booster.title}</h1>
+              <p className="mb-0"> {props.data.home.description_boosters}</p>
             </section>
           </div>
         </div>
@@ -45,7 +44,7 @@ const bRecipes = props => {
         <div>
           <div>
             <div className="rl rl-mobile m-w p-i  ">
-              {props.data.CLE.bList.map(edge => {
+              {props.data.booster.bList.map(edge => {
                 return (
                   <div className=" border  mb-32">
                     <div className="bg-w p-15">
@@ -79,4 +78,4 @@ const bRecipes = props => {
   )
 }
 
-export default bRecipes
+export default BoostersRecipes

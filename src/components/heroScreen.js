@@ -29,11 +29,14 @@ export default function heroScreen() {
               height: "380px",
               color: "initial",
               borderRadius: "0",
-            }} >
+            }}
+          >
             <div className="m-w p-i pb-0 pt-0">
               <section>
                 <h1 className="w-50">{data.contentfulHomePage.titleHome}</h1>
-                <p className="mb-0">{data.contentfulHomePage.descriptionHome}</p>
+                <p className="mb-0">
+                  {data.contentfulHomePage.descriptionHome}
+                </p>
               </section>
             </div>
           </div>

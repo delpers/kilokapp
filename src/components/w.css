@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "MyWebFont";
-  src: url("../fonts/CarnasLight.ttf") format("woff2"),
-    url("../fonts/CarnasLight.ttf") format("woff");
-}
+
 .b-solid-top {
   border-top: 1px solid rgb(248, 248, 248);
 }
@@ -193,7 +189,6 @@
 }
 .icon {
   border-radius: 0;
-  font-family: "MyWebFont";
   color: initial !important;
   font-size: 36px;
 }

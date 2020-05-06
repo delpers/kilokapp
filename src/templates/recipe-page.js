@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
-import SEO from "../components/seo"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export const query = graphql`
   query($slug: String!) {
@@ -97,8 +97,7 @@ const cookingRecipe = props => {
                   alt={props.data.contentfulRecipes.title}
                   src={
                     props.data.contentfulRecipes
-                      .childContentfulRecipesFeaturedImageJsonNode
-                      .secure_url
+                      .childContentfulRecipesFeaturedImageJsonNode.secure_url
                   }
                 ></img>
 
@@ -113,8 +112,7 @@ const cookingRecipe = props => {
         <div className="row m-w pt-0i mt-32">
           <div className="m-w-780">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
-              {props.data.contentfulRecipes.ingredientsNumbers}{" "}
-              Ingrédients.
+              {props.data.contentfulRecipes.ingredientsNumbers} Ingrédients.
             </h3>
 
             <div className="ir-cards m-w mt-1 ns-print bg-w mb-32 pt-32 pb-32">
@@ -227,10 +225,7 @@ const cookingRecipe = props => {
 
                 <span className="tfd">
                   <h3 className="fs-42">
-                    {
-                      props.data.contentfulRecipes
-                        .amountPerServingCalories
-                    }
+                    {props.data.contentfulRecipes.amountPerServingCalories}
                   </h3>
                 </span>
               </div>

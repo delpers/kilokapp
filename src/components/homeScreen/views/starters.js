@@ -6,7 +6,7 @@ export default function Entry() {
     <StaticQuery
       query={graphql`
         query {
-          entry: allContentfulCookingStarters {
+          starter: allContentfulCookingStarters {
             edges {
               node {
                 title
@@ -18,21 +18,21 @@ export default function Entry() {
             }
           }
           home: contentfulHomePage {
-            title_entry
-            description_entry
+            title_straters
+            description_straters
           }
         }
       `}
       render={data => (
         <div className="m-w p-i pb-0 bg-w ">
           <div>
-            <h3 className="mb-0 fs-32 pb-4">{data.home.title_entry}</h3>
+            <h3 className="mb-0 fs-32 pb-4">{data.home.title_straters}</h3>
             <span className="fs-18 text-gray">
-              {data.home.description_entry}
+              {data.home.description_straters}
             </span>
           </div>
           <div className="sr-cards">
-            {data.entry.edges.map(edge => {
+            {data.starter.edges.map(edge => {
               return (
                 <div className="" key={edge.node.id}>
                   <div
