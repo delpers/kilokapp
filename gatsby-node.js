@@ -178,7 +178,7 @@ exports.createPages = ({ graphql, actions }) => {
                   reject(result.errors)
                 }
       
-                const breakfastTemplate = path.resolve(`./src/templates/breakfast-page.js`)
+                const breakfastTemplate = path.resolve(`./src/templates/breakfasts-page.js`)
                 req.each(result.data.allContentfulCookingBreakfasts.edges, edge => {
                   createPage({
                     path: `/breakfast/recettes/${edge.node.slug}`,

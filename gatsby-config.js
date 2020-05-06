@@ -1,6 +1,4 @@
-require("dotenv").config({path: `.env.${process.env.NODE_ENV}`,})
-
-
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 
 const blogQuery = `
 {
@@ -25,18 +23,15 @@ const blogQuery = `
     }
   }
 }
-
-
-`;
+`
 
 const queries = [
   {
     query: blogQuery,
-    transformer: ({ data }) => data.allContentfulCookingRecipe.nodes, // optional
+    transformer: ({ data }) => data.allContentfulRecipes.nodes, // optional
     indexName: process.env.ALGOLIA_INDEX_NAME, // overrides main index name, optional
-  }
-];
-
+  },
+]
 
 module.exports = {
   siteMetadata: {
@@ -45,7 +40,6 @@ module.exports = {
     author: `@kilokajs`,
   },
   plugins: [
-   
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -72,10 +66,11 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,        
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
-    }, {
+    },
+    {
       resolve: `gatsby-plugin-algolia`,
       options: {
         appId: process.env.ALGOLIA_APP_ID,
@@ -89,7 +84,7 @@ module.exports = {
           // optional, any index settings
         },
         enablePartialUpdates: true, // default: false
-        matchFields: ['slug', 'modified'], // Array<String> default: ['modified']
+        matchFields: ["slug", "modified"], // Array<String> default: ['modified']
       },
     },
   ],
