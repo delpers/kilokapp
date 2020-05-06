@@ -13,7 +13,7 @@ const SearchPreview = ({ hit }) => {
               style={{
                 backgroundImage:
                   "url(" +
-                  hit.ChildContentfulRecipesFeaturedImageJsonNode.secure_url +
+                  hit.childContentfulRecipesFeaturedImageJsonNode.secure_url +
                   ")",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
