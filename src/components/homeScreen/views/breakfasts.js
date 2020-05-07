@@ -24,9 +24,9 @@ export default function Breakfasts() {
         }
       `}
       render={data => (
-        <div className="m-w p-i pb-0 bg-w ">
+        <div className="m-w p-i pb-0 bg-w mt-32 ">
           <div>
-            <h3 className="mb-0 fs-32 pb-4">{data.home.title_breakfasts}</h3>
+            <h3 className="mb-0 fs-48 pb-4">{data.home.title_breakfasts}</h3>
             <span className="fs-18 text-gray">
               {data.home.description_breakfasts}
             </span>
@@ -44,8 +44,8 @@ export default function Breakfasts() {
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
-                      height: "200px",
-                      width: "320px",
+                      height: "250px",
+                      width: "400px",
                       borderRadius: "0",
                     }}
                   >

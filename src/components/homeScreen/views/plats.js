@@ -26,7 +26,7 @@ export default function Plats() {
       render={data => (
         <div className="m-w p-i pb-0 bg-w ">
           <div>
-            <h3 className="mb-0 fs-32 pb-4">{data.home.title_plats}</h3>
+            <h3 className="mb-0 fs-48 pb-4">{data.home.title_plats}</h3>
             <span className="fs-18 text-gray">
               {data.home.description_plats}
             </span>
@@ -43,8 +43,8 @@ export default function Plats() {
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
-                      height: "200px",
-                      width: "320px",
+                      height: "250px",
+                      width: "400px",
                       borderRadius: "0",
                     }}
                   >

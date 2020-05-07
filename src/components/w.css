@@ -305,8 +305,8 @@ header {
 .fs-36 {
   font-size: 36px;
 }
-.fs-32 {
-  font-size: 32px;
+.fs-48 {
+  font-size: 48px;
 }
 .fs-18 {
   font-size: 18px;
@@ -413,7 +413,10 @@ header {
   background: white;
 }
 .border_b {
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #008489;
+display: block;
+width: 8%;
+margin-top: 20px;
 }
 .pb-4 {
   padding-bottom: 4px;
