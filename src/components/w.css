@@ -305,23 +305,32 @@ header {
 .fs-36 {
   font-size: 36px;
 }
-.fs-48 {
-  font-size: 48px;
+.fs-36 {
+  font-size: 36px;
 }
 .fs-18 {
   font-size: 18px;
 }
 .mask-thumb-h {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(7, 7, 7, 0.47)); */
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(7, 7, 7, 0.47)); 
   z-index: 1;
   display: block;
-  padding-top: 70px;
+  padding-top: 150px;
+}
+.cards-n {
+  z-index: 1;
+display: block;
+padding-top: 0;
+width: 200px;
+height: 120px;
+background-color: #fff2f1;
 }
 .c-t {
   color: white;
   font-size: 24px;
-  padding: 32px;
+  padding: 47px;
+  text-align: center;
+  margin-right: 0;
 }
 .orange-btn {
   background: #ef7044;

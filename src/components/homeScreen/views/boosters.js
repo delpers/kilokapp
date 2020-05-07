@@ -23,7 +23,7 @@ export default function Boosters() {
       render={data => (
         <div className="m-w p-i pb-0 bg-w ">
           <div className="">
-            <h3 className="mb-0 fs-48 pb-4">{data.home.title_boosters}</h3>
+            <h3 className="mb-0 fs-36 pb-4">{data.home.title_boosters}</h3>
             <span className="fs-18 text-gray">
               {data.home.description_boosters}
             </span>
@@ -33,7 +33,7 @@ export default function Boosters() {
               return (
                 <div className="" key={edge.node.id}>
                   <div className="">
-                    <span className="mask-thumb-h rounded">
+                    <span className="cards-n">
                       <span className="mt-10-b">
                         <Link
                           className="i-link fs-16 b-b-g mr-15 font-bold c-t"

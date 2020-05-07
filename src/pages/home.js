@@ -21,6 +21,8 @@ const HomePage = () => {
       
       <StickyNav />
 
+      <Boosters />
+
       <Breakfasts />
     
       <Entry />
@@ -28,7 +30,6 @@ const HomePage = () => {
       <Dishes />
 
       <Desserts />
-      <Boosters />
 
       
     

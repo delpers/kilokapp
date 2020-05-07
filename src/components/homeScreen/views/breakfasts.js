@@ -26,11 +26,10 @@ export default function Breakfasts() {
       render={data => (
         <div className="m-w p-i pb-0 bg-w mt-32 ">
           <div>
-            <h3 className="mb-0 fs-48 pb-4">{data.home.title_breakfasts}</h3>
+            <h3 className="mb-0 fs-36 pb-4">{data.home.title_breakfasts}</h3>
             <span className="fs-18 text-gray">
               {data.home.description_breakfasts}
             </span>
-            <span className="border_b"></span>
           </div>
           <div className="sr-cards">
             {data.breakfast.edges.map(edge => {
