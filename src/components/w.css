@@ -214,7 +214,7 @@
   padding: 10px;
 }
 .m-w {
-  max-width: 1140px;
+  max-width: 1090px;
   margin: 0 auto;
 }
 .i-t {
@@ -579,7 +579,7 @@ th {
   }
 }
 .sr-cards {
-  grid-gap: 32px;
+  grid-gap: 15px;
   display: flex;
   margin: 0 auto;
   margin-top: 32px;
@@ -649,7 +649,7 @@ th {
     display: block;
   }
   .sr-cards {
-    grid-gap: 32px !important;
+    grid-gap: 15px !important;
   }
   .mediaLR {
     width: auto !important;
