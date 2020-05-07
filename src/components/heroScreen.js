@@ -26,7 +26,6 @@ export default function heroScreen() {
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               width: "100%",
-              height: "380px",
               color: "initial",
               borderRadius: "0",
             }}

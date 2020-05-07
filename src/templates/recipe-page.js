@@ -108,7 +108,7 @@ const cookingRecipe = props => {
             </span>
 
             <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-14 bg-blue mr-p">
+              <span className="fs-14 bg-pink mr-p">
                 <i className="fas fa-check-circle"></i>{" "}
                 {props.data.contentfulRecipes.time}
               </span>

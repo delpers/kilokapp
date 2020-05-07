@@ -250,6 +250,14 @@ header {
   border-radius: 2px;
   color: white !important;
 }
+.bg-pink {
+  padding: 6px 12px;
+  float: left;
+  background: #ff7571 !important;
+  border-radius: 2px;
+  color: white !important;
+}
+
 .border-c {
   border: 1px solid rgba(217, 219, 224, 0.5);
 }
@@ -524,8 +532,8 @@ header {
   padding: 8px;
 }
 .p-home-screen {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 td,
 th {
