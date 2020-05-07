@@ -27,7 +27,7 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #f8f8f8;
+  background: #FCFCFC;
 `
 
 const FVegetablesRecipes = props => {
