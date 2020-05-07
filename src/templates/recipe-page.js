@@ -49,7 +49,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #FFF;
+  background: #FCFCFC;
   header {
     background: white !important;
     position: relative !important;
@@ -219,7 +219,7 @@ const cookingRecipe = props => {
             </div>
           </div>
 
-          <div className="m-w-100p100 bg-w ml-32 border">
+          <div className="m-w-100p100 bg-w ml-32">
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Valeur nutritive
