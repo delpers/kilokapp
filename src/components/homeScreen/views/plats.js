@@ -43,8 +43,8 @@ export default function Plats() {
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
-                      height: "170px",
-                      width: "270px",
+                      height: "200px",
+                      width: "320px",
                       borderRadius: "0",
                     }}
                   >

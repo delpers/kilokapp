@@ -214,7 +214,7 @@
   padding: 10px;
 }
 .m-w {
-  max-width: 1280px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 .i-t {
@@ -304,7 +304,8 @@ header {
   font-size: 18px;
 }
 .mask-thumb-h {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(7, 7, 7, 0.47));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(7, 7, 7, 0.47)); */
+  
   z-index: 1;
   display: block;
   padding-top: 70px;
@@ -376,7 +377,9 @@ header {
   background-position: bottom;
   color: white;
 }
-
+.w-screen-home {
+  background-color: #fff2f1;
+}
 .ais-Hits-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -411,7 +414,9 @@ header {
   padding-bottom: 8px;
 }
 .mask-thumb {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    /*   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+*/
+
   z-index: 1;
   display: block;
 }
@@ -518,6 +523,10 @@ header {
 .p-8 {
   padding: 8px;
 }
+.p-home-screen {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 td,
 th {
   border-bottom: 1px solid rgb(248, 248, 248);
@@ -559,7 +568,7 @@ th {
   scrollbar-width: thin;
 }
 .m-w-780 {
-  max-width: 780px;
+  max-width: 688px;
 }
 .mt-32 {
   margin-top: 32px !important;
@@ -645,7 +654,7 @@ th {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  
   .p-160-0 {
     padding: 60px 0;
   }

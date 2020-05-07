@@ -49,32 +49,19 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f8f8f8;
+  background: #FFF;
+  header {
+    background: white !important;
+    position: relative !important;
+    box-shadow: rgba(16, 25, 30, 0.08) 0px 1px 4px 0px;
+  }
 `
 const cookingRecipe = props => {
   return (
     <Background>
       <Layout key={props.data.contentfulRecipes.id}>
         <SEO title={props.data.contentfulRecipes.title} />
-        <div className="sticky blue">
-          <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
-              {props.data.contentfulRecipes.numberOfPersons}
-            </span>
-
-            <span className="i-link fs-16 b-b-g mr-15 font-bold text-white">
-              <i className="fas fa-file-medical-alt  mr-15"></i>{" "}
-              {props.data.contentfulRecipes.medicalNumber}
-            </span>
-
-            <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-14 bg-blue mr-p">
-                <i className="fas fa-check-circle"></i>{" "}
-                {props.data.contentfulRecipes.time}
-              </span>
-            </div>
-          </div>
-        </div>
+       
 
         <div
           className="w-screen p-100-0 pb-0 p-h ml-i-8"
@@ -84,7 +71,7 @@ const cookingRecipe = props => {
               props.data.contentfulRecipes
                 .childContentfulRecipesFeaturedImageJsonNode.secure_url +
               ")",
-            backgroundPosition: "center",
+            backgroundPosition: "initial",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
@@ -107,6 +94,26 @@ const cookingRecipe = props => {
               </section>
             </div>
           </span>
+        </div>
+
+        <div className="sticky b-solid-b">
+          <div className="m-w p-i ">
+            <span className="i-link fs-16 b-b-g mr-15 font-bold">
+              {props.data.contentfulRecipes.numberOfPersons}
+            </span>
+
+            <span className="i-link fs-16 b-b-g mr-15 font-bold">
+              <i className="fas fa-file-medical-alt  mr-15"></i>{" "}
+              {props.data.contentfulRecipes.medicalNumber}
+            </span>
+
+            <div className="t-d fl-r mb-15 mt_i5">
+              <span className="fs-14 bg-blue mr-p">
+                <i className="fas fa-check-circle"></i>{" "}
+                {props.data.contentfulRecipes.time}
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="row m-w pt-0i mt-32">
@@ -212,7 +219,7 @@ const cookingRecipe = props => {
             </div>
           </div>
 
-          <div className="m-w-100p100 bg-w ml-32">
+          <div className="m-w-100p100 bg-w ml-32 border">
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Valeur nutritive

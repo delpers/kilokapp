@@ -24,6 +24,11 @@ export const query = graphql`
 
 const Background = styled.div`
   background: #f8f8f8;
+  header {
+    background: white !important;
+    position: relative !important;
+    box-shadow: rgba(16, 25, 30, 0.08) 0px 1px 4px 0px;
+  }
 `
 
 const BoostersRecipes = props => {
