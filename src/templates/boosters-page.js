@@ -23,7 +23,7 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #FCFCFC;
+  background: #f8f9fb;
   header {
     background: white !important;
     position: relative !important;

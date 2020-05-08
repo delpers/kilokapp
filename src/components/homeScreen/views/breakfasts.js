@@ -43,8 +43,8 @@ export default function Breakfasts() {
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
-                      height: "250px",
-                      width: "400px",
+                      height: "160px",
+                      width: "251px",
                       borderRadius: "0",
                     }}
                   >
