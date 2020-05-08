@@ -628,7 +628,10 @@ th {
   }.w-screen-home {
     background-position-x: 56% !important;
     background-size: cover !important;
-  }
+  }.p-home-screen {
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
+}
 }
 
 @media only screen and (max-width: 834px) {
