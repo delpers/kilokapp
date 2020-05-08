@@ -626,8 +626,8 @@ th {
   }.cards-n {
     margin-right: 15px !important;
   }.w-screen-home {
-    background-position-x: 56%;
-    background-size: cover;
+    background-position-x: 56% !important;
+    background-size: cover !important;
   }
 }
 
@@ -706,8 +706,8 @@ th {
   }.cards-n {
     margin-right: 15px !important;
   }.w-screen-home {
-    background-position-x: 56%;
-    background-size: cover;
+    background-position-x: 56% !important;
+    background-size: cover !important;
   }
 }
 
