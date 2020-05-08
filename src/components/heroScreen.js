@@ -33,7 +33,7 @@ export default function heroScreen() {
             <div className="m-w p-i pb-0 pt-0">
               <section>
                 <h1 className="w-50">{data.contentfulHomePage.titleHome}</h1>
-                <p className="mb-0">
+                <p className="mb-0 mr-h-15">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

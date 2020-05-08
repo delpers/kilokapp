@@ -626,11 +626,13 @@ th {
   }.cards-n {
     margin-right: 15px !important;
   }.w-screen-home {
-    background-position-x: 56% !important;
+    background-position-x: 55.64% !important;
     background-size: cover !important;
   }.p-home-screen {
     padding-top: 110px !important;
     padding-bottom: 110px !important;
+}.mr-h-15 {
+  margin-right: 15px;
 }
 }
 
@@ -709,7 +711,7 @@ th {
   }.cards-n {
     margin-right: 15px !important;
   }.w-screen-home {
-    background-position-x: 56% !important;
+    background-position-x: 55.64% !important;
     background-size: cover !important;
   }
 }
