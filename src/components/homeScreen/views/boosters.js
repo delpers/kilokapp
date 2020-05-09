@@ -51,7 +51,7 @@ export default function Boosters() {
                     <span className="cards-n">
                       <span className="mt-10-b">
                         <Link
-                          className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                          className="i-link fs-16 b-b-g mr-15 font-bold c-u"
                           to={`/booster/${edge.node.slug}/`}
                         >
                           {edge.node.title}
