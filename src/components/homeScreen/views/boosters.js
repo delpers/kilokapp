@@ -43,8 +43,8 @@ export default function Boosters() {
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
-                      height: "160px",
-                      width: "251px",
+                      height: "190px",
+                      width: "300px",
                       borderRadius: "0px",
                     }}
                   >
