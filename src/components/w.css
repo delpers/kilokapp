@@ -641,6 +641,8 @@ th {
     padding-bottom: 110px !important;
 }.mr-h-15 {
   margin-right: 15px;
+}.media {
+  margin-right: 15px !important;
 }
 }
 
