@@ -22,16 +22,17 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-
-      <footer className="b-solid-top p-32 fs-16">
-        © {new Date().getFullYear()}, {` `}
-        <a className="i-link font-bold" href="https://kiloka.io/">
-          Kiloka France
-        </a>
-        <Link className="i-link font-bold ml-15" to="/page/mentions-legales">
-          Mentions légales
-        </Link>
-      </footer>
+      <div className="b-solid-top bg-w">
+        <footer className="p-32 fs-16 m-w p-i">
+          © {new Date().getFullYear()}, {` `}
+          <a className="i-link font-bold" href="https://kiloka.io/">
+            Kiloka France
+          </a>
+          <Link className="i-link font-bold ml-15" to="/page/mentions-legales">
+            Mentions légales
+          </Link>
+        </footer>
+      </div>
     </>
   )
 }

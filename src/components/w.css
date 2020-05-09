@@ -9,7 +9,7 @@
   border-bottom: 1px solid rgb(248, 248, 248);
 }
 .fs-16 {
-  font-size: 16.64px;
+  font-size: 16px;
 }
 .fs-14 {
   font-size: 14.64px;
@@ -76,17 +76,20 @@
   text-decoration: none;
 }
 .g-btn {
-  background: transparent;
-  color: #00909ead !important;
+  background: #74bae1;
+  color: white;
   margin: 0 20px;
+      margin-bottom: 0px;
   margin-bottom: 0px;
   margin-bottom: 0px;
-  padding: 9.64px 18.27px;
+  padding: 16px 32px;
   display: inline-block;
   margin-bottom: 20px;
   border-radius: 1.64px;
   font-size: 16px;
-  border: 2px solid #00909ead;
+  border: 2px solid #74bae1;
+  width: 50%;
+  text-align: center;
 }
 .c-pink {
   color: #fe544b;
@@ -262,8 +265,14 @@ header {
   background: #ff7571 !important;
   border-radius: 2px;
   color: white !important;
-}
-
+} 
+.bg-wl {
+  padding: 6px 12px;
+  float: left;
+  background: #7dcea9 !important;
+  border-radius: 2px;
+  color: white !important;
+} 
 .border-c {
   border: 1px solid rgba(217, 219, 224, 0.5);
 }
@@ -329,7 +338,6 @@ header {
   padding-top: 0;
   width: 251px;
   height: 160px;
-  background-color: #fff2f1;
 }
 .c-t {
   color: black;
@@ -808,5 +816,9 @@ th {
     padding: 11px 7px 50px 69px;
     counter-increment: directions;
     position: relative;
+  }.sticky {
+    background: transparent !important;
+  }.p-i {
+    padding: 0 !important;
   }
 }

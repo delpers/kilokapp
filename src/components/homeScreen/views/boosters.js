@@ -11,6 +11,9 @@ export default function Boosters() {
               node {
                 title
                 slug
+                picture: childContentfulBoostersImageJsonNode {
+                  secure_url
+                }
               }
             }
           }
@@ -32,7 +35,19 @@ export default function Boosters() {
             {data.booster.edges.map(edge => {
               return (
                 <div className="" key={edge.node.id}>
-                  <div className="">
+                  <div
+                    className="media"
+                    style={{
+                      backgroundImage:
+                        "url(" + edge.node.picture.secure_url + ")",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                      height: "160px",
+                      width: "251px",
+                      borderRadius: "4px",
+                    }}
+                  >
                     <span className="cards-n">
                       <span className="mt-10-b">
                         <Link

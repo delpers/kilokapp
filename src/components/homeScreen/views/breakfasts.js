@@ -36,7 +36,7 @@ export default function Breakfasts() {
               return (
                 <div className="mr-32 mr-32 shadow-sm" key={edge.node.id}>
                   <div
-                    className="media shadow-sm"
+                    className="media"
                     style={{
                       backgroundImage:
                         "url(" + edge.node.picture.secure_url + ")",
@@ -45,7 +45,7 @@ export default function Breakfasts() {
                       backgroundRepeat: "no-repeat",
                       height: "160px",
                       width: "251px",
-                      borderRadius: "0",
+                      borderRadius: "4px",
                     }}
                   >
                     <span className="mask-thumb-h">

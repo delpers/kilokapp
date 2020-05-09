@@ -9,6 +9,9 @@ export const query = graphql`
     booster: contentfulBoosters(slug: { eq: $slug }) {
       title
       slug
+      picture: childContentfulBoostersImageJsonNode {
+        secure_url
+      }
       bList {
         title
         slug
@@ -27,7 +30,6 @@ const Background = styled.div`
   header {
     background: white !important;
     position: relative !important;
-    box-shadow: rgba(16, 25, 30, 0.08) 0px 1px 4px 0px;
   }
 `
 
@@ -37,7 +39,18 @@ const BoostersRecipes = props => {
       <Layout>
         <SEO title={props.data.booster.title} />
 
-        <div className="w-screen p-120-0">
+        <div className="w-screen p-120-0" style={{
+            backgroundImage:
+              "url(" +
+              props.data.booster
+                .picture.secure_url +
+              ")",
+            backgroundPosition: "left",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            color: "initial",
+          }}
+        >
           <div className="m-w p-i pb-0 pt-0">
             <section>
               <h1>{props.data.booster.title}</h1>
@@ -73,7 +86,7 @@ const BoostersRecipes = props => {
                       </div>
                     </div>
                   </div>
-                )
+                ) || null
               })}
             </div>
           </div>

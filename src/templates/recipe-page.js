@@ -49,7 +49,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f9f9f9;
+  background: #F7F7F7;
   header {
     background: white !important;
     position: relative !important;
@@ -96,7 +96,7 @@ const cookingRecipe = props => {
           </span>
         </div>
 
-        <div className="sticky b-solid-b">
+        <div className="sticky">
           <div className="m-w p-i ">
             <span className="i-link fs-16 b-b-g mr-15 font-bold">
               {props.data.contentfulRecipes.numberOfPersons}
@@ -108,7 +108,7 @@ const cookingRecipe = props => {
             </span>
 
             <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-14 bg-pink mr-p">
+              <span className="fs-14 bg-wl mr-p">
                 <i className="fas fa-check-circle"></i>{" "}
                 {props.data.contentfulRecipes.time}
               </span>
