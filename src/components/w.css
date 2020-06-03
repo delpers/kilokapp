@@ -53,7 +53,7 @@ background-repeat: no-repeat;
   width: auto;
 }
 .end {
-  justify-content: end !important;
+  justify-content: right !important;
 }
 .btn-login {
   background: #ff7571;
