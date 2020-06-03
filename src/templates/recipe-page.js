@@ -229,7 +229,7 @@ const cookingRecipe = props => {
                    )
                   })
                 : (
-                  <div className="p-i">N/A</div>
+                  <div className="">Aucune données disponible</div>
                 )
               
               }
