@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+
 const Header = ({ siteTitle }) => (
   <header 
     style={{
@@ -53,6 +54,10 @@ const Header = ({ siteTitle }) => (
 
         <Link className="btn_h" to="/login">
           Connexion
+          </Link>
+
+          <Link className="btn_h_r" to="/register">
+          Inscription
           </Link>
         </div>
 

@@ -16,6 +16,22 @@ audio, canvas, progress, video {
   border-radius: 2px;
   text-decoration: none;
 
+  
+}
+.font-bold {
+  font-weight: bold !important;
+}
+.btn_h_r{
+  background: #ff7571;
+  padding: 16px 32px;
+  color: aliceblue;
+  border-radius: 2px;
+  text-decoration: none;
+
+  
+}
+.btn_h_r {
+  display: none;
 }
 .pt0 {
   padding: 0;
@@ -349,7 +365,10 @@ background-size: 7%;
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: bold;
+}
+.fs18 {
+  font-size: 18px;
 }
 
 .blogPost {
@@ -357,6 +376,16 @@ background-size: 7%;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
 }
+.brp {
+  border-right: 2px solid #ff7571;
+}
+._kilokapr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+
+
 .p-hr {
   padding-top: 280px !important;
 }
@@ -1123,6 +1152,8 @@ width: 70px;
 }.bm01b {
   border: 0;
   border-bottom: 1px solid rgba(217, 219, 224, 0.5);
+}._kilokapr {
+  display: block;
 }
 }
 
