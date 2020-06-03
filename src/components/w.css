@@ -7,7 +7,7 @@ audio, canvas, progress, video {
 }
 ::-webkit-scrollbar {
   height: 6px;
-  background-color:red;
+  background-color:blue;
 }
 .pt0 {
   padding: 0;
