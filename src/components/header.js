@@ -51,7 +51,9 @@ const Header = ({ siteTitle }) => (
           <i className="fas fa-search lgw"></i>
         </Link>      </h1>
 
- 
+        <Link className="btn_h" to="/login">
+          Connexion
+          </Link>
         </div>
 
     </div>

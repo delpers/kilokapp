@@ -9,6 +9,14 @@ audio, canvas, progress, video {
   height: 6px;
   background-color:blue;
 }
+.btn_h {
+  background: #ff7571;
+  padding: 16px 32px;
+  color: aliceblue;
+  border-radius: 2px;
+  text-decoration: none;
+
+}
 .pt0 {
   padding: 0;
 }
