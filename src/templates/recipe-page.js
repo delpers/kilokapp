@@ -206,25 +206,33 @@ const cookingRecipe = props => {
               </div>
 
               <table className="d-grid m-w mt-1 ns-print mt-32 pb-0 p-15">
-                {props.data.contentfulRecipes.nFacts.map(dataFACTS => {
-                  return (
+
+
+{props.data.contentfulRecipes.nFacts != null
+  ? props.data.contentfulRecipes.nFacts.map((mv, i) => {
+      return (
                     <tbody
-                      id={dataFACTS.id}
+                      key={i}
                       className=" bg-w ns-print bg-w-c d-table"
                     >
                       <tr className="fs-16 _print_w ns-print">
                         <th className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap align-left">
-                          {dataFACTS.title}
+                          {mv.title}
                         </th>
 
                         <th className="fs-16 text-gray pr-15 align-right">
-                          {dataFACTS.amount}
-                          <strong className="initial">{dataFACTS.type}</strong>
+                          {mv.amount}
+                          <strong className="initial">{mv.type}</strong>
                         </th>
                       </tr>
                     </tbody>
-                  )
-                })}
+                   )
+                  })
+                : (
+                  <div className="p-i">N/A</div>
+                )
+              
+              }
               </table>
             </div>
 
