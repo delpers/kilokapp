@@ -14,7 +14,7 @@ export default function MediaLinks() {
 
       <a
         className="fl-r i-link fs-16 b-b-g mr-15 font-bold"
-        href="https://www.facebook.com/"
+        href="https://www.spotify.com/"
         alt="Spotify"
         target="_blank"
       >
@@ -23,7 +23,7 @@ export default function MediaLinks() {
 
       <a
         className="fl-r i-link fs-16 b-b-g mr-15 font-bold"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/kilokafr"
         alt="Spotify"
         target="_blank"
       >

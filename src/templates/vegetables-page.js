@@ -10,6 +10,10 @@ export const query = graphql`
       title
       slug
       category
+      getBoosters
+      image: childContentfulFruitsVegetablesImageJsonNode {
+        secure_url
+      }
       dataRecipes {
         id
         title
@@ -38,21 +42,52 @@ const FVegetablesRecipes = props => {
 
         <div className="w-screen p-120-0">
           <div className="m-w p-i pb-0 pt-0">
-            <section>
-              <h1 id={props.data.vegetable.slug}>
-                {props.data.vegetable.title}
+            <section className="row">
+           
+         
+
+
+
+
+        <div> 
+          
+           <h1 id={props.data.vegetable.slug}>
+              {props.data.vegetable.title} 
               </h1>
               <p className="mb-0"> {props.data.vegetable.category}</p>
-            </section>
-          </div>
-        </div>
+ </div>
+            
 
+
+ <div> 
+
+<div className="tfd">
+                          {props.data.vegetable.getBoosters.map(datafl => {
+                            return (
+                              <span
+                                id={datafl.contentful_id}
+                                className="p-16-20 align-left  pb-0"
+                              >
+                                {datafl}
+                              </span>
+                            )
+                          })}
+                        </div>
+                        </div>
+
+
+            </section>
+
+            
+        </div>
+        </div>
         <div>
           <div>
             <div className="rl rl-mobile m-w p-i ">
-              {props.data.vegetable.dataRecipes.map(edge => {
-                return (
-                  <div id={edge.id} className="mb-20 border ">
+                  {props.data.vegetable.dataRecipes != null ? (
+                    props.data.vegetable.dataRecipes.map((edge, i) => {
+                      return (
+                  <div className="mb-20 border " key={i}>
                     <div
                       className="mediaLR"
                       style={{
@@ -92,25 +127,31 @@ const FVegetablesRecipes = props => {
                             {edge.numberOfPersons}{" "}
                           </span>
                         </div>
+                        
                       </div>
 
                       <div className="b-solid-top">
                         <div className="pt-15 ">
                           <i className="fas fa-file-medical-alt c-g mr-15"></i>
-                          {edge.for.map(dataFor => (
+                          {edge.for != null
+                  ? edge.for.map((mv, i) => {
+                      return (
+
                             <span
                               className="fs-14 text-gray pr-15"
-                              key={dataFor.instructions}
+                              key={i}
                             >
-                              {dataFor}
+                              {mv.for}
                             </span>
-                          ))}
+                                   )
+                                  })
+                                : null}
                         </div>
                       </div>
                     </div>
                   </div>
-                )
-              })}
+                )})) : (null)
+              }
             </div>
           </div>
         </div>

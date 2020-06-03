@@ -8,6 +8,8 @@ import Entry from "../components/homeScreen/views/starters"
 import Dishes from "../components/homeScreen/views/plats"
 import Desserts from "../components/homeScreen/views/desserts"
 import Boosters from "../components/homeScreen/views/boosters"
+import Training from "../components/homeScreen/views/training"
+import Calandar from "../components/homeScreen/views/month"
 
 
 
@@ -29,8 +31,9 @@ const HomePage = () => {
       <Dishes />
 
       <Desserts />
-
+      
       <Boosters />
+
 
     
 

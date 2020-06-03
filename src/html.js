@@ -12,6 +12,8 @@ export default function HTML(props) {
           integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
           crossorigin="anonymous"
         ></script>
+        <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 
         <meta
           name="viewport"

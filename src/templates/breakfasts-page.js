@@ -12,6 +12,9 @@ export const query = graphql`
       childContentfulCookingBreakfastsDescriptionTextNode {
         description
       }
+      picture: childContentfulCookingBreakfastsFeaturedImageJsonNode {
+        secure_url
+      }
       recipesRecettes {
         id
         title
@@ -30,6 +33,13 @@ export const query = graphql`
 
 const Background = styled.div`
   background: #f8f9fb;
+  header {
+    background: white !important;
+  }
+  .cl {
+    color: white !important;
+  }
+ 
 `
 
 const eRecipes = props => {
@@ -38,9 +48,21 @@ const eRecipes = props => {
       <Layout>
         <SEO title={props.data.breakfast.title} />
 
-        <div className="w-screen p-120-0">
-          <div className="m-w p-i pb-0 pt-0">
-            <section>
+        <div className="w-screen " style={{
+                        backgroundImage:
+                          "url(" +
+                          props.data.breakfast.picture
+                            .secure_url +
+                          ")",
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        borderRadius: "0",
+                      }}>
+          <div className="mask-thumb-cat p-50-0">
+          <div className="m-w p-i pb-0 pt-0 cl" >
+
+
               <h1>{props.data.breakfast.title}</h1>
               <p className="mb-0">
                 {" "}
@@ -50,16 +72,17 @@ const eRecipes = props => {
                     .description
                 }
               </p>
-            </section>
-          </div>
-        </div>
 
+
+          </div>
+        </div>   </div>
         <div>
           <div>
-            <div className="rl rl-mobile m-w p-i ">
-              {props.data.breakfast.recipesRecettes.map(edge => {
-                return (
-                  <div id={edge.id} className="mb-20 bg-w  border  ">
+            <div className="rl rl-mobile m-w p-i mt-32  ">
+                  {props.data.breakfast.recipesRecettes != null ? (
+                    props.data.breakfast.recipesRecettes.map((edge, i) => {
+                      return (
+                  <div id={edge.id} className="mb-20 bg-w  border shadow-sm br-4 " key={i}>
                     <div
                       className="mediaLR"
                       style={{
@@ -71,15 +94,15 @@ const eRecipes = props => {
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
-                        height: "230px",
+                         height: "230px",
                         width: "374px",
-                        borderRadius: "0",
+                        borderRadius: "4px 4px 0px 0px",
                       }}
                     ></div>
 
-                    <div className="mt-10 p-15 fs-16  ">
+                    <div className="mt-10 p-15 fs-18  ">
                       <Link
-                        className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
+                        className="i-link fs-18 b-b-g mr-15 font-bold mb-15 nowrap"
                         to={`/recette/${edge.slug}/`}
                       >
                         {edge.title}
@@ -89,7 +112,7 @@ const eRecipes = props => {
                         <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
-                            <i className="fas fa-check-circle"></i> {edge.time}{" "}
+                            <i className="fas fa-check-circle"></i> {edge.time} min(s){" "}
                           </span>
                         </div>
                         <div className="bg-w-c pl-0">
@@ -104,20 +127,27 @@ const eRecipes = props => {
                       <div className="b-solid-top">
                         <div className="pt-15 ">
                           <i className="fas fa-file-medical-alt c-g mr-15"></i>
-                          {edge.for.map(dataFor => (
+
+                          {edge.for != null
+                  ? edge.for.map((mv, i) => {
+                      return (
+
+
                             <span
                               className="fs-14 text-gray pr-15"
-                              key={dataFor.instructions}
+                              key={i}
                             >
-                              {dataFor}
+                              {mv.for}
                             </span>
-                          ))}
+                            )
+                    })
+                  : null}
                         </div>
                       </div>
                     </div>
                   </div>
-                )
-              })}
+                 )})) : (null)
+                }
             </div>
           </div>
         </div>

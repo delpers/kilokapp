@@ -36,7 +36,7 @@ const SearchPreview = ({ hit }) => {
                 <div className="t-d fl-r mb-15">
                   <span className="fs-14 bg-g">
                     {" "}
-                    <i className="fas fa-check-circle"></i> {hit.time}{" "}
+                    <i className="fas fa-check-circle"></i> {hit.time} min(s){" "}
                   </span>
                 </div>
                 <div className="bg-w-c pl-0">
@@ -56,14 +56,15 @@ const SearchPreview = ({ hit }) => {
               <div className="b-solid-top">
                 <div className="pt-15 ">
                   <i className="fas fa-file-medical-alt c-g mr-15"></i>
-                  {hit.for.map(dataFor => (
-                    <span
-                      className="fs-14 text-gray pr-15"
-                      key={dataFor.instructions}
-                    >
-                      {dataFor}
-                    </span>
-                  ))}
+                  {hit.for != null
+                    ? hit.for.map((mv, i) => {
+                        return (
+                          <span className="fs-14 text-gray pr-15" key={i}>
+                            {mv.for}
+                          </span>
+                        )
+                      })
+                    : null}
                 </div>
               </div>
             </div>

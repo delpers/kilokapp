@@ -48,8 +48,12 @@ const BlogPost = props => {
           src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
+        <div className="m-w p-i">
 
-        {documentToReactComponents(props.data.post.body.json, options)}
+     
+
+        {documentToReactComponents(props.data.post.body.json, options)}      </div>
+
       </div>
       <div className="">
         <div className="m-w p-i">

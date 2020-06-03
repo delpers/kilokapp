@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+
 export const query = graphql`
   query($slug: String!) {
     contentfulRecipes(slug: { eq: $slug }) {
@@ -32,7 +33,7 @@ export const query = graphql`
         }
       }
       nFacts {
-        contentful_id
+        id
         title
         amount
         type
@@ -43,17 +44,19 @@ export const query = graphql`
         slug
         calories
         stockage
-        getBoosters
+        image: childContentfulFruitsVegetablesImageJsonNode {
+          secure_url
+        }
       }
     }
   }
 `
 const Background = styled.div`
-  background: #F7F7F7;
+  background: #FFF;
   header {
     background: white !important;
     position: relative !important;
-    box-shadow: rgba(16, 25, 30, 0.08) 0px 1px 4px 0px;
+    box-shadow: none !important;
   }
 `
 const cookingRecipe = props => {
@@ -64,20 +67,19 @@ const cookingRecipe = props => {
        
 
         <div
-          className="w-screen p-100-0 pb-0 p-h ml-i-8"
+          className="w-screen p-100-0 pb-0 p-hr ml-i-8"
           style={{
             backgroundImage:
               "url(" +
               props.data.contentfulRecipes
                 .childContentfulRecipesFeaturedImageJsonNode.secure_url +
               ")",
-            backgroundPosition: "initial",
+            backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
         >
-          <span className="mask-thumb">
-            <div className="m-w p-i ">
+            <div className="m-w p-i recipe-title">
               <section>
                 <img
                   className="dn w_print"
@@ -88,36 +90,42 @@ const cookingRecipe = props => {
                   }
                 ></img>
 
-                <h1 className="fs-6rem">
+<h1 className="fs-24 uppercase title_print m0">
                   {props.data.contentfulRecipes.title}
                 </h1>
               </section>
             </div>
-          </span>
         </div>
 
-        <div className="sticky">
+        <div className="sticky b-solid-b">
           <div className="m-w p-i ">
             <span className="i-link fs-16 b-b-g mr-15 font-bold">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
             <span className="i-link fs-16 b-b-g mr-15 font-bold">
-              <i className="fas fa-file-medical-alt  mr-15"></i>{" "}
+              <i className="fas fa-file-medical-alt  mr-15 c-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
 
             <div className="t-d fl-r mb-15 mt_i5">
               <span className="fs-14 bg-wl mr-p">
                 <i className="fas fa-check-circle"></i>{" "}
-                {props.data.contentfulRecipes.time}
+                {props.data.contentfulRecipes.time} min(s).
               </span>
             </div>
           </div>
         </div>
 
+
+
         <div className="row m-w pt-0i mt-32">
+          <div> 
           <div className="m-w-780">
+
+
+          <div className="border br-4 mb-32">
+
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
               {props.data.contentfulRecipes.ingredientsNumbers} Ingrédients.
             </h3>
@@ -138,16 +146,20 @@ const cookingRecipe = props => {
                 )
               })}
             </div>
+            </div>
 
+
+<div className="border br-4">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w ">
               Directions.
             </h3>
             <div className="mt-1 mb-32">
-              {props.data.contentfulRecipes.dRecipe.map(dataDr => {
+              {props.data.contentfulRecipes.dRecipe.map((dataDr,i) => {
                 return (
                   <div
                     id={dataDr.id}
                     className=" bg-w ns-print bg-w-c p-20 mb-1"
+                    key={i}
                   >
                     <div className="fs-16 _print_w ns-print  mt-1">
                       <h3 className="text-gray  i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap tl">
@@ -156,70 +168,26 @@ const cookingRecipe = props => {
                       <span className="fs-16 pr-15">
                         {dataDr.direction.direction}
                       </span>
+                      </div>
+
                     </div>
-                  </div>
                 )
               })}
             </div>
+            </div>
 
-            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
-              Nutriments
-            </h3>
 
-            <div className="m-w boosters bg-w  mb-32 mt-1-s">
-              <div className="getBoosters getBoosters-mobile m-w">
-                {props.data.contentfulRecipes.boosters.map(dataFLC => {
-                  return (
-                    <div className="mb-32 bg-w w-391 br-1" id={dataFLC.id}>
-                      <div className="">
-                        <h3 className="i-link fs-24 b-b-g font-bold mb-0 nowrap p-i pb-0">
-                          {dataFLC.title}
-                        </h3>
+            </div>
 
-                        <div className=" p-i fs-14 pb-0">
-                          <span className="">
-                            <i className="fas fa-burn mr-5"></i>
-                            {dataFLC.calories} <strong>Kcal</strong>/ 100 gr.
-                          </span>
-                        </div>
-                        <div className=" p-i fs-14">
-                          <span className="color-black">
-                            <i className="fas fa-check-circle mr-5"></i>
-                            {dataFLC.stockage}
-                          </span>
-                        </div>
 
-                        <div className="">
-                          <Link
-                            to={`/recettes/base/${dataFLC.slug}/`}
-                            alt="Découvrez"
-                            className="g-btn td-none "
-                          >
-                            <i className="fas fa-link"></i> Afficher la liste
-                          </Link>
-                        </div>
+            <div>
 
-                        <div className="tfd">
-                          {dataFLC.getBoosters.map(datafl => {
-                            return (
-                              <span
-                                id={datafl.contentful_id}
-                                className="p-16-20 align-left  pb-0"
-                              >
-                                {datafl}
-                              </span>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
             </div>
           </div>
 
-          <div className="m-w-100p100 bg-w ml-32">
+          
+
+          <div className="m-w-100p100 bg-w ml-32 border br-4">
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Valeur nutritive
@@ -265,20 +233,88 @@ const cookingRecipe = props => {
                 Allergène(s)
               </h3>
               <div className="db">
-                {props.data.contentfulRecipes.allergen.map(dataALRG => {
-                  return (
+              
+
+                    {props.data.contentfulRecipes.allergen != null
+                      ? props.data.contentfulRecipes.allergen.map((mv, i) => {
+                          return (
+    
                     <div
                       className="p-i fs-18 b-solid-b"
-                      id={dataALRG.contentful_id}
+                      key={i}
                     >
-                      <i className="fas fa-caret-right mr-5"></i> {dataALRG}
+                      <i className="fas fa-caret-right mr-5"></i> {mv.allergen}
                     </div>
-                  )
-                })}
+                    )
+                  })
+                : (
+                  <div className="p-i">N/A</div>
+                )
+              
+              }
               </div>
             </div>
           </div>
-        </div>
+         
+
+
+          </div>
+
+
+<div className="none-print">
+
+
+<h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
+              Nutriments
+            </h3>
+
+            <div className="rl rl-mobile m-w p-i  p0-m">
+                {props.data.contentfulRecipes.boosters.map(dataFLC => {
+                  return (
+                    <div className="bg-w p-15 flex-m border bm01b mb-32 " id={dataFLC.id}>
+                      <div
+          className="w-screen p-80-0 perfect-bg pbg-m"
+          style={{
+              backgroundImage:
+              "url(" + dataFLC.image.secure_url + ")",
+              backgroundSize: "50%",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              margin: "0 10%",
+          }}
+        > </div> 
+<div>
+<Link
+                            to={`/recettes/base/${dataFLC.slug}/`}
+                            alt="Découvrez"
+                            className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap p-15 pb-0"
+                          >
+                          {dataFLC.title}
+                          </Link>
+
+                          
+                          <div className=" p-15 fs-14 pb-0">
+                            <span className="">
+                              <i className="fas fa-burn mr-5"></i>{" "}
+                              {dataFLC.calories} <strong>Cal(s)</strong> · 100 gr.
+                            </span>
+                          </div>
+                          <div className=" p-15 fs-14">
+                            <span className="color-black">
+                              <i className="fas fa-check-circle mr-5"></i>{" "}
+                              {dataFLC.stockage}
+                            </span>
+                            </div>
+
+                            </div>
+                            </div>
+
+                  )
+                })}
+            </div>
+          </div>
+
+        
       </Layout>
     </Background>
   )
