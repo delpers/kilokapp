@@ -213,6 +213,12 @@ transition: all 0.17s ease-out 0s;
   padding: 0 80px;
   color: #484848 !important;
 }
+.w50mf {
+  margin-bottom: 20px;
+font-size: 62px;
+line-height: 72px;
+font-weight: 500;
+}
 .blog-title {
   font-size: 4rem;
   line-height: 8rem;
@@ -326,6 +332,7 @@ background-size: 7%;
 .br-4 {
   border-radius: 4px;
 }
+
 .p-160-0 {
   padding: 160px 0;
 }
@@ -339,8 +346,11 @@ background-size: 7%;
   padding: 100px 0;
 }
 .w-50 {
-  max-width: 50%;
+  max-width: 655px;
   margin-top: -4px;
+}
+.mw374 {
+  max-width: 374px;
 }
 .mt-32 {
   margin-top: 32px !important;
@@ -939,8 +949,8 @@ margin-top: 20px;
   padding: 8px;
 }
 .p-home-screen {
-  padding-top: 140px;
-  padding-bottom: 80px;
+  padding-top: 220px;
+  padding-bottom: 220px;
 }
 td,
 th {

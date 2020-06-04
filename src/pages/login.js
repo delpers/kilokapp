@@ -31,8 +31,7 @@ const SearchPage = () => (
       </div>
 
       <div className="m-w p-i pb-0  ">
-        <h1>Welcome</h1>
-        <p>Sign in for more content !</p>
+        <p>Formulaire de connexion</p>
       </div>
     </Layout>
   </Background>

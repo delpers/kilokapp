@@ -117,7 +117,7 @@ const FVegetablesRecipes = props => {
                         <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
-                            <i className="fas fa-check-circle"></i> {edge.time}{" "}
+                            <i className="fas fa-check-circle"></i> {edge.time}  min(s){" "}
                           </span>
                         </div>
                         <div className="bg-w-c pl-0">

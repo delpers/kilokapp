@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 const Background = styled.div`
   background: #f8f8f8;
   .btn_h {
-      display: none !important;
+      display: block !important;
   }
   .btn_h_r {
-    display: block !important;
+    display: none !important;
 }
 `
 
@@ -35,7 +35,11 @@ const SearchPage = () => (
 
       <div className="m-w p-i pb-0  ">
 
-
+      <div>
+    
+    <p>Formulaire d'inscription</p>
+    
+    </div>
         <div className="_kilokapr mt-32 mb-32 ">
 
             <div className="brp">             <h2>Pourquoi passer à Premium ?</h2>
@@ -62,16 +66,9 @@ Vous pouvez modifier la date avec nous si nécessaire.</p>
 
 
         </div>
+        </div>
 
 
-
-<div className="center">
-
-<h1>Choisissez votre offre Kiloka Premium</h1>
-        <p>Kiloka sans limites, votre enceinte et d'autres appareils.</p>
-</div>
-        
-      </div>
     </Layout>
   </Background>
 )
