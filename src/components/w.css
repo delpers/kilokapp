@@ -1254,7 +1254,10 @@ width: 70px;
   }.w-screen-home {
     background-position-x: 55.64% !important;
     background-size: cover !important;
-    height: 100vh;
+    height: 90vh;
+  }.home-details {
+    height: 90vh;
+
   }.p-flex {
     display: grid;
   } .pw-50 {
