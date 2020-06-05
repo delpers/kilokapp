@@ -32,8 +32,7 @@ export const query = graphql`
 const Background = styled.div`
   background: #f8f9fb;
   header {
-    background: white !important;
-    position: relative !important;
+    position: absolute !important;
     border: 0 !important;
   }
 `
@@ -49,10 +48,10 @@ const BoostersRecipes = props => {
           style={{
             backgroundImage:
               "url(" + props.data.booster.picture.secure_url + ")",
-            backgroundSize: "contain",
+            backgroundSize: "70%",
             backgroundColor: props.data.booster.backgroundColor,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "left",
+            backgroundPosition: "center",
             color: "initial",
           }}
         >

@@ -789,15 +789,23 @@ header {
   font-weight: normal;
   margin-bottom: 15px;
 }
+.home-details {
+  height: 100vh;
+  align-content: center;
+  bottom: 0;
+  display: grid;
+}
 .w-screen {
   background: #ffffff;
+  height: 100vh;
 
   background-size: cover;
   background-position: bottom;
   color: initial;
 }
 .w-screen-home {
-  background-color: #fff2f0;
+  background-color: #fbf3eb;
+  
 }
 .ais-Hits-list {
   display: grid;
@@ -1053,6 +1061,10 @@ th {
   }.w-screen-home {
     background-position-x: 55.64% !important;
     background-size: cover !important;
+    height: 100%;
+  overflow: auto;
+  /* enable smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
   }.p-home-screen {
     padding-top: 110px !important;
     padding-bottom: 80px !important;
@@ -1242,6 +1254,7 @@ width: 70px;
   }.w-screen-home {
     background-position-x: 55.64% !important;
     background-size: cover !important;
+    height: 100vh;
   }.p-flex {
     display: grid;
   } .pw-50 {

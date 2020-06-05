@@ -12,7 +12,6 @@ import Training from "../components/homeScreen/views/training"
 import Calandar from "../components/homeScreen/views/month"
 
 
-
 const HomePage = () => {
  
   return (
@@ -31,9 +30,10 @@ const HomePage = () => {
       <Dishes />
 
       <Desserts />
+
       
       <Boosters />
-
+      <Training />
 
     
 
