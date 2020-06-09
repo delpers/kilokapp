@@ -199,6 +199,32 @@ transition: all 0.17s ease-out 0s;
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
+.bg_blue {
+  background: #109db9;
+
+text-align: center;
+
+padding-top: 80px;
+
+padding-bottom: 80px;
+}
+.prenium_title {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  max-width: 100%;
+  width: auto;
+  font-size: 80px;
+  color: white;
+  padding: 32px 0;
+
+}
+.prenium_subtitle {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 300;}
 .ads {
   text-align: center;
   max-width: 1440px;
@@ -207,6 +233,55 @@ transition: all 0.17s ease-out 0s;
   background: #fafafa;
   border: 1px solid #dbdbdb;
   padding: 15px;
+}
+.footer_blue {
+  background: #1a2b49;
+}
+.footer_blue a {
+  color: white;
+}
+.button_reverse {
+  background: transparent;
+
+  border: 2px solid white;
+  
+  border-radius: 5rem;
+  
+  padding: 24px 64px;
+  
+  color: white;
+  
+  font-weight: bold;
+  
+  font-size: 18px;
+  
+  text-decoration: none;
+}
+.button_pw {
+  background: white;
+
+  border: 1px solid transparent;
+  
+  border-radius: 5rem;
+  
+  padding: 24px 64px;
+  
+  color: black;
+  
+  font-weight: bold;
+  
+  font-size: 18px;
+  
+  text-decoration: none;
+}
+.grp {
+
+  grid-gap: 32px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+
 }
 .blue_p {
   background: #5682ca;

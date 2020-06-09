@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <div className="b-solid-top  p-100-0">
+      <div className="  p-100-0 footer_blue">
         <footer className="p-32 fs-16 m-w p-i footer-gr">
          
 
