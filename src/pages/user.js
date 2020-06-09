@@ -60,6 +60,7 @@ const UserPage = () => (
             <h3 className="fw300 fs18">
               Take full advantage of sports programs.
             </h3>
+            <h3 className="fw300 fs18">No advertising.</h3>
           </div>
 
           <div>
