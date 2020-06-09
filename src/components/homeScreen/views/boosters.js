@@ -26,7 +26,7 @@ export default function Boosters() {
       render={data => (
         <div className="m-w p-i pb-0 pt-m-32 ">
           <div className="">
-            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_boosters}</h4>
+            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_boosters} (Prenium)</h4> 
             <span className="fs-18 text-gray dn-m">
               {data.home.description_boosters}
             </span>

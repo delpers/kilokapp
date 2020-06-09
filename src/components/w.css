@@ -199,6 +199,21 @@ transition: all 0.17s ease-out 0s;
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
+.blue_p {
+  background: #5682ca;
+  color: white;
+  border: transparent;
+  padding: 15px 48px;
+  border-radius: 2px;
+}
+.btn_o {
+  background: #e14545;
+  border: transparent;
+  padding: 16px 32px;
+  border-radius: 2px;
+  color: white;
+}
+
 .m-b-plus {
   margin-bottom: 6px;
 }
@@ -446,7 +461,7 @@ background: transparent;
 }
 
 .shadow-sm {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px;
+  box-shadow: none;
 }
 .mask-thumb-cat {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
@@ -797,7 +812,6 @@ header {
 }
 .w-screen {
   background: #ffffff;
-  height: 100vh;
 
   background-size: cover;
   background-position: bottom;
@@ -1176,6 +1190,8 @@ width: 70px;
   border-bottom: 1px solid rgba(217, 219, 224, 0.5);
 }._kilokapr {
   display: block;
+} .rl-mobile {
+  padding: 0;
 }
 }
 

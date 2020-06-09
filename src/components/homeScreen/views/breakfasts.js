@@ -26,7 +26,7 @@ export default function Breakfasts() {
       render={data => (
         <div className="m-w p-i pb-0 mt-64 pt-m-32">
           <div>
-            <h3 className="mb-0 fs-24 pb-4 title-m">{data.home.title_breakfasts}</h3>
+            <h3 className="mb-0 fs-24 pb-4 title-m">{data.home.title_breakfasts} </h3>
             <span className="fs-18 text-gray dn-m">
               {data.home.description_breakfasts}
             </span>
