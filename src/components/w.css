@@ -45,6 +45,13 @@ audio, canvas, progress, video {
   background-color: #3d4852;
   border-radius: 3px;
 }
+._logow {
+  background: url("../../src/images/kiloka_white.svg");
+  width: 160px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 ._logo {
   background: url("../../src/images/kiloka_black.svg");
   width: 160px;
@@ -171,6 +178,9 @@ audio, canvas, progress, video {
 .color-w {
   color: white !important;
 }
+.color-black {
+  color: black !important;
+}
 .title_pe {
   font-size: 80px !important;
   line-height: 1.2;
@@ -211,7 +221,7 @@ transition: all 0.17s ease-out 0s;
   padding-bottom: 24px !important;
 }
 .bg_blue {
-  background: #4da2e9;
+  background: #f8fbff;
 
 text-align: center;
 
@@ -227,14 +237,12 @@ padding-bottom: 100px;
   max-width: 100%;
   width: auto;
   font-size: 80px;
-  color: white;
   padding: 32px 0;
 
 }
 .prenium_subtitle {
   font-size: 24px;
   text-align: center;
-  color: white;
   font-weight: 300;}
 .ads {
   text-align: center;
@@ -254,13 +262,13 @@ padding-bottom: 100px;
 .button_reverse {
   background: transparent;
 
-  border: 2px solid white;
+  border: 2px solid #4ca1e8;
   
   border-radius: 5rem;
   
   padding: 24px 64px;
   
-  color: white;
+  color: #4ca1e8 !important;
   
   font-weight: bold;
   
@@ -269,7 +277,7 @@ padding-bottom: 100px;
   text-decoration: none;
 }
 .button_pw {
-  background: white;
+  background: #4ca1e8;
 
   border: 1px solid transparent;
   
@@ -277,7 +285,7 @@ padding-bottom: 100px;
   
   padding: 24px 64px;
   
-  color: black;
+  color: white;
   
   font-weight: bold;
   
@@ -913,7 +921,7 @@ header {
   color: initial;
 }
 .w-screen-home {
-  background-color: #fff5f1;
+  background-color: #f8fbff;
   background-image: url("../../src/images/SVG/brand.svg") !important;
 
   height: 800px;

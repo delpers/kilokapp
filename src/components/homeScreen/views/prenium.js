@@ -11,14 +11,14 @@ const Prenium = ({ siteTitle }) => (
 
 <div className="db"> 
 
-    <Link to="/" className="button_pw db">Passer à Kiloka Premium</Link>
+    <Link to="/" className="button_pw db ">Passer à Kiloka Premium</Link>
 
 </div>
 <div className="db"> 
 
         
           <Link to="/"
-        className="button_reverse db">En savoir plus</Link>
+        className="button_reverse db color-black">En savoir plus</Link>
 
 
 </div>
@@ -32,7 +32,7 @@ const Prenium = ({ siteTitle }) => (
     <div className="align-center mt-32">
         <span>
 
-            <Link to="/cgv" className="cw fs-16">Offre soumise à nos Conditions générales d'utilisation.</Link>
+            <Link to="/cgv" className="color-black fs-16">Offre soumise à nos Conditions générales d'utilisation.</Link>
         </span>
     </div>
   </div>

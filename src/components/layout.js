@@ -22,7 +22,9 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <div className="  p-100-0">
+    
+      <div className="  p-100-0 bg-w">
+
         <footer className="p-32 fs-16 m-w p-i footer-gr">
          
 
@@ -78,9 +80,10 @@ const Layout = ({ children }) => {
        
           
           </div>
-          <div className="kilokaFooter"></div>
 
         <div>
+        <div className="kilokaFooter"></div>
+
         <p className=""> © {new Date().getFullYear()}, {` `}
           <a className="i-link  " href="https://kiloka.io/">
             Kiloka France

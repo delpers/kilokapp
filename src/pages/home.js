@@ -21,8 +21,9 @@ const HomePage = () => {
       <SEO title="Accueil" />
 
       <HeroScreen />
-      
+
       <StickyNav />
+      <Calandar />
 
 
       <Breakfasts />
