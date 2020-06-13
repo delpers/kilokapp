@@ -97,7 +97,7 @@ const cookingRecipe = props => {
             </div>
         </div>
 
-        <div className="sticky b-solid-b">
+        <div className="sticky">
           <div className="m-w p-i ">
             <span className="i-link fs-16 b-b-g mr-15 font-bold">
               {props.data.contentfulRecipes.numberOfPersons}

@@ -45,11 +45,11 @@ audio, canvas, progress, video {
   border-radius: 3px;
 }
 ._logo {
-  background-size: contain;
-  background: url("../../src/images/logo.svg");
-  width: 234px;
-height: 36px;
-background-repeat: no-repeat;
+  background: url("../../src/images/kiloka_black.svg");
+  width: 175px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
 }.css-ok35s6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -119,11 +119,12 @@ background-repeat: no-repeat;
 }
 .kilokaFooter {
   background: url("../../src/images/kiloka_black.svg");
-  width: 200px;
-  height: auto;
+  width: 175px;
+  height: 50px;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .border {
   border: 1px solid rgba(231, 231, 231, 0.58);
 }
@@ -213,9 +214,9 @@ transition: all 0.17s ease-out 0s;
 
 text-align: center;
 
-padding-top: 80px;
+padding-top: 100px;
 
-padding-bottom: 80px;
+padding-bottom: 100px;
 }
 .prenium_title {
   line-height: 1.2;
@@ -230,7 +231,7 @@ padding-bottom: 80px;
 
 }
 .prenium_subtitle {
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   color: white;
   font-weight: 300;}
@@ -898,7 +899,7 @@ header {
   margin-bottom: 15px;
 }
 .home-details {
-  height: 100vh;
+  height: 800px;
   align-content: center;
   bottom: 0;
   display: grid;
@@ -912,6 +913,7 @@ header {
 }
 .w-screen-home {
   background-color: #4ca1e6;
+  height: 800px;
   
 }
 .ais-Hits-list {
@@ -1031,9 +1033,8 @@ margin-top: 20px;
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: white;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #231f20;
 }
 .link a {
   color: black;
@@ -1363,7 +1364,7 @@ width: 70px;
   }.w-screen-home {
     background-position-x: 55.64% !important;
     background-size: cover !important;
-    height: 88vh;
+    height: 800px;
   }.home-details {
     height: 88vh;
 

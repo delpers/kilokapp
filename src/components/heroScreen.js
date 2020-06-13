@@ -32,8 +32,8 @@ export default function heroScreen() {
           >
             <div className="m-w p-i home-details">
               <section>
-                <h1 className="w-50 w50mf">{data.contentfulHomePage.titleHome}</h1>
-                <p className="mb-0 mr-h-15 mw374">
+                <h1 className="w-50 w50mf cw">{data.contentfulHomePage.titleHome}</h1>
+                <p className="mb-0 mr-h-15 mw374 cw">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

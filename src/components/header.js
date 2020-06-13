@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
 
           }}
         >
-          <p className="pt0 m0 fw300">Kiloka</p>
+          <p className="_logo"></p>
         </Link>
        
       </h1>

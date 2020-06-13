@@ -85,14 +85,14 @@ const cookingRecipe = props => {
 
         <div className="sticky">
           <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15 font-bold"></span>
+            <span className="i-link fs-16 b-b-g mr-15 font-bold cw"></span>
 
-            <span className="i-link fs-16 b-b-g mr-15 font-bold">
+            <span className="i-link fs-16 b-b-g mr-15 font-bold cw">
               <i className="fas fa-heart mr-8"></i>{" "}
               {props.data.contentfulTraining.level}
             </span>
 
-            <span className="i-link fs-16 b-b-g mr-15 font-bold ">
+            <span className="i-link fs-16 b-b-g mr-15 font-bold cw ">
               <i className="fa fa-calendar-week mr-8"></i>{" "}
               {props.data.contentfulTraining.nWeeks}
             </span>

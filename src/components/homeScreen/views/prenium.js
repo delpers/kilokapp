@@ -3,7 +3,7 @@ import React from "react"
 
 const Prenium = ({ siteTitle }) => (
   <div className="bg_blue">
-    <h1 className="prenium_title">Kiloka Explore </h1>
+    <h1 className="prenium_title pt-0">Vaincre vos dépendances</h1>
 <h4 className="prenium_subtitle">Accès à toutes les recettes et programmes sportifs, sans publicité.</h4>
 
 
