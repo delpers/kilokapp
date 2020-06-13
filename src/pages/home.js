@@ -23,6 +23,7 @@ const HomePage = () => {
       <HeroScreen />
 
       <StickyNav />
+
       <Calandar />
 
 
@@ -30,7 +31,6 @@ const HomePage = () => {
     
       <Entry />
 
-      <Ads />
 
       
 

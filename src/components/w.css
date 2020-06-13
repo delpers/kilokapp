@@ -54,7 +54,7 @@ audio, canvas, progress, video {
 }
 ._logo {
   background: url("../../src/images/kiloka_black.svg");
-  width: 160px;
+  width: 120px;
   height: 45px;
   background-position: center;
   background-repeat: no-repeat;
@@ -682,11 +682,18 @@ font-weight: 600;
   font-weight: 500;
   color: #00aa71;
 }
+.featured {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 0;
+}
 .cw {
   color: white !important;
 }
 .p-50-0 {
-  padding: 50px 0;
+  padding: 100px 0;
+  margin-bottom: 32px;
 }
 .mt-10-b {
   margin-top: 10px;

@@ -35,6 +35,8 @@ const Background = styled.div`
   background: #f8f9fb;
   header {
     background: white !important;
+    position: relative !important;
+
   }
   .cl {
     color: white !important;
@@ -76,29 +78,18 @@ const DishesRecipes = props => {
           </div>
         </div>   </div>
         <div>
-          <div>
-            <div className="rl rl-mobile m-w p-i ">
+          <div className="mb-32">
+            <div className="blogPost blogPost-mobile m-w p-i ">
                   {props.data.dessert.recipesRecettes != null ? (
                     props.data.dessert.recipesRecettes.map((edge, i) => {
                       return (
                   <div className="mb-20 border bg-w shadow-sm br-4" key={i}>
-                    <div
-                      className="mediaLR"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          edge.childContentfulRecipesFeaturedImageJsonNode
-                            .secure_url +
-                          ")",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                         height: "230px",
-                        width: "374px",
-                        borderRadius: "4px 4px 0px 0px",
-
-                      }}
-                    ></div>
+                    
+<img
+                className="featured"
+                src={edge.childContentfulRecipesFeaturedImageJsonNode.secure_url}
+                alt={edge.title}
+              />
 
                     <div className="mt-10 p-15 fs-18 ">
                       <Link

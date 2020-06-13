@@ -35,6 +35,8 @@ const Background = styled.div`
   background: #f8f9fb;
   header {
     background: white !important;
+    position: relative !important;
+
   }
   .cl {
     color: white !important;
@@ -77,28 +79,21 @@ const eRecipes = props => {
           </div>
         </div>   </div>
         <div>
-          <div>
-            <div className="rl rl-mobile m-w p-i mt-32  ">
+          <div className="mb-32">
+            <div className="blogPost blogPost-mobile m-w p-i  ">
                   {props.data.breakfast.recipesRecettes != null ? (
                     props.data.breakfast.recipesRecettes.map((edge, i) => {
                       return (
                   <div id={edge.id} className="mb-20 bg-w  border shadow-sm br-4 " key={i}>
-                    <div
-                      className="mediaLR"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          edge.childContentfulRecipesFeaturedImageJsonNode
-                            .secure_url +
-                          ")",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                         height: "230px",
-                        width: "374px",
-                        borderRadius: "4px 4px 0px 0px",
-                      }}
-                    ></div>
+               
+
+
+<img
+                className="featured"
+                src={edge.childContentfulRecipesFeaturedImageJsonNode.secure_url}
+                alt={edge.title}
+              />
+
 
                     <div className="mt-10 p-15 fs-18  ">
                       <Link
@@ -108,7 +103,7 @@ const eRecipes = props => {
                         {edge.title}
                       </Link>
 
-                      <div>
+                      <div >
                         <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}

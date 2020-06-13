@@ -29,7 +29,7 @@ export default function Training() {
 
         <div className=" pe-blue p-i pb-0 pt-m-32 nowrap prog">
           <div className="m-w p-i pb-0 pt-m-32 ">
-            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_trainings} (Prenium)</h4>
+            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_trainings}</h4>
             <span className="fs-18 text-gray dn-m">{data.home.description_trainings}</span>
           
           </div>
