@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
 
           }}
         >
-          <p className="_logo"></p>
+          <p className="_logo mb-0"></p>
         </Link>
        
       </h1>
