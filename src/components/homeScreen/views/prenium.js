@@ -29,10 +29,10 @@ const Prenium = ({ siteTitle }) => (
 </div>
 
 
-    <div className="align-center">
+    <div className="align-center mt-32">
         <span>
 
-            <a href="#">Offre soumise à nos Conditions générales d'utilisation.</a>
+            <Link to="/cgv" className="cw fs-16">Offre soumise à nos Conditions générales d'utilisation.</Link>
         </span>
     </div>
   </div>

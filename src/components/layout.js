@@ -22,13 +22,13 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <div className="  p-100-0 footer_blue">
+      <div className="  p-100-0">
         <footer className="p-32 fs-16 m-w p-i footer-gr">
          
 
           <div className=" ">
             
-          <div className="  uppercase fs-14 bold font-bold mb-32">Entreprise</div>
+          <div className="  uppercase fs-14 bold font-bold mb-32 ">Entreprise</div>
 
 <Link className="i-link   db mb-15" to="/page/about">
           A propos
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           </div>
          <div className=" ">
            
-         <div className="  uppercase fs-14 bold font-bold mb-32">Communautés</div>
+         <div className="  uppercase fs-14 bold font-bold mb-32 ">Communautés</div>
 
 
  <Link className="i-link   db mb-15" to="/">
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
           </div>
          <div className=" ">
 
-         <div className="  uppercase fs-14 bold font-bold mb-32">Liens utiles</div>
+         <div className="  uppercase fs-14 bold font-bold mb-32 ">Liens utiles</div>
 
          <a className="i-link    db mb-15" target="_bank" href="https://www.facebook.com/kilokafr">
           Facebook
@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
          </div>
          <div className=" ">
            
-         <div className="  uppercase fs-14 bold font-bold mb-32">Légales</div>
+         <div className="  uppercase fs-14 bold font-bold mb-32 ">Légales</div>
 
 <Link className="i-link    db mb-15" to="/page/mentions-legales">
             Mentions légales
@@ -78,10 +78,14 @@ const Layout = ({ children }) => {
        
           
           </div>
-         <p> © {new Date().getFullYear()}, {` `}
+          <div className="kilokaFooter"></div>
+
+        <div>
+        <p className=""> © {new Date().getFullYear()}, {` `}
           <a className="i-link  " href="https://kiloka.io/">
             Kiloka France
-          </a></p>
+          </a></p> 
+        </div>
         </footer>
       </div>
     </>

@@ -18,6 +18,7 @@ audio, canvas, progress, video {
 
   
 }
+
 .font-bold {
   font-weight: bold !important;
 }
@@ -68,6 +69,7 @@ background-repeat: no-repeat;
   align-items: center;
   width: auto;
 }
+
 .end {
   justify-content: right !important;
 }
@@ -115,6 +117,13 @@ background-repeat: no-repeat;
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
 }
+.kilokaFooter {
+  background: url("../../src/images/kiloka_black.svg");
+  width: 200px;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .border {
   border: 1px solid rgba(231, 231, 231, 0.58);
 }
@@ -142,7 +151,7 @@ background-repeat: no-repeat;
 .init {
   text-align: justify;
   line-height: 36px;
-  color: #3e3e3e;
+  color: #2b2b3a;
   margin-bottom: 64px !important;
 }
 .p-32-0 {
@@ -200,7 +209,7 @@ transition: all 0.17s ease-out 0s;
   padding-bottom: 24px !important;
 }
 .bg_blue {
-  background: #109db9;
+  background: #4da2e9;
 
 text-align: center;
 
@@ -902,7 +911,7 @@ header {
   color: initial;
 }
 .w-screen-home {
-  background-color: #fbf3eb;
+  background-color: #4ca1e6;
   
 }
 .ais-Hits-list {
