@@ -930,8 +930,7 @@ header {
   color: initial;
 }
 .w-screen-home {
-  background-color: #f8fbff;
-  background-image: url("../../src/images/SVG/brand.svg") !important;
+  background-color: #4ca1e8;
 
   height: 800px;
   

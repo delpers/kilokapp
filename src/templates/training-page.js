@@ -38,7 +38,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f4f4f4;
+  background: #FFF;
   header {
     background: #fd9f62 !important;
     position: relative !important;
