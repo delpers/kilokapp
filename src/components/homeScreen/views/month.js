@@ -21,7 +21,7 @@ export default function Calandar() {
         }
       `}
       render={data => (
-        <div className="m-w p-i pb-0 pt-m-32 mt-64">
+        <div className="m-w p-i pb-0  mt-64">
           <div className="">
             <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_month}</h4>
             <span className="fs-18 text-gray dn-m">

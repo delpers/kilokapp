@@ -24,7 +24,7 @@ export default function Plats() {
         }
       `}
       render={data => (
-        <div className="m-w p-i pb-0 pt-m-32 ">
+        <div className="m-w p-i pb-0  ">
           <div className="mb-100">
             <h3 className="mw728 mb-0 fs-24 pb-4 title-m title-blem">{data.home.title_plats} </h3>
             <span className="pl text-gray mw728">

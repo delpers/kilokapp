@@ -24,7 +24,7 @@ export default function Training() {
       `}
       render={data => (
 
-        <div className=" pe-blue p-i pb-0 pt-m-32  prog">
+        <div className=" pe-blue p-i pb-0   prog">
 
 
           
