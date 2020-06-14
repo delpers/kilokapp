@@ -27,7 +27,6 @@ export default function heroScreen() {
               backgroundRepeat: "no-repeat",
               width: "100%",
               color: "initial",
-              borderRadius: "0",
             }}
           >
             <div className="m-w p-i home-details">
