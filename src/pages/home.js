@@ -24,7 +24,6 @@ const HomePage = () => {
 
       <StickyNav />
 
-      <Calandar />
 
 
       <Breakfasts />

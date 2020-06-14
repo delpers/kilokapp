@@ -25,43 +25,42 @@ export default function Breakfasts() {
       `}
       render={data => (
         <div className="m-w p-i pb-0 mt-64 pt-m-32">
-          <div>
-            <h3 className="mb-0 fs-24 pb-4 title-m">{data.home.title_breakfasts} </h3>
-            <span className="fs-18 text-gray dn-m">
+           <div className="mb-100">
+            <h3 className="mw728 mb-0 fs-24 pb-4 title-m title-blem">{data.home.title_breakfasts} </h3>
+            <span className="pl text-gray mw728">
               {data.home.description_breakfasts}
             </span>
           </div>
-          <div className="sr-cards">
+          <div className="card-des">
             {
               data.breakfast.edges.length>0 ? (
                 data.breakfast.edges.map((edge,i) => {
                   return (
-                    <div className="" key={i}>
-                      <div
-                        className="media"
-                        style={{
-                          backgroundImage:
-                            "url(" + edge.node.picture.secure_url + ")",
-                          backgroundPosition: "center",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          height: "220px",
-                          width: "340px",
-                          borderRadius: "2px",
-                        }}
-                      >
-                        <span className="mask-thumb-h">
-                          <span className="mt-10-b">
-                            <Link
-                              className="i-link fs-16 b-b-g mr-15 font-bold c-t"
-                              to={`/breakfast/recettes/${edge.node.slug}/`}
-                            >
-                              {edge.node.title}
-                            </Link>
-                          </span>
-                        </span>
-                      </div>
-                    </div>
+                    <div className="additions-card__container" key={i}>
+                    <div
+                      className="media"
+                      style={{
+                        backgroundImage:
+                          "url(" + edge.node.picture.secure_url + ")",
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        height: "75px",
+                        width: "75px",
+                      }}
+                    />
+                    <div className="addiction-card__text">
+                    <Link
+                            className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                            to={`/breakfast/recettes/${edge.node.slug}/`}
+                          >
+                            {edge.node.title}
+                          </Link>
+
+                          </div>
+
+
+                  </div>
                   )
                   })
               ) : (

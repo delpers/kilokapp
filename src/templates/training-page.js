@@ -40,7 +40,7 @@ export const query = graphql`
 const Background = styled.div`
   background: #FFF;
   header {
-    background: #fd9f62 !important;
+    background: #82CEA9 !important;
     position: relative !important;
   }
 `
@@ -54,7 +54,7 @@ const cookingRecipe = props => {
           className="w-screen p-100-0 pt-0 pb-0  ml-i-8"
           style={{
            
-            backgroundColor: "#fd9f62",
+            backgroundColor: "#82CEA9",
           }}
         >
           <span className="i-190">

@@ -836,12 +836,29 @@ header {
   border-radius: 0px;
 }
 .c-t {
-  color: white;
   font-size: 18px;
   padding: 26px;
   text-align: left;
   margin-right: 0;
   margin-top: 132px;
+}
+.addiction-card__text {
+  margin-top: 32px;
+color: #47455a;
+line-height: 24px;
+font-weight: 500;
+text-align: center;
+}
+.additions-card__container {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
 }
 .c-v {
   color: white;
@@ -1148,6 +1165,15 @@ th {
   margin: 0 auto;
   margin-bottom: 100px;
 }
+.card-des {
+  display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 32px;
+max-width: 1160px;
+margin: 0 auto;
+    margin-bottom: 0px;
+margin-bottom: 100px;
+}
 .src-b {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1239,7 +1265,6 @@ width: 327px;
   letter-spacing: -1.16px;
   color: black;
 }.c-t {
-  color: white;
   font-size: 18px;
   padding: 26px;
   text-align: left;
