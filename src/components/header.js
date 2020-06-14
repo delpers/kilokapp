@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `0`,
       background: "transparent",
       width: `100%`,
-      position: `absolute`,
+      position: `relative`,
     }}
   >
     <div
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
               maxWidth: "50%",
             }}
           >
-            <p className="_logow mb-0"></p>
+            <p className="_logo mb-0"></p>
           </Link>
         </h1>
       </div>

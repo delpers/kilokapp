@@ -937,8 +937,7 @@ overflow: hidden;
   margin-bottom: 15px;
 }
 .home-details {
-  height: 800px;
-  align-content: center;
+padding: 90px 20px;  align-content: center;
   bottom: 0;
   display: grid;
 }
@@ -952,7 +951,6 @@ overflow: hidden;
 .w-screen-home {
   background-color: #4ca1e8;
 
-  height: 800px;
   
 }
 .ais-Hits-list {
@@ -1238,7 +1236,7 @@ margin-bottom: 100px;
 
 
 }.additions-card__container {
-  width: auto !important; 
+  width: max-content !important; 
 }.c-t {
   font-size: 14px;
 font-weight: 300 !important;
@@ -1264,6 +1262,11 @@ font-weight: 300 !important;
 }.sr-pe {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}.w50mf {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
 }
  
   
@@ -1440,10 +1443,6 @@ width: 70px;
   }.w-screen-home {
     background-position-x: 55.64% !important;
     background-size: cover !important;
-    height: 800px;
-  }.home-details {
-    height: 88vh;
-
   }.p-flex {
     display: grid;
   } .pw-50 {
