@@ -31,23 +31,23 @@ export default function Boosters() {
               {data.home.description_boosters}
             </span>
           </div>
-          <div className="sr-cards">
+          <div className="src-b">
             {
               data.booster.edges.length>0 ? (
                 data.booster.edges.map((edge,i) => {
                   return (
                     <div className="" key={i}>
                       <div
-                        className="media"
+                        className="media src-mb"
                         style={{
                           backgroundImage:
                             "url(" + edge.node.picture.secure_url + ")",
                           backgroundPosition: "center",
                           backgroundSize: "cover",
                           backgroundRepeat: "no-repeat",
-                          height: "220px",
-                          width: "340px",
-                          borderRadius: "2px",
+                          height: "160px",
+                          width: "250px",
+                          borderRadius: "0px",
                         }}
                       >
                         <span className="cards-n">

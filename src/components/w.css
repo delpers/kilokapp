@@ -849,14 +849,11 @@ header {
   margin-top: 250px;
 }
 .c-u {
-  color: #000000b5;
-  font-size: 18px;
-  padding: 00;
-  text-align: left;
-  margin-right: 0;
-  margin-top: -66px;
-  transform: rotate(-90deg);
-  margin-left: -148px;
+  color: black;
+text-align: left;
+margin-right: 0;
+margin-top: 108px;
+font-weight: 300 !important;
 }
 .orange-btn {
   background: #ef7044;
@@ -1146,6 +1143,14 @@ th {
   margin: 0 auto;
   margin-bottom: 100px;
 }
+.src-b {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
 .m-w-780 {
   width: 638px;
 }
@@ -1202,7 +1207,26 @@ width: 327px;
     height: 209px;
 
 
-}.s-screen {
+}.src-b {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)  !important;
+  grid-gap: 15px;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}.src-mb {
+  height: 99px  !important;
+width: 150px  !important;
+}.sr-pe {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+ 
+  
+  
+  
+  
+  .s-screen {
   padding: 20px;
   margin: 20px;
 }.fs-36 {
