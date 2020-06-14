@@ -28,7 +28,7 @@ export default function Training() {
 
 
           
-          <div className=" pt120 m-w p-i">
+          <div className=" pt120 m-w p-i ">
             <h2 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">{data.home.title_trainings}</h2>
             <p className="pl text-gray mw728 ">{data.home.description_trainings}</p>
           
@@ -43,10 +43,10 @@ export default function Training() {
                   return (
                     <div className="mt-10 fs-16   box" key={i}>
                       
-                        <span className=" nowrap i-link p-15">
+                        <span className=" nowrap i-link p-15 border radius">
                       
                           <Link
-                              className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
+                              className="i-link fs-16 b-b-g mr-15  mb-15 nowrap"
                               to={`/training/${edge.node.slug}/`}
                             >
                               {edge.node.title}

@@ -47,7 +47,7 @@ audio, canvas, progress, video {
 }
 ._logow {
   background: url("../../src/images/kiloka_white.svg");
-  width: 160px;
+  width: 120px;
   height: 45px;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,7 +156,9 @@ audio, canvas, progress, video {
   font-weight: 300 !important;
   margin-bottom: 0;
 }
-
+.mb-100 {
+  margin-bottom: 100px;
+}
 .init {
   text-align: justify;
   line-height: 36px;
@@ -208,8 +210,6 @@ audio, canvas, progress, video {
 }
 .box {
   background: white none repeat scroll 0% 0%;
-  box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px;
-transition: all 0.17s ease-out 0s;
 }
 
 .i-190 {
@@ -576,8 +576,9 @@ background: transparent;
 }
 
 .accordion{
-	transform: translateZ(0);
-  background: #fff;
+  transform: translateZ(0);
+  background: white;
+  margin-bottom: 32px;
 }
 
 .accordion > .accordion-toggle{
@@ -649,13 +650,15 @@ font-weight: 600;
   margin-right: 0 !important;
 }
 .day {
-  background: #279fd2;
+  background: #4ca1e8;
   display: inline;
   padding: 10px 17px;
   color: white;
-  border-radius: 2px;
+  border-radius: 5rem;
   font-size: 14px;
   margin-right: 10px;
+  margin-left: 20px;
+  font-weight: 300;
 }
 .p-i {
   padding: 20px;
@@ -849,11 +852,14 @@ header {
   margin-top: 250px;
 }
 .c-u {
-  color: black;
-text-align: left;
-margin-right: 0;
-margin-top: 108px;
-font-weight: 300 !important;
+  color: #000000ad;
+  text-align: left;
+  margin-right: 0;
+  margin-top: -105px;
+  transform: rotate(-90deg);
+  margin-left: -120px;
+  font-weight: 300 !important;
+  font-size: 14px;
 }
 .orange-btn {
   background: #ef7044;
@@ -1208,15 +1214,15 @@ width: 327px;
 
 
 }.src-b {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr)  !important;
   grid-gap: 15px;
-  max-width: 1160px;
+  display: flex;
   margin: 0 auto;
-  margin-bottom: 100px;
-}.src-mb {
-  height: 99px  !important;
-width: 150px  !important;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #f7f7f6 white;
 }.sr-pe {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

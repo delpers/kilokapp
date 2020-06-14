@@ -25,9 +25,9 @@ export default function Boosters() {
       `}
       render={data => (
         <div className="m-w p-i pb-0 pt-m-32 ">
-          <div className="">
-            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_boosters}</h4> 
-            <span className="fs-18 text-gray dn-m">
+          <div className="mb-100">
+            <h4 className="mw728 mb-0 fs-24 pb-4 title-m title-blem">{data.home.title_boosters}</h4> 
+            <span className="pl text-gray mw728 ">
               {data.home.description_boosters}
             </span>
           </div>

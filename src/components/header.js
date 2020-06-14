@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       className="css-15qsopm"
       style={{
         margin: `0 auto`,
-        maxWidth: 1090,
+        maxWidth: 1164,
         padding: `1.6rem 1.0875rem`,
       }}
     >
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
               maxWidth: "50%",
             }}
           >
-            <p className="_logo mb-0"></p>
+            <p className="_logow mb-0"></p>
           </Link>
         </h1>
       </div>

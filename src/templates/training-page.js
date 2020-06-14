@@ -38,10 +38,10 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f7f7f7;
+  background: #f4f4f4;
   header {
-    background: transparant !important;
-    position: absolute !important;
+    background: #fd9f62 !important;
+    position: relative !important;
   }
 `
 const cookingRecipe = props => {
@@ -51,20 +51,14 @@ const cookingRecipe = props => {
         <SEO title={props.data.contentfulTraining.title} />
 
         <div
-          className="w-screen p-100-0 pb-0 p-h ml-i-8"
+          className="w-screen p-100-0 pt-0 pb-0  ml-i-8"
           style={{
-            backgroundImage:
-              "url(" +
-              props.data.contentfulTraining.childContentfulTrainingImageJsonNode
-                .secure_url +
-              ")",
-            backgroundSize: "cover",
-            backgroundPosition: "top",
-            backgroundRepeat: "no-repeat",
+           
+            backgroundColor: "#fd9f62",
           }}
         >
-          <span className="mask-thumb-pr i-190">
-            <div className="m-w p-i ">
+          <span className="i-190">
+            <div className="m-w p-i m-w ">
               <section>
                 <img
                   className="dn w_print"
@@ -75,7 +69,7 @@ const cookingRecipe = props => {
                   }
                 ></img>
 
-                <h1 className="fs-6rem uppercase color-w">
+                <h1 className="fs-48 color-w  mw728">
                   {props.data.contentfulTraining.title}
                 </h1>
               </section>
@@ -85,25 +79,25 @@ const cookingRecipe = props => {
 
         <div className="sticky">
           <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15 font-bold cw"></span>
+            <span className="i-link fs-16 b-b-g mr-15  "></span>
 
-            <span className="i-link fs-16 b-b-g mr-15 font-bold cw">
+            <span className="i-link fs-16 b-b-g mr-15  ">
               <i className="fas fa-heart mr-8"></i>{" "}
               {props.data.contentfulTraining.level}
             </span>
 
-            <span className="i-link fs-16 b-b-g mr-15 font-bold cw ">
+            <span className="i-link fs-16 b-b-g mr-15   ">
               <i className="fa fa-calendar-week mr-8"></i>{" "}
               {props.data.contentfulTraining.nWeeks}
             </span>
           </div>
         </div>
 
-        <div className="row m-w pt-0i mt-32">
-          <div className="m-w">
+        <div className=" m-w pt-0i mt-32">
+          <div>
          
 
-            <div className="bg-w p-i">
+            <div className=" p-i">
               <div className="week mb-32">
                 {props.data.contentfulTraining.steps != null
                   ? props.data.contentfulTraining.steps.map((edge, i) => {
