@@ -173,7 +173,7 @@ audio, canvas, progress, video {
   margin-top: 10px !important;
 }
 .ig {
-  color: #79acd8;
+  color: #1cc996;
 }
 .color-w {
   color: white !important;
@@ -224,20 +224,15 @@ transition: all 0.17s ease-out 0s;
   background: #f8fbff;
 
 text-align: center;
-
-padding-top: 100px;
-
-padding-bottom: 100px;
+padding: 100px 5%;
 }
 .prenium_title {
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  font-weight: 900;
-  max-width: 100%;
-  width: auto;
-  font-size: 80px;
-  padding: 32px 0;
+  margin-bottom: 40px;
+  color: #4ca1e6;
+  font-weight: 500;
+
+  font-size: 36px;
+  line-height: 48px;
 
 }
 .prenium_subtitle {
@@ -260,47 +255,51 @@ padding-bottom: 100px;
   color: white;
 }
 .button_reverse {
-  background: transparent;
-
-  border: 2px solid #4ca1e8;
-  
-  border-radius: 5rem;
-  
-  padding: 24px 64px;
-  
-  color: #4ca1e8 !important;
-  
-  font-weight: bold;
-  
   font-size: 18px;
-  
   text-decoration: none;
+  font-weight: 300;
+  color: #737373 !important;
+
+}
+.title-ble {
+  font-size: 36px;
+line-height: 48px;
+margin-bottom: 32px !important;
+}
+.pl {
+  display: block;
+padding-top: 10px;
+font-size: 24px;
+font-weight: 400;
+line-height: 40px;
+}
+.mw728 {
+  max-width: 728px;
+}
+.pt120 {
+  padding-top: 120px;
 }
 .button_pw {
   background: #4ca1e8;
-
   border: 1px solid transparent;
-  
   border-radius: 5rem;
-  
-  padding: 24px 64px;
-  
+  padding: 17px 36px;
   color: white;
-  
-  font-weight: bold;
-  
   font-size: 18px;
-  
   text-decoration: none;
+  font-weight: 300;
 }
 .grp {
-
+display: grid;
   grid-gap: 32px;
-  display: flex;
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
 
+}
+.dif {
+  display: inline-flex;
+  margin: 0 auto;
 }
 .blue_p {
   background: #5682ca;
@@ -671,7 +670,7 @@ font-weight: 600;
   padding: 10px;
 }
 .m-w {
-  max-width: 1090px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .i-t {
@@ -1140,16 +1139,12 @@ th {
   scrollbar-color: #f7f7f6 white;
 }
 .sr-pe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
-  max-width: 1050px;
-  display: flex;
+  max-width: 1160px;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 60px;
-  padding-bottom: 64px;
-  overflow-x: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: rgb(76, 104, 255) white;
+  margin-bottom: 100px;
 }
 .m-w-780 {
   width: 638px;

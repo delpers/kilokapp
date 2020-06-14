@@ -13,9 +13,6 @@ export default function Training() {
                 slug
                 nWeeks
                 level
-                picture: childContentfulTrainingImageJsonNode {
-                  secure_url
-                }
               }
             }
           }
@@ -27,36 +24,25 @@ export default function Training() {
       `}
       render={data => (
 
-        <div className=" pe-blue p-i pb-0 pt-m-32 nowrap prog">
-          <div className="m-w p-i pb-0 pt-m-32 ">
-            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_trainings}</h4>
-            <span className="fs-18 text-gray dn-m">{data.home.description_trainings}</span>
+        <div className=" pe-blue p-i pb-0 pt-m-32  prog">
+
+
+          
+          <div className=" pt120 m-w p-i">
+            <h2 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">{data.home.title_trainings}</h2>
+            <p className="pl text-gray mw728 ">{data.home.description_trainings}</p>
           
           </div>
 
 
 
-          <div className="sr-pe">
+          <div className="sr-pe p-i">
             {
               data.training.edges.length>0 ? (
                 data.training.edges.map((edge,i) => {
                   return (
                     <div className="mt-10 fs-16   box" key={i}>
-                      <div
-                        className="sr-media"
-                        style={{
-                          backgroundImage:
-                            "url(" + edge.node.picture.secure_url + ")",
-                          backgroundPosition: "center",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          height: "310px",
-                          width: "508px",
-                          borderRadius: "0px",
-
-                        }}
-                       />
-
+                      
                         <span className=" nowrap i-link p-15">
                       
                           <Link

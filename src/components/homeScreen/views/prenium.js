@@ -3,22 +3,21 @@ import React from "react"
 
 const Prenium = ({ siteTitle }) => (
   <div className="bg_blue">
-    <h1 className="prenium_title pt-0">Vaincre vos dépendances</h1>
-<h4 className="prenium_subtitle">Accès à toutes les recettes et programmes sportifs, sans publicité.</h4>
+    <h1 className="prenium_title pt-0">Vous voulez en savoir plus sur le Kiloka ?</h1>
 
 
 <div className="grp">
 
-<div className="db"> 
+<div className="dif mt-10"> 
 
-    <Link to="/" className="button_pw db ">Passer à Kiloka Premium</Link>
+    <Link to="/" className="button_pw  ">Passer à Kiloka Premium</Link>
 
 </div>
 <div className="db"> 
 
         
           <Link to="/"
-        className="button_reverse db color-black">En savoir plus</Link>
+        className="button_reverse  color-black">En savoir plus</Link>
 
 
 </div>
@@ -29,12 +28,6 @@ const Prenium = ({ siteTitle }) => (
 </div>
 
 
-    <div className="align-center mt-32">
-        <span>
-
-            <Link to="/cgv" className="color-black fs-16">Offre soumise à nos Conditions générales d'utilisation.</Link>
-        </span>
-    </div>
   </div>
 )
 

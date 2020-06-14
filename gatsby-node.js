@@ -119,6 +119,89 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
 
+
+
+
+
+
+        
+        .then(() => {
+          graphql(
+            `
+              {
+                allContentfulTraining(limit: 1000) {
+                  edges {
+                    node {
+                      id
+                      slug
+                    }
+                  }
+                }
+              }
+            `
+          )
+          
+          .then(result => {
+            if (result.errors) {
+              reject(result.errors)
+            }
+  
+            const trainingTemplate = path.resolve(`./src/templates/training-page.js`)
+            req.each(result.data.allContentfulTraining.edges, edge => {
+              createPage({
+                path: `/training/${edge.node.slug}`,
+                component: slash(trainingTemplate),
+                context: {
+                  id: edge.node.id,
+                  slug: edge.node.slug,
+                },
+              })
+            })
+          })
+        })
+
+
+
+
+
+        .then(() => {
+          graphql(
+            `
+              {
+                allContentfulMonth(limit: 1000) {
+                  edges {
+                    node {
+                      id
+                      slug
+                    }
+                  }
+                }
+              }
+            `
+          )
+          
+          .then(result => {
+            if (result.errors) {
+              reject(result.errors)
+            }
+  
+            const mounthTemplate = path.resolve(`./src/templates/calandar-page.js`)
+            req.each(result.data.allContentfulMonth.edges, edge => {
+              createPage({
+                path: `/calandar/${edge.node.slug}`,
+                component: slash(mounthTemplate),
+                context: {
+                  id: edge.node.id,
+                  slug: edge.node.slug,
+                },
+              })
+            })
+          })
+        })
+
+
+
+
           .then(() => {
             graphql(
               `
