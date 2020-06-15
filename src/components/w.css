@@ -254,6 +254,15 @@ padding: 100px 5%;
 .footer_blue a {
   color: white;
 }
+.button_blue {
+    background: #4ca1e8;
+    color: white;
+    border-radius: 5rem;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-decoration: none;
+
+}
 .button_reverse {
   font-size: 18px;
   text-decoration: none;
@@ -501,6 +510,63 @@ background-size: 7%;
 .blogPost {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.info_mth {
+    background: #fafafa;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px;
+
+}
+.info_mti {
+  background: #fcfcfc;
+  border-top: 1px solid #f9f9f9;
+  text-align: left;
+  font-size: 16px;
+  padding: 14px;
+
+}
+.btnun {
+  background: white;
+  font-size: 16px;
+  padding: 8px 32px;
+  margin-top: 32px;
+  border-radius: 2px;
+  border: 2px solid #d54040;
+  color: #d54040;
+}
+.btndex {
+  background: #d54040;
+  font-size: 16px;
+  padding: 8px 32px;
+  margin-top: 32px;
+  border-radius: 2px;
+  color: white;
+  border: 2px solid transparent;
+}
+.bgb {
+  background: #4ca1e8;
+}
+.info_txt {
+  
+  text-align: center;
+  background: #5aafed;
+  color: white;
+  font-weight: 300 !important;
+  font-size: 16px;
+  padding: 7px;
+}
+.stripe_name {
+  text-align: center;
+color: white;
+font-size: 32px;
+padding: 24px;
+font-weight: bold;
+}
+.grd_f {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
 }
 .brp {
@@ -1235,6 +1301,10 @@ margin-bottom: 100px;
     height: 209px;
 
 
+}.grd_f {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 32px;
 }.additions-card__container {
   width: max-content !important; 
 }.c-t {

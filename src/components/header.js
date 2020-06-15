@@ -32,6 +32,8 @@ const Header = ({ siteTitle }) => (
           >
             <p className="_logo mb-0"></p>
           </Link>
+        
+
         </h1>
       </div>
       <div className="css-ok35s6 end">
@@ -42,7 +44,14 @@ const Header = ({ siteTitle }) => (
           >
             {" "}
             <i className="fas fa-search lgw"></i>
-          </Link>{" "}
+          </Link>
+
+          <Link to="/login" className="button_blue">Login</Link>
+          
+          <Link to="/addu" className="button_blue">Register</Link>
+
+          <Link to="/user" className="button_blue">Profil</Link>
+
         </h1>
       </div>
     </div>

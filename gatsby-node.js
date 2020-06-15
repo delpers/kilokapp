@@ -260,7 +260,7 @@ exports.createPages = ({ graphql, actions }) => {
                 if (result.errors) {
                   reject(result.errors)
                 }
-      
+  
                 const breakfastTemplate = path.resolve(`./src/templates/breakfasts-page.js`)
                 req.each(result.data.allContentfulCookingBreakfasts.edges, edge => {
                   createPage({
@@ -272,15 +272,13 @@ exports.createPages = ({ graphql, actions }) => {
                     },
                   })
                 })
-      
               })
             })
-  
 
-      .then(() => {
+          
+          .then(() => {
             graphql(
-              `
-                {
+              ` {
                   allContentfulCookingPlats(limit: 1000) {
                     edges {
                       node {
