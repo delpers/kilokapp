@@ -13,9 +13,7 @@ import Calandar from "../components/homeScreen/views/month"
 import Ads from "../components/homeScreen/views/ads"
 import Prenium from "../components/homeScreen/views/prenium"
 
-
 const HomePage = () => {
- 
   return (
     <Layout>
       <SEO title="Accueil" />
@@ -24,26 +22,20 @@ const HomePage = () => {
 
       <StickyNav />
 
-
-
       <Breakfasts />
-    
+
       <Entry />
 
-
-      
+      <Ads />
 
       <Dishes />
 
       <Desserts />
 
-      
       <Boosters />
       <Training />
 
       <Prenium />
-
-
     </Layout>
   )
 }
