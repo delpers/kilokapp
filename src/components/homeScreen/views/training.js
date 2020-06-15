@@ -29,7 +29,7 @@ export default function Training() {
 
           
           <div className=" pt120 m-w p-i ">
-            <h2 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">{data.home.title_trainings}</h2>
+            <h2 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">{data.home.title_trainings} (Prenium)</h2>
             <p className="pl text-gray mw728 ">{data.home.description_trainings}</p>
           
           </div>
