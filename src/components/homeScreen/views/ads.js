@@ -3,7 +3,7 @@ import React from "react"
 
 const Ads = ({ siteTitle }) => (
   <div>
-    <h1 className="ads">Ads block (register not block / prenium not block / invite block) </h1>
+    <h1 className="ads">Ads block blocked if register / premium blocked / invite not blocked </h1>
   </div>
 )
 
