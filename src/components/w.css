@@ -547,6 +547,7 @@ background-size: 7%;
 }
 .bgb {
   background: #4ca1e8;
+  display: grid;
 }
 .info_txt {
   

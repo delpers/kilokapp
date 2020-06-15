@@ -21,14 +21,9 @@ const UserPage = () => {
 
 
 <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
-    <div className="box border fs16">
-        <span className="price_plan">9.99 € / mois</span>
-        <span>Offre Kiloka Prenium</span>
-    </div>
 
 
-
-    <footer>
+    <div>
         <div className="grd_f">
 
         <div className="bgb">
@@ -71,7 +66,7 @@ const UserPage = () => {
         </div>
 
         </div>
-    </footer>
+    </div>
 </div>
 
 
