@@ -55,7 +55,7 @@ const UserPage = () => {
               </div></div>
             <div>
             <div className="bgfa">
-                <span className="info_txt bggr ">Premium</span>
+                <span className="info_txt bggr ">3 mois de Kiloka Prenium</span>
 
                 <span className="stripe_price pb-0">€ 9.99
                 </span>
