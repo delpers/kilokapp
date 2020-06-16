@@ -527,6 +527,17 @@ background-size: 7%;
   padding: 14px;
 
 }
+.stripe_price {
+  font-size: 74px;
+  font-weight: 300 !important;
+  text-align: center;
+  padding: 60px;
+  color: black;
+}
+.bgfa {
+  background: #fafafa;
+  display: grid;
+}
 .btnun {
   background: white;
   font-size: 16px;
@@ -535,6 +546,24 @@ background-size: 7%;
   border-radius: 2px;
   border: 2px solid #d54040;
   color: #d54040;
+}
+.month {
+  display: inline-grid;
+font-size: 14px;
+text-align: center;
+margin-top: 15px;
+}
+.btng {
+  background: white;
+  font-size: 16px;
+  padding: 8px 32px;
+  margin-top: 32px;
+  border-radius: 2px;
+  border: 2px solid #1db954;
+  color: #1db954;
+}
+.bggr {
+  background: #1db954 !important;
 }
 .btndex {
   background: #d54040;

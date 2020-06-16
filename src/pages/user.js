@@ -39,7 +39,40 @@ const UserPage = () => {
               </div>
             </div>
           </div>
+          <div className="grd_f mt-32">
+            <div> <div className="bgfa">
+                <span className="info_txt bggr">Premium</span>
+
+                <span className="stripe_price pb-0">€ 9.99
+                </span>
+                <span className="month">/ Month</span>
+                <div className="info_mth">For € 9.99 / Month</div>
+                <div className="info_mth bg-w b-solid-b">Details plan later</div>
+
+                <div className="bay bg-w">
+                  <button className="btng">Choose</button>
+                </div>
+              </div></div>
+            <div>
+            <div className="bgfa">
+                <span className="info_txt bggr ">Premium</span>
+
+                <span className="stripe_price pb-0">€ 9.99
+                </span>
+                <span className="month">/ Month</span>
+                <div className="info_mth">For € 9.99 / Month</div>
+                <div className="info_mth bg-w b-solid-b">Details plan later</div>
+
+                <div className="bay bg-w">
+                  <button className="btng">Choose</button>
+                </div>
+              </div>
+            </div>
+
         </div>
+        </div>
+       
+
       </div>
     </Layout>
   )
