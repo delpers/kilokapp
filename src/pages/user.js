@@ -56,7 +56,9 @@ const UserPage = () => {
                 </div>
 
                 <div className="bay bg-w">
-                  <button className="btng">Choose</button>
+                <div className="bay bg-w">
+                  <button className="btnun">Unsubscribe</button>
+                </div>
                 </div>
               </div>
             </div>
