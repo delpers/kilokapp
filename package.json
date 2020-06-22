@@ -8,18 +8,21 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@stripe/stripe-js": "^1.7.0",
     "algoliasearch": "^4.2.0",
     "dotenv": "^8.2.0",
-    "firebase": "^7.15.0",
+    "firebase": "^7.15.1",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-algolia": "^0.9.0",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-manifest": "^2.3.5",
     "gatsby-plugin-offline": "^3.1.4",
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-sharp": "^2.5.6",
     "gatsby-source-contentful": "^2.2.9",
     "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-source-stripe": "^3.1.0",
     "gatsby-transformer-remark": "^2.8.4",
     "gatsby-transformer-sharp": "^2.4.6",
     "hyvor-talk-react": "^1.0.1",
@@ -28,8 +31,11 @@
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-hook-form": "^5.7.2",
     "react-instantsearch-dom": "^6.4.0",
-    "react-styled-carousel": "^0.5.1"
+    "react-styled-carousel": "^0.5.1",
+    "stripe": "^8.63.0",
+    "yup": "^0.29.1"
   },
   "devDependencies": {
     "prettier": "2.0.4"
@@ -53,5 +59,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "browser": {
+    "child_process": false
   }
 }

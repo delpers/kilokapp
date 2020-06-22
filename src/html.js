@@ -10,7 +10,7 @@ export default function HTML(props) {
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
           integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
