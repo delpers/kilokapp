@@ -407,56 +407,5 @@ exports.createPages = ({ graphql, actions }) => {
             resolve()
           })
       })
-    // .then(() => {
-    //   if (localStorage.getItem("emailUser")) {
-    //     graphql(`
-    //       {
-    //         allStripeProduct {
-    //           nodes {
-    //             id
-    //             name
-    //             description
-    //           }
-    //         }
-
-    //         allStripeCustomer(filter: { email: { eq: ${localStorage.getItem(
-    //           "emailUser"
-    //         )} } }) {
-    //           edges {
-    //             node {
-    //               id
-    //               currency
-    //               invoice_prefix
-    //               email
-    //               subscriptions {
-    //                 data {
-    //                   id
-    //                   billing_cycle_anchor
-    //                   cancel_at_period_end
-    //                   collection_method
-    //                   current_period_end
-    //                   default_payment_method
-    //                   plan {
-    //                     id
-    //                     billing_scheme
-    //                     currency
-    //                     product
-
-    //                     trial_period_days
-    //                     product
-    //                   }
-    //                 }
-    //               }
-    //             }
-    //           }
-    //         }
-    //       }
-    //     `).then(result => {
-    //       if (result.errors) {
-    //         reject(result.errors)
-    //       }
-    //     })
-    //   }
-    // })
   })
 }

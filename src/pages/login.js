@@ -33,7 +33,6 @@ const LoginPage = () => {
     await login(data.email, data.password)
       .then(() => {
         setLoading(false)
-        localStorage.setItem("emailUser", data.email)
         navigate("/")
       })
       .catch(error => {

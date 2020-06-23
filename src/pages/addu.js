@@ -34,7 +34,6 @@ const RegisterPage = () => {
     setLoading(true)
     await signup(data.email, data.password)
       .then(() => {
-        localStorage.setItem("emailUser", data.email)
         setLoading(false)
       })
       .catch(error => {
