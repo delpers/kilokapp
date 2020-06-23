@@ -26,9 +26,12 @@ const LoginPage = () => {
     message: null,
   })
   const { register, handleSubmit, errors } = useForm({
+    mode: "onSubmit",
     validationSchema: schema,
+    submitFocusError: true,
   })
   const onSubmit = async data => {
+    console.log(errors.email, errors.password)
     setLoading(true)
     await login(data.email, data.password)
       .then(() => {
@@ -53,6 +56,9 @@ const LoginPage = () => {
         type: null,
         message: null,
       })
+    }
+    if (loading) {
+      setLoading(false)
     }
   }
   const checkUser = async () => {

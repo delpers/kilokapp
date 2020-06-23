@@ -56,6 +56,9 @@ const RegisterPage = () => {
     if (errorRegister) {
       setErrorRegister("")
     }
+    if (loading) {
+      setLoading(false)
+    }
   }
 
   const checkUser = async () => {
