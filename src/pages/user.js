@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useContext, useCallback } from "react"
 import { navigate } from "gatsby"
 import { loadStripe } from "@stripe/stripe-js"
 import axios from "axios"
@@ -6,6 +6,7 @@ import moment from "moment"
 import _ from "lodash"
 
 import Layout from "../components/layout"
+import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { auth, logout } from "../utils/firebase"
 
@@ -16,18 +17,16 @@ const stripePromise = loadStripe(STRIPE_PK_KEY)
 const API_UNSUBCRIPTION =
   "https://stripe-api-serverless.vercel.app/api/users/unsubscribe"
 const API_GET_PLANS = "https://stripe-api-serverless.vercel.app/api/plans"
-const API_GET_PLANS_BY_EMAIl =
-  "https://stripe-api-serverless.vercel.app/api/users"
 
 const UserPage = props => {
   const [emailUser, setEmailUser] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [userHavePlan, setUserHavePlan] = useState(false)
+  const { user, planUser, premium } = useContext(UserContext)
+  const [loading, setLoading] = useState(true)
   const [plans, setPlans] = useState([])
   const logoutUser = async () => {
     await logout()
       .then(() => {
-        navigate("/")
+        window.location.reload()
       })
       .catch(error => {
         alert(error.message)
@@ -48,9 +47,6 @@ const UserPage = props => {
         cancelUrl: `${process.env.GATSBY_PUBLIC_URL}/user`,
         customerEmail: emailUser,
       })
-      .then(res => {
-        alert("success")
-      })
       .catch(error => {
         alert(error)
       })
@@ -58,58 +54,39 @@ const UserPage = props => {
       console.warn("Error:", error)
     }
   }
-
-  const getPlans = () => {
-    setLoading(true)
-    auth().onAuthStateChanged(user => {
-      if (!user) {
-        navigate("/login")
-      } else {
-        setEmailUser(user.email)
-        const getPlanByUser = axios.post(API_GET_PLANS_BY_EMAIl, {
-          email: auth().currentUser.email,
-        })
-        const getAllPlan = axios.get(API_GET_PLANS)
-        axios
-          .all([getPlanByUser, getAllPlan])
-          .then(
-            axios.spread((planByUser, allPlan) => {
-              const planUser = planByUser.data.payload
-              const plans = allPlan.data.payload
-              if (planUser) {
-                if (
-                  moment
-                    .unix(planUser.subscriptions.current_period_end)
-                    .isBefore()
-                ) {
-                  setPlans(plans)
-                } else {
-                  const dataPlanUser = plans.filter(plan => {
-                    if (
-                      plan.id === planUser.subscriptions.items.data[0].plan.id
-                    ) {
-                      return plan
-                    }
-                  })
-                  const addDataPlanUser = dataPlanUser.map(plan => ({
-                    ...plan,
-                    user_plan: planUser,
-                  }))
-                  setUserHavePlan(true)
-                  setPlans(addDataPlanUser)
-                }
-              } else {
-                setPlans(plans)
+  console.log("render")
+  const getPlans = useCallback(() => {
+    axios
+      .get(API_GET_PLANS)
+      .then(res => {
+        const plans = res.data.payload
+        if (planUser) {
+          if (
+            moment.unix(planUser.subscriptions.current_period_end).isBefore()
+          ) {
+            setPlans(plans)
+          } else {
+            const dataPlanUser = plans.filter(plan => {
+              if (plan.id === planUser.subscriptions.items.data[0].plan.id) {
+                return plan
               }
-              setLoading(false)
             })
-          )
-          .catch(error => {
-            alert(error.message)
-          })
-      }
-    })
-  }
+            const addDataPlanUser = dataPlanUser.map(plan => ({
+              ...plan,
+              user_plan: planUser,
+            }))
+            setPlans(addDataPlanUser)
+            setLoading(false)
+          }
+        } else {
+          setPlans(plans)
+          setLoading(false)
+        }
+      })
+      .catch(error => {
+        alert(error.message)
+      })
+  }, [planUser])
 
   const onSubcription = dataPlanUser => {
     const { subscriptions } = dataPlanUser
@@ -134,8 +111,15 @@ const UserPage = props => {
   }
 
   useEffect(() => {
-    if (plans.length === 0) getPlans()
-  }, [])
+    if (!user) {
+      navigate("/login")
+    } else {
+      setEmailUser(user.email)
+      if (plans.length === 0) {
+        getPlans()
+      }
+    }
+  }, [planUser])
 
   return (
     <Layout>
@@ -156,9 +140,9 @@ const UserPage = props => {
                     {plans.map(plan => (
                       <div key={plan.id} className="bgb mb-10">
                         <span className="info_txt">
-                          {userHavePlan
+                          {premium
                             ? "You are currently premium"
-                            : "Premium"}
+                            : "Premium Plan"}
                         </span>
 
                         <span className="stripe_name">{plan.product.name}</span>
@@ -167,7 +151,7 @@ const UserPage = props => {
                           {plan.interval_count + " " + plan.interval}
                         </div>
                         {plan.user_plan && (
-                          <div className="time_end">
+                          <div className="time_end" style={{ color: "#fff" }}>
                             Time End :
                             {moment
                               .unix(
@@ -176,9 +160,21 @@ const UserPage = props => {
                               .format("ll")}
                             {plan.user_plan.subscriptions.trial_end &&
                               " (Trial)"}
+                            {moment
+                              .unix(
+                                plan.user_plan.subscriptions.current_period_end
+                              )
+                              .isBefore() && (
+                              <span style={{ color: "red" }}>OUT DATE</span>
+                            )}
                           </div>
                         )}
-                        {userHavePlan ? (
+                        {plan.trial_period_days && (
+                          <div className="time_end" style={{ color: "#fff" }}>
+                            Days Trial : {plan.trial_period_days}
+                          </div>
+                        )}
+                        {premium ? (
                           !_.get(
                             plan,
                             "user_plan.subscriptions.cancel_at_period_end"
@@ -187,12 +183,13 @@ const UserPage = props => {
                               <button
                                 className="btnun"
                                 onClick={() =>
-                                  !userHavePlan
+                                  !premium
                                     ? checkoutSubscribe(plan.id)
                                     : onSubcription(plan.user_plan)
                                 }
                               >
-                                {plan.user_plan.subscriptions
+                                {plan.user_plan &&
+                                plan.user_plan.subscriptions
                                   .cancel_at_period_end
                                   ? "Subscribe"
                                   : "Unsubscribe"}
@@ -204,7 +201,7 @@ const UserPage = props => {
                             <button
                               className="btnun"
                               onClick={() =>
-                                !userHavePlan
+                                !premium
                                   ? checkoutSubscribe(plan.id)
                                   : onSubcription(plan.user_plan)
                               }

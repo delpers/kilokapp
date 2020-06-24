@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useContext } from "react"
 import { useForm } from "react-hook-form"
 import * as yup from "yup"
 
 import Layout from "../components/layout"
+import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
-import { signup, loginWithGoogle, auth } from "../utils/firebase"
+import { signup, loginWithGoogle } from "../utils/firebase"
 
 const schema = yup.object().shape({
   email: yup
@@ -25,6 +26,7 @@ const schema = yup.object().shape({
 })
 
 const RegisterPage = () => {
+  const { user } = useContext(UserContext)
   const [errorRegister, setErrorRegister] = useState("")
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit, errors } = useForm({
@@ -61,17 +63,11 @@ const RegisterPage = () => {
     }
   }
 
-  const checkUser = async () => {
-    auth().onAuthStateChanged(user => {
-      if (user) {
-        navigate("/")
-      }
-    })
-  }
-
   useEffect(() => {
-    checkUser()
-  }, [])
+    if (user) {
+      navigate("/user")
+    }
+  }, [user])
   return (
     <Layout>
       <SEO title="Connexion" />

@@ -3,9 +3,6 @@ const Promise = require(`bluebird`)
 const path = require(`path`)
 const slash = require(`slash`)
 
-const STRIPE_SK_KEY =
-  "sk_test_51GqJtIK8I3CGeQRStmnRAQLhKPq71vQFIAxQ0IPAJnyarje9Nkn5PTVpQy3a1Ck8b7bvLj41mVuhjp03xcHxjHWx001D3HnLy8"
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {

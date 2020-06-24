@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { useForm } from "react-hook-form"
 import * as yup from "yup"
 
 import { auth, login, loginWithGoogle } from "../utils/firebase"
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
+import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 
 const schema = yup.object().shape({
@@ -21,6 +22,7 @@ const schema = yup.object().shape({
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false)
+  const { user } = useContext(UserContext)
   const [textLoginSubmit, setTextLoginSubmit] = useState({
     type: null,
     message: null,
@@ -31,12 +33,11 @@ const LoginPage = () => {
     submitFocusError: true,
   })
   const onSubmit = async data => {
-    console.log(errors.email, errors.password)
     setLoading(true)
     await login(data.email, data.password)
       .then(() => {
         setLoading(false)
-        navigate("/")
+        navigate("/user")
       })
       .catch(error => {
         setLoading(false)
@@ -61,17 +62,11 @@ const LoginPage = () => {
       setLoading(false)
     }
   }
-  const checkUser = async () => {
-    auth().onAuthStateChanged(user => {
-      if (user) {
-        navigate("/")
-      }
-    })
-  }
-
   useEffect(() => {
-    checkUser()
-  }, [])
+    if (user) {
+      navigate("/user")
+    }
+  }, [user])
 
   return (
     <Layout>
