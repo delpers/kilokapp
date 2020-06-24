@@ -7,7 +7,7 @@ const defaultValue = {
   user: null,
   premium: false,
   planUser: null,
-  loading: false,
+  loading: true,
 }
 const API_GET_PLANS_BY_EMAIl =
   "https://stripe-api-serverless.vercel.app/api/users"
@@ -16,12 +16,11 @@ const API_GET_PLANS = "https://stripe-api-serverless.vercel.app/api/plans"
 const UserContext = React.createContext(defaultValue)
 
 export const UserProvider = props => {
-  const [dataUser, setDataUser] = useState(defaultValue)
+  const [dataCtx, setDataCtx] = useState(defaultValue)
   const checkUserLogin = () => {
-    setDataUser({ ...dataUser, loading: true })
     auth().onAuthStateChanged(user => {
       if (user) {
-        setDataUser({ ...dataUser, user, loading: true })
+        setDataCtx({ ...dataCtx, user, loading: true })
         const getPlanByUser = axios.post(API_GET_PLANS_BY_EMAIl, {
           email: user.email,
         })
@@ -36,8 +35,8 @@ export const UserProvider = props => {
                   .unix(planUser.subscriptions.current_period_end)
                   .isBefore()
               ) {
-                setDataUser({
-                  ...dataUser,
+                setDataCtx({
+                  ...dataCtx,
                   loading: false,
                   user,
                   premium: false,
@@ -55,8 +54,8 @@ export const UserProvider = props => {
                   ...plan,
                   user_plan: planUser,
                 }))
-                setDataUser({
-                  ...dataUser,
+                setDataCtx({
+                  ...dataCtx,
                   user,
                   planUser: addDataPlanUser,
                   premium: true,
@@ -64,8 +63,8 @@ export const UserProvider = props => {
                 })
               }
             } else {
-              setDataUser({
-                ...dataUser,
+              setDataCtx({
+                ...dataCtx,
                 loading: false,
                 user,
                 premium: false,
@@ -75,18 +74,18 @@ export const UserProvider = props => {
           })
         )
       } else {
-        setDataUser({ ...dataUser, loading: false })
+        setDataCtx({ ...dataCtx, loading: false })
       }
     })
   }
   const setPlans = data => {
-    setDataUser({ ...dataUser, planUser: data })
+    setDataCtx({ ...dataCtx, planUser: data })
   }
   useEffect(() => {
     checkUserLogin()
   }, [])
   return (
-    <UserContext.Provider value={{ ...dataUser, setPlans }}>
+    <UserContext.Provider value={{ ...dataCtx, setPlans }}>
       {props.children}
     </UserContext.Provider>
   )
