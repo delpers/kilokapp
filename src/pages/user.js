@@ -8,18 +8,19 @@ import { auth, logout } from "../utils/firebase"
 
 const STRIPE_PK_KEY =
   "pk_test_51GqJtIK8I3CGeQRSMHhuhVkvRRXpaThOzyzQks0TJsRXUuSQTTyw4azzrzqWq1FRbZ5wiLj5TpUZR8c2cEws1I1v00GhpO44IP"
-const STRIPE_SK_KEY =
-  "sk_test_51GqJtIK8I3CGeQRStmnRAQLhKPq71vQFIAxQ0IPAJnyarje9Nkn5PTVpQy3a1Ck8b7bvLj41mVuhjp03xcHxjHWx001D3HnLy8"
-const STRIPE_RK_KEY =
-  "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"
-const stripe = require("stripe")(STRIPE_SK_KEY)
+// const STRIPE_SK_KEY =
+//   "sk_test_51GqJtIK8I3CGeQRStmnRAQLhKPq71vQFIAxQ0IPAJnyarje9Nkn5PTVpQy3a1Ck8b7bvLj41mVuhjp03xcHxjHWx001D3HnLy8"
+// const STRIPE_RK_KEY =
+//   "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"
+// const stripe = require("stripe")(STRIPE_SK_KEY)
 const STRIPE_3MONTH_KEY_PRICE = "price_1GuIxnK8I3CGeQRSn7Xg3d5T"
 const STRIPE_1MONTH_KEY_PRICE = "price_1GqJwzK8I3CGeQRSfhv0zANs"
 const SUCCESS_URL = "http://localhost:8000/user"
 const CANCEL_URL = "http://localhost:8000/user"
 const stripePromise = loadStripe(STRIPE_PK_KEY)
 
-const UserPage = () => {
+const UserPage = props => {
+  console.log(props)
   const [emailUser, setEmailUser] = useState(null)
   const logoutUser = async () => {
     await logout()
