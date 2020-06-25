@@ -35,8 +35,16 @@
     "react-hook-form": "^5.7.2",
     "react-instantsearch-dom": "^6.4.0",
     "react-styled-carousel": "^0.5.1",
+<<<<<<< HEAD
     "stripe": "^8.63.0",
     "yup": "^0.29.1"
+=======
+    "yup": "^0.29.1",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.15",
+    "micro-cors": "^0.1.1",
+    "stripe": "^8.64.0"
+>>>>>>> e111cb7e71393373188e1dad761ed2c8e212cbff
   },
   "devDependencies": {
     "prettier": "2.0.4"
