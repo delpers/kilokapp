@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react"
 import { useForm } from "react-hook-form"
 import * as yup from "yup"
 
-import { auth, login, loginWithGoogle } from "../utils/firebase"
+import { login, loginWithGoogle } from "../utils/firebase"
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
