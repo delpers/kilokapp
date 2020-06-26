@@ -114,6 +114,10 @@ video {
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
 }
+input, button {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
 .kilokaFooter {
   background: url("../../src/images/kiloka_black.svg");
   width: 87px;
