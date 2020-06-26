@@ -11,9 +11,9 @@ const Header = ({ siteTitle }) => {
       style={{
         marginBottom: `0`,
         background: "transparent",
-        boxShadow: "0 2px 4px 0 rgba(0,0,0,.1)",
         width: `100%`,
         position: `relative`,
+        borderBottom: `1px solid #eaeaea`,
       }}
     >
       <div
@@ -35,7 +35,7 @@ const Header = ({ siteTitle }) => {
                 maxWidth: "50%",
               }}
             >
-              <p className="_logo mb-0"></p>
+              Kentia
             </Link>
           </h1>
         </div>

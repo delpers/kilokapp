@@ -10,6 +10,7 @@ import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
 
+
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
 
 const stripePromise = loadStripe(STRIPE_PK_KEY)
@@ -79,27 +80,24 @@ const UserPage = props => {
     }
   }, [planUser])
   return (
+
     <Layout>
       <SEO title="Mon compte" />
       <div>
-        <div className="m-w p-i m-w ">
-          <h1 className="fs-48   mw728">Mon compte</h1>
-        </div>
-
-        <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+     
+        <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
           <div>
             <div className="grd_f">
               {planUser && planUser.length !== 0 ? (
-                <div>
+                <div className="bg-w p-32">
                   {planUser.map(plan => (
                     <div key={plan.id} className="bgb mb-10">
-                      <span className="info_txt">
-                        {premium ? "Votre abonnement" : "Premium Plan"}
+                      <span className="info_txt uppercase">
+                        {premium ? "Abonnement" : "Premium Plan"}
                       </span>
 
-                      <span className="stripe_name">{plan.product.name}</span>
                       <div className="info_mth">
-                        For € {plan.amount / 100} /{" "}
+                        € {plan.amount / 100} /{" "}
                         {plan.interval_count + " " + plan.interval}
                       </div>
                       {plan.user_plan && (
@@ -110,7 +108,7 @@ const UserPage = props => {
                               plan.user_plan.subscriptions.current_period_end
                             )
                             .format("ll")}
-                          {plan.user_plan.subscriptions.trial_end && " (Trial)"}
+                          {plan.user_plan.subscriptions.trial_end && " (Période d'essai)"}
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
@@ -188,6 +186,7 @@ const UserPage = props => {
         </div>
       </div>
     </Layout>
+
   )
 }
 

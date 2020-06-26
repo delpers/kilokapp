@@ -10,7 +10,6 @@ import Desserts from "../components/homeScreen/views/desserts"
 import Boosters from "../components/homeScreen/views/boosters"
 import Training from "../components/homeScreen/views/training"
 import Calandar from "../components/homeScreen/views/month"
-import Ads from "../components/homeScreen/views/ads"
 import Prenium from "../components/homeScreen/views/prenium"
 
 const HomePage = () => {
@@ -26,17 +25,17 @@ const HomePage = () => {
 
       <Entry />
 
-      <Ads />
 
       <Dishes />
 
       <Desserts />
 
       <Boosters />
+
       <Training />
 
       <Prenium />
-      
+
     </Layout>
   )
 }
