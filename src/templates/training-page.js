@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,9 +38,9 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #FFF;
+  background: #fff;
   header {
-    background: #82CEA9 !important;
+    background: #82cea9 !important;
     position: relative !important;
   }
 `
@@ -53,7 +53,6 @@ const cookingRecipe = props => {
         <div
           className="w-screen p-100-0 pt-0 pb-0  ml-i-8"
           style={{
-           
             backgroundColor: "#82CEA9",
           }}
         >
@@ -95,58 +94,62 @@ const cookingRecipe = props => {
 
         <div className=" m-w pt-0i mt-32">
           <div>
-         
-
             <div className=" p-i">
               <div className="week mb-32">
                 {props.data.contentfulTraining.steps != null
                   ? props.data.contentfulTraining.steps.map((edge, i) => {
                       return (
                         <div className="accordion" key={i}>
-                          <input id={edge.id} type="radio" className="accordion-toggle" name="toggle" />
-  <label htmlFor={edge.id}><div className="day">{edge.week} - D{edge.day}</div> {edge.title}</label>
-  <section> 
+                          <input
+                            id={edge.id}
+                            type="radio"
+                            className="accordion-toggle"
+                            name="toggle"
+                          />
+                          <label htmlFor={edge.id}>
+                            <div className="day">
+                              {edge.week} - D{edge.day}
+                            </div>{" "}
+                            {edge.title}
+                          </label>
+                          <section>
+                            {edge.videoUrl != null
+                              ? edge.videoUrl.map((mv, i) => {
+                                  return (
+                                    <div>
+                                      <h4> {mv.title} </h4>
 
-  {edge.videoUrl != null
-                  ? edge.videoUrl.map((mv, i) => {
-                      return (
-<div>
-<h4> {mv.title} </h4>
- 
+                                      <video id="player" key={i}>
+                                        <source
+                                          src={mv.urlVideo}
+                                          type="video/mp4"
+                                        />
+                                      </video>
+                                    </div>
+                                  )
+                                })
+                              : null}
+                            {documentToReactComponents(edge.body.json)}
 
-    <video id="player" key={i}>
-  <source src={mv.urlVideo} type="video/mp4" />
+                            <div className="p-flex mb-32">
+                              <div className="pw-50 p-20 border fs-16 mr-15">
+                                <h4 className="uppercase">
+                                  Tips avant la séance{" "}
+                                </h4>
+                                <p className="fs-16 text-gray">
+                                  {edge.adviceBefore.adviceBefore}
+                                </p>
+                              </div>
 
-</video>
-
-
-</div>
-
-)
-})
-: null}
-                       {documentToReactComponents(edge.body.json)}
-
-
-                          <div className="p-flex mb-32">
-                            <div className="pw-50 p-20 border fs-16 mr-15">
-                              <h4 className="uppercase">
-                              Tips avant la séance{" "}
-                              </h4>
-                              <p className="fs-16 text-gray">{edge.adviceBefore.adviceBefore}</p>
+                              <div className="pw-50 p-20 border fs-16 ">
+                                <h4 className="uppercase">
+                                  Tips après la séance
+                                </h4>
+                                <p className="fs-16 text-gray">
+                                  {edge.adviceAfter.adviceAfter}
+                                </p>
+                              </div>
                             </div>
-
-                            <div className="pw-50 p-20 border fs-16 ">
-                              <h4 className="uppercase">
-                              Tips après la séance
-                              </h4>
-                              <p className="fs-16 text-gray">{edge.adviceAfter.adviceAfter}</p>
-                            </div>
-                          
-                          </div>
-                          
-                          
-                
                           </section>
                         </div>
                       )
