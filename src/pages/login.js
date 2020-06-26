@@ -7,11 +7,6 @@ import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
-import styled from "@emotion/styled"
-
-const Background = styled.div`
-  background: #FFF;
-`
 
 const schema = yup.object().shape({
   email: yup
@@ -74,20 +69,23 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <Background> 
     <Layout>
       <SEO title="Connexion" />
       <div>
-  
+        <div className="m-w p-i m-w ">
+          <h1 className="fs-48   mw728">Connexion</h1>
+        </div>
+
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
           <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
             <div className="form-group">
+              <label style={{ margin: "10px 0 0 " }}>Email</label>
               <input
                 type="email"
                 onChange={onChangeInput}
                 className="form-control"
                 name="email"
-                placeholder="Email"
+                placeholder="Enter email"
                 style={{ width: "100%" }}
                 ref={register({ required: true, minLength: 8 })}
               />
@@ -96,12 +94,13 @@ const LoginPage = () => {
               )}
             </div>
             <div className="form-group">
+              <label style={{ margin: "10px 0 0 " }}>Password</label>
               <input
                 type="password"
                 onChange={onChangeInput}
                 className="form-control"
                 name="password"
-                placeholder="Mot de passe"
+                placeholder="Password"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -128,29 +127,27 @@ const LoginPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/addu">Devenir membre</a>
+              <a href="/addu">Register</a>
               <button
                 type="submit"
-                className="button_blue_submit"
                 onClick={onSubmit}
                 style={{ padding: "0 15px" }}
               >
-                {loading ? "Chargement..." : "Connexion"}
+                {loading ? "Loading..." : "Login"}
               </button>
             </div>
             <button
-              className="mt-10 google"
+              className="mt-10"
               style={{ width: "100%" }}
               type="button"
               onClick={loginByGmail}
             >
-              Connectez-vous avec Google
+              Sign in with Google
             </button>
           </form>
         </div>
       </div>
     </Layout>
-    </Background>
   )
 }
 

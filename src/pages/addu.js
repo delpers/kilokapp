@@ -72,7 +72,9 @@ const RegisterPage = () => {
     <Layout>
       <SEO title="Connexion" />
       <div>
-       
+        <div className="m-w p-i m-w ">
+          <h1 className="fs-48   mw728">Inscription</h1>
+        </div>
 
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
           <form
@@ -80,12 +82,13 @@ const RegisterPage = () => {
             style={{ maxWidth: "500px" }}
           >
             <div className="form-group">
+              <label style={{ margin: "10px 0 0 " }}>Email</label>
               <input
                 type="email"
                 className="form-control"
                 onChange={onChangeInput}
                 name="email"
-                placeholder="Saisir votre Email"
+                placeholder="Enter email"
                 style={{ width: "100%" }}
                 ref={register({ required: true, minLength: 8 })}
               />
@@ -94,12 +97,13 @@ const RegisterPage = () => {
               )}
             </div>
             <div className="form-group">
+              <label style={{ margin: "10px 0 0 " }}>Password</label>
               <input
                 type="password"
                 className="form-control"
                 onChange={onChangeInput}
                 name="password"
-                placeholder="Mot de passe"
+                placeholder="Password"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -108,12 +112,13 @@ const RegisterPage = () => {
               )}
             </div>
             <div className="form-group">
+              <label style={{ margin: "10px 0 0 " }}>Confirm Password</label>
               <input
                 type="password"
                 className="form-control"
                 onChange={onChangeInput}
                 name="confirm_password"
-                placeholder="Repeter le mot de passe"
+                placeholder="Password"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -134,22 +139,22 @@ const RegisterPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/login">Connexion</a>
+              <a href="/login">Login</a>
               <button
                 type="submit"
                 style={{ padding: "0 15px" }}
                 onClick={onSubmitRegister}
               >
-                {loading ? "Chargement..." : "S'inscrire"}
+                {loading ? "Loading..." : "Sign Up"}
               </button>
             </div>
             <button
-              className="mt-10 google"
+              className="mt-10"
               style={{ width: "100%" }}
               type="button"
               onClick={loginByGmail}
             >
-              Connectez-vous avec Google
+              Sign in with Google
             </button>
           </form>
         </div>
