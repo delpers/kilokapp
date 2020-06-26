@@ -22,5 +22,5 @@ GATSBY_STRIPE_PUBLIC_KEY=pk_test_51GqJtIK8I3CGeQRSMHhuhVkvRRXpaThOzyzQks0TJsRXUu
 Command Dev:
 
 ```
-env NODE_ENV=development vercel dev
+cross-env NODE_ENV=development vercel dev
 ```
