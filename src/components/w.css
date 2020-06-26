@@ -213,11 +213,15 @@ input, button {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
+.training-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 .bg_blue {
-  background: #f8fbff;
+  background: #012749;
 
   text-align: center;
-  padding: 100px 5%;
+  padding: 140px 5%;
 }
 .prenium_title {
   margin-bottom: 40px;
@@ -270,7 +274,7 @@ input, button {
 
 }
 .button_blue {
-  background: #000586;
+  background: #012749;
   color: white;
   border-radius: 2px;
   font-size: 16px;
@@ -743,11 +747,11 @@ input, button {
   margin-right: 0 !important;
 }
 .day {
-  background: #4ca1e8;
+  background: #012749;
   display: inline;
   padding: 10px 17px;
   color: white;
-  border-radius: 5rem;
+  border-radius: 2px;
   font-size: 14px;
   margin-right: 10px;
   margin-left: 20px;
@@ -1467,7 +1471,8 @@ th {
     padding-top: 140px !important;
   }
   .footer-gr {
-    display: block;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
   }
   .p0-m {
     padding: 0;

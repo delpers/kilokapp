@@ -40,9 +40,9 @@ export const query = graphql`
 const Background = styled.div`
   background: #fff;
   header {
-    background: #82cea9 !important;
-    position: relative !important;
+    border-bottom: 0 !important;
   }
+
 `
 const cookingRecipe = props => {
   return (
@@ -53,7 +53,7 @@ const cookingRecipe = props => {
         <div
           className="w-screen p-100-0 pt-0 pb-0  ml-i-8"
           style={{
-            backgroundColor: "#82CEA9",
+            backgroundColor: "#009d9a",
           }}
         >
           <span className="i-190">
@@ -68,7 +68,7 @@ const cookingRecipe = props => {
                   }
                 ></img>
 
-                <h1 className="fs-48 color-w  mw728">
+                <h1 className="fs-48 color-w  mw728 mb-0 training-title">
                   {props.data.contentfulTraining.title}
                 </h1>
               </section>
@@ -76,7 +76,7 @@ const cookingRecipe = props => {
           </span>
         </div>
 
-        <div className="sticky">
+        <div className="sticky b-solid-b">
           <div className="m-w p-i ">
             <span className="i-link fs-16 b-b-g mr-15  "></span>
 
