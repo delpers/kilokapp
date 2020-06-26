@@ -10,12 +10,10 @@ import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
 
-const STRIPE_PK_KEY =
-  "pk_test_51GqJtIK8I3CGeQRSMHhuhVkvRRXpaThOzyzQks0TJsRXUuSQTTyw4azzrzqWq1FRbZ5wiLj5TpUZR8c2cEws1I1v00GhpO44IP"
+const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
 
 const stripePromise = loadStripe(STRIPE_PK_KEY)
-const API_UNSUBCRIPTION =
-  "https://stripe-api-serverless.vercel.app/api/users/unsubscribe"
+const API_UNSUBCRIPTION = `${process.env.GATSBY_PUBLIC_URL}/api/users/unsubscribe`
 
 const UserPage = props => {
   const { user, planUser, premium, setPlans } = useContext(UserContext)

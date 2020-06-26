@@ -9,9 +9,8 @@ const defaultValue = {
   planUser: null,
   loading: true,
 }
-const API_GET_PLANS_BY_EMAIl =
-  "https://stripe-api-serverless.vercel.app/api/users"
-const API_GET_PLANS = "https://stripe-api-serverless.vercel.app/api/plans"
+const API_GET_PLANS_BY_EMAIl = `${process.env.GATSBY_PUBLIC_URL}/api/users`
+const API_GET_PLANS = `${process.env.GATSBY_PUBLIC_URL}/api/plans`
 
 const UserContext = React.createContext(defaultValue)
 
