@@ -7,6 +7,11 @@ import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
+
+const Background = styled.div`
+  background: #f8f8f8;
+`
 
 const schema = yup.object().shape({
   email: yup
@@ -69,6 +74,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
+    <Background> 
     <Layout>
       <SEO title="Connexion" />
       <div>
@@ -127,13 +133,14 @@ const LoginPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/addu">Register</a>
+              <a href="/addu">S'inscrire</a>
               <button
                 type="submit"
+                className="button_blue_submit"
                 onClick={onSubmit}
                 style={{ padding: "0 15px" }}
               >
-                {loading ? "Loading..." : "Login"}
+                {loading ? "Loading..." : "Connexion"}
               </button>
             </div>
             <button
@@ -148,6 +155,7 @@ const LoginPage = () => {
         </div>
       </div>
     </Layout>
+    </Background>
   )
 }
 

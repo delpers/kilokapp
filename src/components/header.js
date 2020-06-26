@@ -48,18 +48,18 @@ const Header = ({ siteTitle }) => {
               <i className="fas fa-search lgw"></i>
             </Link>
             {!user && (
-              <Link to="/login" className="button_blue">
-                Login
+              <Link to="/login" className="button_blue mr-15">
+                Connexion
               </Link>
             )}
             {!user && (
               <Link to="/addu" className="button_blue">
-                Register
+                S'inscrire
               </Link>
             )}
             {user && (
               <Link to="/user" className="button_blue">
-                Profil
+                Mon compte
               </Link>
             )}
           </h1>

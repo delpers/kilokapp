@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="  p-100-0 bg-w">
+        <div className="p-100-0 bg-w border-top">
           <footer className="p-32 fs-16 m-w p-i footer-gr">
             <div className=" ">
               <div className="  uppercase fs-14 bold font-bold mb-32 ">

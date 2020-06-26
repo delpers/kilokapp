@@ -94,7 +94,7 @@ const UserPage = props => {
                   {planUser.map(plan => (
                     <div key={plan.id} className="bgb mb-10">
                       <span className="info_txt">
-                        {premium ? "You are currently premium" : "Premium Plan"}
+                        {premium ? "Votre abonnement" : "Premium Plan"}
                       </span>
 
                       <span className="stripe_name">{plan.product.name}</span>
@@ -109,7 +109,7 @@ const UserPage = props => {
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
                             )
-                            .format("ll")}
+                            .format("12")}
                           {plan.user_plan.subscriptions.trial_end && " (Trial)"}
                           {moment
                             .unix(
