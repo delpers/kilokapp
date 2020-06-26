@@ -11,6 +11,7 @@ const Header = ({ siteTitle }) => {
       style={{
         marginBottom: `0`,
         background: "transparent",
+        boxShadow: "0 2px 4px 0 rgba(0,0,0,.1)",
         width: `100%`,
         position: `relative`,
       }}
@@ -20,7 +21,7 @@ const Header = ({ siteTitle }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 1164,
-          padding: `1.6rem 1.0875rem`,
+          padding: `24px 24px`,
         }}
       >
         <div className="css-ok35s6 ">
@@ -39,22 +40,10 @@ const Header = ({ siteTitle }) => {
           </h1>
         </div>
         <div className="css-ok35s6 end">
-          <h1 style={{ margin: 0 }} className="text-xl font-bold">
-            <Link
-              className="fl-r i-link fs-16 b-b-g mr-15 font-bold  p-8"
-              to="/search"
-            >
-              {" "}
-              <i className="fas fa-search lgw"></i>
-            </Link>
+         
             {!user && (
-              <Link to="/login" className="button_blue mr-15">
+              <Link to="/login" className="button_blue">
                 Connexion
-              </Link>
-            )}
-            {!user && (
-              <Link to="/addu" className="button_blue">
-                S'inscrire
               </Link>
             )}
             {user && (
@@ -62,7 +51,6 @@ const Header = ({ siteTitle }) => {
                 Mon compte
               </Link>
             )}
-          </h1>
         </div>
       </div>
     </header>

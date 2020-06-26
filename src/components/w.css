@@ -100,21 +100,9 @@ video {
   margin-bottom: 20px;
 }
 .css-15qsopm {
-  max-width: 1024px;
-  -webkit-align-items: space;
-  -webkit-box-align: space;
-  -ms-flex-align: space;
-  align-items: space;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  min-height: 72px;
-  position: relative;
-  -webkit-transition: min-height 0.2s ease-in-out;
-  transition: min-height 0.2s ease-in-out;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
 }
 ._title_logo {
   max-width: 200px;
@@ -258,13 +246,42 @@ video {
 .border-top {
  border-top:  1px solid #eaeaea;
 }
+.form-control {
+  border: 1px solid #eaeaea;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  color: #333;
+  font-size: 16px;
+}
+.google {
+    width: 100%;
+    background: #e41d59;
+    color: white;
+    border: 1px solid #e41d59;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 16px;
+
+
+}
 .button_blue {
-  background: #002244;
+  background: #000586;
   color: white;
   border-radius: 2px;
   font-size: 16px;
-  padding: 16px 32px;
+  padding: 14px 26px;
   text-decoration: none;
+  display: table;
+}
+.pfl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #002244;
+  color: white;
 }
 .button_blue_submit {
   background: #002244;

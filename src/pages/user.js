@@ -109,7 +109,7 @@ const UserPage = props => {
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
                             )
-                            .format("12")}
+                            .format("ll")}
                           {plan.user_plan.subscriptions.trial_end && " (Trial)"}
                           {moment
                             .unix(
