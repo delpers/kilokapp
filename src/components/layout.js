@@ -27,36 +27,36 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="p-100-0 bg-black border-top">
+        <div className="  border-top p-100-0 bg-w">
           <footer className="p-32 fs-16 m-w p-i footer-gr">
             <div className=" ">
-              <div className="  uppercase fs-14 bold cw font-bold mb-32 ">
+              <div className="  uppercase fs-14 bold font-bold mb-32 ">
                 Entreprise
               </div>
 
-              <Link className="i-link cw  db mb-15" to="/page/about">
+              <Link className="i-link   db mb-15" to="/page/about">
                 A propos
               </Link>
-              <Link className="i-link  cw  db mb-15" to="/page/mentions-legales">
+              <Link className="i-link    db mb-15" to="/page/mentions-legales">
                 Offres d'emploi
               </Link>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 cw bold font-bold mb-32 ">
+              <div className="  uppercase fs-14 bold font-bold mb-32 ">
                 Communautés
               </div>
 
-              <Link className="i-link cw  db mb-15" to="/">
+              <Link className="i-link   db mb-15" to="/">
                 Investisseurs
               </Link>
             </div>
             <div className=" ">
-              <div className="cw  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase fs-14 bold font-bold mb-32 ">
                 Liens utiles
               </div>
 
               <a
-                className="i-link  cw  db mb-15"
+                className="i-link    db mb-15"
                 target="_bank"
                 href="https://www.facebook.com/kilokafr"
               >
@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
               </a>
 
               <a
-                className="i-link  cw  db mb-15"
+                className="i-link    db mb-15"
                 target="_bank"
                 href="https://www.instagram.com/kilokafr/"
               >
@@ -72,16 +72,16 @@ const Layout = ({ children }) => {
               </a>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 cw">
+              <div className="  uppercase fs-14 bold font-bold mb-32 ">
                 Légales
               </div>
-              <Link className="i-link  cw  db mb-15" to="/page/mentions-legales">
+              <Link className="i-link    db mb-15" to="/page/mentions-legales">
                 Mentions légales
               </Link>{" "}
-              <Link className="i-link  cw  db mb-15" to="/page/rgpd">
+              <Link className="i-link    db mb-15" to="/page/rgpd">
                 RGPD
               </Link>
-              <Link className="i-link  cw  db mb-15" to="/page/cgv">
+              <Link className="i-link    db mb-15" to="/page/cgv">
                 CGV
               </Link>
             </div>
@@ -89,10 +89,10 @@ const Layout = ({ children }) => {
             <div>
               <div className="kilokaFooter"></div>
 
-              <p className="cw">
+              <p className="">
                 {" "}
                 © {new Date().getFullYear()}, {` `}
-                <a className="i-link  cw" href="https://kiloka.io/">
+                <a className="i-link  " href="https://kiloka.io/">
                   Kiloka France
                 </a>
               </p>

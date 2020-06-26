@@ -102,7 +102,7 @@ const UserPage = props => {
                       </div>
                       {plan.user_plan && (
                         <div className="time_end" style={{ color: "#fff" }}>
-                          Time End :
+                          Fini le :
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
@@ -181,8 +181,41 @@ const UserPage = props => {
                   </button>
                 </div>
               </div>
+
+
+
+
+              <div className="block">
+
+
+  <h1>Spotify</h1>
+  <p> Les playlists sont mises à jour régulièrement pour rester pertinentes.</p>
+    <div className="logo_spotify"></div>
+
+
+
+
+          </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
+            
+
           </div>
+
+
+
         </div>
       </div>
     </Layout>
