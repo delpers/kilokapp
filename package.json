@@ -10,7 +10,6 @@
     "@emotion/styled": "^10.0.27",
     "@stripe/stripe-js": "^1.7.0",
     "algoliasearch": "^4.2.0",
-    "axios": "^0.19.2",
     "child_process": "^1.0.2",
     "dotenv": "^8.2.0",
     "firebase": "^7.15.1",
@@ -28,7 +27,6 @@
     "gatsby-transformer-remark": "^2.8.4",
     "gatsby-transformer-sharp": "^2.4.6",
     "hyvor-talk-react": "^1.0.1",
-    "moment": "^2.27.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-copy-to-clipboard": "^5.0.2",
@@ -37,8 +35,11 @@
     "react-hook-form": "^5.7.2",
     "react-instantsearch-dom": "^6.4.0",
     "react-styled-carousel": "^0.5.1",
-    "stripe": "^8.63.0",
-    "yup": "^0.29.1"
+    "yup": "^0.29.1",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.15",
+    "micro-cors": "^0.1.1",
+    "stripe": "^8.64.0"
   },
   "devDependencies": {
     "prettier": "2.0.4"

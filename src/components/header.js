@@ -57,10 +57,11 @@ const Header = ({ siteTitle }) => {
                 Register
               </Link>
             )}
-
-            <Link to="/user" className="button_blue">
-              Profil
-            </Link>
+            {user && (
+              <Link to="/user" className="button_blue">
+                Profil
+              </Link>
+            )}
           </h1>
         </div>
       </div>

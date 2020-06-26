@@ -10979,6 +10979,11 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
+micro-cors@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/micro-cors/-/micro-cors-0.1.1.tgz#af7a480182c114ffd1ada84ad9dffc52bb4f4054"
+  integrity sha512-6WqIahA5sbQR1Gjexp1VuWGFDKbZZleJb/gy1khNGk18a6iN1FdTcr3Q8twaxkV5H94RjxIBjirYbWCehpMBFw==
+
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
@@ -11182,11 +11187,6 @@ moment@^2.26.0:
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
   integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
-
-moment@^2.27.0:
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
-  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -15118,10 +15118,10 @@ stripe@8.56.0:
     "@types/node" ">=8.1.0"
     qs "^6.6.0"
 
-stripe@^8.63.0:
-  version "8.63.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.63.0.tgz#44926a492ebec0723c4a7d293fcaea130ada92ee"
-  integrity sha512-IjT4c9sPy/hNA4VKLRZq1+bUnL8V3nqCGSGnEA2ueCZi9CDS1ev8Q3t/6gh9lrgJ23ps+Z5MC29WLn4EZvIuBQ==
+stripe@^8.64.0:
+  version "8.67.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.67.0.tgz#df87de805de944ff16c90323598c84a6b3a87540"
+  integrity sha512-MncFtlNtMPYlian/Za7jgPeC7YJegZjWkfdxcSC5DCgZLO69/za6ORI2M3dwZ50tfqh6BCYkRIcsrK5vkpSUHQ==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.6.0"
