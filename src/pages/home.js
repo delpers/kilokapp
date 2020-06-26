@@ -36,6 +36,7 @@ const HomePage = () => {
       <Training />
 
       <Prenium />
+      
     </Layout>
   )
 }
