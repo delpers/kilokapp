@@ -119,7 +119,7 @@ input, button {
   -moz-appearance: none !important;
 }
 .kilokaFooter {
-  background: url("../../src/images/kiloka_black.svg");
+  background: url("../../src/images/kiloka_white.svg");
   width: 87px;
   height: 36px;
   background-position: center;
@@ -614,7 +614,7 @@ input, button {
   padding-top: 280px !important;
 }
 .bg-black {
-  background: #161616;
+  background: #000;
 }
 .footer-gr {
   display: grid;
