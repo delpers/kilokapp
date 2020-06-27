@@ -243,7 +243,7 @@ display: table;
   font-weight: 500;
 }
 .bg_blue {
-  background: #edf7f2;
+  background: #fff7ee;
 
   text-align: center;
   padding: 140px 5%;
@@ -353,7 +353,7 @@ display: table;
   padding-top: 120px;
 }
 .button_pw {
-  background: #97ceb1;
+  background: #efcc95;
   border: 1px solid transparent;
   border-radius: 5rem;
   padding: 17px 36px;
@@ -1092,7 +1092,7 @@ header {
   color: initial;
 }
 .w-screen-home {
-  background-color: #fff7f6;
+  background-color: #fff7ee !important;
   background: url("../../src/images/kiloka_home.svg");
   height: 735px;
 }
@@ -1367,7 +1367,7 @@ margin-top: 2px;
   margin-top: 50px;
 }
 .bg_blue {
-  background: #edf7f2;
+  background: #fff7ee;
   text-align: center;
   padding: 100px 5%;
 }
