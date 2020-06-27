@@ -14,9 +14,6 @@ export default function Breakfasts() {
               node {
                 title
                 slug
-                picture: childContentfulCookingBreakfastsFeaturedImageJsonNode {
-                  secure_url
-                }
               }
             }
           }
@@ -44,19 +41,8 @@ export default function Breakfasts() {
                   data.breakfast.edges.map((edge, i) => {
                     return (
                       <div className="additions-card__container" key={i}>
-                        <div
-                          className="media"
-                          style={{
-                            backgroundImage:
-                              "url(" + edge.node.picture.secure_url + ")",
-                            backgroundPosition: "center",
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                            height: "75px",
-                            width: "75px",
-                          }}
-                        />
-                        <div className="addiction-card__text">
+                      
+                        <div className="addiction-card__text mt-0">
                           <Link
                             className="i-link fs-16 b-b-g mr-15 font-bold c-t"
                             to={`/breakfast/recettes/${edge.node.slug}/`}

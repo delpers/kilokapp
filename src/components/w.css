@@ -982,28 +982,31 @@ header {
   padding: 26px;
   text-align: left;
   margin-right: 0;
-  margin-top: 132px;
+  margin-top: 0;
+  display: ruby-text-container;
 }
 .addiction-card__text {
   margin-top: 32px;
   color: #47455a;
   line-height: 24px;
   font-weight: 500;
+  padding: 0 24px;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .additions-card__container {
-  display: flex;
-  width: 180px;
-  height: 180px;
+  width: 238px;
+  height: auto;
   padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  border: 1px solid hsla(0, 0%, 90.6%, 0.58);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
 }
 .c-v {
   color: white;
@@ -1310,8 +1313,8 @@ th {
 }
 .card-des {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
   max-width: 1160px;
   margin: 0 auto;
   margin-bottom: 0px;
@@ -1367,6 +1370,8 @@ margin-top: 2px;
   font-weight: 300;
   font-size: 28px;
   line-height: 33px;
+}.cards-n {
+  margin-right: 15px !important;
 }
 .mt-100 {
   margin-top: 50px;
@@ -1414,7 +1419,7 @@ margin-top: 2px;
     grid-gap: 32px;
   }
   .additions-card__container {
-    width: max-content !important;
+    width: 100% !important;
   }
   .c-t {
     font-size: 14px;
@@ -1463,10 +1468,11 @@ margin-top: 2px;
   .c-t {
     font-size: 18px;
     padding: 26px;
-    text-align: left;
+    text-align: center;
     margin-right: 0;
-    margin-top: 135px !important;
-  }
+    margin-top: 0;
+    display: ruby-text-container;
+}
   .dn-m {
     margin-right: 8% !important;
     display: none !important;

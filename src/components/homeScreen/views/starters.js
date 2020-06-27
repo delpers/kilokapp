@@ -11,9 +11,7 @@ export default function Entry() {
               node {
                 title
                 slug
-                picture: childContentfulCookingStartersFeaturedImageJsonNode {
-                  secure_url
-                }
+            
               }
             }
           }
@@ -37,18 +35,7 @@ export default function Entry() {
                 data.starter.edges.map((edge,i) => {
                   return (
                     <div className="additions-card__container" key={i}>
-                      <div
-                        className="media"
-                        style={{
-                          backgroundImage:
-                            "url(" + edge.node.picture.secure_url + ")",
-                          backgroundPosition: "center",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          height: "75px",
-                          width: "75px",
-                        }}
-                      />
+                 
                       <div className="addiction-card__text">
                       <Link
                               className="i-link fs-16 b-b-g mr-15 font-bold c-t"
