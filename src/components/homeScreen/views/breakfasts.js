@@ -3,6 +3,9 @@ import { StaticQuery, graphql, Link } from "gatsby"
 
 import UserContext from "../../UserContext"
 
+
+
+
 export default function Breakfasts() {
   const { premium } = useContext(UserContext)
   return (
@@ -26,7 +29,7 @@ export default function Breakfasts() {
       render={data => {
         if (premium)
           return (
-            <div className="m-w p-i pb-0 mt-64 ">
+            <div className="m-w p-i pb-0 mt-64">
               <div className="mb-100">
                 <h3 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">
                   {data.home.title_breakfasts}{" "}
@@ -40,11 +43,11 @@ export default function Breakfasts() {
                 {data.breakfast.edges.length > 0 ? (
                   data.breakfast.edges.map((edge, i) => {
                     return (
-                      <div className="additions-card__container" key={i}>
+                      <div id="bloc" className="additions-card__container nowrap" key={i}>
                       
-                        <div className="addiction-card__text mt-0">
+                        <div className="addiction-card__text mt-0 nowrap">
                           <Link
-                            className="i-link fs-16 b-b-g font-bold c-t"
+                            className="i-link fs-16 b-b-g font-bold c-t nowrap"
                             to={`/breakfast/recettes/${edge.node.slug}/`}
                           >
                             {edge.node.title}

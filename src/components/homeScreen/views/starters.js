@@ -34,11 +34,11 @@ export default function Entry() {
               data.starter.edges.length>0 ? (
                 data.starter.edges.map((edge,i) => {
                   return (
-                    <div className="additions-card__container" key={i}>
+                    <div className="additions-card__container nowrap" key={i}>
                  
-                      <div className="addiction-card__text">
+                      <div className="addiction-card__text nowrap">
                       <Link
-                              className="i-link fs-16 b-b-g font-bold c-t"
+                              className="i-link fs-16 b-b-g font-bold c-t nowrap"
                               to={`/recettes/${edge.node.slug}/`}
                             >
                               {edge.node.title}
