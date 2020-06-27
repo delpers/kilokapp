@@ -1362,6 +1362,11 @@ display: flex;
 margin-top: 2px;
   }.mw374 {
     max-width: 290px;
+}.prenium_title {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
 }
 .mt-100 {
   margin-top: 50px;
