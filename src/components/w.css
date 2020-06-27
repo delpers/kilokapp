@@ -127,8 +127,8 @@ input, button {
 }
 .kilokaFooter {
   background: url("../../src/images/kiloka_black.svg");
-  width: 87px;
-  height: 36px;
+  width: 110px;
+  height: 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -243,14 +243,14 @@ display: table;
   font-weight: 500;
 }
 .bg_blue {
-  background: #fff7ee;
+  background: #edf7f2;
 
   text-align: center;
   padding: 140px 5%;
 }
 .prenium_title {
   margin-bottom: 40px;
-  font-weight: bold;
+  font-weight: 300;
 
   font-size: 36px;
   line-height: 48px;
@@ -353,7 +353,7 @@ display: table;
   padding-top: 120px;
 }
 .button_pw {
-  background: #efcc95;
+  background: #97ceb1;
   border: 1px solid transparent;
   border-radius: 5rem;
   padding: 17px 36px;
@@ -830,7 +830,7 @@ padding-right: 4px;
   margin-bottom: 0;
 }
 .mt-100 {
-  margin-top: 50px;
+  margin-top: 130px;
 }
 .cw {
   color: white !important;
@@ -1347,9 +1347,7 @@ th {
 ::marker {
   display: none;
 }
-.mt-100 {
-  margin-top: 130px;
-}
+
 @media only screen and (max-width: 630px) {
   .mediaLR {
     width: auto !important;
@@ -1365,7 +1363,14 @@ margin-top: 2px;
   }.mw374 {
     max-width: 290px;
 }
-  
+.mt-100 {
+  margin-top: 50px;
+}
+.bg_blue {
+  background: #edf7f2;
+  text-align: center;
+  padding: 100px 5%;
+}
 .blockgr {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

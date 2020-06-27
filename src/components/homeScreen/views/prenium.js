@@ -3,6 +3,7 @@ import React from "react"
 
 const Prenium = ({ siteTitle }) => (
   <div className="bg_blue">
+    <h1 className="fs-42 ">Explorez</h1>
     <h1 className="prenium_title pt-0">Choisissez l'offre qui vous convient</h1>
 
 
