@@ -111,6 +111,12 @@ video {
 .fs-24 {
   font-size: 32px;
 }
+
+.badw {
+  background: #ecae44;
+  border-radius: 2px;
+  font-size: 14px !important;
+}
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
 }
@@ -119,7 +125,7 @@ input, button {
   -moz-appearance: none !important;
 }
 .kilokaFooter {
-  background: url("../../src/images/kiloka_white.svg");
+  background: url("../../src/images/kiloka_black.svg");
   width: 87px;
   height: 36px;
   background-position: center;
@@ -132,14 +138,18 @@ input, button {
   height: 50px;
   background-position: center;
   background-repeat: no-repeat;
-}
-.block {
-    box-shadow: 0 2px 4px 0 rgba(119, 117, 117, 0.1);
-    border-radius: 8px;
-
+  margin: 0 auto;
 }
 
-
+.grd {
+  box-shadow: 0 2px 4px 0 rgba(119, 117, 117, 0.1);
+border-radius: 6px;
+width: 100px;
+height: 100px;
+text-align: center;
+padding: 15px;
+display: table;
+}
 .border {
   border: 1px solid rgba(231, 231, 231, 0.58);
 }
@@ -297,13 +307,16 @@ input, button {
   display: table;
 }
 .pfl {
-  position: fixed;
+  position: absolute;
+  margin: auto;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  background: #002244;
-  color: white;
+  left: 0;
+  width: 300px;
+  text-align: center;
+  height: 50px;
+  background-color: #FFF;
 }
 .button_blue_submit {
   background: #002244;
@@ -558,6 +571,20 @@ input, button {
 .blogPost {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.price {
+  color: #000;
+font-size: 64px;
+font-weight: 700;
+letter-spacing: -.7px;
+line-height: 1.03;
+padding-right: 4px;
+}
+
+.blockgr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
 }
 .info_mth {
@@ -1322,6 +1349,12 @@ th {
     border-radius: 2px;
     border-radius: 0px;
   }
+  
+.blockgr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
   .mob-mb32 {
     margin-bottom: 32px;
   }

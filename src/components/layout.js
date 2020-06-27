@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  if (loading) return <h5>loading ...</h5>
+  if (loading) return <div className="pfl">Chargement...</div>
   else
     return (
       <>
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <div className="  border-top p-100-0 bg-w">
           <footer className="p-32 fs-16 m-w p-i footer-gr">
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase fs-18 bold font-bold mb-32 ">
                 Entreprise
               </div>
 
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase fs-18 bold font-bold mb-32 ">
                 Communautés
               </div>
 
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase fs-18 bold font-bold mb-32 ">
                 Liens utiles
               </div>
 
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
               </a>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase fs-18 bold font-bold mb-32 ">
                 Légales
               </div>
               <Link className="i-link    db mb-15" to="/page/mentions-legales">
@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
                 {" "}
                 © {new Date().getFullYear()}, {` `}
                 <a className="i-link  " href="https://kiloka.io/">
-                  Kiloka France
+                  Kiloka France 
                 </a>
               </p>
             </div>

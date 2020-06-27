@@ -89,15 +89,18 @@ const UserPage = props => {
           <div>
             <div className="grd_f">
               {planUser && planUser.length !== 0 ? (
-                <div className="bg-w p-32">
+                <div className="bg-w ">
                   {planUser.map(plan => (
-                    <div key={plan.id} className="bgb mb-10">
-                      <span className="info_txt uppercase">
-                        {premium ? "Abonnement" : "Premium Plan"}
+                    <div key={plan.id} className="mb-10">
+                      <span className="badw uppercase">
+                        {premium ? "Abonnement" : "Formule"}
                       </span>
+                      <span className="font-bold uppercase align-center">                        {plan.product.name}
+</span>
 
                       <div className="info_mth">
-                        € {plan.amount / 100} /{" "}
+                        <span className="price">€ {plan.amount / 100}</span>
+                        
                         {plan.interval_count + " " + plan.interval}
                       </div>
                       {plan.user_plan && (
@@ -120,7 +123,7 @@ const UserPage = props => {
                       )}
                       {plan.trial_period_days && (
                         <div className="time_end" style={{ color: "#fff" }}>
-                          Days Trial : {plan.trial_period_days}
+                          Période d'essai : {plan.trial_period_days}
                         </div>
                       )}
                       {premium ? (
@@ -154,7 +157,7 @@ const UserPage = props => {
                                 : onSubcription(plan.user_plan)
                             }
                           >
-                            Buy
+                            Continuez avec la formule
                           </button>
                         </div>
                       )}
@@ -187,12 +190,59 @@ const UserPage = props => {
 
               <div className="block">
 
+              <div className="blockgr">
 
-  <h1>Spotify</h1>
-  <p> Les playlists sont mises à jour régulièrement pour rester pertinentes.</p>
-    <div className="logo_spotify"></div>
+    
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
 
 
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
+
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
+
+
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
+
+
+
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
+
+
+
+
+<div className="grd">
+<div className="logo_spotify"></div>
+
+<span classname="fs16">Spotify</span>
+</div>
+
+
+    </div> 
 
 
           </div> 
