@@ -12,7 +12,7 @@ import { logout } from "../utils/firebase"
 import styled from "@emotion/styled"
 
 const Background = styled.div`
-  background: #f8f9fb;
+  background: #ffffff;
   header {
     position: relative !important;
     border: 0 !important;
@@ -104,8 +104,9 @@ const UserPage = props => {
                       <span className="badw cw">
                         {premium ? "Abonnement" : "Formule"}
                       </span>
-                      <span className="font-bold uppercase align-center">                        {plan.product.name}
-</span>
+                      <div className="font-bold uppercase align-center">                        
+                      {plan.product.name}
+</div>
 
                       <div className="info_mth">
                         <span className="price">€ {plan.amount / 100}</span>
