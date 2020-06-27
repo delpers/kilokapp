@@ -658,12 +658,24 @@ padding-right: 4px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
 }
-
+.cab {
+  background: #006288;
+  padding: 6px 16px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+}
+.blackblack {
+  background: #09090969;
+}
 .p-hr {
   padding-top: 280px !important;
 }
 .bg-black {
-  background: #000;
+  background: #000000 !important;
+}
+.fs-76 {
+  font-size: 76px;
 }
 .footer-gr {
   display: grid;
