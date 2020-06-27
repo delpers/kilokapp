@@ -1000,6 +1000,9 @@ header {
   border: none;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 .c-v {
   color: white;
@@ -1416,11 +1419,12 @@ margin-top: 2px;
   }
   .c-t {
     font-size: 18px;
-    padding: 26px;
+    padding: 0 26px;
     margin-right: 0;
     margin-top: 0;
     display: block;
     text-align: center;
+    flex-wrap: nowrap;
 }
   .card-des {
     display: grid;
