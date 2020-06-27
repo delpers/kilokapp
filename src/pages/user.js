@@ -86,13 +86,14 @@ const UserPage = props => {
       <div>
      
         <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
+          <h1>Mon compte</h1>
           <div>
             <div className="grd_f">
               {planUser && planUser.length !== 0 ? (
                 <div className="bg-w ">
                   {planUser.map(plan => (
                     <div key={plan.id} className="mb-10">
-                      <span className="badw uppercase">
+                      <span className="badw cw">
                         {premium ? "Abonnement" : "Formule"}
                       </span>
                       <span className="font-bold uppercase align-center">                        {plan.product.name}

@@ -9,9 +9,7 @@ export default function heroScreen() {
           contentfulHomePage {
             titleHome
             descriptionHome
-            picture: childContentfulHomePageHeroImageJsonNode {
-              secure_url
-            }
+         
           }
         }
       `}
@@ -20,8 +18,6 @@ export default function heroScreen() {
           <div
             className="w-screen-home"
             style={{
-              backgroundImage:
-                "url(" + data.contentfulHomePage.picture.secure_url + ")",
               backgroundPosition: "center",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
@@ -29,10 +25,10 @@ export default function heroScreen() {
               color: "initial",
             }}
           >
-            <div className="m-w p-i home-details">
-              <section>
-                <h1 className="w-50 w50mf cw">{data.contentfulHomePage.titleHome}</h1>
-                <p className="mb-0 mr-h-15 mw374 cw">
+            <div className="m-w p-i home-details ">
+              <section className="mt-100">
+                <h1 className="w-50 w50mf">{data.contentfulHomePage.titleHome}</h1>
+                <p className="mb-0 mr-h-15 mw374">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

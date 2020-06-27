@@ -116,6 +116,7 @@ video {
   background: #ecae44;
   border-radius: 2px;
   font-size: 14px !important;
+  padding: 6px 12px;
 }
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
@@ -601,13 +602,13 @@ padding-right: 4px;
   padding: 14px;
 }
 .btnun {
-  background: white;
+  background: #4ca1e8;
   font-size: 16px;
   padding: 8px 32px;
   margin-top: 32px;
   border-radius: 2px;
-  border: 2px solid #d54040;
-  color: #d54040;
+  border: 2px solid #4ca1e8;
+  color: white;
 }
 .btndex {
   background: #d54040;
@@ -827,6 +828,9 @@ padding-right: 4px;
   object-fit: cover;
   width: 100%;
   margin-bottom: 0;
+}
+.mt-100 {
+  margin-top: 100px;
 }
 .cw {
   color: white !important;
@@ -1088,7 +1092,9 @@ header {
   color: initial;
 }
 .w-screen-home {
-  background-color: #4ca1e8;
+  background-color: #fff7f6;
+  background: url("../../src/images/kiloka_home.svg");
+  height: 735px;
 }
 .ais-Hits-list {
   display: grid;
@@ -1210,7 +1216,7 @@ header {
   background-color: #fff;
 }
 .link a {
-  color: black;
+  color: initial;
 }
 .fl-r {
   float: right;
@@ -1433,7 +1439,6 @@ th {
   .fs-36 {
     font-size: 24px;
     letter-spacing: -1.16px;
-    color: black;
   }
   .c-t {
     font-size: 18px;
