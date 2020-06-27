@@ -126,6 +126,9 @@ video {
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
 }
+.b-solid-top-black {
+  border-top: 1px solid #3333331c;
+}
 input, button {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -666,7 +669,7 @@ padding-right: 4px;
   border-radius: 2px;
 }
 .blackblack {
-  background: #09090969;
+  background: #040406;
 }
 .p-hr {
   padding-top: 280px !important;

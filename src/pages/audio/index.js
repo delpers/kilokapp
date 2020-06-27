@@ -11,6 +11,8 @@ const Background = styled.div`
     border: 0 !important;
     background: white;
     display: none;
+  }footer {
+      display: none;
   }
 `
 const Audio = () => {
@@ -67,7 +69,6 @@ const Audio = () => {
               <div className="audio">
 
               <figure>
-    <figcaption>Listen to the T-Rex:</figcaption>
     <audio
         controls
         src={edge.node.eAudio.secure_url}>
@@ -78,7 +79,7 @@ const Audio = () => {
 
 
               </div>
-              <div className="b-solid-top p-24 text-base font-bold">
+              <div className="b-solid-top-black p-24 text-base font-bold">
                 {edge.node.author}
               </div>
             </div>
