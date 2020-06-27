@@ -977,20 +977,13 @@ header {
   padding: 42px;
   border-radius: 0px;
 }
-.c-t {
-  font-size: 18px;
-  padding: 26px;
-  text-align: left;
-  margin-right: 0;
-  margin-top: 0;
-  display: ruby-text-container;
-}
+
 .addiction-card__text {
-  margin-top: 32px;
+  margin-top: 0;
   color: #47455a;
   line-height: 24px;
   font-weight: 500;
-  padding: 0 24px;
+  padding: 24px;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
@@ -1422,9 +1415,13 @@ margin-top: 2px;
     width: 100% !important;
   }
   .c-t {
-    font-size: 14px;
-    font-weight: 300 !important;
-  }
+    font-size: 18px;
+    padding: 26px;
+    margin-right: 0;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+}
   .card-des {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1468,10 +1465,10 @@ margin-top: 2px;
   .c-t {
     font-size: 18px;
     padding: 26px;
-    text-align: center;
     margin-right: 0;
     margin-top: 0;
-    display: ruby-text-container;
+    display: block;
+    text-align: center;
 }
   .dn-m {
     margin-right: 8% !important;

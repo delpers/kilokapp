@@ -37,7 +37,7 @@ export default function Plats() {
                
                       <div className="addiction-card__text">
                       <Link
-                              className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                              className="i-link fs-16 b-b-g font-bold c-t"
                               to={`/plats/recettes/${edge.node.slug}/`}
                             >
                               {edge.node.title}

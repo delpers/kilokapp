@@ -44,7 +44,7 @@ export default function Breakfasts() {
                       
                         <div className="addiction-card__text mt-0">
                           <Link
-                            className="i-link fs-16 b-b-g mr-15 font-bold c-t"
+                            className="i-link fs-16 b-b-g font-bold c-t"
                             to={`/breakfast/recettes/${edge.node.slug}/`}
                           >
                             {edge.node.title}
