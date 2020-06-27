@@ -9,8 +9,16 @@ import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
+import styled from "@emotion/styled"
 
-
+const Background = styled.div`
+  background: #f8f9fb;
+  header {
+    position: relative !important;
+    border: 0 !important;
+    background: white;
+  }
+`
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
 
 const stripePromise = loadStripe(STRIPE_PK_KEY)
@@ -80,7 +88,7 @@ const UserPage = props => {
     }
   }, [planUser])
   return (
-
+<Background>
     <Layout>
       <SEO title="Mon compte" />
       <div>
@@ -179,79 +187,8 @@ const UserPage = props => {
                   </a>
                 </div>
 
-                <div className="dex bg-w">
-                  <button onClick={logoutUser} className="btndex">
-                    Logout
-                  </button>
-                </div>
+                
               </div>
-
-
-
-
-              <div className="block">
-
-              <div className="blockgr">
-
-    
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-
-
-<div className="grd">
-<div className="logo_spotify"></div>
-
-<span classname="fs16">Spotify</span>
-</div>
-
-
-    </div> 
-
-
-          </div> 
-
-
-
-
-
 
 
 
@@ -270,7 +207,7 @@ const UserPage = props => {
         </div>
       </div>
     </Layout>
-
+    </Background>
   )
 }
 

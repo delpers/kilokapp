@@ -1,9 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
+import { logout } from "../utils/firebase"
 
 import UserContext from "./UserContext"
-
+const logoutUser = async () => {
+  await logout()
+    .then(() => {})
+    .catch(error => {
+      alert(error.message)
+    })
+}
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
@@ -46,10 +53,16 @@ const Header = ({ siteTitle }) => {
               </Link>
             )}
             {user && (
-              <Link to="/user" className="button_blue">
+              <Link to="/user" className="button_blue nowrap">
                 Mon compte
               </Link>
             )}
+            {user && (
+                  <button onClick={logoutUser} className="btnlogout">
+                  <i class="fas fa-sign-out-alt"></i>
+                  </button>
+            )}
+            
         </div>
       </div>
     </header>
