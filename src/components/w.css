@@ -243,15 +243,14 @@ display: table;
   font-weight: 500;
 }
 .bg_blue {
-  background: #012749;
+  background: #fff7ee;
 
   text-align: center;
   padding: 140px 5%;
 }
 .prenium_title {
   margin-bottom: 40px;
-  color: #4ca1e6;
-  font-weight: 500;
+  font-weight: bold;
 
   font-size: 36px;
   line-height: 48px;
@@ -354,7 +353,7 @@ display: table;
   padding-top: 120px;
 }
 .button_pw {
-  background: #4ca1e8;
+  background: #efcc95;
   border: 1px solid transparent;
   border-radius: 5rem;
   padding: 17px 36px;
@@ -1348,7 +1347,9 @@ th {
 ::marker {
   display: none;
 }
-
+.mt-100 {
+  margin-top: 130px;
+}
 @media only screen and (max-width: 630px) {
   .mediaLR {
     width: auto !important;
@@ -1361,7 +1362,9 @@ background-position: left;
 background-repeat: no-repeat;
 display: flex;
 margin-top: 2px;
-  }
+  }.mw374 {
+    max-width: 290px;
+}
   
 .blockgr {
   display: grid;
