@@ -26,7 +26,7 @@ export default function Desserts() {
       render={data => (
         <div className="m-w p-i pb-0  ">
           <div className="mb-100">
-            <h3 className="mw728 mb-0 fs-24 pb-4 title-m title-blem">{data.home.title_desserts}</h3>
+            <h3 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">{data.home.title_desserts}</h3>
             <span className="pl text-gray mw728 ">
               {data.home.description_desserts}
             </span>

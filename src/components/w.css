@@ -338,12 +338,12 @@ display: table;
   font-size: 36px;
   line-height: 48px;
   margin-bottom: 32px !important;
+  font-weight: 300;
 }
 .pl {
   display: block;
   padding-top: 10px;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
   line-height: 40px;
 }
 .mw728 {
@@ -689,7 +689,7 @@ padding-right: 4px;
 }
 
 .text-gray {
-  color: rgb(98, 99, 102) !important;
+  color: #7e8186 !important;
 }
 
 .justify {
@@ -1493,7 +1493,7 @@ margin-top: 2px;
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    font-weight: 900;
+    font-weight: 300;
     max-width: 100%;
     width: auto;
     display: inline-block;
