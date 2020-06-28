@@ -7,22 +7,31 @@ import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import { signup, loginWithGoogle } from "../utils/firebase"
+import styled from "@emotion/styled"
 
+const Background = styled.div`
+  background: #ffffff;
+  header {
+    position: relative !important;
+    border: 0 !important;
+    background: white;
+  }
+`
 const schema = yup.object().shape({
   email: yup
     .string()
     .email()
-    .required("Please enter email to register!")
-    .min(6, "Email is too short - should be 6 chars minimum."),
+    .required("Veuillez saisir votre e-mail pour vous inscrire!")
+    .min(6, "L'email est trop court, sinon vérifiez qu'elle n'est pas déjà utilisée."),
   password: yup
     .string()
-    .required("Please enter password to register!")
-    .min(8, "Email is too short - should be 6 chars minimum."),
+    .required("Veuillez saisir votre mot de passe pour vous inscrire!")
+    .min(8, "L'email est trop court - devrait être de 6 caractères minimum."),
   confirm_password: yup
     .string()
-    .required("Please confirm password!")
-    .min(8, "Email is too short - should be 6 chars minimum.")
-    .oneOf([yup.ref("password"), null], "Passwords must match"),
+    .required("Veuillez confirmer le mot de passe!")
+    .min(8, "L'email est trop court - devrait être de 6 caractères minimum.")
+    .oneOf([yup.ref("password"), null], "Les mots de passe doivent correspondre"),
 })
 
 const RegisterPage = () => {
@@ -69,8 +78,9 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
+    <Background>
     <Layout>
-      <SEO title="Connexion" />
+      <SEO title="Inscription" />
       <div>
     
 
@@ -80,13 +90,12 @@ const RegisterPage = () => {
             style={{ maxWidth: "500px" }}
           >
             <div className="form-group">
-              <label style={{ margin: "10px 0 0 " }}>Email</label>
               <input
                 type="email"
                 className="form-control"
                 onChange={onChangeInput}
                 name="email"
-                placeholder="Enter email"
+                placeholder="Veuillez saisir votre adresse e-mail"
                 style={{ width: "100%" }}
                 ref={register({ required: true, minLength: 8 })}
               />
@@ -95,13 +104,12 @@ const RegisterPage = () => {
               )}
             </div>
             <div className="form-group">
-              <label style={{ margin: "10px 0 0 " }}>Password</label>
               <input
                 type="password"
                 className="form-control"
                 onChange={onChangeInput}
                 name="password"
-                placeholder="Password"
+                placeholder="Saisir un mot de passe"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -110,13 +118,12 @@ const RegisterPage = () => {
               )}
             </div>
             <div className="form-group">
-              <label style={{ margin: "10px 0 0 " }}>Confirm Password</label>
               <input
                 type="password"
                 className="form-control"
                 onChange={onChangeInput}
                 name="confirm_password"
-                placeholder="Password"
+                placeholder="Confirmez le mot de passe"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -137,27 +144,34 @@ const RegisterPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/login">Login</a>
-              <button
+            
+            </div>
+            <div>
+            <button
                 type="submit"
                 style={{ padding: "0 15px" }}
+                className="btnlogin"
+
                 onClick={onSubmitRegister}
               >
-                {loading ? "Loading..." : "Sign Up"}
+                {loading ? "Chargement..." : "Inscription"}
               </button>
             </div>
             <button
-              className="mt-10"
+              className="mt-10 btngoogle"
               style={{ width: "100%" }}
               type="button"
               onClick={loginByGmail}
             >
-              Sign in with Google
+              Connectez-vous avec Google
             </button>
+            <a href="/login">Connexion</a>
+
           </form>
         </div>
       </div>
     </Layout>
+    </Background>
   )
 }
 

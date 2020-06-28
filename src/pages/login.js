@@ -106,7 +106,7 @@ const LoginPage = () => {
                 onChange={onChangeInput}
                 className="form-control"
                 name="password"
-                placeholder="Veuillez saisir votre mot de passe"
+                placeholder="Saisir votre mot de passe"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -125,17 +125,7 @@ const LoginPage = () => {
                 {textLoginSubmit.message}
               </span>
             )}
-            <div
-              className="mt-10"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <a href="/addu">Devenir membre</a>
-              
-            </div>
+            
             <div>
             <button
                 type="submit"
@@ -154,6 +144,17 @@ const LoginPage = () => {
             >
               Connectez-vous avec Google
             </button>
+            <div
+              className="mt-10 align-center fs16"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <a href="/addu">Devenir membre</a>
+              
+            </div>
           </form>
         </div>
       </div>

@@ -292,7 +292,7 @@ display: table;
   border: 1px solid #eaeaea;
   margin-bottom: 15px;
   padding: 10px 15px;
-  border-radius: 2px;
+  border-radius: 5rem;
   color: #333;
   font-size: 16px;
 }
@@ -858,20 +858,20 @@ background-position: bottom;
   color: #00aa71;
 }
 .btnlogin {
-  background: #79acd8;
-  font-size: 18px;
-  padding: 10px 32px !important;
-  border-radius: 2px;
+  background: #4ba0e7;
+  font-size: 16px;
+  padding: 14px 32px !important;
+  border-radius: 5rem;
   color: white;
   width: 100%;
   border: none;
 }
 .btngoogle {
-  background: #dd6363;
-  font-size: 18px;
-  padding: 10px 32px !important;
-  border-radius: 2px;
-  color: white;
+  background: #ffe7bf;
+  font-size: 16px;
+  padding: 14px 32px !important;
+  border-radius: 5rem;
+  color: black;
   width: 100%;
   border: none;
 }
