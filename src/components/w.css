@@ -669,15 +669,16 @@ padding-right: 4px;
   border-radius: 2px;
 }
 .bg_audio {
-  background-image: url(https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1593354394/Images/samuele-errico-piccarini-2KRlcimj0us-unsplash_1_yvl2uj.jpg);
   text-align: center;
-padding: 140px 5%;
+padding: 200px 5%;
 color: white;
 background-size: cover;
 background-position: center;
+background-position: bottom;
 }
 .bg-top {
-  background-color: red;
+  background-color: black;
 }
 .blackblack {
   background: #141414;

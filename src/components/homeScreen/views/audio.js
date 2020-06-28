@@ -21,10 +21,10 @@ export default function Audio() {
             <div className="bg_audio">
               <h1 className="prenium_title pt-0">
                 {" "}
-                {data.home.title_audio} L'esprit clair !{" "}
+                {data.home.title_audio}{" "}
               </h1>
               <p>
-                {data.home.description_audio} L'esprit clair avec des programmes nombreux et variés.
+                {data.home.description_audio}
               </p>
 
               <div className="grp">
