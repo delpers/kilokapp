@@ -116,9 +116,17 @@ video {
 .fs-24 {
   font-size: 32px;
 }
-
+.psmg {
+  font-size: 16px;
+  border: 2px solid #ecebeb;
+  padding: 12px 14px;
+  border-radius: 2px;
+  color: #777;
+  font-weight: 300;
+  line-height: 24px;
+}
 .badw {
-  background: #ecae44;
+  background: #00aa71;
   border-radius: 2px;
   font-size: 14px !important;
   padding: 6px 12px;
@@ -952,9 +960,39 @@ header {
 .tfd {
   display: grid;
 }
+.bdgeww {
+  background: #1593ff;
+  text-align: center;
+  color: #FFF;
+  border: 2px solid #1593ff;
+  display: grid;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 20px;
+}
+.prenium {
+  border-radius: 2px;
+  border: 2px solid #c6c8d0;
+}
+.price {
+  text-align: center;
+  font-size: 74px;
+  margin-bottom: 0;
+}
+.month {
+  width: 100%;
+  text-align: center;
+  display: block ruby;
+  color: #c8c6cb;
+}
 .ir-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.gr-log {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
 }
 .fs-42 {
@@ -1416,6 +1454,10 @@ margin-top: 2px;
   line-height: 33px;
 }.cards-n {
   margin-right: 15px !important;
+}.gr-log {
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
 }
 .mt-100 {
   margin-top: 50px;

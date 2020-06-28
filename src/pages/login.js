@@ -89,7 +89,12 @@ const LoginPage = () => {
             <h1>Vous connecter à Kiloka </h1>
             <p>Connectez-vous, ajoutez des activités à votre liste de favoris et accédez à vos recettes depuis tous vos appareils.</p>
           </div>
-          <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
+
+
+          <div className="gr-log">
+
+<div>
+<form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
             <div className="form-group">
               <input
                 type="email"
@@ -156,6 +161,15 @@ const LoginPage = () => {
               
             </div>
           </form>
+</div>
+
+<div>
+  <h1>Prenium ?</h1>
+</div>
+
+
+          </div>
+          
         </div>
       </div>
     </Layout>

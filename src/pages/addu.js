@@ -85,8 +85,14 @@ const RegisterPage = () => {
     
 
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
-          <h1>S’inscrire sur Kiloka</h1>
-          <form
+
+          <div className="gr-log">
+
+            <div>
+            <h1>S’inscrire sur Kiloka</h1>
+            <h4 className="db align-left">Découvrez dès maintenant Kiloka Premium.</h4>
+
+            <form
             onSubmit={handleSubmit(onSubmitRegister)}
             style={{ maxWidth: "500px" }}
           >
@@ -167,6 +173,35 @@ const RegisterPage = () => {
             </div>
 
           </form>
+            </div>
+         
+         <div className="prenium">
+         <span className="bdgeww">Abonnement Premium</span>
+                <h1 className="price align-center">9.99 € </h1>
+                <span className="month db align-center mb-32">/mois                 <i>*Essayez gratuitement pendant 1 mois</i>
+</span>
+
+                <div>
+
+                <span className="db align-center">Blog</span>
+                <span className="db align-center ">Plans d'entraînement course à pied</span>
+                <span className="db align-center ">Exercices de fitness et de musculation</span>
+                <span className="db align-center">Méditation+ (Audio)</span>
+                <span className="db align-center">Programmes alimentaires</span>
+
+
+                </div>
+
+         </div>
+
+          </div>
+
+
+
+
+
+
+
         </div>
       </div>
     </Layout>

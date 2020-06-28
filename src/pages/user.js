@@ -104,7 +104,7 @@ const UserPage = props => {
                       <span className="badw cw">
                         {premium ? "Abonnement" : "Formule"}
                       </span>
-                      <div className="font-bold uppercase align-center">                        
+                      <div className="font-bold align-left p-15-0">                        
                       {plan.product.name}
 </div>
 
@@ -114,25 +114,28 @@ const UserPage = props => {
                         {plan.interval_count + " " + plan.interval}
                       </div>
                       {plan.user_plan && (
-                        <div className="time_end" style={{ color: "#fff" }}>
-                          Fini le :
+                        <div className="time_end" style={{ color: "#000" }}>
+                          Prendra fin le
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
                             )
-                            .format("ll")}
+                            .format("11")}
                           {plan.user_plan.subscriptions.trial_end && " (Période d'essai)"}
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
                             )
                             .isBefore() && (
-                            <span style={{ color: "red" }}>OUT DATE</span>
+                            <span style={{ color: "red" }}>Date de sortie</span>
                           )}
+                          <p className="psmg">Lorsque vous suspendez un abonnement, la suspension intervient à la fin de votre période de facturation en cours.</p>
+
                         </div>
+
                       )}
                       {plan.trial_period_days && (
-                        <div className="time_end" style={{ color: "#fff" }}>
+                        <div className="time_end" style={{ color: "#000" }}>
                           Période d'essai : {plan.trial_period_days}
                         </div>
                       )}
@@ -142,6 +145,7 @@ const UserPage = props => {
                           "user_plan.subscriptions.cancel_at_period_end"
                         ) && (
                           <div className="bay bg-w">
+
                             <button
                               className="btnun"
                               onClick={() =>
@@ -152,8 +156,8 @@ const UserPage = props => {
                             >
                               {plan.user_plan &&
                               plan.user_plan.subscriptions.cancel_at_period_end
-                                ? "Subscribe"
-                                : "Unsubscribe"}
+                                ? "Continuez avec la formule"
+                                : "Annuler "}
                             </button>
                           </div>
                         )
@@ -177,16 +181,12 @@ const UserPage = props => {
               ) : null}
 
               <div>
-                <div className="info_mth">Your informations</div>
+                <div className="info_mth">Vos Informations</div>
                 {user ? (
-                  <div className="info_mti">registred with: {email}</div>
+                  <div className="info_mti">E-mail: {email}</div>
                 ) : null}
 
-                <div className="info_mti">
-                  <a className="cred" href="">
-                    Deleted my account
-                  </a>
-                </div>
+              
                 {user && (
                   <button onClick={logoutUser} className="btnlogout">
                   <i class="fas fa-sign-out-alt"></i>
