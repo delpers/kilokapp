@@ -57,11 +57,7 @@ const Header = ({ siteTitle }) => {
                 Mon compte
               </Link>
             )}
-            {user && (
-                  <button onClick={logoutUser} className="btnlogout">
-                  <i class="fas fa-sign-out-alt"></i>
-                  </button>
-            )}
+         
             
         </div>
       </div>

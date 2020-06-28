@@ -187,7 +187,11 @@ const UserPage = props => {
                     Deleted my account
                   </a>
                 </div>
-
+                {user && (
+                  <button onClick={logoutUser} className="btnlogout">
+                  <i class="fas fa-sign-out-alt"></i>
+                  </button>
+            )}
                 
               </div>
 

@@ -857,6 +857,24 @@ background-position: bottom;
   font-weight: 500;
   color: #00aa71;
 }
+.btnlogin {
+  background: #79acd8;
+  font-size: 18px;
+  padding: 10px 32px !important;
+  border-radius: 2px;
+  color: white;
+  width: 100%;
+  border: none;
+}
+.btngoogle {
+  background: #dd6363;
+  font-size: 18px;
+  padding: 10px 32px !important;
+  border-radius: 2px;
+  color: white;
+  width: 100%;
+  border: none;
+}
 .featured {
   height: 220px;
   object-fit: cover;
@@ -864,7 +882,7 @@ background-position: bottom;
   margin-bottom: 0;
 }
 .mt-100 {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .cw {
   color: white !important;
@@ -1030,9 +1048,9 @@ header {
   align-items: center;
   border-radius: 0;
   border: none;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-animation: 1.2s bgrandom infinite;
+  border-radius: 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  animation: 1.2s bgrandom infinite;
 }
 .c-v {
   color: white;
@@ -1121,9 +1139,9 @@ animation: 1.2s bgrandom infinite;
   color: initial;
 }
 .w-screen-home {
-  background-color: #fff7ee !important;
+  background-color: #f4f7fc !important;
   background: url("../../src/images/kiloka_home.svg");
-  height: 735px;
+  height: 600px;
 }
 .ais-Hits-list {
   display: grid;
@@ -1242,7 +1260,7 @@ animation: 1.2s bgrandom infinite;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #f4f7fc;
 }
 .link a {
   color: initial;

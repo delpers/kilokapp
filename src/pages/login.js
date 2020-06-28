@@ -7,18 +7,27 @@ import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
 
+const Background = styled.div`
+  background: #ffffff;
+  header {
+    position: relative !important;
+    border: 0 !important;
+    background: white;
+  }
+`
 
 const schema = yup.object().shape({
   email: yup
     .string()
     .email()
-    .required("Please enter email to login!")
-    .min(6, "Email is too short - should be 6 chars minimum."),
+    .required("Veuillez saisir un e-mail pour vous connecter!")
+    .min(6, "L'email est trop court - devrait être de 6 caractères minimum."),
   password: yup
     .string()
-    .required("Please enter password to login!")
-    .min(8, "Email is too short - should be 6 chars minimum."),
+    .required("Veuillez saisir votre mot de passe pour vous connecter!")
+    .min(8, "L'email est trop court - devrait être de 6 caractères minimum."),
 })
 
 const LoginPage = () => {
@@ -70,6 +79,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
+    <Background>
     <Layout>
       <SEO title="Connexion" />
       <div>
@@ -77,13 +87,12 @@ const LoginPage = () => {
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
           <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
             <div className="form-group">
-              <label style={{ margin: "10px 0 0 " }}>Email</label>
               <input
                 type="email"
                 onChange={onChangeInput}
                 className="form-control"
                 name="email"
-                placeholder="Enter email"
+                placeholder="Veuillez saisir votre adresse e-mail"
                 style={{ width: "100%" }}
                 ref={register({ required: true, minLength: 8 })}
               />
@@ -92,13 +101,12 @@ const LoginPage = () => {
               )}
             </div>
             <div className="form-group">
-              <label style={{ margin: "10px 0 0 " }}>Password</label>
               <input
                 type="password"
                 onChange={onChangeInput}
                 className="form-control"
                 name="password"
-                placeholder="Password"
+                placeholder="Veuillez saisir votre mot de passe"
                 ref={register({ required: true, minLength: 8 })}
                 style={{ width: "100%" }}
               />
@@ -125,27 +133,32 @@ const LoginPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/addu">Register</a>
-              <button
+              <a href="/addu">Devenir membre</a>
+              
+            </div>
+            <div>
+            <button
                 type="submit"
+                className="btnlogin"
                 onClick={onSubmit}
                 style={{ padding: "0 15px" }}
               >
-                {loading ? "Loading..." : "Login"}
+                {loading ? "Chargement..." : "Connexion"}
               </button>
             </div>
             <button
-              className="mt-10"
+              className="mt-10 btngoogle"
               style={{ width: "100%" }}
               type="button"
               onClick={loginByGmail}
             >
-              Sign in with Google
+              Connectez-vous avec Google
             </button>
           </form>
         </div>
       </div>
     </Layout>
+    </Background>
   )
 }
 
