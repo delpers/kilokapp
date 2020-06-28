@@ -1411,6 +1411,10 @@ margin-top: 2px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
+}.bg_audio {
+
+padding: 76px 5%;
+
 }
   .mob-mb32 {
     margin-bottom: 32px;
