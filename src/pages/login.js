@@ -85,6 +85,10 @@ const LoginPage = () => {
       <div>
     
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+          <div>
+            <h1>Vous connecter à Kiloka </h1>
+            <p>Connectez-vous, ajoutez des activités à votre liste de favoris et accédez à vos recettes depuis tous vos appareils.</p>
+          </div>
           <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
             <div className="form-group">
               <input
@@ -146,11 +150,7 @@ const LoginPage = () => {
             </button>
             <div
               className="mt-10 align-center fs16"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
+             
             >
               <a href="/addu">Devenir membre</a>
               

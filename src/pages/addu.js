@@ -85,6 +85,7 @@ const RegisterPage = () => {
     
 
         <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+          <h1>S’inscrire sur Kiloka</h1>
           <form
             onSubmit={handleSubmit(onSubmitRegister)}
             style={{ maxWidth: "500px" }}
@@ -136,16 +137,7 @@ const RegisterPage = () => {
             {errorRegister && (
               <span style={{ color: "red" }}>{errorRegister}</span>
             )}
-            <div
-              className="mt-10"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-            
-            </div>
+          
             <div>
             <button
                 type="submit"
@@ -165,7 +157,14 @@ const RegisterPage = () => {
             >
               Connectez-vous avec Google
             </button>
+
+            <div
+              className="mt-10 align-center fs16"
+             
+            >
             <a href="/login">Connexion</a>
+              
+            </div>
 
           </form>
         </div>

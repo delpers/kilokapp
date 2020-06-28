@@ -289,12 +289,13 @@ display: table;
  border-top:  1px solid #eaeaea;
 }
 .form-control {
-  border: 1px solid #eaeaea;
+  border: 2px solid #c6c8d0;
   margin-bottom: 15px;
-  padding: 10px 15px;
-  border-radius: 5rem;
-  color: #333;
-  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 2px;
+  color: #90949e;
+  font-size: 19px;
+  font-weight: 300 !important;
 }
 .google {
     width: 100%;
@@ -858,21 +859,20 @@ background-position: bottom;
   color: #00aa71;
 }
 .btnlogin {
-  background: #4ba0e7;
+  background: #1593ff;
   font-size: 16px;
   padding: 14px 32px !important;
-  border-radius: 5rem;
+  border-radius: 2px;
   color: white;
   width: 100%;
   border: none;
 }
 .btngoogle {
-  background: #ffe7bf;
+  background: black;
   font-size: 16px;
   padding: 14px 32px !important;
-  border-radius: 5rem;
-  color: black;
-  width: 100%;
+  border-radius: 2px;
+  color: white;
   border: none;
 }
 .featured {
