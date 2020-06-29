@@ -874,13 +874,23 @@ background-position: bottom;
   color: #00aa71;
 }
 .btnlogin {
+ 
+
+  border-width: 0;
+  width: 50%;
   background: #1593ff;
+  color: #FFF;
   font-size: 16px;
-  padding: 12px 32px !important;
   border-radius: 2px;
-  color: white;
-  width: 100%;
-  border: none;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 16px 32px !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 .google-button {
@@ -893,7 +903,7 @@ background-position: bottom;
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
-  padding: 12px 32px !important;
+  padding: 16px 32px !important;
   margin-top: 20px;
   margin-bottom: 20px;
 
@@ -1491,6 +1501,8 @@ background-position: left;
 background-repeat: no-repeat;
 display: flex;
 margin-top: 2px;
+  }.btnlogin {
+    width: 100%;
   }.mw374 {
     max-width: 290px;
 }.prenium_title {
