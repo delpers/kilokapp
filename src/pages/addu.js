@@ -142,13 +142,13 @@ const RegisterPage = () => {
                       style={{ width: "100%" }}
                     />
                     {errors.confirm_password && (
-                      <span style={{ color: "red" }}>
+                      <span className="msg_alert" style={{ color: "red" }}>
                         {errors.confirm_password.message}
                       </span>
                     )}
                   </div>
                   {errorRegister && (
-                    <span style={{ color: "red" }}>{errorRegister}</span>
+                    <span className="msg_alert" style={{ color: "red" }}>{errorRegister}</span>
                   )}
 
                   <div>
