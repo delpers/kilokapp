@@ -137,9 +137,9 @@ video {
 }
 .badw {
   background: #00aa71;
-  border-radius: 2px;
+  border-radius: 5rem;
   font-size: 14px !important;
-  padding: 6px 12px;
+  padding: 7px 24px;
 }
 .b-solid-top {
   border-top: 1px solid rgba(231, 231, 231, 0.58);
@@ -618,7 +618,7 @@ padding-right: 4px;
   grid-gap: 32px;
 }
 .info_mth {
-  background: #fafafa;
+  background: #FFF;
   text-align: left;
   font-size: 16px;
   padding: 20px 0;
@@ -631,13 +631,13 @@ padding-right: 4px;
   padding: 14px;
 }
 .btnun {
-  background: #4ca1e8;
+  background: #FFF;
   font-size: 16px;
   padding: 8px 32px;
   margin-top: 32px;
   border-radius: 2px;
-  border: 2px solid #4ca1e8;
-  color: white;
+  border: 2px solid #000;
+  color: #000;
 }
 .btndex {
   background: #d54040;
@@ -897,7 +897,7 @@ background-position: bottom;
   border: 1px solid #ededed;
   padding: 20px;
   border-radius: 2px;
-  background: #fafafa;
+  background: #FFF;
   margin-bottom: 20px;
 }
 .google-button {
