@@ -305,8 +305,8 @@ display: table;
 }
 .form-control {
   border: 1px solid #c6c8d0;
-  margin-bottom: 15px;
-  padding: 8px 12px;
+  margin-bottom: 20px;
+  padding: 12px 12px !important;
   border-radius: 2px;
   color: #90949e;
   font-size: 16px;
@@ -876,7 +876,7 @@ background-position: bottom;
 .btnlogin {
   background: #1593ff;
   font-size: 16px;
-  padding: 14px 32px !important;
+  padding: 12px 32px !important;
   border-radius: 2px;
   color: white;
   width: 100%;
@@ -887,24 +887,29 @@ background-position: bottom;
   border-width: 0;
   background: white;
   color: #737373;
-  border-radius: 5px;
+  border-radius: 2px;
   white-space: nowrap;
   box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
-  padding: 14px 32px !important;
-  margin-top: 15px;
+  padding: 12px 32px !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
  
+}
+.msg_alert {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .google-button__icon {
   display: inline-block;
   vertical-align: middle;
-  margin: 8px 0 8px 8px;
-  width: 18px;
-  height: 18px;
+  margin: -6px 0 8px 8px;
+  width: 22px;
+  height: 20px;
   box-sizing: border-box;
 }
 
@@ -918,18 +923,9 @@ background-position: bottom;
   padding: 0 24px;
   font-size: 14px;
   font-weight: bold;
+  margin-top: -5px;
 }
 
-.btngoogle {
-  background: transparent;
-  font-size: 16px;
-  padding: 14px 32px !important;
-  border-radius: 2px;
-  color: white;
-  border: none;
-  border: 1px solid #c6c8d0;
-  color: initial;
-}
 .featured {
   height: 220px;
   object-fit: cover;
@@ -1299,6 +1295,9 @@ header {
 .mt-1 {
   margin-top: 1px !important;
   display: grid;
+}
+mt-20 {
+  margin-top: 20px !important;
 }
 .mt-1-s {
   margin-top: 1px !important;

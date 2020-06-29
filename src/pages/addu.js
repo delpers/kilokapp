@@ -110,7 +110,7 @@ const RegisterPage = () => {
                       ref={register({ required: true, minLength: 8 })}
                     />
                     {errors.email && (
-                      <span style={{ color: "red" }}>
+                      <span className="msg_alert" style={{ color: "#d05b5b" }}>
                         {errors.email.message}
                       </span>
                     )}
@@ -126,7 +126,7 @@ const RegisterPage = () => {
                       style={{ width: "100%" }}
                     />
                     {errors.password && (
-                      <span style={{ color: "red" }}>
+                      <span className="msg_alert" style={{ color: "#d05b5b" }}>
                         {errors.password.message}
                       </span>
                     )}
@@ -199,7 +199,7 @@ const RegisterPage = () => {
                     </span>
                   </button>
 
-                  <div className="mt-15">
+                  <div className="mt-20">
                     <p class="fs-16">
                       <span class="LinkContainer-sc-1t58wcv-0 knFNJQ">
                         En cliquant sur le bouton d'inscription, vous acceptez
