@@ -56,6 +56,9 @@ video {
   background-position: center;
   background-repeat: no-repeat;
 }
+.fs-28 {
+  font-size: 28px;
+}
 ._logo_google {
   background: url("../../src/images/logo-google.svg");
   width: 45px;
@@ -616,9 +619,9 @@ padding-right: 4px;
 }
 .info_mth {
   background: #fafafa;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  padding: 14px;
+  padding: 20px 0;
 }
 .info_mti {
   background: #fcfcfc;
@@ -889,6 +892,13 @@ background-position: bottom;
 }
 .mt-42 {
   margin-top: 42px;
+}
+.plan {
+  border: 1px solid #ededed;
+  padding: 20px;
+  border-radius: 2px;
+  background: #fafafa;
+  margin-bottom: 20px;
 }
 .google-button {
   border-width: 0;

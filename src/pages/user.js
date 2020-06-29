@@ -101,11 +101,11 @@ const UserPage = props => {
               {planUser && planUser.length !== 0 ? (
                 <div className="bg-w ">
                   {planUser.map(plan => (
-                    <div key={plan.id} className="mb-10">
+                    <div key={plan.id} className="mb-10 plan">
                       <span className="badw cw">
                         {premium ? "Abonnement en cours" : "Formule"}
                       </span>
-                      <div className="font-bold align-left p-15-0">                        
+                      <div className="fs-28 align-left p-15-0 fw300 pt-15">                        
                       {plan.product.name}
 </div>
 
@@ -115,8 +115,8 @@ const UserPage = props => {
                         {plan.interval_count + " " + plan.interval}
                       </div>
                       {plan.user_plan && (
-                        <div className="time_end" style={{ color: "#000" }}>
-                          <span className="mr-15">Prendra fin le</span>
+                        <div className="time_end fs-16" style={{ color: "#000" }}>
+                          <span className="mr-5">Prendra fin le</span>
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
@@ -135,8 +135,8 @@ const UserPage = props => {
 
                       )}
                       {plan.trial_period_days && (
-                        <div className="time_end" style={{ color: "#000" }}>
-                          Période d'essai : {plan.trial_period_days}
+                        <div className="time_end fs-16" style={{ color: "#000" }}>
+                          Période d'essai: {plan.trial_period_days}
                         </div>
                       )}
                       {premium ? (
