@@ -56,6 +56,13 @@ video {
   background-position: center;
   background-repeat: no-repeat;
 }
+._logo_google {
+  background: url("../../src/images/logo-google.svg");
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 ._logo {
   background: url("../../src/images/kiloka_black.svg");
   width: 120px;
@@ -297,12 +304,12 @@ display: table;
  border-top:  1px solid #eaeaea;
 }
 .form-control {
-  border: 2px solid #c6c8d0;
+  border: 1px solid #c6c8d0;
   margin-bottom: 15px;
-  padding: 12px 24px;
+  padding: 8px 12px;
   border-radius: 2px;
   color: #90949e;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300 !important;
 }
 .google {
@@ -875,13 +882,53 @@ background-position: bottom;
   width: 100%;
   border: none;
 }
+
+.google-button {
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 14px 32px !important;
+  margin-top: 15px;
+
+ 
+}
+
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.google-button__icon--plus {
+  width: 27px;
+}
+
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .btngoogle {
-  background: black;
+  background: transparent;
   font-size: 16px;
   padding: 14px 32px !important;
   border-radius: 2px;
   color: white;
   border: none;
+  border: 1px solid #c6c8d0;
+  color: initial;
 }
 .featured {
   height: 220px;

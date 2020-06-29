@@ -17,6 +17,7 @@ const Background = styled.div`
     position: relative !important;
     border: 0 !important;
     background: white;
+    border-bottom: 1px solid #eaeaea;
   }
 `
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
@@ -102,7 +103,7 @@ const UserPage = props => {
                   {planUser.map(plan => (
                     <div key={plan.id} className="mb-10">
                       <span className="badw cw">
-                        {premium ? "Abonnement" : "Formule"}
+                        {premium ? "Abonnement en cours" : "Formule"}
                       </span>
                       <div className="font-bold align-left p-15-0">                        
                       {plan.product.name}
@@ -115,12 +116,12 @@ const UserPage = props => {
                       </div>
                       {plan.user_plan && (
                         <div className="time_end" style={{ color: "#000" }}>
-                          Prendra fin le
+                          <span className="mr-15">Prendra fin le</span>
                           {moment
                             .unix(
                               plan.user_plan.subscriptions.current_period_end
                             )
-                            .format("11")}
+                            .format("ll")}
                           {plan.user_plan.subscriptions.trial_end && " (Période d'essai)"}
                           {moment
                             .unix(
@@ -129,7 +130,6 @@ const UserPage = props => {
                             .isBefore() && (
                             <span style={{ color: "red" }}>Date de sortie</span>
                           )}
-                          <p className="psmg">Lorsque vous suspendez un abonnement, la suspension intervient à la fin de votre période de facturation en cours.</p>
 
                         </div>
 
@@ -157,7 +157,7 @@ const UserPage = props => {
                               {plan.user_plan &&
                               plan.user_plan.subscriptions.cancel_at_period_end
                                 ? "Continuez avec la formule"
-                                : "Annuler "}
+                                : "Annuler votre abonnement"}
                             </button>
                           </div>
                         )
@@ -181,12 +181,14 @@ const UserPage = props => {
               ) : null}
 
               <div>
-                <div className="info_mth">Vos Informations</div>
+                <div className="info_mth">Vos informations</div>
                 {user ? (
-                  <div className="info_mti">E-mail: {email}</div>
+                  <div className="info_mti">E-mail {email}</div>
                 ) : null}
 
-              
+                <div className="info_mti">
+                 
+                </div>
                 {user && (
                   <button onClick={logoutUser} className="btnlogout">
                   <i class="fas fa-sign-out-alt"></i>
