@@ -95,7 +95,7 @@ const UserPage = props => {
       <div>
      
         <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
-          <h1>Mon compte</h1>
+          <h2>Mon compte</h2>
           <div>
             <div className="grd_f">
               {planUser && planUser.length !== 0 ? (
@@ -181,7 +181,7 @@ const UserPage = props => {
               ) : null}
 
               <div>
-                <div className="info_mth">Vos informations</div>
+                <h2 className="info_mth">Vos informations</h2>
                 {user ? (
                   <div className="info_mti">E-mail {email}</div>
                 ) : null}
