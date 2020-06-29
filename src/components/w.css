@@ -301,10 +301,10 @@ display: table;
   color: white;
 }
 .border-top {
- border-top:  1px solid #eaeaea;
+ border-top:  1px solid #ededed;
 }
 .form-control {
-  border: 1px solid #c6c8d0;
+  border: 1px solid #ededed;
   margin-bottom: 20px;
   padding: 12px 12px !important;
   border-radius: 2px;
@@ -883,12 +883,10 @@ background-position: bottom;
   font-size: 16px;
   border-radius: 2px;
   white-space: nowrap;
-  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
   padding: 16px 32px !important;
-  margin-top: 20px;
   margin-bottom: 20px;
 
 }
@@ -896,15 +894,14 @@ background-position: bottom;
 .google-button {
   border-width: 0;
   background: white;
-  color: #737373;
+  color: #000;
+  border: 1px solid #ededed;
   border-radius: 2px;
   white-space: nowrap;
-  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
   padding: 16px 32px !important;
-  margin-top: 20px;
   margin-bottom: 20px;
 
  

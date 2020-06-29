@@ -17,7 +17,7 @@ const Background = styled.div`
     position: relative !important;
     border: 0 !important;
     background: white;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #ededed;
   }
 `
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY

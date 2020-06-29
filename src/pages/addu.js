@@ -13,8 +13,8 @@ const Background = styled.div`
   background: #ffffff;
   header {
     position: relative !important;
-    border: 0 !important;
     background: white;
+    border-bottom: 1px solid #ededed !important;
   }
 `
 const schema = yup.object().shape({
@@ -91,8 +91,8 @@ const RegisterPage = () => {
           <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
             <div className="gr-log">
               <div>
-                <h2>S’inscrire sur Kiloka</h2>
-                <h4 className="db align-left">
+                <h2 className="mb-0">S’inscrire sur Kiloka</h2>
+                <h4 className="db align-left fs-16 fw300">
                   Inscrivez-vous avec votre adresse e-mail
                 </h4>
                 <form
