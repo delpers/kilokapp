@@ -77,6 +77,7 @@ const cookingRecipe = props => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+            backgroundPositionX: "bottom",
           }}
         >
             <div className="m-w p-i recipe-title">

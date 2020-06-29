@@ -860,7 +860,7 @@ background: #fafafa;
   padding: 20px 15px;
 }
 .p-15 {
-  padding: 15px;
+  padding: 20px;
 }
 .p-10 {
   padding: 10px;
@@ -1505,13 +1505,13 @@ th {
     border-radius: 2px;
     border-radius: 0px;
   }.featured {
-    height: 250px;
+    height: 260px;
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
     margin-bottom: 0;
 }.mb-20_mb0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }._logo {
     height: 30px;
 background-position: left;
@@ -1780,7 +1780,7 @@ padding: 90px 5%;
     margin-right: 32px;
   }
   .mb-20 {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
   }
 
   .fs-6rem {
