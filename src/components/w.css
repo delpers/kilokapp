@@ -886,9 +886,10 @@ background-position: bottom;
   transition-timing-function: ease-in-out;
   padding: 15px 32px !important;
   margin-bottom: 20px;
-  text-transform: ;
 }
-
+.mt-42 {
+  margin-top: 42px;
+}
 .google-button {
   border-width: 0;
   background: white;

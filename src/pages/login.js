@@ -85,7 +85,7 @@ const LoginPage = () => {
       <SEO title="Connexion" />
       <div>
     
-        <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+        <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
          
 
 
@@ -192,7 +192,7 @@ const LoginPage = () => {
 </div>
 
 <div>
-  <h1>Prenium ?</h1>
+  <span>- -</span>
 </div>
 
 

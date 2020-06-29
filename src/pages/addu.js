@@ -88,7 +88,7 @@ const RegisterPage = () => {
       <Layout>
         <SEO title="S'inscrire" />
         <div>
-          <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+          <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
             <div className="gr-log">
               <div>
                 <h2 className="mb-0">S’inscrire sur Kiloka</h2>
@@ -229,26 +229,8 @@ const RegisterPage = () => {
                 </form>
               </div>
 
-              <div className="prenium">
-                <span className="bdgeww">Abonnement Premium</span>
-                <h1 className="price align-center">9.99 € </h1>
-                <span className="month db align-center mb-32">
-                  /mois <i>*Essayez gratuitement pendant 1 mois</i>
-                </span>
-
-                <div>
-                  <span className="db align-center">Blog</span>
-                  <span className="db align-center ">
-                    Plans d'entraînement course à pied
-                  </span>
-                  <span className="db align-center ">
-                    Exercices de fitness et de musculation
-                  </span>
-                  <span className="db align-center">Méditation+ (Audio)</span>
-                  <span className="db align-center">
-                    Programmes alimentaires
-                  </span>
-                </div>
+              <div>
+                <span>- -</span>
               </div>
             </div>
           </div>
