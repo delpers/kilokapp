@@ -306,7 +306,7 @@ display: table;
 .form-control {
   border: 1px solid #ededed;
   margin-bottom: 20px;
-  padding: 12px 12px !important;
+  padding: 15px 15px !important;
   border-radius: 2px;
   color: #90949e;
   font-size: 16px;
@@ -874,21 +874,19 @@ background-position: bottom;
   color: #00aa71;
 }
 .btnlogin {
- 
-
   border-width: 0;
   width: 50%;
   background: #1593ff;
   color: #FFF;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 2px;
   white-space: nowrap;
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
-  padding: 16px 32px !important;
+  padding: 15px 32px !important;
   margin-bottom: 20px;
-
+  text-transform: ;
 }
 
 .google-button {
@@ -901,7 +899,7 @@ background-position: bottom;
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
-  padding: 16px 32px !important;
+  padding: 15px 32px !important;
   margin-bottom: 20px;
 
  
@@ -916,6 +914,7 @@ background-position: bottom;
   vertical-align: middle;
   margin: -6px 0 8px 8px;
   width: 22px;
+  color: 000;
   height: 20px;
   box-sizing: border-box;
 }
@@ -928,9 +927,10 @@ background-position: bottom;
   display: inline-block;
   vertical-align: middle;
   padding: 0 24px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 18px !important;
+  font-weight: 300;
   margin-top: -5px;
+  color: gray;
 }
 
 .featured {
