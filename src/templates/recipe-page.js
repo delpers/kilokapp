@@ -272,7 +272,7 @@ const cookingRecipe = props => {
 <div className="none-print">
 
 
-<h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
+<h3 className="i-link b-b-g mr-15 font-bold m-w p-i ">
               Nutriments
             </h3>
 

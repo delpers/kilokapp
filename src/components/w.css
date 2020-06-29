@@ -1363,7 +1363,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #f4f7fc;
+  background-color: #FFF;
 }
 .link a {
   color: initial;
@@ -1504,7 +1504,15 @@ th {
     height: 230px !important;
     border-radius: 2px;
     border-radius: 0px;
-  }._logo {
+  }.featured {
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 0;
+}.mb-20_mb0 {
+  margin-bottom: 0;
+}._logo {
     height: 30px;
 background-position: left;
 background-repeat: no-repeat;

@@ -71,7 +71,7 @@ const eRecipes = props => {
                   {props.data.breakfast.recipesRecettes != null ? (
                     props.data.breakfast.recipesRecettes.map((edge, i) => {
                       return (
-                  <div id={edge.id} className="mb-20 bg-w  border shadow-sm br-4 " key={i}>
+                  <div id={edge.id} className="mb-20 mb-20_mb0 bg-w  border shadow-sm br-4 " key={i}>
                
 
 
