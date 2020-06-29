@@ -31,17 +31,14 @@ export const query = graphql`
   }
 `
 
-const Background = styled.div`
-  background: #f8f9fb;
-  header {
-    background: white !important;
-    position: relative !important;
 
+const Background = styled.div`
+  background: #ffffff;
+  header {
+    position: relative !important;
+    background: white;
+    border-bottom: 1px solid #ededed;
   }
-  .cl {
-    color: white !important;
-  }
- 
 `
 
 const eRecipes = props => {
@@ -50,19 +47,9 @@ const eRecipes = props => {
       <Layout>
         <SEO title={props.data.breakfast.title} />
 
-        <div className="w-screen " style={{
-                        backgroundImage:
-                          "url(" +
-                          props.data.breakfast.picture
-                            .secure_url +
-                          ")",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        borderRadius: "0",
-                      }}>
+       
           <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0 cl" >
+          <div className="m-w p-i pb-0 pt-0 cl " >
 
 
               <h1>{props.data.breakfast.title}</h1>
@@ -77,10 +64,10 @@ const eRecipes = props => {
 
 
           </div>
-        </div>   </div>
+        </div>  
         <div>
           <div className="mb-32">
-            <div className="blogPost blogPost-mobile m-w p-i  ">
+            <div className="blogPost pi0-mob blogPost-mobile m-w p-i pi0-mob ">
                   {props.data.breakfast.recipesRecettes != null ? (
                     props.data.breakfast.recipesRecettes.map((edge, i) => {
                       return (

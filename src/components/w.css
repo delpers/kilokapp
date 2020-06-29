@@ -757,11 +757,12 @@ background-position: bottom;
 .shadow-sm {
   box-shadow: none;
 }
+
 .mask-thumb-cat {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+background: #fafafa;
   z-index: 1;
   display: block;
-  padding-top: 140px !important;
+  border-bottom: 1px solid #dbdbdb;
 }
 .rounded {
   border-radius: 0.25rem !important;
@@ -957,7 +958,7 @@ background-position: bottom;
   color: white !important;
 }
 .p-50-0 {
-  padding: 100px 0;
+  padding: 50px 0;
   margin-bottom: 32px;
 }
 .mt-10-b {
@@ -1509,6 +1510,8 @@ background-position: left;
 background-repeat: no-repeat;
 display: flex;
 margin-top: 2px;
+  }.pi0-mob {
+    padding: 0 !important;
   }.btnlogin {
     width: 100%;
   }.mw374 {
@@ -1706,9 +1709,7 @@ padding: 90px 5%;
   .flex-m {
     display: flex;
   }
-  .mask-thumb-cat {
-    padding-top: 140px !important;
-  }
+ 
   .footer-gr {
     display: grid;
   grid-template-columns: repeat(2, 1fr);
