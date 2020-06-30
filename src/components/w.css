@@ -307,7 +307,7 @@ display: table;
  border-top:  1px solid #ededed;
 }
 .form-control {
-  border: 1px solid #ededed;
+  border: 2px solid #ededed;
   margin-bottom: 20px;
   padding: 15px 15px !important;
   border-radius: 2px;
@@ -880,7 +880,7 @@ background: #fafafa;
 .btnlogin {
   border-width: 0;
   width: 50%;
-  background: #1593ff;
+  background: #2d7ff7;
   color: #FFF;
   font-size: 18px;
   border-radius: 2px;

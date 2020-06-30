@@ -85,6 +85,15 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+      {
+        resolve: 'gatsby-plugin-intercom-spa',
+        options: {
+          app_id: 'vsun2k49',
+          include_in_development: false,
+          delay_timeout: 0
+        },
+      },
+    
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
