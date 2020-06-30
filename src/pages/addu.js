@@ -230,7 +230,64 @@ const RegisterPage = () => {
               </div>
 
               <div>
-                <span>- -</span>
+                <h2 className="mb-0">Choisissez votre offre Premium</h2>
+                <h4 className="db align-left fs-16 fw300">
+                  Inscrivez-vous avec votre adresse e-mail
+                </h4>
+               <div className="plangr">
+
+
+               <div className="userplan">
+                 <div className="badgeblue">1 mois gratuits</div>
+                 <h3 class="plan_name">Standard</h3>
+                  <p className="detailsuserplan">9,99 €/mois après la période de l'offre.</p>
+                  <div className="tb">
+                    
+                    <div className="fs-16"><i class="fas fa-check"></i> Blog</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Recherche</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Boosters & Breakfast</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Méditation+</div>
+
+
+                  </div>
+                  </div>
+                 
+
+
+
+
+
+
+
+
+
+                  <div className="userplan">
+                 <div className="badgeblue">1 mois gratuits</div>
+                 <h3 class="plan_name">Standard +</h3>
+                  <p className="detailsuserplan">14,99 €/mois après la période de l'offre.</p>
+                  <div className="tb">
+                    
+                    <div className="fs-16"><i class="fas fa-check"></i> Blog</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Recherche</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Entrainements & Exercises</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Boosters & Breakfast</div>
+                    <div className="fs-16"><i class="fas fa-check"></i> Méditation+</div>
+
+
+                  </div>
+                  </div>
+                 
+
+
+
+
+
+
+
+
+
+
+               </div>
               </div>
             </div>
           </div>

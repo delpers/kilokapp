@@ -877,6 +877,9 @@ background: #fafafa;
   font-weight: 500;
   color: #00aa71;
 }
+.bgp {
+  background: #ffe39a;
+}
 .btnlogin {
   border-width: 0;
   width: 50%;
@@ -1051,6 +1054,38 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
+}
+.userplan {
+  background-color: rgb(255, 255, 255);
+}
+.detailsuserplan {
+  display: block;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+margin: 0px 0px 2px;
+}
+.plangr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+.badgeblue {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 8px;
+  display: inline-block;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-block: 0px 10px;
+  background-color: rgb(46, 119, 208);
+  color: rgb(255, 255, 255);
+}
+.plan_name {
+  font-size: 24px;
+font-weight: bold;
+line-height: 24px;
+margin: 0px 0px 5px;
 }
 .gr-log {
   display: grid;
@@ -1504,7 +1539,12 @@ th {
     height: 230px !important;
     border-radius: 2px;
     border-radius: 0px;
-  }.featured {
+  }
+.plangr {
+  display: block;
+}
+  
+  .featured {
     height: 260px;
     -o-object-fit: cover;
     object-fit: cover;
