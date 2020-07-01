@@ -194,9 +194,7 @@ const RegisterPage = () => {
                         />
                       </svg>
                     </span>
-                    <span class="google-button__text">
-                      Connectez-vous avec Google
-                    </span>
+               
                   </button>
 
                   <div className="mt-20">
