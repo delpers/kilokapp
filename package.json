@@ -41,6 +41,7 @@
     "react-instantsearch-dom": "^6.4.0",
     "react-styled-carousel": "^0.5.1",
     "stripe": "^8.64.0",
+    "vercel": "^19.1.1",
     "yup": "^0.29.1"
   },
   "devDependencies": {

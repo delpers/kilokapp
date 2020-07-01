@@ -45,9 +45,18 @@ video {
     background: transparent !important;
     border: 0;
 }
+ul, li {
+  list-style: none;
+}
 ::-webkit-scrollbar-thumb {
   background-color: #3d4852;
   border-radius: 3px;
+}
+.link_h {
+  padding: 28px 17px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
 }
 ._logow {
   background: url("../../src/images/kiloka_white.svg");
@@ -67,7 +76,7 @@ video {
   background-repeat: no-repeat;
 }
 ._logo {
-  background: url("../../src/images/kiloka_black.svg");
+  background: url("../../src/images/kiloka_white.svg");
   width: 120px;
   height: 45px;
   background-position: center;
@@ -114,10 +123,9 @@ video {
   margin: 0;
   margin-bottom: 20px;
 }
-.css-15qsopm {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+.svelte-4ldyho {
+  display: inline-flex;
+
 }
 ._title_logo {
   max-width: 200px;
@@ -434,8 +442,9 @@ display: table;
 .w50mf {
   margin-bottom: 20px;
   font-size: 62px;
+  color: white;
   line-height: 72px;
-  font-weight: 500;
+  font-weight: bold;
 }
 .blog-title {
   font-size: 4rem;
@@ -1274,7 +1283,7 @@ margin: 0px 0px 5px;
   color: initial;
 }
 .w-screen-home {
-  background-color: #f4f7fc !important;
+  background-color: #549ff9 !important;
   background: url("../../src/images/kiloka_home.svg");
   height: 600px;
 }
@@ -1666,6 +1675,8 @@ padding: 90px 5%;
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 35px;
+    color: white;
+
     font-weight: bold;
   }
 

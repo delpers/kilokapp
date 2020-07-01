@@ -17,9 +17,9 @@ const Header = ({ siteTitle }) => {
     <header
       style={{
         marginBottom: `0`,
-        background: "transparent",
+        background: "#000",
         width: `100%`,
-        position: `absolute`,
+        position: `relative`,
       }}
     >
       <div
@@ -28,9 +28,11 @@ const Header = ({ siteTitle }) => {
           margin: `0 auto`,
           maxWidth: 1164,
           padding: `24px 24px`,
+          display: "flex",
+
         }}
       >
-        <div className="css-ok35s6 ">
+        <div className="c">
           <h1 style={{ margin: 0 }} className="text-xl font-bold">
             <Link
               to="/"
@@ -45,22 +47,26 @@ const Header = ({ siteTitle }) => {
             </Link>
           </h1>
         </div>
-        <div className="css-ok35s6 end">
          
-            {!user && (
-              <Link to="/login" className="button_blue">
+          <div>
+          <ul>
+             <li className="svelte-4ldyho">
+             {!user && (
+              <Link to="/login" className="link_h">
                 Connexion
               </Link>
             )}
             {user && (
-              <Link to="/user" className="button_blue nowrap">
+              <Link to="/user" className="link_h">
                 Mon compte
               </Link>
             )}
+             </li>
+           </ul>
+          </div>
          
             
         </div>
-      </div>
     </header>
   )
 }
