@@ -14,59 +14,12 @@ const logoutUser = async () => {
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
-    <header
-      style={{
-        marginBottom: `0`,
-        background: "#000",
-        width: `100%`,
-        position: `relative`,
-      }}
-    >
-      <div
-        className="css-15qsopm"
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1164,
-          padding: `24px 24px`,
-          display: "flex",
+    <header className="header">
+      <div className="">
+        {!user && <Link to="/login">Connexion</Link>}
 
-        }}
-      >
-        <div className="c">
-          <h1 style={{ margin: 0 }} className="text-xl cw font-bold">
-            <Link
-              to="/"
-              alt={siteTitle}
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-                maxWidth: "50%",
-              }}
-            >
-              <h1>Yukō</h1>
-            </Link>
-          </h1>
-        </div>
-         
-          <div>
-          <ul>
-             <li className="svelte-4ldyho">
-             {!user && (
-              <Link to="/login" className="link_h">
-                Connexion
-              </Link>
-            )}
-            {user && (
-              <Link to="/user" className="link_h">
-                Mon compte
-              </Link>
-            )}
-             </li>
-           </ul>
-          </div>
-         
-            
-        </div>
+        {user && <Link to="/user">Mon compte</Link>}
+      </div>
     </header>
   )
 }
