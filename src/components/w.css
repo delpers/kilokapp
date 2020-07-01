@@ -133,8 +133,8 @@ ul, li {
   line-height: 24px;
 }
 .badw {
-  background: #00aa71;
-  border-radius: 5rem;
+  background: #549ff9;
+  border-radius: 2px;
   font-size: 14px !important;
   padding: 7px 24px;
 }
@@ -295,7 +295,6 @@ display: table;
   color: white;
 }
 .header {
-  background: black !important;
   min-height: 90px;
 }
 .border-top {
@@ -305,7 +304,7 @@ display: table;
   border: 1px solid #ededed;
   margin-bottom: 20px;
   padding: 15px 15px !important;
-  border-radius: 0;
+  border-radius: 2px;
   color: #90949e;
   font-size: 18px;
   font-weight: 300 !important;
@@ -868,10 +867,12 @@ background: #fafafa;
 .btnlogin {
   border-width: 0;
   width: 50%;
-  background: #2e77d0;
+  background: #f4856f;
+  
+  
   color: #FFF;
   font-size: 18px;
-  border-radius: 0;
+  border-radius: 2px;
   white-space: nowrap;
   transition-property: background-color, box-shadow;
   transition-duration: 150ms;

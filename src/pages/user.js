@@ -89,63 +89,86 @@ const UserPage = props => {
     }
   }, [planUser])
   return (
-<Background>
-    <Layout>
-      <SEO title="Mon compte" />
-      <div>
-     
-        <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
-          <h2>Mon compte</h2>
-          <div>
-            <div className="grd_f">
-              {planUser && planUser.length !== 0 ? (
-                <div className="bg-w ">
-                  {planUser.map(plan => (
-                    <div key={plan.id} className="mb-10 plan">
-                      <span className="badw cw">
-                        {premium ? "Abonnement en cours" : "Formule"}
-                      </span>
-                      <div className="fs-28 align-left p-15-0 fw300 pt-15">                        
-                      {plan.product.name}
-</div>
-
-                      <div className="info_mth">
-                        <span className="price">€ {plan.amount / 100}</span>
-                        
-                        {plan.interval_count + " " + plan.interval}
-                      </div>
-                      {plan.user_plan && (
-                        <div className="time_end fs-16" style={{ color: "#000" }}>
-                          <span className="mr-5">Prendra fin le</span>
-                          {moment
-                            .unix(
-                              plan.user_plan.subscriptions.current_period_end
-                            )
-                            .format("ll")}
-                          {plan.user_plan.subscriptions.trial_end && " (Période d'essai)"}
-                          {moment
-                            .unix(
-                              plan.user_plan.subscriptions.current_period_end
-                            )
-                            .isBefore() && (
-                            <span style={{ color: "red" }}>Date de sortie</span>
-                          )}
-
+    <Background>
+      <Layout>
+        <SEO title="Mon compte" />
+        <div>
+          <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
+            <h2>Mon compte</h2>
+            <div>
+              <div className="grd_f">
+                {planUser && planUser.length !== 0 ? (
+                  <div className="bg-w ">
+                    {planUser.map(plan => (
+                      <div key={plan.id} className="mb-10 plan">
+                        <span className="badw cw">
+                          {premium ? "Abonnement en cours" : "Formule"}
+                        </span>
+                        <div className="fs-28 align-left p-15-0 fw300 pt-15">
+                          {plan.product.name}
                         </div>
 
-                      )}
-                      {plan.trial_period_days && (
-                        <div className="time_end fs-16" style={{ color: "#000" }}>
-                          Période d'essai: {plan.trial_period_days}
+                        <div className="info_mth">
+                          <span className="price">€ {plan.amount / 100}</span>
+
+                          {plan.interval_count + " " + plan.interval}
                         </div>
-                      )}
-                      {premium ? (
-                        !_.get(
-                          plan,
-                          "user_plan.subscriptions.cancel_at_period_end"
-                        ) && (
+                        {plan.user_plan && (
+                          <div
+                            className="time_end fs-16"
+                            style={{ color: "#000" }}
+                          >
+                            <span className="mr-5">Prendra fin le</span>
+                            {moment
+                              .unix(
+                                plan.user_plan.subscriptions.current_period_end
+                              )
+                              .format("ll")}
+                            {plan.user_plan.subscriptions.trial_end &&
+                              " (Période d'essai)"}
+                            {moment
+                              .unix(
+                                plan.user_plan.subscriptions.current_period_end
+                              )
+                              .isBefore() && (
+                              <span style={{ color: "red" }}>
+                                Date de sortie
+                              </span>
+                            )}
+                          </div>
+                        )}
+                        {plan.trial_period_days && (
+                          <div
+                            className="time_end fs-16"
+                            style={{ color: "#000" }}
+                          >
+                            Période d'essai: {plan.trial_period_days}
+                          </div>
+                        )}
+                        {premium ? (
+                          !_.get(
+                            plan,
+                            "user_plan.subscriptions.cancel_at_period_end"
+                          ) && (
+                            <div className="bay bg-w">
+                              <button
+                                className="btnun"
+                                onClick={() =>
+                                  !premium
+                                    ? checkoutSubscribe(plan.id)
+                                    : onSubcription(plan.user_plan)
+                                }
+                              >
+                                {plan.user_plan &&
+                                plan.user_plan.subscriptions
+                                  .cancel_at_period_end
+                                  ? "Continuez avec la formule"
+                                  : "Annuler votre abonnement"}
+                              </button>
+                            </div>
+                          )
+                        ) : (
                           <div className="bay bg-w">
-
                             <button
                               className="btnun"
                               onClick={() =>
@@ -154,66 +177,31 @@ const UserPage = props => {
                                   : onSubcription(plan.user_plan)
                               }
                             >
-                              {plan.user_plan &&
-                              plan.user_plan.subscriptions.cancel_at_period_end
-                                ? "Continuez avec la formule"
-                                : "Annuler votre abonnement"}
+                              Continuez avec la formule
                             </button>
                           </div>
-                        )
-                      ) : (
-                        <div className="bay bg-w">
-                          <button
-                            className="btnun"
-                            onClick={() =>
-                              !premium
-                                ? checkoutSubscribe(plan.id)
-                                : onSubcription(plan.user_plan)
-                            }
-                          >
-                            Continuez avec la formule
-                          </button>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              ) : null}
-
-              <div>
-                <h2 className="info_mth">Vos informations</h2>
-                {user ? (
-                  <div className="info_mti">E-mail {email}</div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 ) : null}
 
-                <div className="info_mti">
-                 
+                <div>
+                  <h2 className="info_mth">Vos informations</h2>
+                  {user ? <div className="info_mti">E-mail {email}</div> : null}
+
+                  <div className="info_mti"></div>
+                  {user && (
+                    <button onClick={logoutUser} className="btnlogout">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                  )}
                 </div>
-                {user && (
-                  <button onClick={logoutUser} className="btnlogout">
-                  <i class="fas fa-sign-out-alt"></i>
-                  </button>
-            )}
-                
               </div>
-
-
-
-
-
-
-
-
             </div>
-            
-
           </div>
-
-
-
         </div>
-      </div>
-    </Layout>
+      </Layout>
     </Background>
   )
 }

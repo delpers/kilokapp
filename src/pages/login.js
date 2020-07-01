@@ -15,7 +15,6 @@ const Background = styled.div`
     position: relative !important;
     background: white;
     border-bottom: 1px solid #ededed !important;
-
   }
 `
 
@@ -81,71 +80,73 @@ const LoginPage = () => {
 
   return (
     <Background>
-    <Layout>
-      <SEO title="Connexion" />
-      <div>
-    
-        <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
-         
+      <Layout>
+        <SEO title="Connexion" />
+        <div>
+          <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
+            <div className="gr-log">
+              <div>
+                <h2 className="">Content de vous revoir !</h2>
 
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  style={{ maxWidth: "500px" }}
+                >
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      onChange={onChangeInput}
+                      className="form-control"
+                      name="email"
+                      placeholder="Veuillez saisir votre adresse e-mail"
+                      style={{ width: "100%" }}
+                      ref={register({ required: true, minLength: 8 })}
+                    />
+                    {errors.email && (
+                      <span style={{ color: "red" }}>
+                        {errors.email.message}
+                      </span>
+                    )}
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="password"
+                      onChange={onChangeInput}
+                      className="form-control"
+                      name="password"
+                      placeholder="Saisir votre mot de passe"
+                      ref={register({ required: true, minLength: 8 })}
+                      style={{ width: "100%" }}
+                    />
+                    {errors.password && (
+                      <span style={{ color: "red" }}>
+                        {errors.password.message}
+                      </span>
+                    )}
+                  </div>
+                  {textLoginSubmit.type && (
+                    <span
+                      style={{
+                        color: `${
+                          textLoginSubmit.type === "error" ? "red" : "green"
+                        }`,
+                      }}
+                    >
+                      {textLoginSubmit.message}
+                    </span>
+                  )}
 
-          <div className="gr-log">
-
-<div>
-<h2 className="">Content de vous revoir !</h2>
-               
-<form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: "500px" }}>
-            <div className="form-group">
-              <input
-                type="email"
-                onChange={onChangeInput}
-                className="form-control"
-                name="email"
-                placeholder="Veuillez saisir votre adresse e-mail"
-                style={{ width: "100%" }}
-                ref={register({ required: true, minLength: 8 })}
-              />
-              {errors.email && (
-                <span style={{ color: "red" }}>{errors.email.message}</span>
-              )}
-            </div>
-            <div className="form-group">
-              <input
-                type="password"
-                onChange={onChangeInput}
-                className="form-control"
-                name="password"
-                placeholder="Saisir votre mot de passe"
-                ref={register({ required: true, minLength: 8 })}
-                style={{ width: "100%" }}
-              />
-              {errors.password && (
-                <span style={{ color: "red" }}>{errors.password.message}</span>
-              )}
-            </div>
-            {textLoginSubmit.type && (
-              <span
-                style={{
-                  color: `${
-                    textLoginSubmit.type === "error" ? "red" : "green"
-                  }`,
-                }}
-              >
-                {textLoginSubmit.message}
-              </span>
-            )}
-            
-            <div>
-            <button
-                type="submit"
-                className="btnlogin"
-                onClick={onSubmit}
-                style={{ padding: "0 15px" }}
-              >
-                {loading ? "Chargement..." : "Connexion"}
-              </button>
-            </div>
-            <button
+                  <div>
+                    <button
+                      type="submit"
+                      className="btnlogin"
+                      onClick={onSubmit}
+                      style={{ padding: "0 15px" }}
+                    >
+                      {loading ? "Chargement..." : "Connexion"}
+                    </button>
+                  </div>
+                  <button
                     className="google-button"
                     style={{ width: "100%" }}
                     type="button"
@@ -177,30 +178,22 @@ const LoginPage = () => {
                         />
                       </svg>
                     </span>
-                    <span class="google-button__text">
-                      Connectez-vous avec Google
-                    </span>
                   </button>
 
-                  
                   <div className=" align-left fs-16">
-                  Vous n'avez pas de compte ?{" "}
+                    Vous n'avez pas de compte ?{" "}
                     <a href="/addu">Je n'ai pas Kiloka</a>.
                   </div>
+                </form>
+              </div>
 
-          </form>
-</div>
-
-<div>
-  <span>- -</span>
-</div>
-
-
+              <div>
+                <span></span>
+              </div>
+            </div>
           </div>
-          
         </div>
-      </div>
-    </Layout>
+      </Layout>
     </Background>
   )
 }

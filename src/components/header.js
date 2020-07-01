@@ -16,9 +16,14 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="header">
       <div className="">
-        {!user && <Link to="/login">Connexion</Link>}
+      <Link to="/"><h1>Yuko</h1></Link>
+        
 
-        {user && <Link to="/user">Mon compte</Link>}
+
+        <nav>  {!user && <Link to="/login">Connexion</Link>}
+
+{user && <Link to="/user">Mon compte</Link>} </nav>
+        
       </div>
     </header>
   )
