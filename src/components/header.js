@@ -33,17 +33,17 @@ const Header = ({ siteTitle }) => {
         }}
       >
         <div className="c">
-          <h1 style={{ margin: 0 }} className="text-xl font-bold">
+          <h1 style={{ margin: 0 }} className="text-xl cw font-bold">
             <Link
               to="/"
               alt={siteTitle}
               style={{
-                color: `initial`,
+                color: `white`,
                 textDecoration: `none`,
                 maxWidth: "50%",
               }}
             >
-              <p className="_logo mb-0"></p>
+              <h1>Yukō</h1>
             </Link>
           </h1>
         </div>

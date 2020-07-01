@@ -1283,8 +1283,8 @@ margin: 0px 0px 5px;
   color: initial;
 }
 .w-screen-home {
-  background-color: #549ff9 !important;
-  background: url("../../src/images/kiloka_home.svg");
+  background-image: radial-gradient( circle 966px at 6.9% 10.8%,  rgba(92,123,237,1) 0%, rgba(147,186,252,1) 90% );
+  
   height: 600px;
 }
 .ais-Hits-list {
