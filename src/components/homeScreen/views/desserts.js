@@ -11,7 +11,9 @@ export default function Desserts() {
               node {
                 title
                 slug
-      
+                image: childContentfulCookingDessertsFeaturedImageJsonNode {
+                  secure_url
+                }
               }
             }
           }
@@ -37,6 +39,9 @@ export default function Desserts() {
                     <div className="additions-card__container nowrap" key={i}>
                  
                       <div className="addiction-card__text nowrap">
+                        <div>
+                          <img src={edge.node.image.secure_url}></img>
+                        </div>
                       <Link
                               className="i-link fs-16 b-b-g font-bold c-t nowrap"
                               to={`/desserts/recettes/${edge.node.slug}/`}

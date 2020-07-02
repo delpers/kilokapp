@@ -229,7 +229,7 @@ display: table;
   margin-top: 10px !important;
 }
 .ig {
-  color: #1cc996;
+  color: #79acd8;
 }
 .color-w {
   color: white !important;
@@ -705,13 +705,12 @@ padding-right: 4px;
   border-radius: 2px;
 }
 .bg_audio {
-  background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1593356319/Images/aperture-vintage-dg0UR_6Vhd4-unsplash_za6bsf.jpg);
   text-align: center;
 padding: 200px 5%;
 color: white;
-background-size: cover;
-background-position: center;
-background-position: bottom;
+
+background-image: linear-gradient(135deg,#6b73ff 10%,#000dff);
+margin-top: 80px;
 }
 .bg-top {
   background-color: black;
@@ -1275,11 +1274,10 @@ line-height: 22px !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0;
+  border-radius: 6px;
   border: none;
   border-radius: 0;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-  animation: 1.2s bgrandom infinite;
+  box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
 }
 .c-v {
   color: white;

@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 import UserContext from "../../UserContext"
+import { divide } from "lodash"
 
 export default function Training() {
   const { premium } = useContext(UserContext)
@@ -16,6 +17,9 @@ export default function Training() {
                 slug
                 nWeeks
                 level
+                image: childContentfulTrainingImageJsonNode {
+                  secure_url
+                }
               }
             }
           }
@@ -40,27 +44,34 @@ export default function Training() {
                 </div>
               )}
 
-              <div className="sr-pe p-i">
+              <div className="recipesGr m-w p-i">
                 {data.training.edges.length > 0 ? (
                   data.training.edges.map((edge, i) => {
                     return (
-                      <div className="mt-10 fs-16   box" key={i}>
-                        <span className=" nowrap i-link p-15 border radius">
+                      <div className="mb-20  bg-w shadow-sm br-4" key={i}>
+
+
+                  <img class="featured" src={edge.node.image.secure_url} alt="Smoothie fraise et cerise" />
+
+
+                        <div className=" mt-10 p-15 fs-18 pt-0">
                           <Link
-                            className="i-link fs-16 b-b-g mr-15  mb-15 nowrap"
+                            className="i-link fs-18 b-b-g mr-15 font-bold mb-15 nowrap"
                             to={`/training/${edge.node.slug}/`}
                           >
                             {edge.node.title}
                           </Link>
-                          <span className="mt-10-b db-fb">
+                          <div className="bg-w-c pl-0 fs-16 text-gray " >
                             <i className="fas fa-heart ig mr-15"></i>
                             {edge.node.level}
-                          </span>
-                          <span className="mt-10-b db-fb">
+                          </div>
+                          <div className="b-solid-top">
+                          <div className="pt-15 fs-16">
                             <i className="fas fa-calendar-week mr-15"></i>{" "}
                             {edge.node.nWeeks} semaine(s)
-                          </span>
-                        </span>
+                          </div>
+                        </div>
+                        </div>
                       </div>
                     )
                   })

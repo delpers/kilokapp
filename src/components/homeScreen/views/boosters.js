@@ -54,7 +54,7 @@ export default function Boosters() {
                             backgroundRepeat: "no-repeat",
                             height: "160px",
                             width: "250px",
-                            borderRadius: "0px",
+                            borderRadius: "6px",
                           }}
                         >
                           <span className="cards-n">

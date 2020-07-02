@@ -37,7 +37,6 @@ const HomePage = () => {
 
       <Audio />
 
-      <Prenium />
 
     </Layout>
   )
