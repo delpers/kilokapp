@@ -12,10 +12,13 @@ import styled from "@emotion/styled"
 const Background = styled.div`
   background: #ffffff;
   header {
-    position: relative !important;
     background: white;
     border-bottom: 1px solid #ededed !important;
-  }
+  }@media only screen and (max-width: 480px) {
+    header {
+      display: none !important;
+    }
+}
 `
 const schema = yup.object().shape({
   email: yup

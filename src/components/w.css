@@ -492,6 +492,13 @@ display: table;
   width: 50%;
   text-align: center;
 }
+.footer-100  {
+  padding: 0 100px;
+}
+.fs-14 {
+  font-size: 14px;
+  color: initial;
+}
 .align-center {
   text-align: center;
 }
@@ -1677,6 +1684,15 @@ th {
   }
 .plangr {
   display: block;
+}.gr-log {
+  border:0 !important;
+  
+}.mtandmb-24 {
+  margin:0;
+}.title_ic {
+  text-align: left !important;
+}.footer-100  {
+  padding: 0;
 }
   
   .featured {
