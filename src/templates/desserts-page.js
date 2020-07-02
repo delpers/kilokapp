@@ -79,11 +79,11 @@ const DishesRecipes = props => {
         </div>   </div>
         <div>
           <div className="mb-32">
-            <div className="blogPost blogPost-mobile m-w p-i ">
+            <div className="recipesGr m-w p-i ">
                   {props.data.dessert.recipesRecettes != null ? (
                     props.data.dessert.recipesRecettes.map((edge, i) => {
                       return (
-                  <div className="mb-20 border bg-w shadow-sm br-4" key={i}>
+                  <div className="mb-20  bg-w shadow-sm br-4" key={i}>
                     
 <img
                 className="featured"

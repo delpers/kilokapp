@@ -560,9 +560,13 @@ display: table;
   padding-bottom: 15px;
 }
 .br-4 {
-  border-radius: 16px !important;
+  border-radius: 6px !important;
 }
-
+.recipesGr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
 .p-160-0 {
   padding: 160px 0;
 }
@@ -768,7 +772,7 @@ background-position: bottom;
 }
 
 .shadow-sm {
-  box-shadow: rgba(230, 224, 224, 0.18) 0px 2px 1px !important;
+  box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
 }
 
 .mask-thumb-cat {
@@ -879,7 +883,7 @@ background: #fafafa;
   padding: 10px;
 }
 .m-w {
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .i-t {
@@ -922,12 +926,12 @@ background: #fafafa;
 
 
 .featured {
-  height: 220px;
+  height: 180px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   margin-bottom: 0;
-  border-radius: 16px 16px 0 0;
+  border-radius: 6px 6px 0 0;
 }
 .mt-100 {
   margin-top: 100px;
@@ -951,8 +955,8 @@ background: #fafafa;
   padding: 6px 12px;
   float: left;
   color: white;
-  border-radius: 8px;
-  background: #000DFF ;
+  border-radius: 4px;
+  background: #4c68ff;
 }
 header {
   z-index: 1000 !important;
@@ -1668,6 +1672,10 @@ th {
   }
 .plangr {
   display: block;
+}.recipesGr {
+  display: block;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
 }.gr-log {
   border:0 !important;
   
