@@ -37,11 +37,16 @@ export default function Desserts() {
                 data.dessert.edges.map((edge,i) => {
                   return (
                     <div className="additions-card__container nowrap" key={i}>
-                 
+                   <div className="df">
+
+
+
+<img class="featuredSup" src={edge.node.image.secure_url} alt={edge.node.title} />
+
+
+</div>
                       <div className="addiction-card__text nowrap">
-                        <div>
-                          <img src={edge.node.image.secure_url}></img>
-                        </div>
+                     
                       <Link
                               className="i-link fs-16 b-b-g font-bold c-t nowrap"
                               to={`/desserts/recettes/${edge.node.slug}/`}

@@ -11,6 +11,9 @@ export default function Plats() {
               node {
                 title
                 slug
+                image: childContentfulCookingPlatsFeaturedImageJsonNode {
+                  secure_url
+                }
               }
             }
           }
@@ -34,7 +37,14 @@ export default function Plats() {
                 data.plat.edges.map((edge,i) => {
                   return (
                     <div className="additions-card__container nowrap" key={i}>
-               
+               <div className="df">
+
+
+
+               <img class="featuredSup" src={edge.node.image.secure_url} alt={edge.node.title} />
+
+
+               </div>
                       <div className="addiction-card__text nowrap">
                       <Link
                               className="i-link fs-16 b-b-g font-bold c-t nowrap"

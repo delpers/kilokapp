@@ -17,6 +17,9 @@ export default function Breakfasts() {
               node {
                 title
                 slug
+                image: childContentfulCookingBreakfastsFeaturedImageJsonNode {
+                  secure_url
+                }
               }
             }
           }
@@ -44,7 +47,14 @@ export default function Breakfasts() {
                   data.breakfast.edges.map((edge, i) => {
                     return (
                       <div id="bloc" className="additions-card__container nowrap" key={i}>
-                      
+                                      <div className="df">
+
+
+
+<img class="featuredSup" src={edge.node.image.secure_url} alt={edge.node.title} />
+
+
+</div>
                         <div className="addiction-card__text mt-0 nowrap">
                           <Link
                             className="i-link fs-16 b-b-g font-bold c-t nowrap"
