@@ -23,7 +23,7 @@ export const query = graphql`
         for
         ingredientsNumbers
         slug
-        childContentfulRecipesFeaturedImageJsonNode {
+        image: childContentfulRecipesFeaturedImageJsonNode {
           secure_url
         }
       }
@@ -32,7 +32,7 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #f8f9fb;
+  background: #FFF;
   header {
     background: white !important;
     position: relative !important;
@@ -59,7 +59,7 @@ const pRecipes = props => {
                         borderRadius: "0",
                       }}>
           <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0 cl" >
+          <div className="m-w p-i pb-0 pt-0" >
 
               <h1>{props.data.plat.title}</h1>
               <p className="mb-0">
@@ -75,18 +75,18 @@ const pRecipes = props => {
           </div>
         </div>   </div>
         <div>
-          <div className="mb-32">
-            <div className="blogPost blogPost-mobile m-w p-i  ">
-            {props.data.plat.recipesRecettes != null ? (
-              props.data.plat.recipesRecettes.map((edge, i) => {
-                return (
-                  <div className="mb-20 border bg-w shadow-sm br-4" key={i}>
+        <div className="mb-32">
+            <div className="recipesGr m-w p-i ">
+                  {props.data.plat.recipesRecettes != null ? (
+                    props.data.plat.recipesRecettes.map((edge, i) => {
+                      return (
+                  <div className="mb-20  bg-w shadow-sm br-4" key={i}>
+                    
 <img
                 className="featured"
-                src={edge.childContentfulRecipesFeaturedImageJsonNode.secure_url}
+                src={edge.image.secure_url}
                 alt={edge.title}
               />
-
 
                     <div className="mt-10 p-15 fs-18 ">
                       <Link
@@ -97,10 +97,10 @@ const pRecipes = props => {
                       </Link>
 
                       <div>
-                        <div className="t-d fl-r mb-15 ">
+                        <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
-                            <i className="fas fa-check-circle"></i> {edge.time} min(s){" "}
+                            <i className="fas fa-check-circle"></i> {edge.time}{" "}
                           </span>
                         </div>
                         <div className="bg-w-c pl-0">
@@ -115,14 +115,20 @@ const pRecipes = props => {
                       <div className="b-solid-top">
                         <div className="pt-15 ">
                           <i className="fas fa-file-medical-alt c-g mr-15"></i>
-                          {edge.for.map(dataFor => (
+                          {edge.for != null
+                  ? edge.for.map((mv, i) => {
+                      return (
+
+
                             <span
                               className="fs-14 text-gray pr-15"
-                              key={dataFor.instructions}
+                              key={i}
                             >
-                              {dataFor}
+                              {mv.for}
                             </span>
-                          ))}
+                                  )
+                                })
+                              : null}
                         </div>
                       </div>
                     </div>
@@ -136,5 +142,6 @@ const pRecipes = props => {
     </Background>
   )
 }
+
 
 export default pRecipes

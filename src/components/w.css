@@ -26,7 +26,9 @@ video {
   text-decoration: none;
   font-size: 16px;
 }
-
+.br6 {
+  border-radius: 6px;
+}
 .font-bold {
   font-weight: bold !important;
 }
@@ -340,6 +342,9 @@ display: table;
   text-decoration: none;
   float: right;
   right: 0;
+}
+.df {
+  display: flex !important;
 }
 .pfl {
   position: absolute;
@@ -964,7 +969,7 @@ z-index: 1 !important;
   height: 80px !important;
 }
 .featured {
-  height: 180px;
+  height: 167px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -1572,6 +1577,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid #ededed;
   background-color: #FFF;
 }
 .link a {
@@ -1716,6 +1722,8 @@ th {
   }.media {
     height: 180px !important;
 width: 280px !important;
+  }.dfmb {
+    display: flex;
   }
 .plangr {
   display: block;
@@ -1971,7 +1979,7 @@ padding: 90px 5%;
     display: block;
   }
   .rl-mobile {
-    padding: 0;
+    padding: 20px;
   }
 }
 

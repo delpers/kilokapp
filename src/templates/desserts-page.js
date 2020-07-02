@@ -62,7 +62,7 @@ const DishesRecipes = props => {
                         borderRadius: "0",
                       }}>
           <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0 cl" >
+          <div className="m-w p-i pb-0 pt-0 " >
 
               <h1>{props.data.dessert.title}</h1>
               <p className="mb-0">

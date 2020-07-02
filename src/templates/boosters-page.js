@@ -30,11 +30,8 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #f8f9fb;
-  header {
-    position: absolute !important;
-    border: 0 !important;
-  }
+  background: #FFF;
+
 `
 
 const BoostersRecipes = props => {
@@ -48,10 +45,10 @@ const BoostersRecipes = props => {
           style={{
             backgroundImage:
               "url(" + props.data.booster.picture.secure_url + ")",
-            backgroundSize: "70%",
+            backgroundSize: "contain",
             backgroundColor: props.data.booster.backgroundColor,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            backgroundPosition: "left",
             color: "initial",
           }}
         >
@@ -71,7 +68,7 @@ const BoostersRecipes = props => {
                   return (
                     (
                       <div className="   mb-32" key={i}>
-                        <div className="bg-w p-15 border ">
+                        <div className="bg-w p-15 shadow-sm br6 dfmb">
                         <div
           className="w-screen p-80-0 perfect-bg pbg-m"
           style={{
@@ -83,6 +80,8 @@ const BoostersRecipes = props => {
               margin: "0 10%",
           }}
         > </div> 
+
+        <div> 
                           <Link
                             className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap p-15 pb-0"
                             to={`/recettes/base/${edge.slug}/`}
@@ -101,7 +100,7 @@ const BoostersRecipes = props => {
                               {edge.stockage}
                             </span>
                           </div>
-
+                          </div>
                        
                         </div>
                       </div>

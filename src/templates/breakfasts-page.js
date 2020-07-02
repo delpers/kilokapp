@@ -23,7 +23,7 @@ export const query = graphql`
         for
         ingredientsNumbers
         slug
-        childContentfulRecipesFeaturedImageJsonNode {
+        image: childContentfulRecipesFeaturedImageJsonNode {
           secure_url
         }
       }
@@ -49,7 +49,7 @@ const eRecipes = props => {
 
        
           <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0 cl " >
+          <div className="m-w p-i pb-0 pt-0  " >
 
 
               <h1>{props.data.breakfast.title}</h1>
@@ -66,23 +66,20 @@ const eRecipes = props => {
           </div>
         </div>  
         <div>
-          <div className="mb-32">
-            <div className="blogPost pi0-mob blogPost-mobile m-w p-i pi0-mob ">
+        <div className="mb-32">
+            <div className="recipesGr m-w p-i ">
                   {props.data.breakfast.recipesRecettes != null ? (
                     props.data.breakfast.recipesRecettes.map((edge, i) => {
                       return (
-                  <div id={edge.id} className="mb-20 mb-20_mb0 bg-w  border shadow-sm br-4 " key={i}>
-               
-
-
+                  <div className="mb-20  bg-w shadow-sm br-4" key={i}>
+                    
 <img
                 className="featured"
-                src={edge.childContentfulRecipesFeaturedImageJsonNode.secure_url}
+                src={edge.image.secure_url}
                 alt={edge.title}
               />
 
-
-                    <div className="mt-10 p-15 fs-18 pt-0 ">
+                    <div className="mt-10 p-15 fs-18 ">
                       <Link
                         className="i-link fs-18 b-b-g mr-15 font-bold mb-15 nowrap"
                         to={`/recette/${edge.slug}/`}
@@ -90,7 +87,7 @@ const eRecipes = props => {
                         {edge.title}
                       </Link>
 
-                      <div >
+                      <div>
                         <div className="t-d fl-r mb-15">
                           <span className="fs-14 bg-g">
                             {" "}
@@ -109,7 +106,6 @@ const eRecipes = props => {
                       <div className="b-solid-top">
                         <div className="pt-15 ">
                           <i className="fas fa-file-medical-alt c-g mr-15"></i>
-
                           {edge.for != null
                   ? edge.for.map((mv, i) => {
                       return (
@@ -121,15 +117,15 @@ const eRecipes = props => {
                             >
                               {mv.for}
                             </span>
-                            )
-                    })
-                  : null}
+                                  )
+                                })
+                              : null}
                         </div>
                       </div>
                     </div>
                   </div>
-                 )})) : (null)
-                }
+                )})) : (null)
+              }
             </div>
           </div>
         </div>
