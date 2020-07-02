@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="  border-top p-100-0 bg-w">
+        <div className="  border-top p-100-0 bg-fa">
           <footer className="p-32 fs-16 m-w p-i footer-gr">
             <div className=" ">
               <div className="  uppercase fs-18 bold font-bold mb-32 ">
@@ -87,7 +87,6 @@ const Layout = ({ children }) => {
             </div>
 
             <div>
-              <div className="kilokaFooter"></div>
 
               <p className="">
                 {" "}

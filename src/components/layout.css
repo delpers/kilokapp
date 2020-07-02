@@ -251,6 +251,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+a {
+  color: initial !important;
+}
 
 body {
   color:#2b2b3a;
@@ -264,7 +267,9 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-
+footer {
+  background: #f7f7f7;
+}
 img {
   max-width: 100%;
   margin-left: 0;

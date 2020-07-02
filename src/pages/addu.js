@@ -87,7 +87,8 @@ const RegisterPage = () => {
     <Background>
       <Layout>
         <SEO title="S'inscrire" />
-        <div>
+        <div className="mtandmb-24">
+
             <div className="gr-log">
               <div>
                 <h2 className="title_ic">Inscription</h2>
@@ -157,29 +158,29 @@ const RegisterPage = () => {
                       {loading ? "Chargement..." : "S'inscrire"}
                     </button>
                   </div>
-                  <button formaction="https://www.youtube.com/watch?v=Zr4JwPb99qU" className="googleSignIn"  type="button"
+                  <button className="googleSignIn"  type="button"
                     onClick={loginByGmail}> 
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg" alt="Google logo"></img>
-    <span class="googleSignIn__text">Sign in with Google</span>
+    <span class="googleSignIn__text">Continuer avec Google</span>
   </button>
 
                  
                   <div className="mt-20">
                     <p class="fs-16">
-                      <span class="LinkContainer-sc-1t58wcv-0 knFNJQ">
+                      <span>
                         En cliquant sur le bouton d'inscription, vous acceptez
                         les{" "}
-                        <a href="/legal/end-user-agreement" target="_blank">
+                        <a class="font-bold" href="/legal/end-user-agreement" target="_blank">
                           Conditions générales d'utilisation
                         </a>{" "}
                         de Kiloka.
                       </span>
                     </p>
                     <p class="fs-16">
-                      <span class="LinkContainer-sc-1t58wcv-0 knFNJQ">
+                      <span>
                         Pour en savoir plus sur la façon dont Kiloka utilise vos
                         données personnelles, veuillez consulter la{" "}
-                        <a href="/legal/privacy-policy" target="_blank">
+                        <a class="font-bold" href="/legal/privacy-policy" target="_blank">
                           Politique de confidentialité
                         </a>{" "}
                         de Kiloka.
@@ -189,7 +190,7 @@ const RegisterPage = () => {
 
                   <div className=" align-left fs-16">
                     Vous avez déjà un compte ?{" "}
-                    <a href="/login">Se connecter</a>.
+                    <a class="font-bold" href="/login">Se connecter</a>.
                   </div>
                 </form>
               </div>
