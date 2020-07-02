@@ -75,15 +75,19 @@ const Layout = ({ children }) => {
               <div className="  uppercase fs-14 bold font-bold mb-32 ">
                 Légales
               </div>
-              <Link className="i-link    db mb-15" to="/page/mentions-legales">
-                Mentions légales
+            
+              <Link className="i-link    db mb-15" to="/page/pdc">
+              Politique de confidentialité
               </Link>{" "}
-              <Link className="i-link    db mb-15" to="/page/rgpd">
-                RGPD
+             
+              <Link className="i-link    db mb-15" to="/page/cgu">
+              Conditions générales d'utilisation
               </Link>
-              <Link className="i-link    db mb-15" to="/page/cgv">
-                CGV
-              </Link>
+              <Link className="i-link    db mb-15" to="/page/mentions-legales">
+                Légal
+              </Link>{" "}
+
+              
             </div>
 
             <div>
