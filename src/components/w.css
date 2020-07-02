@@ -387,7 +387,7 @@ display: table;
   padding-top: 120px;
 }
 .button_pw {
-  background: #efcc95;
+  background: #f0f7fd;
   border: 1px solid transparent;
   border-radius: 5rem;
   padding: 17px 36px;
@@ -709,7 +709,7 @@ padding-right: 4px;
 padding: 200px 5%;
 color: white;
 
-background-image: linear-gradient(135deg,#6b73ff 10%,#000dff);
+background: #79acd8;
 margin-top: 80px;
 }
 .bg-top {
@@ -1706,6 +1706,9 @@ th {
     height: 230px !important;
     border-radius: 2px;
     border-radius: 0px;
+  }.media {
+    height: 180px !important;
+width: 280px !important;
   }
 .plangr {
   display: block;
@@ -1716,6 +1719,8 @@ th {
 }.gr-log {
   border:0 !important;
   
+}.mr-15mb {
+  margin-right: 15px !important;
 }.mtandmb-24 {
   margin:0;
 }.title_ic {

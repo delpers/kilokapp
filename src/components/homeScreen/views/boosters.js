@@ -57,7 +57,7 @@ export default function Boosters() {
                             borderRadius: "6px",
                           }}
                         >
-                          <span className="cards-n">
+                          <span className="cards-n mr-15mb">
                             <span className="mt-10-b">
                               <Link
                                 className="i-link fs-16 b-b-g mr-15 font-bold c-u"
