@@ -14,10 +14,12 @@ const Background = styled.div`
   header {
     background: white;
     border-bottom: 1px solid #ededed !important;
-  }@media only screen and (max-width: 480px) {
+  }
+  @media only screen and (max-width: 480px) {
     header {
       display: none !important;
     }
+  }
 `
 
 const schema = yup.object().shape({
@@ -85,87 +87,85 @@ const LoginPage = () => {
       <Layout>
         <SEO title="Connexion" />
         <div className="mtandmb-24">
-            <div className="gr-log">
-              <div>
-                <h2 className="title_ic">Connexion</h2>
+          <div className="gr-log">
+            <div>
+              <h2 className="title_ic">Connexion</h2>
 
-                <form
-                  onSubmit={handleSubmit(onSubmit)}
-                >
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      onChange={onChangeInput}
-                      className="form-control"
-                      name="email"
-                      placeholder="Veuillez saisir votre adresse e-mail"
-                      style={{ width: "100%" }}
-                      ref={register({ required: true, minLength: 8 })}
-                    />
-                    {errors.email && (
-                      <div   className="alert"                  
-                      >
-                        {errors.email.message}
-                      </div>
-                    )}
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      onChange={onChangeInput}
-                      className="form-control"
-                      name="password"
-                      placeholder="Saisir votre mot de passe"
-                      ref={register({ required: true, minLength: 8 })}
-                      style={{ width: "100%" }}
-                    />
-                    {errors.password && (
-                      <div className="alert" >
-                        {errors.password.message}
-                      </div>
-                    )}
-                  </div>
-                  {textLoginSubmit.type && (
-                    <div
-                    className="alert"
-
-                      style={{
-                        color: `${
-                          textLoginSubmit.type === "error" ? "red" : "green"
-                        }`,
-                      }}
-                    >
-                      {textLoginSubmit.message}
-                    </div>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    onChange={onChangeInput}
+                    className="form-control"
+                    name="email"
+                    placeholder="Veuillez saisir votre adresse e-mail"
+                    style={{ width: "100%" }}
+                    ref={register({ required: true, minLength: 8 })}
+                  />
+                  {errors.email && (
+                    <div className="alert">{errors.email.message}</div>
                   )}
-
-                  <div>
-                    <button
-                      type="submit"
-                      className="btnlogin"
-                      onClick={onSubmit}
-                      style={{ padding: "0 15px" }}
-                    >
-                      {loading ? "Chargement..." : "Connexion"}
-                    </button>
+                </div>
+                <div className="form-group">
+                  <input
+                    type="password"
+                    onChange={onChangeInput}
+                    className="form-control"
+                    name="password"
+                    placeholder="Saisir votre mot de passe"
+                    ref={register({ required: true, minLength: 8 })}
+                    style={{ width: "100%" }}
+                  />
+                  {errors.password && (
+                    <div className="alert">{errors.password.message}</div>
+                  )}
+                </div>
+                {textLoginSubmit.type && (
+                  <div
+                    className="alert"
+                    style={{
+                      color: `${
+                        textLoginSubmit.type === "error" ? "red" : "green"
+                      }`,
+                    }}
+                  >
+                    {textLoginSubmit.message}
                   </div>
-               
-                  <button className="googleSignIn"  type="button"
-                    onClick={loginByGmail}> 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg" alt="Google logo"></img>
-    <span class="googleSignIn__text">Continuer avec Google</span>
-  </button>
+                )}
 
+                <div>
+                  <button
+                    type="submit"
+                    className="btnlogin"
+                    onClick={onSubmit}
+                    style={{ padding: "0 15px" }}
+                  >
+                    {loading ? "Chargement..." : "Connexion"}
+                  </button>
+                </div>
 
-                  <div className=" align-left fs-16">
-                    Vous n'avez pas de compte ?{" "}
-                    <a className="font-bold" href="/addu">Inscription</a>
-                  </div>
-                </form>
-              </div>
+                <button
+                  className="googleSignIn"
+                  type="button"
+                  onClick={loginByGmail}
+                >
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg"
+                    alt="Google logo"
+                  ></img>
+                  <span class="googleSignIn__text">Continuer avec Google</span>
+                </button>
 
+                <div className=" align-left fs-16">
+                  Vous n'avez pas de compte ?{" "}
+                  <a className="font-bold" href="/addu">
+                    Inscription
+                  </a>
+                </div>
+              </form>
             </div>
           </div>
+        </div>
       </Layout>
     </Background>
   )

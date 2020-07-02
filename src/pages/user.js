@@ -93,7 +93,7 @@ const UserPage = props => {
       <Layout>
         <SEO title="Mon compte" />
         <div>
-          <div className="m-w p-i pb-0 link justify mt-32 mb-32 init">
+          <div className="m-w p-i pb-0 link justify mtandmb-24 init">
             <h2>Mon compte</h2>
             <div>
               <div className="grd_f">
@@ -193,7 +193,7 @@ const UserPage = props => {
                   <div className="info_mti"></div>
                   {user && (
                     <button onClick={logoutUser} className="btnlogout">
-                      <i class="fas fa-sign-out-alt"></i>
+                      Déconnexion
                     </button>
                   )}
                 </div>
