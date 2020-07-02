@@ -83,14 +83,12 @@ const LoginPage = () => {
       <Layout>
         <SEO title="Connexion" />
         <div>
-          <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
             <div className="gr-log">
               <div>
-                <h2 className="">Content de vous revoir !</h2>
+                <h2 className="title_ic">Connexion</h2>
 
                 <form
                   onSubmit={handleSubmit(onSubmit)}
-                  style={{ maxWidth: "500px" }}
                 >
                   <div className="form-group">
                     <input
@@ -182,17 +180,13 @@ const LoginPage = () => {
 
                   <div className=" align-left fs-16">
                     Vous n'avez pas de compte ?{" "}
-                    <a href="/addu">Je n'ai pas Kiloka</a>.
+                    <a href="/addu">Inscription</a>
                   </div>
                 </form>
               </div>
 
-              <div>
-                <span></span>
-              </div>
             </div>
           </div>
-        </div>
       </Layout>
     </Background>
   )

@@ -88,16 +88,12 @@ const RegisterPage = () => {
       <Layout>
         <SEO title="S'inscrire" />
         <div>
-          <div className="m-w p-i pb-0 bg-w link justify mt-42 mb-32 init">
             <div className="gr-log">
               <div>
-                <h2 className="mb-0">S’inscrire sur Kiloka</h2>
-                <h4 className="db align-left fs-16 fw300">
-                  Inscrivez-vous avec votre adresse e-mail
-                </h4>
+                <h2 className="title_ic">Inscription</h2>
+            
                 <form
                   onSubmit={handleSubmit(onSubmitRegister)}
-                  style={{ maxWidth: "500px" }}
                 >
                   <div className="form-group">
                     <input
@@ -222,63 +218,14 @@ const RegisterPage = () => {
 
                   <div className=" align-left fs-16">
                     Vous avez déjà un compte ?{" "}
-                    <a href="/login">Connectez-vous</a>.
+                    <a href="/login">Se connecter</a>.
                   </div>
                 </form>
               </div>
 
-              <div>
-                <h2 className="mb-0">Choisissez votre offre Premium</h2>
-                <h4 className="db align-left fs-16 fw300">
-                  Inscrivez-vous avec votre adresse e-mail
-                </h4>
-               <div className="plangr">
-
-
-               <div className="userplan">
-                 <div className="badgeblue">1 mois gratuits</div>
-                 <h3 class="plan_name">Standard</h3>
-                  <p className="detailsuserplan">12,99 €/mois après la période de l'offre.</p>
-                  <div className="tb">
-                    
-                    <div className="fs-16"><i class="fas fa-check"></i> Blog</div>
-                    <div className="fs-16"><i class="fas fa-check"></i> Recherche</div>
-                    <div className="fs-16"><i class="fas fa-check"></i> Entrainements & Exercises</div>
-                    <div className="fs-16"><i class="fas fa-check"></i> Boosters & Breakfast</div>
-                    <div className="fs-16"><i class="fas fa-check"></i> Méditation+</div>
-
-
-                  </div>
-                  </div>
-                 
-
-
-
-
-
-
-
-
-
-                  <div className="userplan">
-                 - -
-                  </div>
-                 
-
-
-
-
-
-
-
-
-
-
-               </div>
-              </div>
+              
             </div>
           </div>
-        </div>
       </Layout>
     </Background>
   )
