@@ -1054,6 +1054,88 @@ font-weight: bold;
 line-height: 24px;
 margin: 0px 0px 5px;
 }
+
+
+
+.customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+.customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* GOOGLE SIGN IN BUTTON */
+.googleSignIn {
+  border: none;
+  padding: 0 15px;
+  border-radius: 2px;
+  background-color: #4285f4;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  display: flex;
+  padding: 1px;
+  color: #FFF;
+}
+.googleSignIn:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.googleSignIn:active {
+  background: #3367D6;
+}
+
+.googleSignIn--white {
+  background: #FFF;
+  color: rgba(0, 0, 0, 0.54);
+}
+.googleSignIn--white:active {
+  background: #EEEEEE;
+}
+
+.googleSignIn:disabled {
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+}
+
+.googleSignIn__text {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+
+
 .gr-log {
   max-width: 440px;
   padding: 24px;
