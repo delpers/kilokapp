@@ -12,6 +12,12 @@ video {
   height: 6px;
   background-color: blue;
 }
+.alert {
+  font-size: 14px;
+  border-left: 4px solid #d90865;
+  margin-bottom: 24px;
+  padding: 0 15px;
+}
 .btn_h {
   background: #2b2b3a;
   padding: 16px 48px;
@@ -307,7 +313,6 @@ display: table;
   color: #90949e;
   font-size: 16px;
   font-weight: 300;
-  line-height: 23px;
   border-radius: 8px;
 }
 .button_blue {
@@ -493,7 +498,7 @@ display: table;
   text-align: center;
 }
 .footer-100  {
-  padding: 0 100px;
+  padding: 50px 0;
 }
 .fs-14 {
   font-size: 14px;
@@ -884,7 +889,6 @@ background: #fafafa;
   margin-bottom: 24px;
   font-weight: bold;
   cursor: pointer;
-  line-height: 24px;
   border-radius: 8px;
   background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
 }
@@ -1106,7 +1110,7 @@ span.buttonText {
   border-radius: 8px;
   background-color: white;
   border: 1px solid #ededed;
-  display: flex;
+  display: inline-flex;
   color: #222121;
   margin-bottom: 24px;
   padding: 0 15px;

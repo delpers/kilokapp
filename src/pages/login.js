@@ -25,11 +25,11 @@ const schema = yup.object().shape({
     .string()
     .email()
     .required("Veuillez saisir un e-mail pour vous connecter!")
-    .min(6, "L'email est trop court - devrait être de 6 caractères minimum."),
+    .min(6, "Veuillez vérifier vos identifiants."),
   password: yup
     .string()
     .required("Veuillez saisir votre mot de passe pour vous connecter!")
-    .min(8, "L'email est trop court - devrait être de 6 caractères minimum."),
+    .min(8, "Veuillez vérifier vos identifiants."),
 })
 
 const LoginPage = () => {
@@ -103,9 +103,10 @@ const LoginPage = () => {
                       ref={register({ required: true, minLength: 8 })}
                     />
                     {errors.email && (
-                      <span style={{ color: "red" }}>
+                      <div   className="alert"                  
+                      >
                         {errors.email.message}
-                      </span>
+                      </div>
                     )}
                   </div>
                   <div className="form-group">
@@ -119,13 +120,15 @@ const LoginPage = () => {
                       style={{ width: "100%" }}
                     />
                     {errors.password && (
-                      <span style={{ color: "red" }}>
+                      <div className="alert" >
                         {errors.password.message}
-                      </span>
+                      </div>
                     )}
                   </div>
                   {textLoginSubmit.type && (
-                    <span
+                    <div
+                    className="alert"
+
                       style={{
                         color: `${
                           textLoginSubmit.type === "error" ? "red" : "green"
@@ -133,7 +136,7 @@ const LoginPage = () => {
                       }}
                     >
                       {textLoginSubmit.message}
-                    </span>
+                    </div>
                   )}
 
                   <div>

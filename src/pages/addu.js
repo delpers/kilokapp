@@ -110,9 +110,9 @@ const RegisterPage = () => {
                       ref={register({ required: true, minLength: 8 })}
                     />
                     {errors.email && (
-                      <span className="msg_alert" style={{ color: "#d05b5b" }}>
-                        {errors.email.message}
-                      </span>
+                      <div className="alert" >
+                      {errors.email.message}
+                      </div>
                     )}
                   </div>
                   <div className="form-group">
@@ -126,9 +126,9 @@ const RegisterPage = () => {
                       style={{ width: "100%" }}
                     />
                     {errors.password && (
-                      <span className="msg_alert" style={{ color: "#d05b5b" }}>
-                        {errors.password.message}
-                      </span>
+                      <div className="alert" >
+                      {errors.password.message}
+                      </div>
                     )}
                   </div>
                   <div className="form-group">
@@ -142,9 +142,9 @@ const RegisterPage = () => {
                       style={{ width: "100%" }}
                     />
                     {errors.confirm_password && (
-                      <span className="msg_alert" style={{ color: "red" }}>
-                        {errors.confirm_password.message}
-                      </span>
+                      <div className="alert" >
+                      {errors.confirm_password.message}
+                      </div>
                     )}
                   </div>
                   {errorRegister && (
