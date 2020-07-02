@@ -14,15 +14,15 @@ const logoutUser = async () => {
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
-    <header className="header">
-      <div className="">
-      <Link to="/"><h1>Yuko</h1></Link>
+    <header className="bsh">
+      <div className="m-w p-i pb-0 pt-0 header">
+      <Link className="logoHome" to="/">Doshi</Link>
         
 
+      <div class="_1fmnqpr"></div>
+        <nav className="_vuzcgs">  {!user && <Link className="navLink"to="/login">Connexion</Link>}
 
-        <nav>  {!user && <Link to="/login">Connexion</Link>}
-
-{user && <Link to="/user">Mon compte</Link>} </nav>
+{user && <Link className="navLink" to="/user">Mon compte</Link>} </nav>
         
       </div>
     </header>
