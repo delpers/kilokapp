@@ -40,6 +40,7 @@
     "react-hook-form": "^5.7.2",
     "react-instantsearch-dom": "^6.4.0",
     "react-styled-carousel": "^0.5.1",
+    "socket.io": "^2.3.0",
     "stripe": "^8.64.0",
     "vercel": "^19.1.1",
     "yup": "^0.29.1"
