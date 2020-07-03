@@ -174,6 +174,7 @@ const cookingRecipe = props => {
                     </div>
                 )
               })}
+              
             </div>
             </div>
 
