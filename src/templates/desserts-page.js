@@ -91,7 +91,7 @@ const DishesRecipes = props => {
                 alt={edge.title}
               />
 
-                    <div className="mt-10 p-15 fs-18 ">
+                    <div className="mt-10 p-15 fs-18 pt-0">
                       <Link
                         className="i-link fs-18 b-b-g mr-15 font-bold mb-15 nowrap"
                         to={`/recette/${edge.slug}/`}

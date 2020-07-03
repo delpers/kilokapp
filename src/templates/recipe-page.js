@@ -125,10 +125,10 @@ const cookingRecipe = props => {
           <div className="m-w-780">
 
 
-          <div className="border br-4 mb-32">
+          <div className="sw-recipes br-4 mb-32">
 
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
-              {props.data.contentfulRecipes.ingredientsNumbers} Ingrédients.
+              {props.data.contentfulRecipes.ingredientsNumbers} Ingrédient(s).
             </h3>
 
             <div className="ir-cards m-w mt-1 ns-print bg-w mb-32 pt-32 pb-32">
@@ -150,7 +150,7 @@ const cookingRecipe = props => {
             </div>
 
 
-<div className="border br-4">
+<div className="sw-recipes br-4">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w ">
               Instruction(s)
             </h3>
@@ -163,7 +163,7 @@ const cookingRecipe = props => {
                     key={i}
                   >
                     <div className="fs-16 _print_w ns-print  mt-1">
-                      <h3 className="text-gray  i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap tl">
+                      <h3 className="text-gray  i-link fs-16 b-b-g mb-5 fw300 nowrap tl">
                         {dataDr.title}
                       </h3>
                       <span className="fs-16 pr-15">
@@ -174,7 +174,7 @@ const cookingRecipe = props => {
                     </div>
                 )
               })}
-              
+
             </div>
             </div>
 
@@ -189,7 +189,7 @@ const cookingRecipe = props => {
 
           
 
-          <div className="m-w-100p100 bg-w ml-32 border br-4">
+          <div className="m-w-100p100 bg-w ml-32 sw-recipes br-4">
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
                 Valeur nutritive
@@ -207,7 +207,7 @@ const cookingRecipe = props => {
                 </span>
               </div>
 
-              <table className="d-grid m-w mt-1 ns-print mt-32 pb-0 p-15">
+              <table className="d-grid m-w mt-1 ns-print pb-0 pt-0 p-15">
 
 
 {props.data.contentfulRecipes.nFacts != null
@@ -246,14 +246,14 @@ const cookingRecipe = props => {
               
 
                     {props.data.contentfulRecipes.allergen != null
-                      ? props.data.contentfulRecipes.allergen.map((mv, i) => {
+                      ? props.data.contentfulRecipes.allergen.map((alr, i) => {
                           return (
     
                     <div
                       className="p-i fs-18 b-solid-b"
                       key={i}
                     >
-                      <i className="fas fa-caret-right mr-5"></i> {mv.allergen}
+                      <i className="fas fa-caret-right mr-5"></i> {alr.allergen}
                     </div>
                     )
                   })
@@ -281,7 +281,7 @@ const cookingRecipe = props => {
             <div className="rl rl-mobile m-w p-i  p0-m">
                 {props.data.contentfulRecipes.boosters.map(dataFLC => {
                   return (
-                    <div className="bg-w p-15 flex-m border bm01b mb-32 " id={dataFLC.id}>
+                    <div className="bg-w p-15 flex-m sw-recipes bm01b mb-32 " id={dataFLC.id}>
                       <div
           className="w-screen p-80-0 perfect-bg pbg-m"
           style={{
