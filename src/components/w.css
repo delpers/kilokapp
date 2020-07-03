@@ -214,7 +214,7 @@ display: table;
   margin-bottom: 0;
 }
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 36px;
 }
 .init {
   text-align: justify;
@@ -1680,7 +1680,7 @@ th {
   max-width: 1160px;
   margin: 0 auto;
   margin-bottom: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 72px;
 }
 .src-b {
   display: grid;
