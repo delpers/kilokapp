@@ -152,7 +152,7 @@ const cookingRecipe = props => {
 
 <div className="border br-4">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w ">
-              Directions.
+              Instruction(s)
             </h3>
             <div className="mt-1 mb-32">
               {props.data.contentfulRecipes.dRecipe.map((dataDr,i) => {
