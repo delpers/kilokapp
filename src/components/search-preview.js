@@ -6,27 +6,23 @@ const SearchPreview = ({ hit }) => {
   return (
     <div>
       <div>
-        <div>
+        <div className="mb-32">
           <div id={hit.id} className="mb-20 border ">
-            <div
-              className="mediaLR"
-              style={{
-                backgroundImage:
-                  "url(" +
-                  hit.childContentfulRecipesFeaturedImageJsonNode.secure_url +
-                  ")",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                height: "240px",
-                width: "374px",
-                borderRadius: "0",
-              }}
-            />
+          
 
+<img className="featured" src={hit.childContentfulRecipesFeaturedImageJsonNode.secure_url} alt="Purée d'œufs à la ciboulette">
+
+</img>
             <div className="mt-10 p-15 fs-16 ">
+
+            <span className="med-i-2">
+                  {" "}
+                  <i className="fas fa-file-medical-alt c-green mr-8"></i>{" "}
+                  <span className="fs-14">{hit.medicalNumber}{" "}</span>
+                </span>
+
               <Link
-                className="i-link fs-16 b-b-g mr-15 font-bold mb-15 nowrap"
+                className="i-link fs-16 b-b-g mr-15 font-bold mb-15 fs-18 nowrap"
                 to={`/recette/${hit.slug}/`}
               >
                 <Highlight hit={hit} attribute="title" tagName="mark" />
@@ -46,11 +42,7 @@ const SearchPreview = ({ hit }) => {
                   </span>
                 </div>
 
-                <span className="med-i">
-                  {" "}
-                  <i className="fas fa-file-medical-alt c-green mr-8"></i>{" "}
-                  {hit.medicalNumber}{" "}
-                </span>
+                
               </div>
 
               <div className="b-solid-top">

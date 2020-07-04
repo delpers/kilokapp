@@ -6,6 +6,7 @@ import moment from "moment"
 import _ from "lodash"
 
 import Layout from "../components/layout"
+import Audio from "../components/homeScreen/views/audio"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
@@ -198,7 +199,10 @@ const UserPage = props => {
                   )}
                 </div>
               </div>
+              <Audio />
+
             </div>
+
           </div>
         </div>
       </Layout>

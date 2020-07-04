@@ -11,7 +11,6 @@ import Boosters from "../components/homeScreen/views/boosters"
 import Training from "../components/homeScreen/views/training"
 import Calandar from "../components/homeScreen/views/month"
 import Prenium from "../components/homeScreen/views/prenium"
-import Audio from "../components/homeScreen/views/audio"
 
 const HomePage = () => {
   return (
@@ -35,7 +34,6 @@ const HomePage = () => {
 
       <Training />
 
-      <Audio />
 
 
     </Layout>

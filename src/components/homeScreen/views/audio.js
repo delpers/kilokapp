@@ -17,6 +17,7 @@ export default function Audio() {
       render={data => {
         if (premium)
           return (
+            
             <div className="bg-top">
             <div className="bg_audio">
               <h1 className="prenium_title pt-0">

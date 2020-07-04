@@ -315,6 +315,9 @@ display: table;
 .footer_blue a {
   color: white;
 }
+.mb-72 {
+  margin-bottom: 72px;
+}
 .header {
   min-height: 90px;
 }
@@ -711,11 +714,10 @@ padding-right: 4px;
 }
 .bg_audio {
   text-align: center;
-padding: 200px 5%;
-color: white;
-
-background: #79acd8;
-margin-top: 80px;
+  padding: 50px 50px;
+  color: white;
+  background: #79acd8;
+  margin-top: 80px;
 }
 .bg-top {
   background-color: black;
@@ -1209,11 +1211,12 @@ line-height: 22px !important;
 .w-80 {
   width: 80%;
 }
+
 .b-b-blue {
   border-bottom: 1px solid #1c4c74 !important;
 }
 .bg-w-c {
-  padding: 16px 20px;
+  padding: 6px 20px;
   float: left;
   background: #fff;
   border-radius: 0;
@@ -1464,10 +1467,9 @@ line-height: 22px !important;
 
 .ais-Hits-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
-
-  margin-left: 0 !important;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 32px;
+margin-left: 0;
 }
 
 .d-table {
@@ -1610,6 +1612,15 @@ mt-20 {
   border: 0;
   margin-right: 15px;
 }
+.med-i-2 {
+  padding: 0;
+  margin-top: 0px;
+  display: inline-block;
+  font-size: 16px;
+  border: 0;
+  margin-bottom: 15px;
+}
+
 .p-8 {
   padding: 8px;
 }
@@ -1854,7 +1865,7 @@ padding: 90px 5%;
     margin: 0 auto;
     margin-bottom: 0px;
     margin-bottom: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 72px;
   }
   .src-b {
     grid-gap: 15px;

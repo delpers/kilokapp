@@ -11,24 +11,20 @@ const searchClient = algoliasearch(
   "0a7d5fe8113aaa7a96d869e99fbd9619"
 )
 
-const Background = styled.div`
-  background: #f8f8f8;
-`
+
 
 const SearchPage = () => (
-  <Background>
     <Layout>
       <SEO title="Recherche" />
 
-      <div className="w-screen p-120-0">
-        <div className="m-w p-i pb-0 pt-0">
-          <section>
-            <h1 className="w-50">Que recherchez-vous ?</h1>
+      <div className="mask-thumb-cat p-50-0">
+          <div className="m-w p-i pb-0 pt-0">
+            <h1>Que recherchez-vous ?</h1>
             <p className="mb-0">
               Recherche des recettes, ainsi que des références.
             </p>
-          </section>
-        </div>
+            </div>
+
       </div>
 
       <div className="m-w p-i pb-0  ">
@@ -44,7 +40,6 @@ const SearchPage = () => (
         </InstantSearch>
       </div>
     </Layout>
-  </Background>
 )
 
 export default SearchPage

@@ -32,7 +32,7 @@ export default function Training() {
       render={data => {
         if (premium)
           return (
-            <div className=" pe-blue p-i pb-0   prog">
+            <div className=" pe-blue p-i pb-0 mb-72   prog">
               {premium && (
                 <div className=" pt120 m-w p-i ">
                   <h2 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">
