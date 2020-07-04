@@ -99,7 +99,7 @@ const UserPage = props => {
             <div>
               <div className="grd_f">
                 {planUser && planUser.length !== 0 ? (
-                  <div className="bg-w ">
+                  <div className="bg-w grpl">
                     {planUser.map(plan => (
                       <div key={plan.id} className="mb-10 plan">
                         <span className="badw cw">
@@ -143,7 +143,7 @@ const UserPage = props => {
                             className="time_end fs-16"
                             style={{ color: "#000" }}
                           >
-                            Période d'essai: {plan.trial_period_days}
+                            Période d'essai: {plan.trial_period_days} j
                           </div>
                         )}
                         {premium ? (
@@ -163,7 +163,7 @@ const UserPage = props => {
                                 {plan.user_plan &&
                                 plan.user_plan.subscriptions
                                   .cancel_at_period_end
-                                  ? "Continuez avec la formule"
+                                  ? "Continuez"
                                   : "Annuler votre abonnement"}
                               </button>
                             </div>
@@ -178,7 +178,7 @@ const UserPage = props => {
                                   : onSubcription(plan.user_plan)
                               }
                             >
-                              Continuez avec la formule
+                              Continuez
                             </button>
                           </div>
                         )}
