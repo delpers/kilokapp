@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 import UserContext from "../../UserContext"
-import { divide } from "lodash"
 
 export default function Training() {
   const { premium } = useContext(UserContext)

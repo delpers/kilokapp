@@ -3,7 +3,6 @@ import algoliasearch from "algoliasearch/lite"
 import { InstantSearch, SearchBox, Hits } from "react-instantsearch-dom"
 import SearchPreview from "../components/search-preview"
 import Layout from "../components/layout"
-import styled from "@emotion/styled"
 import SEO from "../components/seo"
 
 const searchClient = algoliasearch(

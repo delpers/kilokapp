@@ -1370,6 +1370,9 @@ span.buttonText {
   font-weight: normal;
   margin-bottom: 15px;
 }
+.bblue {
+  background: #012749;
+}
 .home-details {
   padding: 90px 20px;
   align-content: center;

@@ -14,7 +14,7 @@ const logoutUser = async () => {
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
-    <header className="bsh">
+    <header className="bsh shadow-sm">
       <div className="m-w p-i pb-0 pt-0 header">
       <Link className="logoHome" to="/">Doshi</Link>
         

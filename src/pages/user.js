@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import Audio from "../components/homeScreen/views/audio"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
-import { logout } from "../utils/firebase"
+import { logout } from "../utils/firebase" 
 import styled from "@emotion/styled"
 
 const Background = styled.div`

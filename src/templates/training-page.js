@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
@@ -31,50 +30,26 @@ export const query = graphql`
           adviceAfter
         }
       }
-      childContentfulTrainingImageJsonNode {
-        secure_url
-      }
+     
     }
   }
 `
-const Background = styled.div`
-  background: #fff;
-  header {
-    border-bottom: 0 !important;
-  }
 
-`
 const cookingRecipe = props => {
   return (
-    <Background>
       <Layout key={props.data.contentfulTraining.id}>
         <SEO title={props.data.contentfulTraining.title} />
 
-        <div
-          className="w-screen p-100-0 pt-0 pb-0  ml-i-8"
-          style={{
-            backgroundColor: "#009d9a",
-          }}
-        >
-          <span className="i-190">
-            <div className="m-w p-i m-w ">
-              <section>
-                <img
-                  className="dn w_print"
-                  alt={props.data.contentfulTraining.title}
-                  src={
-                    props.data.contentfulTraining
-                      .childContentfulTrainingImageJsonNode.secure_url
-                  }
-                ></img>
+     
 
-                <h1 className="fs-48 color-w  mw728 mb-0 training-title">
-                  {props.data.contentfulTraining.title}
-                </h1>
-              </section>
-            </div>
-          </span>
+      <div className="mask-thumb-cat p-50-0 mb-0 bblue cw">
+      <div className="m-w p-i pb-0 pt-0  " >
+            <h1 className="fs-48">                  {props.data.contentfulTraining.title}
+</h1>
         </div>
+      </div>
+
+
 
         <div className="sticky b-solid-b">
           <div className="m-w p-i ">
@@ -160,7 +135,6 @@ const cookingRecipe = props => {
           </div>
         </div>
       </Layout>
-    </Background>
   )
 }
 
