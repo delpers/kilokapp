@@ -34,21 +34,24 @@ const BlogPost = props => {
     <Layout>
       <SEO title={props.data.post.title} />
 
-      <div className="w-screen p-h"></div>
 
-      <div className="w-screen p-120-0">
-        <div className="m-w p-i pb-0 pt-0">
-          <section>
-            <h1 className="blog-title">{props.data.post.title}</h1>
-          </section>
+      <div className="mask-thumb-cat p-50-0 mb-0">
+      <div className="m-w p-i pb-0 pt-0  " >
+            <h1 className="fs-48">{props.data.post.title}</h1>
         </div>
+      </div>
+
+
+
+      <div>
+       
 
         <img
           className=""
           src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
-        <div className="m-w p-i">
+        <div className="m-w p-i mt-32 align-justify">
 
      
 

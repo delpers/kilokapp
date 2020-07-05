@@ -31,16 +31,14 @@ const Blog = () => {
     <Layout>
       <SEO title="Blog" />
 
-      <div className="w-screen p-100-0">
-        <div className="m-w p-i pb-0 mt-32">
-          <section>
+      <div className="mask-thumb-cat p-50-0">
+      <div className="m-w p-i pb-0 pt-0  " >
             <h1>Blog</h1>
-            <p className="mb-0 ">
-              Retrouvez ici l'ensemble des actualités Kiloka
-            </p>
-          </section>
         </div>
       </div>
+
+     
+      
 
       <div className="blogPost blogPost-mobile m-w p-i">
         {data.blog.edges.map(edge => {
@@ -51,14 +49,12 @@ const Blog = () => {
                 src={edge.node.media.secure_url}
                 alt={edge.node.title}
               />
-              <h3>
                 <Link
-                  className="p-0-24 font-bold i-link"
+                  className="p-0-24 blog-title font-bold i-link"
                   to={`/blog/${edge.node.slug}/`}
                 >
                   {edge.node.title}
                 </Link>
-              </h3>
               <p className="text-gray text-base justify p-0-24">
                 {edge.node.ePost.excerpt}
               </p>

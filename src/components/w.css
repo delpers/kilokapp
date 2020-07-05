@@ -1627,13 +1627,26 @@ th {
   margin-bottom: 0px;
   margin-bottom: 72px;
 }
+.blog-title {
+  font-size: 24px;
+  margin-bottom: 0 !important;
+}
+.fs-48 {
+  margin-bottom: 0;
+}
+.align-justify {
+  text-align: justify;
+}
 .src-b {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
   max-width: 1160px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 72px;
+}
+.mb-72 {
+  margin-bottom: 72px !important;
 }
 .m-w-780 {
   width: 638px;
