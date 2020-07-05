@@ -109,19 +109,19 @@ const cookingRecipe = props => {
 
                             <div className="p-flex mb-32 mt-32">
                               <div className="pw-50 fs-16 mr-15">
-                                <h4 className="">
+                                <h3 className="">
                                   Avant la séance{" "}
-                                </h4>
-                                <p className="fs-16 text-gray">
+                                </h3>
+                                <p className="fs-16">
                                   {edge.adviceBefore.adviceBefore}
                                 </p>
                               </div>
 
                               <div className="pw-50 fs-16">
-                                <h4 className="">
+                                <h3 className="">
                                   Après la séance
-                                </h4>
-                                <p className="fs-16 text-gray">
+                                </h3>
+                                <p className="fs-16">
                                   {edge.adviceAfter.adviceAfter}
                                 </p>
                               </div>
