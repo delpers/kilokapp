@@ -880,6 +880,7 @@ button {
   font-size: 18px;
   font-weight: bold;
   color: black;
+  padding-bottom: 15px;
 }
 .day {
   background: #000;

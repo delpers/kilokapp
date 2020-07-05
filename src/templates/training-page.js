@@ -107,19 +107,19 @@ const cookingRecipe = props => {
                               : null}
                             {documentToReactComponents(edge.body.json)}
 
-                            <div className="p-flex mb-32">
-                              <div className="pw-50 p-20 border fs-16 mr-15">
-                                <h4 className="uppercase">
-                                  Tips avant la séance{" "}
+                            <div className="p-flex mb-32 mt-32">
+                              <div className="pw-50 fs-16 mr-15">
+                                <h4 className="">
+                                  Avant la séance{" "}
                                 </h4>
                                 <p className="fs-16 text-gray">
                                   {edge.adviceBefore.adviceBefore}
                                 </p>
                               </div>
 
-                              <div className="pw-50 p-20 border fs-16 ">
-                                <h4 className="uppercase">
-                                  Tips après la séance
+                              <div className="pw-50 fs-16">
+                                <h4 className="">
+                                  Après la séance
                                 </h4>
                                 <p className="fs-16 text-gray">
                                   {edge.adviceAfter.adviceAfter}
