@@ -1385,12 +1385,8 @@ span.buttonText {
 }
 
 .w-screen-home {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(239, 87, 87, 0.74) 0%,
-    rgba(245, 123, 13, 0.74) 90.2%
-  );
-
+  background: #6c73ff;
+  color: white !important;
   height: 600px;
 }
 

@@ -10,9 +10,7 @@ export const query = graphql`
       title
       slug
       backgroundColor
-      picture: childContentfulBoostersImageJsonNode {
-        secure_url
-      }
+      
       bList {
         title
         slug
@@ -40,27 +38,21 @@ const BoostersRecipes = props => {
       <Layout>
         <SEO title={props.data.booster.title} />
 
-        <div
-          className="w-screen p-120-0 perfect-bg"
-          style={{
-            backgroundImage:
-              "url(" + props.data.booster.picture.secure_url + ")",
-            backgroundSize: "contain",
-            backgroundColor: props.data.booster.backgroundColor,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left",
-            color: "initial",
-          }}
-        >
-          <div className="m-wb pb-0 pt-0">
-            <section className="sub-header">
-              <h1 className="mb-0">{props.data.booster.title}</h1>
+        <div className="mask-thumb-cat p-50-0">
+          <div className="m-w p-i pb-0 pt-0  " >
 
-            </section>
+
+              <h1>{props.data.booster.title}</h1>
+            
+
+
           </div>
-        </div>
-
+        </div>  
         <div>
+
+         
+
+        
           <div>
             <div className="rl rl-mobile m-w p-i  ">
               {props.data.booster.bList != null ? (

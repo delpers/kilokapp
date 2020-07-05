@@ -9,11 +9,21 @@ import Dishes from "../components/homeScreen/views/plats"
 import Desserts from "../components/homeScreen/views/desserts"
 import Boosters from "../components/homeScreen/views/boosters"
 import Training from "../components/homeScreen/views/training"
-import Calandar from "../components/homeScreen/views/month"
-import Prenium from "../components/homeScreen/views/prenium"
+import styled from "@emotion/styled"
+
+const Custom = styled.div`
+  header {
+    position: absolute !important;
+    background: none !important;
+    box-shadow: none !important;
+    width: 100%;
+  }
+
+`
 
 const HomePage = () => {
   return (
+    <Custom>  
     <Layout>
       <SEO title="Accueil" />
 
@@ -37,6 +47,7 @@ const HomePage = () => {
 
 
     </Layout>
+    </Custom>
   )
 }
 
