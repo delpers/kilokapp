@@ -81,11 +81,12 @@ const cookingRecipe = props => {
                             className="accordion-toggle"
                             name="toggle"
                           />
+             <div className="title-trading">{edge.title}</div>
+
                           <label htmlFor={edge.id}>
                             <div className="day">
                               {edge.week} - D{edge.day}
                             </div>{" "}
-                            {edge.title}
                           </label>
                           <section>
                             {edge.videoUrl != null

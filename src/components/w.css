@@ -805,6 +805,7 @@ button {
   transform: translateZ(0);
   background: white;
   margin-bottom: 32px;
+  border-bottom: 1px solid #ededed;
 }
 
 .accordion > .accordion-toggle {
@@ -875,15 +876,20 @@ button {
   border-radius: 8px;
   margin-right: 0 !important;
 }
+.title-trading {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
 .day {
-  background: #012749;
+  background: #000;
   display: inline;
   padding: 10px 17px;
   color: white;
   border-radius: 2px;
   font-size: 14px;
   margin-right: 10px;
-  margin-left: 20px;
+  margin-left: 0;
   font-weight: 300;
 }
 .p-i {
