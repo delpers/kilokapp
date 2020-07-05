@@ -43,7 +43,7 @@ const Blog = () => {
       <div className="blogPost blogPost-mobile m-w p-i">
         {data.blog.edges.map(edge => {
           return (
-            <div className="shadow-sm rounded mb-32 border" key={edge.node.id}>
+            <div className="shadow-sm rounded mb-32" key={edge.node.id}>
               <img
                 className="featured"
                 src={edge.node.media.secure_url}
