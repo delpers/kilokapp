@@ -392,18 +392,31 @@ button {
   max-width: 440px;
   line-height: 36px;
 }
+.mt-15 {
+  margin-top: 15px;
+}
+#pink {
+  background: #fc6565 !important;
+}
+.p-024 {
+  padding: 0 24px;
+}
+.di {
+  display: initial;
+}
 .pt120 {
   padding-top: 120px;
 }
 .button_pw {
-  background: #f0f7fd;
+  background: #79acd8;
   border: 1px solid transparent;
-  border-radius: 5rem;
   padding: 17px 36px;
-  color: white;
   font-size: 18px;
   text-decoration: none;
   font-weight: 300;
+  border-radius: 6px;
+  text-align: center;
+  color: white !important;
 }
 .grp {
   display: grid;
@@ -1010,7 +1023,7 @@ button {
   border-radius: 6px 6px 0 0;
 }
 .mt-100 {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .cw {
   color: white !important;
@@ -1402,8 +1415,7 @@ span.buttonText {
 }
 
 .w-screen-home {
-  background: rgb(25,68,236);
-  background: linear-gradient(90deg, rgba(25,68,236,1) 0%, rgba(39,92,241,1) 50%);    color: white !important;
+  background: #79acd8;
   height: 600px;
 }
 

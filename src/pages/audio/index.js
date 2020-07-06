@@ -1,74 +1,66 @@
+
+
+
+
+
+
+
+
+
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #000000;
-  header {
-    position: relative !important;
-    border: 0 !important;
-    background: white;
-    display: none;
-  }footer {
-      display: none;
-  }
-`
-const Audio = () => {
+const Blog = () => {
   const data = useStaticQuery(
     graphql`
-      query {
-        audio: allContentfulAudio(
-          sort: { fields: publishedDate, order: DESC }
-        ) {
-          edges {
-            node {
-              title
-              id
-              slug
-              author
-              category
-              eAudio: childContentfulAudioAudioJsonNode {
-                secure_url
-              }
-             
+    query {
+      audio: allContentfulAudio(
+        sort: { fields: publishedDate, order: DESC }
+      ) {
+        edges {
+          node {
+            title
+            id
+            slug
+            author
+            category
+            color
+            eAudio: childContentfulAudioAudioJsonNode {
+              secure_url
             }
+           
           }
         }
       }
-    `
+    }
+  `
   )
   return (
-      <Background>
     <Layout>
       <SEO title="Blog" />
 
-      <div className="w-screen p-100-0 bg-black">
-        <div className="m-w p-i pb-0 mt-32">
-          <section>
-            <h1 className="fs-76 cw">Bien-être </h1>
-            <p className="mb-0 cw fs-36 ">
-              Retrouvez ici l'ensemble des séances
-              
-            </p>
-          </section>
+      <div className="mask-thumb-cat p-50-0">
+      <div className="m-w p-i pb-0 pt-0  " >
+            <h1>Bibliothèque numérique</h1>
         </div>
       </div>
 
-      <div className="blogPost blogPost-mobile m-w p-i">
-        {data.audio.edges.map(edge => {
-          return (
-            <div className="shadow-sm rounded mb-32 blackblack p-15" key={edge.node.id}>
-             
-              <h3 className="cw">
-                {edge.node.title}
-              </h3>
-              <span className="cab">                {edge.node.category}
-</span>
-              <div className="audio">
+     
+      
 
-              <figure>
+      <div className="blogPost blogPost-mobile m-w p-i">
+      {data.audio.edges.map(edge => {
+          return (
+            <div className="shadow-sm rounded mb-32" key={edge.node.id}>
+             
+                <h4 className="p-024">
+                  {edge.node.title}
+                </h4>
+            <div>
+
+            <figure>
     <audio
         controls
         src={edge.node.eAudio.secure_url}>
@@ -76,19 +68,21 @@ const Audio = () => {
             <code>audio</code> element.
     </audio>
 </figure>
-
-
-              </div>
-              <div className="b-solid-top-black p-24 text-base font-bold">
+            </div>
+              <div className="b-solid-top p-24 text-base font-bold">
+                <h3 className="i-link cab di" id={edge.node.color}>
+                  {edge.node.category}
+                </h3>
+                <div className="mt-15">
                 {edge.node.author}
+                </div>
               </div>
             </div>
           )
         })}
       </div>
     </Layout>
-    </Background>
   )
 }
 
-export default Audio
+export default Blog

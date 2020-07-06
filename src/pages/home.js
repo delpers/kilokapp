@@ -17,17 +17,27 @@ const Custom = styled.div`
     background: none !important;
     box-shadow: none !important;
     width: 100%;
+  }.logoHome {
+    color: white !important;
+  }.navLink {
+    background: white;
+padding: 15px 24px;
+border-radius: 6px;
   }
 
 `
+
+
+
+
+
 
 const HomePage = () => {
   return (
     <Custom>  
     <Layout>
       <SEO title="Accueil" />
-
-      <HeroScreen />
+      <HeroScreen /> 
 
       <StickyNav />
 

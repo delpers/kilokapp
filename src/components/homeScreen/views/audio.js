@@ -17,24 +17,12 @@ export default function Audio() {
       render={data => {
         if (premium)
           return (
-            <div className="bg-top">
-            <div className="bg_audio">
-              <h1 className="prenium_title pt-0">
-                {" "}
-                {data.home.title_audio}{" "}
-              </h1>
-              <p>
-                {data.home.description_audio}
-              </p>
-
-              <div className="grp">
+          
                 <div className="dif mt-10">
                   <Link to="/audio" className="button_pw  ">
-                    Méditer
+                      Bibliothèque numérique
                   </Link>
                 </div>
-              </div>
-            </div></div>
           )
       }}
     />

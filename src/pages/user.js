@@ -191,6 +191,9 @@ const UserPage = props => {
                   <h2 className="info_mth">Vos informations</h2>
                   {user ? <div className="info_mti">E-mail {email}</div> : null}
 
+                  <Audio />
+
+
                   <div className="info_mti"></div>
                   {user && (
                     <button onClick={logoutUser} className="btnlogout">
@@ -199,7 +202,6 @@ const UserPage = props => {
                   )}
                 </div>
               </div>
-              <Audio />
 
             </div>
 
