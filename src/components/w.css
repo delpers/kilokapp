@@ -140,7 +140,7 @@ li {
   display: ruby-text-container;
 }
 .fs-24 {
-  font-size: 32px;
+  font-size: 24px;
 }
 .psmg {
   font-size: 16px;
@@ -229,7 +229,7 @@ button {
   margin-top: 10px !important;
 }
 .ig {
-  color: #000dff;
+  color: #2459f0;
 }
 .color-w {
   color: white !important;
@@ -387,6 +387,10 @@ button {
 }
 .mw728 {
   max-width: 728px;
+}
+.mw500 {
+  max-width: 440px;
+  line-height: 36px;
 }
 .pt120 {
   padding-top: 120px;
