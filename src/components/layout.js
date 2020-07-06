@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
                 Légales
               </div>
             
-              <Link className="i-link    db mb-15" to="/page/pdc">
+              <Link className="i-link    db mb-15" to="/page/privacy-policy">
               Politique de confidentialité
               </Link>{" "}
              

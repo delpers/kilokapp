@@ -108,7 +108,9 @@ li {
   align-items: center;
   width: auto;
 }
-
+.mr-32-i {
+  margin-right: 32px !important;
+}
 .end {
   justify-content: right !important;
 }
@@ -150,7 +152,8 @@ li {
   line-height: 24px;
 }
 .badw {
-  background-image: linear-gradient(135deg, #6b73ff 10%, #000dff 100%);
+  background: rgb(25,68,236);
+  background: linear-gradient(90deg, rgba(25,68,236,1) 0%, rgba(39,92,241,1) 50%);   
   border-radius: 2px;
   font-size: 14px !important;
   padding: 7px 24px;
@@ -447,7 +450,7 @@ button {
   font-size: 62px;
   color: white;
   line-height: 72px;
-  font-weight: bold;
+  font-weight: 300;
 }
 .blog-title {
   font-size: 4rem;
@@ -1047,8 +1050,8 @@ header {
 .bg-wl {
   padding: 8px 14px;
   float: left;
-  background: #5f67ff;
-  border-radius: 2px;
+  background: rgb(25,68,236);
+  background: linear-gradient(90deg, rgba(25,68,236,1) 0%, rgba(39,92,241,1) 50%);    border-radius: 2px;
   color: white;
   margin-top: -2.5px;
 }
@@ -1395,8 +1398,8 @@ span.buttonText {
 }
 
 .w-screen-home {
-  background: #6c73ff;
-  color: white !important;
+  background: rgb(25,68,236);
+  background: linear-gradient(90deg, rgba(25,68,236,1) 0%, rgba(39,92,241,1) 50%);    color: white !important;
   height: 600px;
 }
 
@@ -2005,6 +2008,7 @@ th {
   .mr-32 {
     margin-right: 32px;
   }
+ 
   .mb-20 {
     margin-bottom: 20px;
   }

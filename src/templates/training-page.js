@@ -30,112 +30,116 @@ export const query = graphql`
           adviceAfter
         }
       }
-     
     }
   }
 `
 
 const cookingRecipe = props => {
   return (
-      <Layout key={props.data.contentfulTraining.id}>
-        <SEO title={props.data.contentfulTraining.title} />
-
-     
+    <Layout key={props.data.contentfulTraining.id}>
+      <SEO title={props.data.contentfulTraining.title} />
 
       <div className="mask-thumb-cat p-50-0 mb-0 bblue cw">
-      <div className="m-w p-i pb-0 pt-0  " >
-            <h1 className="fs-48">                  {props.data.contentfulTraining.title}
-</h1>
+        <div className="m-w p-i pb-0 pt-0  ">
+          <h1 className="fs-48"> {props.data.contentfulTraining.title}</h1>
         </div>
       </div>
 
+      <div className="sticky b-solid-b">
+        <div className="m-w p-i ">
+          <span className="i-link fs-16 b-b-g mr-15  "></span>
 
+          <span className="i-link fs-16 b-b-g mr-15  ">
+            <i className="fas fa-heart mr-8"></i>{" "}
+            {props.data.contentfulTraining.level}
+          </span>
 
-        <div className="sticky b-solid-b">
-          <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15  "></span>
-
-            <span className="i-link fs-16 b-b-g mr-15  ">
-              <i className="fas fa-heart mr-8"></i>{" "}
-              {props.data.contentfulTraining.level}
-            </span>
-
-            <span className="i-link fs-16 b-b-g mr-15   ">
-              <i className="fa fa-calendar-week mr-8"></i>{" "}
-              {props.data.contentfulTraining.nWeeks}
-            </span>
-          </div>
+          <span className="i-link fs-16 b-b-g mr-15   ">
+            <i className="fa fa-calendar-week mr-8"></i>{" "}
+            {props.data.contentfulTraining.nWeeks}
+          </span>
         </div>
+      </div>
 
-        <div className=" m-w pt-0i mt-32">
-          <div>
-            <div className=" p-i">
-              <div className="week mb-32">
-                {props.data.contentfulTraining.steps != null
-                  ? props.data.contentfulTraining.steps.map((edge, i) => {
-                      return (
-                        <div className="accordion" key={i}>
-                          <input
-                            id={edge.id}
-                            type="radio"
-                            className="accordion-toggle"
-                            name="toggle"
-                          />
-             <div className="title-trading">{edge.title}</div>
+      <div className=" m-w pt-0i mt-32">
+        <div>
+          <div className=" p-i">
+            <div className="week mb-32">
+              {props.data.contentfulTraining.steps != null
+                ? props.data.contentfulTraining.steps.map((edge, i) => {
+                    return (
+                      <div className="accordion" key={i}>
+                        <input
+                          id={edge.id}
+                          type="radio"
+                          className="accordion-toggle"
+                          name="toggle"
+                        />
+                        <div className="title-trading">{edge.title}</div>
 
-                          <label htmlFor={edge.id}>
-                            <div className="day">
-                              {edge.week} - D{edge.day}
-                            </div>{" "}
-                          </label>
-                          <section>
-                            {edge.videoUrl != null
-                              ? edge.videoUrl.map((mv, i) => {
-                                  return (
-                                    <div>
-                                      <h4> {mv.title} </h4>
+                        <label htmlFor={edge.id}>
+                          <div className="day">
+                            Semaine {edge.week} - Jour {edge.day}
+                          </div>{" "}
+                        </label>
+                        <section>
+                          {edge.videoUrl != null
+                            ? edge.videoUrl.map((mv, i) => {
+                                return (
+                                  <div>
+                                    <h4> {mv.title} </h4>
 
-                                      <video id="player" key={i}>
-                                        <source
-                                          src={mv.urlVideo}
-                                          type="video/mp4"
-                                        />
-                                      </video>
-                                    </div>
-                                  )
-                                })
-                              : null}
-                            {documentToReactComponents(edge.body.json)}
 
-                            <div className="p-flex mb-32 mt-32">
-                              <div className="pw-50 fs-16 mr-15">
-                                <h3 className="">
-                                  Avant la séance{" "}
-                                </h3>
-                                <p className="fs-16">
-                                  {edge.adviceBefore.adviceBefore}
-                                </p>
-                              </div>
+                                    <video width="720" height="405" controls  poster={mv.urlVideo}>
+	<source src={mv.urlVideo} type="video/mp4" />
+	Your browser does not support the video tag or the file format of this video. <a href="http://www.supportduweb.com/">http://www.supportduweb.com/</a>
+</video>
 
-                              <div className="pw-50 fs-16">
-                                <h3 className="">
-                                  Après la séance
-                                </h3>
-                                <p className="fs-16">
-                                  {edge.adviceAfter.adviceAfter}
-                                </p>
-                              </div>
+
+
+                                    <div id="my_video">
+  <video src={mv.urlVideo} type="video/mp4" poster="sample.jpg" playsinline>
+  	<source src={mv.urlVideo} type="video/mp4" />
+  </video>
+</div>
+
+<div id="my_video" data-video={mv.urlVideo} data-type="video/mp4" data-poster="sample.jpg">
+</div>
+
+
+
+
+                                  </div>
+                                )
+                              })
+                            : null}
+                          {documentToReactComponents(edge.body.json)}
+
+                          <div className="p-flex mb-32 mt-32">
+                            <div className="pw-50 fs-16 mr-32-i">
+                              <h3 className="">Avant la séance </h3>
+                              <p className="fs-16">
+                                {edge.adviceBefore.adviceBefore}
+                              </p>
                             </div>
-                          </section>
-                        </div>
-                      )
-                    })
-                  : null}
-              </div>
+
+                            <div className="pw-50 fs-16">
+                              <h3 className="">Après la séance</h3>
+                              <p className="fs-16">
+                                {edge.adviceAfter.adviceAfter}
+                              </p>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    )
+                  })
+                : null}
             </div>
           </div>
         </div>
-      </Layout>
+      </div>
+    </Layout>
   )
 }
 
