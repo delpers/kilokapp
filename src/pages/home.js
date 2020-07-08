@@ -21,8 +21,8 @@ const Custom = styled.div`
     color: white !important;
   }.navLink {
     background: white;
-padding: 15px 24px;
-border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 5rem;
   }
 
 `

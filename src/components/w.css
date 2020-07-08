@@ -467,7 +467,7 @@ button {
   font-size: 62px;
   color: white;
   line-height: 72px;
-  font-weight: 300;
+  font-weight: bold;
 }
 .blog-title {
   font-size: 4rem;
@@ -989,7 +989,7 @@ button {
 .logoHome {
   text-decoration: none;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
 }
 ._1fmnqpr {
   flex: 1 1 auto !important;
@@ -1415,8 +1415,7 @@ span.buttonText {
 }
 
 .w-screen-home {
-  background: #79acd8;
-  height: 600px;
+  background: #1d5166;
 }
 
 .ais-Hits-list {

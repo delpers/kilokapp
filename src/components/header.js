@@ -16,11 +16,11 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="bsh shadow-sm">
       <div className="m-w p-i pb-0 pt-0 header">
-      <Link className="logoHome" to="/">Doshi</Link>
+      <Link className="logoHome" to="/">kiloka</Link>
         
 
       <div class="_1fmnqpr"></div>
-        <nav className="_vuzcgs">  {!user && <Link className="navLink"to="/login">Connexion</Link>}
+        <nav className="_vuzcgs">  {!user && <Link className="navLink" to="/login">Connexion</Link>}
 
 {user && <Link className="navLink" to="/user">Mon compte</Link>} </nav>
         
