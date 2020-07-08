@@ -28,10 +28,6 @@ const Custom = styled.div`
 `
 
 
-
-
-
-
 const HomePage = () => {
   return (
     <Custom>  
