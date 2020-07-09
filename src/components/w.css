@@ -517,7 +517,7 @@ button {
   color: #00758d !important;
 }
 .c-green {
-  color: #1cc996 !important;
+  color: #008489 !important;
   font-weight: normal !important;
 }
 .mr-8 {
@@ -993,8 +993,8 @@ button {
 }
 .logoHome {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 36px;
+  font-weight: 300;
+  font-size: 28px;
 }
 ._1fmnqpr {
   flex: 1 1 auto !important;
@@ -1072,11 +1072,14 @@ header {
   color: white !important;
 }
 .bg-wl {
-  padding: 8px 14px;
+  padding: 9px 14px;
+      padding-right: 14px;
   float: left;
-  background: #1cc996;
-  color: white;
-  margin-top: -2.5px;
+  background: ;
+  color: #e61e4f;
+  margin-top: -4.5px;
+  font-size: 16px;
+  padding-right: 0;
 }
 .border-c {
   border: 1px solid rgba(231, 231, 231, 0.58);
@@ -1543,7 +1546,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #eeefef;
   background-color: #fff;
 }
 .link a {

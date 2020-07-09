@@ -50,10 +50,11 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f4f5f5;
+  background: #f7f7f7;
   header {
     background: white !important;
     position: relative !important;
+    border-bottom: 1px solid #f4f5f5;
   }
 `
 const cookingRecipe = props => {
@@ -70,7 +71,7 @@ const cookingRecipe = props => {
 
 
           <span className="i-link fs-16 b-b-g mr-15 fw300">
-            {props.data.contentfulRecipes.ingredientsNumbers} Ingrédient(s).
+            {props.data.contentfulRecipes.ingredientsNumbers} Ingr(s).
 
             </span>
 
@@ -90,7 +91,7 @@ const cookingRecipe = props => {
             
 
             <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-14 bg-wl mr-p">
+              <span className="fs-16 bg-wl mr-p">
                 <i className="fas fa-check-circle"></i>{" "}
                 {props.data.contentfulRecipes.time} min(s).
               </span>
