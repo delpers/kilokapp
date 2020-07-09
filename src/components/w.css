@@ -986,15 +986,18 @@ button {
   box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
 }
 .navLink {
-  color: initial !important;
   text-decoration: none;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: bold;
+  background: #79acd8;
+  padding: 14px 20px;
+  color: white !important;
+  border-radius: 2px;
+  font-size: 16px;
 }
 .logoHome {
   text-decoration: none;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 36px;
 }
 ._1fmnqpr {
   flex: 1 1 auto !important;
@@ -1076,11 +1079,12 @@ header {
       padding-right: 14px;
   float: left;
   background: ;
-  color: #e61e4f;
+  color: #7ab194 !important;
   margin-top: -4.5px;
   font-size: 16px;
   padding-right: 0;
 }
+
 .border-c {
   border: 1px solid rgba(231, 231, 231, 0.58);
 }
@@ -1495,7 +1499,7 @@ span.buttonText {
   padding-bottom: 0;
 }
 .mt-1 {
-  margin-top: 2.86px !important;
+  margin-top: 4px !important;
   display: grid;
 }
 mt-20 {
@@ -1539,7 +1543,7 @@ mt-20 {
   margin-top: -5px;
 }
 .mb-1 {
-  margin-bottom: 2.86px;
+  margin-bottom: 4px;
 }
 .sticky {
   position: sticky;
@@ -1976,7 +1980,8 @@ th {
     grid-template-columns: repeat(2, 1fr);
   }
   .p0-m {
-    padding: 0;
+    padding: 0 !important;
+    margin-top: 2px;
   }
   .bm01b {
     border: 0;
