@@ -13,8 +13,6 @@ export const query = graphql`
       time
       medicalNumber
       ingredientsNumbers
-      amountPerServingCalories
-      allergen
       numberOfPersons
       childContentfulRecipesFeaturedImageJsonNode {
         secure_url
@@ -52,11 +50,10 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #FFF;
+  background: #f4f5f5;
   header {
     background: white !important;
     position: relative !important;
-    box-shadow: none !important;
   }
 `
 const cookingRecipe = props => {
@@ -66,48 +63,31 @@ const cookingRecipe = props => {
         <SEO title={props.data.contentfulRecipes.title} />
        
 
-        <div
-          className="w-screen p-100-0 pb-0 p-hr ml-i-8"
-          style={{
-            backgroundImage:
-              "url(" +
-              props.data.contentfulRecipes
-                .childContentfulRecipesFeaturedImageJsonNode.secure_url +
-              ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "bottom",
-          }}
-        >
-            <div className="m-w p-i recipe-title">
-              <section>
-                <img
-                  className="dn w_print"
-                  alt={props.data.contentfulRecipes.title}
-                  src={
-                    props.data.contentfulRecipes
-                      .childContentfulRecipesFeaturedImageJsonNode.secure_url
-                  }
-                ></img>
-
-<h1 className="fs-24 uppercase title_print m0">
-                  {props.data.contentfulRecipes.title}
-                </h1>
-              </section>
-            </div>
-        </div>
+     
 
         <div className="sticky">
           <div className="m-w p-i ">
-            <span className="i-link fs-16 b-b-g mr-15 font-bold">
+
+
+          <span className="i-link fs-16 b-b-g mr-15 fw300">
+            {props.data.contentfulRecipes.ingredientsNumbers} Ingrédient(s).
+
+            </span>
+
+            <span className="i-link fs-16 b-b-g mr-15 fw300">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
-            <span className="i-link fs-16 b-b-g mr-15 font-bold">
+
+
+
+
+            <span className="i-link fs-16 b-b-g mr-15 fw300">
               <i className="fas fa-file-medical-alt  mr-15 c-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
+
+            
 
             <div className="t-d fl-r mb-15 mt_i5">
               <span className="fs-14 bg-wl mr-p">
@@ -124,19 +104,23 @@ const cookingRecipe = props => {
           <div> 
           <div className="m-w-780">
 
+<div>
 
-          <div className="sw-recipes br-4 mb-32">
+</div>
+          <div className="sw-recipes mb-32">
 
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w">
-              {props.data.contentfulRecipes.ingredientsNumbers} Ingrédient(s).
+            {props.data.contentfulRecipes.title}
+        
             </h3>
+         
 
             <div className="ir-cards m-w mt-1 ns-print bg-w mb-32 pt-32 pb-32">
               {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                 return (
                   <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c pt-0">
-                    <div className="fs-16 _print_w ns-print">
-                      <h3 className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap">
+                    <div className="_print_w ns-print">
+                      <h3 className="i-link fs-20 b-b-g mr-15 font-bold mb-5 nowrap">
                         {dataIGRD.title}
                       </h3>
                       <span className="fs-16 text-gray pr-15">
@@ -152,18 +136,18 @@ const cookingRecipe = props => {
 
 <div className="sw-recipes br-4">
             <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w ">
-              Instruction(s)
+            Préparation
             </h3>
             <div className="mt-1 mb-32">
               {props.data.contentfulRecipes.dRecipe.map((dataDr,i) => {
                 return (
                   <div
                     id={dataDr.id}
-                    className=" bg-w ns-print bg-w-c p-20 mb-1"
+                    className=" bg-w ns-print bg-w-c p-20 mb-1 mbs shadow-sm"
                     key={i}
                   >
                     <div className="fs-16 _print_w ns-print  mt-1">
-                      <h3 className="text-gray  i-link fs-16 b-b-g mb-5 fw300 nowrap tl">
+                      <h3 className=" i-link fs-20 b-b-g mb-5 fw300 nowrap ">
                         {dataDr.title}
                       </h3>
                       <span className="fs-16 pr-15">
@@ -190,22 +174,24 @@ const cookingRecipe = props => {
           
 
           <div className="m-w-100p100 bg-w ml-32 sw-recipes br-4">
+
+            <div  style={{
+            backgroundImage:
+              "url(" +
+              props.data.contentfulRecipes
+                .childContentfulRecipesFeaturedImageJsonNode.secure_url +
+              ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionX: "bottom",
+            height: "280px"
+          }}></div>
             <div className="nutrition">
               <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
-                Valeur nutritive
+                Information(s)
               </h3>
-              <div className="total flex p-i">
-                <span className="d-grid w-80">
-                  <i className="text-gray fs-16">Quantité par portion</i>
-                  <i className="text-gray fs-16">Calories</i>
-                </span>
-
-                <span className="tfd">
-                  <h3 className="fs-42">
-                    {props.data.contentfulRecipes.amountPerServingCalories}
-                  </h3>
-                </span>
-              </div>
+            
 
               <table className="d-grid m-w mt-1 ns-print pb-0 pt-0 p-15">
 
@@ -238,45 +224,17 @@ const cookingRecipe = props => {
               </table>
             </div>
 
-            <div className="nutrition">
-              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i  b-solid-b">
-                Allergène(s)
-              </h3>
-              <div className="db">
-              
-
-                    {props.data.contentfulRecipes.allergen != null
-                      ? props.data.contentfulRecipes.allergen.map((alr, i) => {
-                          return (
-    
-                    <div
-                      className="p-i fs-18 b-solid-b"
-                      key={i}
-                    >
-                      <i className="fas fa-caret-right mr-5"></i> {alr.allergen}
-                    </div>
-                    )
-                  })
-                : (
-                  <div className="p-i">N/A</div>
-                )
-              
-              }
-              </div>
             </div>
-          </div>
-         
+            </div>
 
-
-          </div>
 
 
 <div className="none-print">
 
-
 <h3 className="i-link b-b-g mr-15 font-bold m-w p-i ">
               Nutriments
             </h3>
+
 
             <div className="rl rl-mobile m-w p-i  p0-m">
                 {props.data.contentfulRecipes.boosters.map(dataFLC => {
