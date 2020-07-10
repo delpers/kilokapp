@@ -1078,7 +1078,6 @@ header {
   padding: 9px 14px;
       padding-right: 14px;
   float: left;
-  background: ;
   color: #7ab194 !important;
   margin-top: -4.5px;
   font-size: 16px;
@@ -1499,7 +1498,7 @@ span.buttonText {
   padding-bottom: 0;
 }
 .mt-1 {
-  margin-top: 4px !important;
+  margin-top: 2px !important;
   display: grid;
 }
 mt-20 {

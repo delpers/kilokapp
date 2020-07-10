@@ -105,7 +105,7 @@ const cookingRecipe = props => {
 </div>
           <div className="sw-recipes mb-32">
 
-            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm">
+            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm mb-1">
             {props.data.contentfulRecipes.title}
         
             </h3>
@@ -131,7 +131,7 @@ const cookingRecipe = props => {
 
 
 <div className="sw-recipes">
-            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm">
+            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm mb-1">
             Préparation
             </h3>
             <div className="mt-1 mb-32">
@@ -184,7 +184,7 @@ const cookingRecipe = props => {
             height: "280px"
           }}></div>
             <div className="nutrition">
-              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i shadow-sm b-solid-b">
+              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i shadow-sm mb-1">
                 Information(s)
               </h3>
             
