@@ -382,8 +382,8 @@ button {
 .title-ble {
   font-size: 36px;
   line-height: 48px;
-  margin-bottom: 32px !important;
-  font-weight: 300;
+  margin-bottom: 0px !important;
+  font-weight: 600;
 }
 .pl {
   display: block;
@@ -1421,8 +1421,8 @@ span.buttonText {
 }
 
 .hero {
-  background:#22333b;
-  color: #fffffff2 !important;
+  background:#6c56e9;
+  color: white !important;
 }
 
 .ais-Hits-list {
@@ -1539,13 +1539,15 @@ mt-20 {
 .mb-1 {
   margin-bottom: 4px;
 }
+.color-white  {
+  color: white;
+}
 .sticky {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #eeefef;
-  background-color: #fff;
+  background-color: #6c56e9;
 }
 .link a {
   color: initial;

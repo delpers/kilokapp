@@ -21,7 +21,7 @@ export default function hNavigation() {
           <nav className="padding-top-qz max-width padding-initial padding-navigation">
             {data.home.pages.map(Pages => (
               <Link
-                className="i-link font-size-16 b-b-g margin-right-qz font-bold"
+                className="i-link color-white font-size-16 b-b-g margin-right-qz font-bold"
                 to={Pages.url}
                 target="_bank"
                 key={Pages.id}

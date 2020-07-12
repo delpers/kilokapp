@@ -5,7 +5,7 @@ export default function MediaLinks() {
   return (
     <span>
       <Link
-        className="float-right i-link font-size-16 b-b-g font-bold"
+        className="float-right i-link color-white font-size-16 b-b-g font-bold"
         to="https://www.facebook.com/kilokafr"
         alt="Facebook"
         target="_blank"
@@ -14,7 +14,7 @@ export default function MediaLinks() {
       </Link>
 
       <Link
-        className="float-right i-link font-size-16 b-b-g margin-right-qz font-bold"
+        className="float-right i-link color-white font-size-16 b-b-g margin-right-qz font-bold"
         to="https://www.spotify.com/"
         alt="Spotify"
         target="_blank"
@@ -23,7 +23,7 @@ export default function MediaLinks() {
       </Link>
 
       <Link
-        className="float-right i-link font-size-16 b-b-g margin-right-qz font-bold"
+        className="float-right i-link color-white font-size-16 b-b-g margin-right-qz font-bold"
         to="https://www.instagram.com/kilokafr"
         alt="Spotify"
         target="_blank"
