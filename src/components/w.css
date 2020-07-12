@@ -30,7 +30,7 @@ video {
   border-radius: 6px;
 }
 .font-bold {
-  font-weight: 500 !important;
+  font-weight: bold !important;
 }
 .fs-20 {
   font-size: 20px;
@@ -38,7 +38,6 @@ video {
 .btn_h_r {
   background: #ff7571;
   padding: 16px 32px;
-  color: aliceblue;
   border-radius: 2px;
   text-decoration: none;
 }
@@ -1293,8 +1292,8 @@ span.buttonText {
   display: block;
 }
 
-.mt-64 {
-  margin-top: 64px;
+.margin-top-sq {
+  margin-top: 75px;
 }
 
 .cards-n {
@@ -1317,7 +1316,6 @@ span.buttonText {
 
 .addiction-card__text {
   margin-top: 0;
-  color: #47455a;
   line-height: 24px;
   font-weight: 500;
   padding: 24px;
@@ -1343,7 +1341,6 @@ span.buttonText {
   margin-top: 250px;
 }
 .c-u {
-  color: #000000ad;
   text-align: left;
   margin-right: 0;
   margin-top: -105px;
@@ -1411,7 +1408,7 @@ span.buttonText {
   background: #012749;
 }
 .home-details {
-  padding: 115px 24px;
+  padding: 130px 24px 50px;
   align-content: center;
   display: grid;
 }
@@ -1421,7 +1418,7 @@ span.buttonText {
 }
 
 .hero {
-  background:#79acd8;
+  background:#50808e;
   color: white !important;
 }
 
@@ -1547,7 +1544,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #79acd8;
+  background-color: #50808e;
 }
 .link a {
   color: initial;
@@ -1710,6 +1707,11 @@ th {
     height: 230px !important;
     border-radius: 2px;
     border-radius: 0px;
+  }.title-ble {
+   font-size: 24px;
+   padding-bottom: 0;
+  }.pl {
+    padding-top: 0;
   }
   .media {
     height: 180px !important;

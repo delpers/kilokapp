@@ -32,7 +32,7 @@ export default function Breakfasts() {
       render={data => {
         if (premium)
           return (
-            <div className="max-width padding-initial padding-bottom-none mt-64">
+            <div className="max-width padding-initial padding-bottom-none margin-top-sq">
               <div className="mb-100">
                 <h3 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
                   {data.home.title_breakfasts}{" "}
