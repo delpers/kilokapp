@@ -43,7 +43,7 @@ export default function Boosters() {
                 {data.booster.edges.length > 0 ? (
                   data.booster.edges.map((edge, i) => {
                     return (
-                      <div className="" key={i}>
+                      <div className="df mobile-margin-right-custom" key={i}>
                         <div
                           className="media src-mb"
                           style={{

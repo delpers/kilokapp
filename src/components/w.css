@@ -1203,6 +1203,9 @@ span.buttonText {
 .bg-fa {
   background: #f9f9f961;
 }
+.bg-black {
+  background: #f9f9f961;
+}
 .mtandmb-24 {
   margin-bottom: 24px;
   margin-top: 24px;
@@ -1711,7 +1714,13 @@ th {
    font-size: 24px;
    padding-bottom: 0;
   }.pl {
+    display: block;
     padding-top: 0;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 317px;
+}.mobile-margin-right-custom {
+    margin-right: 15px !important;
   }
   .media {
     height: 180px !important;
@@ -1858,7 +1867,7 @@ th {
     margin: 0 auto;
     margin-bottom: 0px;
     margin-bottom: 0px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
   .src-b {
     grid-gap: 15px;
