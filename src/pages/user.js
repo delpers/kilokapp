@@ -97,7 +97,11 @@ const UserPage = props => {
           <div className="max-width padding-initial padding-bottom-none link justify mtandmb-24 init">
             <h2>Mon compte</h2>
             <div>
+
+    
+  
               <div className="grd_f">
+                
                 {planUser && planUser.length !== 0 ? (
                   <div className="bg-w grpl">
                     {planUser.map(plan => (
@@ -189,12 +193,12 @@ const UserPage = props => {
 
                 <div>
                   <h2 className="info_mth">Vos informations</h2>
+
                   {user ? <div className="info_mti">E-mail {email}</div> : null}
 
                   <Audio />
 
 
-                  <div className="info_mti"></div>
                   {user && (
                     <button onClick={logoutUser} className="btnlogout">
                       Déconnexion

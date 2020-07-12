@@ -153,8 +153,7 @@ li {
   line-height: 24px;
 }
 .badw {
-  background: rgb(25,68,236);
-  background: linear-gradient(90deg, rgba(25,68,236,1) 0%, rgba(39,92,241,1) 50%);   
+  background: #97ceb1;
   border-radius: 2px;
   font-size: 14px !important;
   padding: 7px 24px;
@@ -685,14 +684,14 @@ button {
 }
 .btnun {
   font-size: 16px;
-  padding: 8px 32px;
+  padding: 15px;
   margin-top: 32px;
-  border: 2px solid #1e29ff12;
+  border: 1px solid #97ceb1;
   color: white;
-  background: #1e29ffa6;
+  background: #97ceb1;
   font-weight: bold;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .btndex {
   background: #d54040;
@@ -963,7 +962,7 @@ button {
 .plan {
   box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 2px;
   background: #fff;
   margin-bottom: 20px;
 }
