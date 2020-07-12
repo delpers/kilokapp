@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
 
 export const query = graphql`
   query($slug: String!) {
@@ -29,10 +30,18 @@ export const query = graphql`
   }
 `
 
-
+const Background = styled.div`
+  background: #F7F7F7;
+  header {
+    background: white !important;
+    border-bottom: 1px solid #ededed;
+  }
+`
 
 const FVegetablesRecipes = props => {
   return (
+    <Background>
+
     <Layout>
       <SEO title={props.data.vegetable.title} />
 
@@ -120,7 +129,8 @@ const FVegetablesRecipes = props => {
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout>    </Background>
+
 )
 }
 

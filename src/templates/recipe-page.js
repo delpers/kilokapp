@@ -50,7 +50,7 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f7f7f7;
+  background: #F7F7F7;
   header {
     background: white !important;
     position: relative !important;
@@ -70,7 +70,7 @@ const cookingRecipe = props => {
           <div className="max-width padding-initial ">
 
 
-            <span className="i-link font-size-16 b-b-g margin-right-qz fw300">
+            <span className="i-link font-size-16 b-b-g margin-right-qz color-white font-bold ">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
@@ -78,7 +78,7 @@ const cookingRecipe = props => {
 
 
 
-            <span className="i-link font-size-16 b-b-g margin-right-qz fw300">
+            <span className="i-link font-size-16 b-b-g margin-right-qz color-white font-bold">
               <i className="fas fa-file-medical-alt  margin-right-qz c-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
@@ -86,9 +86,9 @@ const cookingRecipe = props => {
             
 
             <div className="t-d float-right mb-15 mt_i5">
-              <span className="font-size-16 bg-wl mr-p">
+              <span className="font-size-16 bg-wl mr-p color-white">
                 <i className="fas fa-check-circle"></i>{" "}
-                {props.data.contentfulRecipes.time} min(s).
+                {props.data.contentfulRecipes.time}
               </span>
             </div>
           </div>

@@ -60,6 +60,8 @@ const cookingRecipe = props => {
                      {edge.week} {edge.day}
                   </div>{" "}
                 </label>
+
+                
                 <section>
                   {edge.videoUrl != null
                     ? edge.videoUrl.map((mv, i) => {
