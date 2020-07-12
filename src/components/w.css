@@ -916,10 +916,10 @@ button {
   font-weight: 300;
 }
 .padding-initial {
-  padding: 20px;
+  padding: 24px;
 }
 .padding-initial-2 {
-  padding: 20px 15px;
+  padding: 24px 15px;
 }
 .p-15 {
   padding: 20px;
@@ -989,7 +989,7 @@ button {
   background: #79acd8;
   padding: 14px 20px;
   color: white !important;
-  border-radius: 2px;
+  border-radius: 2.50px;
   font-size: 16px;
 }
 .logo-home-page {
@@ -1200,12 +1200,10 @@ span.buttonText {
   /* Use the Roboto font that is loaded in the <head> */
   font-family: "Roboto", sans-serif;
 }
-.bg-fa {
-  background: #f9f9f961;
+.bg-white {
+  background: #FFF;
 }
-.bg-black {
-  background: #f9f9f961;
-}
+
 .mtandmb-24 {
   margin-bottom: 24px;
   margin-top: 24px;
