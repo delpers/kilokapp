@@ -1421,7 +1421,7 @@ span.buttonText {
 }
 
 .hero {
-  background:#6c56e9;
+  background:#79acd8;
   color: white !important;
 }
 
@@ -1547,7 +1547,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #6c56e9;
+  background-color: #79acd8;
 }
 .link a {
   color: initial;
