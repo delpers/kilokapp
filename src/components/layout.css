@@ -256,7 +256,7 @@ html {
   box-sizing: inherit;
 }
 a {
-  color: initial !important;
+  color: initial;
 }
 
 body {

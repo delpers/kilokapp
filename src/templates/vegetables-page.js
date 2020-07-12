@@ -48,7 +48,7 @@ const FVegetablesRecipes = props => {
                       borderRadius: "0",
                     }}>
         <div className="mask-thumb-cat p-50-0">
-        <div className="m-w p-i pb-0 pt-0 " >
+        <div className="max-width padding-initial padding-bottom-none padding-top-none " >
 
             <h1>{props.data.vegetable.title}</h1>
            
@@ -58,7 +58,7 @@ const FVegetablesRecipes = props => {
       </div>   </div>
       <div>
         <div className="mb-32">
-          <div className="recipesGr m-w p-i ">
+          <div className="recipesGr max-width padding-initial ">
                 {props.data.vegetable.dataRecipes != null ? (
                   props.data.vegetable.dataRecipes.map((edge, i) => {
                     return (
@@ -70,23 +70,23 @@ const FVegetablesRecipes = props => {
               alt={edge.title}
             />
 
-                  <div className="mt-10 p-15 fs-18 pt-0">
+                  <div className="mt-10 p-15 fs-18 padding-top-none">
                     <Link
-                      className="i-link fs-18 b-b-g mr-15 font-bold mb-15 nowrap"
+                      className="i-link fs-18 b-b-g margin-right-qz font-bold mb-15 nowrap"
                       to={`/recette/${edge.slug}/`}
                     >
                       {edge.title}
                     </Link>
 
                     <div>
-                      <div className="t-d fl-r mb-15">
-                        <span className="fs-14 bg-g">
+                      <div className="t-d float-right mb-15">
+                        <span className="font-size-14 bg-g">
                           {" "}
                           <i className="fas fa-check-circle"></i> {edge.time} min(s){" "}
                         </span>
                       </div>
                       <div className="bg-w-c pl-0">
-                        <span className="fs-14 text-gray ">
+                        <span className="font-size-14 text-gray ">
                           {" "}
                           <i className="far fa-user mr-5"></i>{" "}
                           {edge.numberOfPersons}{" "}
@@ -95,15 +95,15 @@ const FVegetablesRecipes = props => {
                     </div>
 
                     <div className="b-solid-top">
-                      <div className="pt-15 ">
-                        <i className="fas fa-file-medical-alt c-g mr-15"></i>
+                      <div className="padding-top-qz ">
+                        <i className="fas fa-file-medical-alt c-g margin-right-qz"></i>
                         {edge.for != null
                 ? edge.for.map((mv, i) => {
                     return (
 
 
                           <span
-                            className="fs-14 text-gray pr-15"
+                            className="font-size-14 text-gray pr-15"
                             key={i}
                           >
                             {mv.for}

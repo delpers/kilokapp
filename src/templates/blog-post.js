@@ -36,7 +36,7 @@ const BlogPost = props => {
 
 
       <div className="mask-thumb-cat p-50-0 mb-0">
-      <div className="m-w p-i pb-0 pt-0  " >
+      <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
             <h1 className="fs-48">{props.data.post.title}</h1>
         </div>
       </div>
@@ -51,7 +51,7 @@ const BlogPost = props => {
           src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
-        <div className="m-w p-i mt-32 align-justify">
+        <div className="max-width padding-initial mt-32 align-justify">
 
      
 
@@ -59,7 +59,7 @@ const BlogPost = props => {
 
       </div>
       <div className="">
-        <div className="m-w p-i">
+        <div className="max-width padding-initial">
           <HyvorTalk.Embed websiteId={277} id={props.data.post.slug} />
         </div>
       </div>

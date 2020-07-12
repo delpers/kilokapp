@@ -18,10 +18,10 @@ export default function hNavigation() {
       `}
       render={data => (
         <div className="sticky m-b-plus">
-          <nav className="pt-15 m-w p-i padding-nav">
+          <nav className="padding-top-qz max-width padding-initial padding-navigation">
             {data.home.pages.map(Pages => (
               <Link
-                className="i-link fs-16 b-b-g mr-15 font-bold"
+                className="i-link font-size-16 b-b-g margin-right-qz font-bold"
                 to={Pages.url}
                 target="_bank"
                 key={Pages.id}

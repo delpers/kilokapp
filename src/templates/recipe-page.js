@@ -67,10 +67,10 @@ const cookingRecipe = props => {
      
 
         <div className="sticky">
-          <div className="m-w p-i ">
+          <div className="max-width padding-initial ">
 
 
-            <span className="i-link fs-16 b-b-g mr-15 fw300">
+            <span className="i-link font-size-16 b-b-g margin-right-qz fw300">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
@@ -78,15 +78,15 @@ const cookingRecipe = props => {
 
 
 
-            <span className="i-link fs-16 b-b-g mr-15 fw300">
-              <i className="fas fa-file-medical-alt  mr-15 c-green"></i>{" "}
+            <span className="i-link font-size-16 b-b-g margin-right-qz fw300">
+              <i className="fas fa-file-medical-alt  margin-right-qz c-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
 
             
 
-            <div className="t-d fl-r mb-15 mt_i5">
-              <span className="fs-16 bg-wl mr-p">
+            <div className="t-d float-right mb-15 mt_i5">
+              <span className="font-size-16 bg-wl mr-p">
                 <i className="fas fa-check-circle"></i>{" "}
                 {props.data.contentfulRecipes.time} min(s).
               </span>
@@ -96,30 +96,30 @@ const cookingRecipe = props => {
 
 
 
-        <div className="row m-w pt-0i mt-32">
+        <div className="row max-width pt-0i mt-32">
           <div> 
-          <div className="m-w-780">
+          <div className="max-width-780">
 
 <div>
 
 </div>
           <div className="sw-recipes mb-32">
 
-            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm mb-1">
+            <h3 className="i-link b-b-g margin-right-qz font-bold max-width padding-initial bg-w shadow-sm mb-1">
             {props.data.contentfulRecipes.title}
         
             </h3>
          
 
-            <div className="ir-cards m-w mt-1 ns-print bg-w mb-32 shadow-sm pt-32 pb-32">
+            <div className="ir-cards max-width mt-1 ns-print bg-w mb-32 shadow-sm pt-32 pb-32">
               {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                 return (
-                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c pt-0">
+                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c padding-top-none">
                     <div className="_print_w ns-print">
-                      <h3 className="i-link fs-20 b-b-g mr-15 font-bold mb-5 nowrap">
+                      <h3 className="i-link fs-20 b-b-g margin-right-qz font-bold mb-5 nowrap">
                         {dataIGRD.title}
                       </h3>
-                      <span className="fs-16 text-gray pr-15">
+                      <span className="font-size-16 text-gray pr-15">
                         {dataIGRD.amount}
                       </span>
                     </div>
@@ -131,7 +131,7 @@ const cookingRecipe = props => {
 
 
 <div className="sw-recipes">
-            <h3 className="i-link b-b-g mr-15 font-bold m-w p-i bg-w shadow-sm mb-1">
+            <h3 className="i-link b-b-g margin-right-qz font-bold max-width padding-initial bg-w shadow-sm mb-1">
             Préparation
             </h3>
             <div className="mt-1 mb-32">
@@ -142,11 +142,11 @@ const cookingRecipe = props => {
                     className=" bg-w ns-print bg-w-c p-20 mb-1 mbs shadow-sm"
                     key={i}
                   >
-                    <div className="fs-16 _print_w ns-print  mt-1">
+                    <div className="font-size-16 _print_w ns-print  mt-1">
                       <h3 className=" i-link fs-20 b-b-g mb-5 fw300 nowrap ">
                         {dataDr.title}
                       </h3>
-                      <span className="fs-16 pr-15">
+                      <span className="font-size-16 pr-15">
                         {dataDr.direction.direction}
                       </span>
                       </div>
@@ -169,7 +169,7 @@ const cookingRecipe = props => {
 
           
 
-          <div className="m-w-100p100 bg-w ml-32 sw-recipes shadow-sm">
+          <div className="max-width-100p100 bg-w ml-32 sw-recipes shadow-sm">
 
             <div  style={{
             backgroundImage:
@@ -184,12 +184,12 @@ const cookingRecipe = props => {
             height: "280px"
           }}></div>
             <div className="nutrition">
-              <h3 className="i-link b-b-g mr-15 font-bold m-w p-i shadow-sm mb-1">
+              <h3 className="i-link b-b-g margin-right-qz font-bold max-width padding-initial shadow-sm mb-1">
                 Information(s)
               </h3>
             
 
-              <table className="d-grid m-w mt-1 ns-print pb-0 pt-0 p-15">
+              <table className="d-grid max-width mt-1 ns-print padding-bottom-none padding-top-none p-15">
 
 
 {props.data.contentfulRecipes.nFacts != null
@@ -199,12 +199,12 @@ const cookingRecipe = props => {
                       key={i}
                       className=" bg-w ns-print bg-w-c d-table"
                     >
-                      <tr className="fs-16 _print_w ns-print">
-                        <th className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap align-left">
+                      <tr className="font-size-16 _print_w ns-print">
+                        <th className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap align-left">
                           {mv.title}
                         </th>
 
-                        <th className="fs-16 text-gray pr-15 align-right">
+                        <th className="font-size-16 text-gray pr-15 align-right">
                           {mv.amount}
                           <strong className="initial">{mv.type}</strong>
                         </th>
@@ -229,7 +229,7 @@ const cookingRecipe = props => {
 
 
 
-            <div className="rl rl-mobile m-w p-i  p0-m">
+            <div className="rl rl-mobile max-width padding-initial  p0-m">
                 {props.data.contentfulRecipes.boosters.map(dataFLC => {
                   return (
                     <div className="bg-w p-15 flex-m sw-recipes bm01b mb-32 shadow-sm" id={dataFLC.id}>
@@ -248,19 +248,19 @@ const cookingRecipe = props => {
 <Link
                             to={`/recettes/base/${dataFLC.slug}/`}
                             alt="Découvrez"
-                            className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap p-15 pb-0"
+                            className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
                           >
                           {dataFLC.title}
                           </Link>
 
                           
-                          <div className=" p-15 fs-14 pb-0">
+                          <div className=" p-15 font-size-14 padding-bottom-none">
                             <span className="">
                               <i className="fas fa-burn mr-5"></i>{" "}
                               {dataFLC.calories} <strong>Cal(s)</strong> · 100 gr.
                             </span>
                           </div>
-                          <div className=" p-15 fs-14">
+                          <div className=" p-15 font-size-14">
                             <span className="color-black">
                               <i className="fas fa-check-circle mr-5"></i>{" "}
                               {dataFLC.stockage}

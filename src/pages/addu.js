@@ -172,7 +172,7 @@ const RegisterPage = () => {
 
                 <Legal />
 
-                <div className=" align-left fs-16">
+                <div className=" align-left font-size-16">
                   Vous avez déjà un compte ?{" "}
                   <a class="font-bold" href="/login">
                     Se connecter

@@ -16,7 +16,7 @@ export default function heroScreen() {
       render={data => (
         <div>
           <div
-            className="w-screen-home"
+            className="hero"
             style={{
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -25,10 +25,10 @@ export default function heroScreen() {
               color: "initial",
             }}
           >
-            <div className="m-w p-i home-details ">
-              <section className="mt-100">
-                <h1 className="w-50 w50mf">{data.contentfulHomePage.titleHome}</h1>
-                <p className="mb-0 mr-h-15 mw500 fs-24 cw">
+            <div className="max-width padding-initial home-details ">
+              <section>
+                <h1 className="width-50 hero-title">{data.contentfulHomePage.titleHome}</h1>
+                <p className="margin-bottom-0 mobile-margin-right-15 hero-max-width-sub font-size-24">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

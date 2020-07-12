@@ -42,7 +42,7 @@ const Blog = () => {
       <SEO title="Blog" />
 
       <div className="mask-thumb-cat p-50-0">
-      <div className="m-w p-i pb-0 pt-0  " >
+      <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
             <h1>Bibliothèque numérique</h1>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Blog = () => {
      
       
 
-      <div className="blogPost blogPost-mobile m-w p-i">
+      <div className="blogPost blogPost-mobile max-width padding-initial">
       {data.audio.edges.map(edge => {
           return (
             <div className="shadow-sm rounded mb-32" key={edge.node.id}>

@@ -142,7 +142,7 @@ li {
   max-width: 200px;
   display: ruby-text-container;
 }
-.fs-24 {
+.font-size-24 {
   font-size: 24px;
 }
 .psmg {
@@ -200,13 +200,13 @@ button {
 .b-solid-b {
   border-bottom: 1px solid rgba(231, 231, 231, 0.58);
 }
-.fs-16 {
-  font-size: 18px;
+.font-size-16 {
+  font-size: 16px;
 }
-.fs-14 {
-  font-size: 14.64px;
+.font-size-14 {
+  font-size: 14px;
 }
-.p-32 {
+.padding-32{
   padding: 32px;
 }
 .recipe-title {
@@ -277,7 +277,7 @@ button {
   padding-top: 190px;
   padding-bottom: 190px;
 }
-.padding-nav {
+.padding-navigation {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
@@ -394,7 +394,7 @@ button {
 .mw728 {
   max-width: 728px;
 }
-.mw500 {
+.hero-max-width-sub {
   max-width: 440px;
   line-height: 36px;
 }
@@ -468,10 +468,9 @@ button {
   padding: 0 80px;
   color: #484848 !important;
 }
-.w50mf {
+.hero-title {
   margin-bottom: 20px;
   font-size: 62px;
-  color: white;
   line-height: 72px;
   font-weight: bold;
 }
@@ -548,7 +547,7 @@ button {
 .footer-100 {
   padding: 50px 0;
 }
-.fs-14 {
+.font-size-14 {
   font-size: 14px;
   color: initial;
 }
@@ -565,10 +564,10 @@ button {
 .c-pink {
   color: #fe544b;
 }
-.pt-15 {
+.padding-top-qz {
   padding-top: 15px;
 }
-.mr-15 {
+.margin-right-qz {
   margin-right: 15px;
 }
 .mr-5 {
@@ -582,10 +581,10 @@ button {
 .pr-5 {
   padding-right: 5px;
 }
-.pb-0 {
+.padding-bottom-none {
   padding-bottom: 0;
 }
-.pt-15 {
+.padding-top-qz {
   padding-top: 15px;
 }
 .pb-15 {
@@ -617,7 +616,7 @@ button {
 .p-100-0 {
   padding: 100px 0;
 }
-.w-50 {
+.width-50 {
   max-width: 655px;
   margin-top: -4px;
 }
@@ -628,10 +627,10 @@ button {
   margin-top: 32px !important;
 }
 
-.mb-0 {
+.margin-bottom-0{
   margin-bottom: 0 !important;
 }
-.mr-15 {
+.margin-right-qz {
   margin-right: 15px;
 }
 .ml-15 {
@@ -917,10 +916,10 @@ button {
   margin-left: 0;
   font-weight: 300;
 }
-.p-i {
+.padding-initial {
   padding: 20px;
 }
-.p-i-2 {
+.padding-initial-2 {
   padding: 20px 15px;
 }
 .p-15 {
@@ -929,7 +928,7 @@ button {
 .p-10 {
   padding: 10px;
 }
-.m-w {
+.max-width {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -982,7 +981,7 @@ button {
   z-index: 1 !important;
   
 }
-.bsh {
+.welcome {
   box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
 }
 .navLink {
@@ -994,25 +993,24 @@ button {
   border-radius: 2px;
   font-size: 16px;
 }
-.logoHome {
+.logo-home-page {
   text-decoration: none;
   font-weight: 300;
   font-size: 36px;
 }
-._1fmnqpr {
+.space {
   flex: 1 1 auto !important;
   min-width: 0px !important;
   padding: 0px 24px !important;
   text-align: center !important;
 }
-._vuzcgs {
+.right {
   -moz-box-pack: end !important;
   -moz-box-align: center !important;
   position: relative !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
-  height: 80px !important;
 }
 .featured {
   height: 167px;
@@ -1030,8 +1028,8 @@ button {
   margin-bottom: 0;
   border-radius: 6px 6px 0 0;
 }
-.mt-100 {
-  margin-top: 60px;
+.margin-top-i {
+  margin-top: 40px;
 }
 .cw {
   color: white !important;
@@ -1389,10 +1387,10 @@ span.buttonText {
   font-size: 16px;
   display: grid;
 }
-.pt-0 {
+.padding-top-none {
   padding-top: 0;
 }
-.pt-0 {
+.padding-top-none {
   padding-top: 0 !important;
 }
 .p-0-32 {
@@ -1413,21 +1411,18 @@ span.buttonText {
   background: #012749;
 }
 .home-details {
-  padding: 90px 20px;
+  padding: 115px 24px;
   align-content: center;
-  bottom: 0;
   display: grid;
 }
 .w-screen {
   background: #ffffff;
-
-  background-size: cover;
-  background-position: bottom;
   color: initial;
 }
 
-.w-screen-home {
-  background: #007e8a;
+.hero {
+  background:#22333b;
+  color: #fffffff2 !important;
 }
 
 .ais-Hits-list {
@@ -1494,7 +1489,7 @@ span.buttonText {
 .fs-6rem {
   font-size: 6rem;
 }
-.pb-0 {
+.padding-bottom-none {
   padding-bottom: 0;
 }
 .mt-1 {
@@ -1555,7 +1550,7 @@ mt-20 {
 .link a {
   color: initial;
 }
-.fl-r {
+.float-right {
   float: right;
 }
 .dn {
@@ -1684,7 +1679,7 @@ th {
 .mb-72 {
   margin-bottom: 72px !important;
 }
-.m-w-780 {
+.max-width-780 {
   width: 638px;
 }
 .mt-32 {
@@ -1693,7 +1688,7 @@ th {
 .p-20 {
   padding: 20px !important;
 }
-.m-w-100p100 {
+.max-width-100p100 {
   width: 100%;
   height: 100%;
 }
@@ -1791,7 +1786,7 @@ th {
   .cards-n {
     margin-right: 15px !important;
   }
-  .mt-100 {
+  .margin-top-i {
     margin-top: 50px;
   }
   .bg_blue {
@@ -1813,7 +1808,7 @@ th {
   .cards-n {
     margin-right: 15px !important;
   }
-  .w-screen-home {
+  .hero {
     background-position-x: 55.64% !important;
     background-size: cover !important;
     height: 100%;
@@ -1825,7 +1820,7 @@ th {
     padding-top: 110px !important;
     padding-bottom: 80px !important;
   }
-  .mr-h-15 {
+  .mobile-margin-right-15 {
     margin-right: 15px;
   }
   .perfect-bg {
@@ -1876,11 +1871,10 @@ th {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .w50mf {
+  .hero-title {
     margin-bottom: 20px;
     font-size: 36px;
     line-height: 35px;
-    color: white;
 
     font-weight: bold;
   }
@@ -1916,7 +1910,7 @@ th {
   ._logo {
     width: 148px;
   }
-  .mr-15-m {
+  .margin-right-qz-m {
     margin-right: 15px !important;
   }
   .sr-pe {
@@ -1949,7 +1943,7 @@ th {
     margin: 0;
     margin-bottom: 20px;
   }
-  .w50mf {
+  .hero-title {
     max-width: 94%;
   }
   .box {
@@ -2062,13 +2056,13 @@ th {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
-  .m-w-780 {
+  .max-width-780 {
     max-width: 100%;
   }
   .cards-n {
     margin-right: 15px !important;
   }
-  .w-screen-home {
+  .hero {
     background-position-x: 50.64% !important;
     background-size: cover !important;
   }
@@ -2139,14 +2133,14 @@ th {
   .mr-p {
     margin-right: 50px;
   }
-  .m-w {
+  .max-width {
     width: 100%;
   }
   .sr-cards {
     padding: 0;
     margin: 0;
   }
-  .p-i {
+  .padding-initial {
     padding: 0;
   }
   .bg-w-c {
@@ -2181,19 +2175,19 @@ th {
   .sticky {
     background: transparent !important;
   }
-  .p-i {
+  .padding-initial {
     padding: 0 !important;
   }
   .p-100-0 {
     padding-top: 0 !important;
   }
-  .m-w-780 {
+  .max-width-780 {
     width: 400px !important;
   }
   .none-print {
     display: none !important;
   }
-  .m-w {
+  .max-width {
     margin: 0;
     padding: 0;
   }
@@ -2203,7 +2197,7 @@ th {
   .b-solid-b {
     border: 0;
   }
-  .m-w-780 {
+  .max-width-780 {
     width: 500px;
   }
   .border {

@@ -3,7 +3,7 @@ import React from "react"
 
 const Legal = ({ }) => (
   <div className="mt-20">
-    <p class="fs-16">
+    <p class="font-size-16">
       <span>
         En cliquant sur le bouton d'inscription, vous acceptez les{" "}
         <Link class="font-bold" to="/page/cgu" target="_blank">
@@ -12,7 +12,7 @@ const Legal = ({ }) => (
         de Kiloka.
       </span>
     </p>
-    <p class="fs-16">
+    <p class="font-size-16">
       <span>
         Pour en savoir plus sur la façon dont Kiloka utilise vos données
         personnelles, veuillez consulter la{" "}

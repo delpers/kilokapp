@@ -28,9 +28,9 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="  border-top footer-100 bg-fa">
-          <footer className="p-32 fs-16 m-w p-i footer-gr">
+          <footer className="padding-32font-size-16 max-width padding-initial footer-gr">
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
                 Entreprise
               </div>
 
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
                 Communautés
               </div>
 
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
                 Liens utiles
               </div>
 
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
               </a>
             </div>
             <div className=" ">
-              <div className="  uppercase fs-14 bold font-bold mb-32 ">
+              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
                 Légales
               </div>
             

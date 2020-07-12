@@ -31,8 +31,8 @@ const BlogPage = props => {
     <Layout>
       <SEO title={props.data.page.title} />
 
-      <div className="w-screen p-120-0 pb-0">
-        <div className="m-w p-i pb-0 pt-0">
+      <div className="w-screen p-120-0 padding-bottom-none">
+        <div className="max-width padding-initial padding-bottom-none padding-top-none">
           <section>
             <h1>{props.data.page.title}</h1>
             <p className="mb-0"> {props.data.page.publishedDate}</p>
@@ -40,7 +40,7 @@ const BlogPage = props => {
         </div>
       </div>
 
-      <div className="m-w p-i pb-0 bg-w link justify mt-32 mb-32 init">
+      <div className="max-width padding-initial padding-bottom-none bg-w link justify mt-32 mb-32 init">
         {documentToReactComponents(
           props.data.page.body.json,
           options

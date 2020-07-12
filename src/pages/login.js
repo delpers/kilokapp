@@ -156,7 +156,7 @@ const LoginPage = () => {
                   <span class="googleSignIn__text">Continuer avec Google</span>
                 </button>
 
-                <div className=" align-left fs-16">
+                <div className=" align-left font-size-16">
                   Vous n'avez pas de compte ?{" "}
                   <a className="font-bold" href="/addu">
                     Inscription

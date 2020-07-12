@@ -29,9 +29,9 @@ export default function Boosters() {
       render={data => {
         if (premium)
           return (
-            <div className="m-w p-i pb-0  ">
+            <div className="max-width padding-initial padding-bottom-none  ">
               <div className="mb-100">
-                <h4 className="mw728 mb-0 fs-24 pb-4 title-m title-ble">
+                <h4 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
                   {data.home.title_boosters}
                 </h4>
                 <span className="pl text-gray mw728 ">
@@ -60,7 +60,7 @@ export default function Boosters() {
                           <span className="cards-n mr-15mb">
                             <span className="mt-10-b">
                               <Link
-                                className="i-link fs-16 b-b-g mr-15 font-bold c-u"
+                                className="i-link font-size-16 b-b-g margin-right-qz font-bold c-u"
                                 to={`/booster/${edge.node.slug}/`}
                               >
                                 {edge.node.title}

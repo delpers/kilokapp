@@ -39,31 +39,31 @@ const cookingRecipe = props => {
     <Layout key={props.data.contentfulTraining.id}>
       <SEO title={props.data.contentfulTraining.title} />
 
-      <div className="mask-thumb-cat p-50-0 mb-0 bblue cw">
-        <div className="m-w p-i pb-0 pt-0  ">
+      <div className="mask-thumb-cat p-50-0 margin-bottom-0bblue cw">
+        <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
           <h1 className="fs-48"> {props.data.contentfulTraining.title}</h1>
         </div>
       </div>
 
       <div className="sticky b-solid-b">
-        <div className="m-w p-i ">
-          <span className="i-link fs-16 b-b-g mr-15  "></span>
+        <div className="max-width padding-initial ">
+          <span className="i-link font-size-16 b-b-g margin-right-qz  "></span>
 
-          <span className="i-link fs-16 b-b-g mr-15  ">
+          <span className="i-link font-size-16 b-b-g margin-right-qz  ">
             <i className="fas fa-heart mr-8"></i>{" "}
             {props.data.contentfulTraining.level}
           </span>
 
-          <span className="i-link fs-16 b-b-g mr-15   ">
+          <span className="i-link font-size-16 b-b-g margin-right-qz   ">
             <i className="fa fa-calendar-week mr-8"></i>{" "}
             {props.data.contentfulTraining.nWeeks}
           </span>
         </div>
       </div>
 
-      <div className=" m-w pt-0i mt-32">
+      <div className=" max-width pt-0i mt-32">
         <div>
-          <div className=" p-i">
+          <div className=" padding-initial">
             <div className="week mb-32">
               {props.data.contentfulTraining.steps != null
                 ? props.data.contentfulTraining.steps.map((edge, i) => {
@@ -116,16 +116,16 @@ const cookingRecipe = props => {
                           {documentToReactComponents(edge.body.json)}
 
                           <div className="p-flex mb-32 mt-32">
-                            <div className="pw-50 fs-16 mr-32-i">
+                            <div className="pw-50 font-size-16 mr-32-i">
                               <h3 className="">Avant la séance </h3>
-                              <p className="fs-16">
+                              <p className="font-size-16">
                                 {edge.adviceBefore.adviceBefore}
                               </p>
                             </div>
 
-                            <div className="pw-50 fs-16">
+                            <div className="pw-50 font-size-16">
                               <h3 className="">Après la séance</h3>
-                              <p className="fs-16">
+                              <p className="font-size-16">
                                 {edge.adviceAfter.adviceAfter}
                               </p>
                             </div>

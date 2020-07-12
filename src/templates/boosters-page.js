@@ -39,7 +39,7 @@ const BoostersRecipes = props => {
         <SEO title={props.data.booster.title} />
 
         <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0  " >
+          <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
 
 
               <h1>{props.data.booster.title}</h1>
@@ -54,7 +54,7 @@ const BoostersRecipes = props => {
 
         
           <div>
-            <div className="rl rl-mobile m-w p-i  ">
+            <div className="rl rl-mobile max-width padding-initial  ">
               {props.data.booster.bList != null ? (
                 props.data.booster.bList.map((edge, i) => {
                   return (
@@ -75,18 +75,18 @@ const BoostersRecipes = props => {
 
         <div> 
                           <Link
-                            className="i-link fs-16 b-b-g mr-15 font-bold mb-0 nowrap p-15 pb-0"
+                            className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
                             to={`/recettes/base/${edge.slug}/`}
                           >
                             {edge.title}
                           </Link>
-                          <div className=" p-15 fs-14 pb-0">
+                          <div className=" p-15 font-size-14 padding-bottom-none">
                             <span className="">
                               <i className="fas fa-burn mr-5"></i>{" "}
                               {edge.calories} <strong>C</strong> · 100 gr.
                             </span>
                           </div>
-                          <div className=" p-15 fs-14">
+                          <div className=" p-15 font-size-14">
                             <span className="color-black">
                               <i className="fas fa-check-circle mr-5"></i>{" "}
                               {edge.stockage}

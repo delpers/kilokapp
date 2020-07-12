@@ -21,9 +21,9 @@ export default function Calandar() {
         }
       `}
       render={data => (
-        <div className="m-w p-i pb-0  mt-64">
+        <div className="max-width padding-initial padding-bottom-none  mt-64">
           <div className="">
-            <h4 className="mb-0 fs-24 pb-4 title-m">{data.home.title_month}</h4>
+            <h4 className="margin-bottom-0fs-24 pb-4 title-m">{data.home.title_month}</h4>
             <span className="fs-18 text-gray dn-m">
               {data.home.description_month}
             </span>
@@ -37,7 +37,7 @@ export default function Calandar() {
                         <span className="card-calandar">
                           <span className="">
                             <Link
-                              className="i-link fs-16 b-b-g mr-15 font-bold cw "
+                              className="i-link font-size-16 b-b-g margin-right-qz font-bold cw "
                               to={`/calandar/${edge.node.slug}/`}
                             >
                               {edge.node.title}

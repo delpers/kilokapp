@@ -17,7 +17,7 @@ const SearchPage = () => (
       <SEO title="Recherche" />
 
       <div className="mask-thumb-cat p-50-0">
-          <div className="m-w p-i pb-0 pt-0">
+          <div className="max-width padding-initial padding-bottom-none padding-top-none">
             <h1>Que recherchez-vous ?</h1>
             <p className="mb-0">
               Recherche des recettes, ainsi que des références.
@@ -26,7 +26,7 @@ const SearchPage = () => (
 
       </div>
 
-      <div className="m-w p-i pb-0  ">
+      <div className="max-width padding-initial padding-bottom-none  ">
         <InstantSearch searchClient={searchClient} indexName="KILOKA_SEARCH">
           <SearchBox
             submit={<span>Recherche</span>}

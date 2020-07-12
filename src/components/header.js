@@ -1,26 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
-import { logout } from "../utils/firebase"
 
 import UserContext from "./UserContext"
-const logoutUser = async () => {
-  await logout()
-    .then(() => {})
-    .catch(error => {
-      alert(error.message)
-    })
-}
+
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
-    <header className="bsh ">
-      <div className="m-w p-i pb-0 pt-0 header ">
-      <Link className="logoHome" to="/">kiloka</Link>
+    <header className="welcome">
+      <div className="max-width padding-initial padding-bottom-none padding-top-none header">
+      <Link className="logo-home-page" to="/">kiloka</Link>
         
 
-      <div class="_1fmnqpr"></div>
-        <nav className="_vuzcgs">  {!user && <Link className="navLink" to="/login">Connexion</Link>}
+      <div class="space"></div>
+        <nav className="right">  {!user && <Link className="navLink" to="/login">Connexion</Link>}
 
 {user && <Link className="navLink" to="/user">Mon compte</Link>} </nav>
         

@@ -17,12 +17,13 @@ const Custom = styled.div`
     background: none !important;
     box-shadow: none !important;
     width: 100%;
-  }.logoHome {
+  }.logo-home-page {
     color: white !important;
   }.navLink {
     background: white;
     padding: 12px 24px;
     border-radius: 5rem;
+    color: #22333b !important;
   }
 
 `

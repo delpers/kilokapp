@@ -94,7 +94,7 @@ const UserPage = props => {
       <Layout>
         <SEO title="Mon compte" />
         <div>
-          <div className="m-w p-i pb-0 link justify mtandmb-24 init">
+          <div className="max-width padding-initial padding-bottom-none link justify mtandmb-24 init">
             <h2>Mon compte</h2>
             <div>
               <div className="grd_f">
@@ -105,7 +105,7 @@ const UserPage = props => {
                         <span className="badw cw">
                           {premium ? "Abonnement en cours" : "Formule"}
                         </span>
-                        <div className="fs-28 align-left p-15-0 fw300 pt-15">
+                        <div className="fs-28 align-left p-15-0 fw300 padding-top-qz">
                           {plan.product.name}
                         </div>
 
@@ -116,7 +116,7 @@ const UserPage = props => {
                         </div>
                         {plan.user_plan && (
                           <div
-                            className="time_end fs-16"
+                            className="time_end font-size-16"
                             style={{ color: "#000" }}
                           >
                             <span className="mr-5">Prendra fin le</span>
@@ -140,7 +140,7 @@ const UserPage = props => {
                         )}
                         {plan.trial_period_days && (
                           <div
-                            className="time_end fs-16"
+                            className="time_end font-size-16"
                             style={{ color: "#000" }}
                           >
                             Période d'essai: {plan.trial_period_days} j
