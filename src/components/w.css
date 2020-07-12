@@ -56,14 +56,13 @@ video {
   color: #fff;
   font-size: 16px;
   white-space: nowrap;
-  transition-duration: 150ms;
   transition-timing-function: ease-in-out;
   padding: 15px 32px !important;
   margin-bottom: 24px;
-  font-weight: bold;
+  font-weight: 300;
   cursor: pointer;
-  border-radius: 8px;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border-radius: 2px;
+background: #1D1D1D;
 }
 ul,
 li {
@@ -413,13 +412,14 @@ button {
   padding-top: 120px;
 }
 .button_pw {
-  background: #79acd8;
+  background: #50808e;
   border: 1px solid transparent;
-  padding: 17px 36px;
-  font-size: 18px;
+  padding: 15px 32px !important;
+
+  font-size: 16px;
   text-decoration: none;
   font-weight: 300;
-  border-radius: 6px;
+  border-radius: 2px;
   text-align: center;
   color: white !important;
 }
@@ -986,7 +986,7 @@ button {
 .navLink {
   text-decoration: none;
   font-weight: bold;
-  background: #79acd8;
+  background: #50808e;
   padding: 14px 20px;
   color: white !important;
   border-radius: 2.50px;
