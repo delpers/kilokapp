@@ -10,7 +10,6 @@ export const query = graphql`
       title
       slug
       category
-      getBoosters
       picture: childContentfulFruitsVegetablesImageJsonNode {
         secure_url
       }
@@ -31,7 +30,7 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #F7F7F7;
+  background: #FFFFFF;
   header {
     background: white !important;
     border-bottom: 1px solid #ededed;
