@@ -18,7 +18,10 @@ const Background = styled.div`
     position: relative !important;
     border: 0 !important;
     background: white;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #ededed !important;
+  }.welcome {
+    box-shadow: none !important;
+
   }
 `
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
@@ -192,7 +195,6 @@ const UserPage = props => {
                 ) : null}
 
                 <div>
-                  <h2 className="info_mth">Vos informations</h2>
 
                   {user ? <div className="info_mti">E-mail {email}</div> : null}
 
