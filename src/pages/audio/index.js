@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
@@ -15,67 +6,55 @@ import SEO from "../../components/seo"
 const Blog = () => {
   const data = useStaticQuery(
     graphql`
-    query {
-      audio: allContentfulAudio(
-        sort: { fields: publishedDate, order: DESC }
-      ) {
-        edges {
-          node {
-            title
-            id
-            slug
-            author
-            category
-            color
-            eAudio: childContentfulAudioAudioJsonNode {
-              secure_url
+      query {
+        audio: allContentfulAudio(
+          sort: { fields: publishedDate, order: DESC }
+        ) {
+          edges {
+            node {
+              title
+              id
+              slug
+              author
+              category
+              color
+              eAudio: childContentfulAudioAudioJsonNode {
+                secure_url
+              }
             }
-           
           }
         }
       }
-    }
-  `
+    `
   )
   return (
     <Layout>
       <SEO title="Blog" />
 
-      <div className="mask-thumb-cat p-50-0">
-      <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
-            <h1>Bibliothèque numérique</h1>
+      <div className="mask-thumb-cat padding-50-0">
+        <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
+          <h1>Bibliothèque numérique</h1>
         </div>
       </div>
 
-     
-      
-
       <div className="blogPost blogPost-mobile max-width padding-initial">
-      {data.audio.edges.map(edge => {
+        {data.audio.edges.map(edge => {
           return (
             <div className="shadow-sm rounded mb-32" key={edge.node.id}>
-             
-                <h4 className="p-024">
-                  {edge.node.title}
-                </h4>
-            <div>
-
-            <figure>
-    <audio
-        controls
-        src={edge.node.eAudio.secure_url}>
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-            </div>
+              <h4 className="p-024">{edge.node.title}</h4>
+              <div>
+                <figure>
+                  <audio controls src={edge.node.eAudio.secure_url}>
+                    Your browser does not support the
+                    <code>audio</code> element.
+                  </audio>
+                </figure>
+              </div>
               <div className="b-solid-top p-24 text-base font-bold">
                 <h3 className="i-link cab di" id={edge.node.color}>
                   {edge.node.category}
                 </h3>
-                <div className="mt-15">
-                {edge.node.author}
-                </div>
+                <div className="mt-15">{edge.node.author}</div>
               </div>
             </div>
           )

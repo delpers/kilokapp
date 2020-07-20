@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-const Legal = ({ }) => (
+const Legal = ({}) => (
   <div className="mt-20">
     <p class="font-size-16">
       <span>

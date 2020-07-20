@@ -41,10 +41,7 @@ const BlogPage = props => {
       </div>
 
       <div className="max-width padding-initial padding-bottom-none bg-w link justify mt-32 mb-32 init">
-        {documentToReactComponents(
-          props.data.page.body.json,
-          options
-        )}
+        {documentToReactComponents(props.data.page.body.json, options)}
       </div>
     </Layout>
   )

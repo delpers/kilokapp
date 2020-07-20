@@ -1,10 +1,6 @@
 import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-
 import UserContext from "../../UserContext"
-
-
-
 
 export default function Breakfasts() {
   const { premium } = useContext(UserContext)
@@ -33,7 +29,7 @@ export default function Breakfasts() {
         if (premium)
           return (
             <div className="max-width padding-initial padding-bottom-none margin-top-sq">
-              <div className="mb-100">
+              <div className="margin-bottom-card">
                 <h3 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
                   {data.home.title_breakfasts}{" "}
                 </h3>
@@ -42,20 +38,19 @@ export default function Breakfasts() {
                 </span>
               </div>
 
-              <div className="card-des">
+              <div className="card-home">
                 {data.breakfast.edges.length > 0 ? (
                   data.breakfast.edges.map((edge, i) => {
                     return (
-                      <div id="bloc" className="additions-card__container nowrap" key={i}>
-                                      <div className="df">
-
-
-
-<img class="featuredSup" src={edge.node.image.secure_url} alt={edge.node.title} />
-
-
-</div>
-                        <div className="addiction-card__text mt-0 nowrap">
+                      <div id="bloc" className="card-container nowrap" key={i}>
+                        <div className="display-flex">
+                          <img
+                            class="featured-card"
+                            src={edge.node.image.secure_url}
+                            alt={edge.node.title}
+                          />
+                        </div>
+                        <div className="card-text margin-top-none nowrap">
                           <Link
                             className="i-link font-size-16 b-b-g font-bold c-t nowrap"
                             to={`/breakfast/recettes/${edge.node.slug}/`}

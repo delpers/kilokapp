@@ -7,20 +7,14 @@ const SearchPreview = ({ hit }) => {
     <div>
       <div>
         <div className="mb-32">
-          <div id={hit.id} className="mb-20 border ">
-          
-
-<img className="featured" src={hit.childContentfulRecipesFeaturedImageJsonNode.secure_url} alt="Purée d'œufs à la ciboulette">
-
-</img>
+          <div id={hit.id} className="mb-20 border "> 
+            <img className="featured" src={hit.childContentfulRecipesFeaturedImageJsonNode.secure_url} alt="Purée d'œufs à la ciboulette"></img>
             <div className="mt-10 p-15 font-size-16 ">
-
-            <span className="med-i-2">
+                <span className="med-i-2">
                   {" "}
                   <i className="fas fa-file-medical-alt c-green mr-8"></i>{" "}
                   <span className="font-size-14">{hit.medicalNumber}{" "}</span>
                 </span>
-
               <Link
                 className="i-link font-size-16 b-b-g margin-right-qz font-bold mb-15 fs-18 nowrap"
                 to={`/recette/${hit.slug}/`}

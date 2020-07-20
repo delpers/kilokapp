@@ -14,7 +14,7 @@ export default function HTML(props) {
         ></script>
         <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-      
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

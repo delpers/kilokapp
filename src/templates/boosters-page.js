@@ -10,7 +10,7 @@ export const query = graphql`
       title
       slug
       backgroundColor
-      
+
       bList {
         title
         slug
@@ -28,8 +28,7 @@ export const query = graphql`
 `
 
 const Background = styled.div`
-  background: #FFFFFF;
-
+  background: #ffffff;
 `
 
 const BoostersRecipes = props => {
@@ -38,21 +37,12 @@ const BoostersRecipes = props => {
       <Layout>
         <SEO title={props.data.booster.title} />
 
-        <div className="mask-thumb-cat p-50-0">
-          <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
-
-
-              <h1>{props.data.booster.title}</h1>
-            
-
-
+        <div className="mask-thumb-cat padding-50-0">
+          <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
+            <h1>{props.data.booster.title}</h1>
           </div>
-        </div>  
+        </div>
         <div>
-
-         
-
-        
           <div>
             <div className="rl rl-mobile max-width padding-initial  ">
               {props.data.booster.bList != null ? (
@@ -61,39 +51,40 @@ const BoostersRecipes = props => {
                     (
                       <div className="   mb-32" key={i}>
                         <div className="bg-w p-15 shadow-sm br6 dfmb">
-                        <div
-          className="w-screen p-80-0 perfect-bg pbg-m"
-          style={{
-            backgroundImage:
-              "url(" + edge.image.secure_url + ")",
-              backgroundSize: "50%",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              margin: "0 10%",
-          }}
-        > </div> 
-
-        <div> 
-                          <Link
-                            className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
-                            to={`/recettes/base/${edge.slug}/`}
+                          <div
+                            className="w-screen p-80-0 perfect-bg pbg-m"
+                            style={{
+                              backgroundImage:
+                                "url(" + edge.image.secure_url + ")",
+                              backgroundSize: "50%",
+                              backgroundRepeat: "no-repeat",
+                              backgroundPosition: "center",
+                              margin: "0 10%",
+                            }}
                           >
-                            {edge.title}
-                          </Link>
-                          <div className=" p-15 font-size-14 padding-bottom-none">
-                            <span className="">
-                              <i className="fas fa-burn mr-5"></i>{" "}
-                              {edge.calories} <strong>C</strong> · 100 gr.
-                            </span>
+                            {" "}
                           </div>
-                          <div className=" p-15 font-size-14">
-                            <span className="color-black">
-                              <i className="fas fa-check-circle mr-5"></i>{" "}
-                              {edge.stockage}
-                            </span>
+
+                          <div>
+                            <Link
+                              className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
+                              to={`/recettes/base/${edge.slug}/`}
+                            >
+                              {edge.title}
+                            </Link>
+                            <div className=" p-15 font-size-14 padding-bottom-none">
+                              <span className="">
+                                <i className="fas fa-burn mr-5"></i>{" "}
+                                {edge.calories} <strong>C</strong> · 100 gr.
+                              </span>
+                            </div>
+                            <div className=" p-15 font-size-14">
+                              <span className="color-black">
+                                <i className="fas fa-check-circle mr-5"></i>{" "}
+                                {edge.stockage}
+                              </span>
+                            </div>
                           </div>
-                          </div>
-                       
                         </div>
                       </div>
                     ) || null

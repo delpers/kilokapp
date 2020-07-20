@@ -9,7 +9,6 @@ export default function heroScreen() {
           contentfulHomePage {
             titleHome
             descriptionHome
-         
           }
         }
       `}
@@ -25,10 +24,12 @@ export default function heroScreen() {
               color: "initial",
             }}
           >
-            <div className="max-width padding-initial home-details ">
+            <div className="max-width padding-initial hero-block">
               <section>
-                <h1 className="width-50 hero-title">{data.contentfulHomePage.titleHome}</h1>
-                <p className="margin-bottom-0 mobile-margin-right-15 hero-max-width-sub font-size-24">
+                <h1 className="max-width-half hero-title">
+                  {data.contentfulHomePage.titleHome}
+                </h1>
+                <p className="margin-bottom-none mobile-margin-right-15 hero-max-width-sub font-size-24">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

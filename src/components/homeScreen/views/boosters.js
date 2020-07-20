@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-
 import UserContext from "../../../components/UserContext"
 
 export default function Boosters() {
@@ -30,7 +29,7 @@ export default function Boosters() {
         if (premium)
           return (
             <div className="max-width padding-initial padding-bottom-none  ">
-              <div className="mb-100">
+              <div className="margin-bottom-card">
                 <h4 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
                   {data.home.title_boosters}
                 </h4>
@@ -39,11 +38,14 @@ export default function Boosters() {
                 </span>
               </div>
 
-              <div className="src-b">
+              <div className="booster-block">
                 {data.booster.edges.length > 0 ? (
                   data.booster.edges.map((edge, i) => {
                     return (
-                      <div className="df mobile-margin-right-custom" key={i}>
+                      <div
+                        className="display-flex mobile-margin-right-custom"
+                        key={i}
+                      >
                         <div
                           className="media src-mb"
                           style={{

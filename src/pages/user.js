@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import Audio from "../components/homeScreen/views/audio"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
-import { logout } from "../utils/firebase" 
+import { logout } from "../utils/firebase"
 import styled from "@emotion/styled"
 
 const Background = styled.div`
@@ -19,9 +19,9 @@ const Background = styled.div`
     border: 0 !important;
     background: white;
     border-bottom: 1px solid #ededed !important;
-  }.welcome {
+  }
+  .welcome {
     box-shadow: none !important;
-
   }
 `
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
@@ -78,6 +78,7 @@ const UserPage = props => {
             cancel_at_period_end: true,
             cancel_at: moment().unix(),
           },
+          alert: "Ho no!",
         },
       }
       setPlans([newPlans])
@@ -100,11 +101,7 @@ const UserPage = props => {
           <div className="max-width padding-initial padding-bottom-none link justify mtandmb-24 init">
             <h2>Mon compte</h2>
             <div>
-
-    
-  
               <div className="grd_f">
-                
                 {planUser && planUser.length !== 0 ? (
                   <div className="bg-w grpl">
                     {planUser.map(plan => (
@@ -195,11 +192,9 @@ const UserPage = props => {
                 ) : null}
 
                 <div>
-
                   {user ? <div className="info_mti">E-mail {email}</div> : null}
 
                   <Audio />
-
 
                   {user && (
                     <button onClick={logoutUser} className="btnlogout">
@@ -208,9 +203,7 @@ const UserPage = props => {
                   )}
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </Layout>

@@ -17,42 +17,37 @@ const Custom = styled.div`
     background: none !important;
     box-shadow: none !important;
     width: 100%;
-  }.logo-home-page {
+  }
+  .logo-home-page {
     color: white !important;
-  }.navLink {
+  }
+  .navLink {
     background: white;
     padding: 14px 24px;
     color: #22333b !important;
   }
-
 `
-
-
 const HomePage = () => {
   return (
-    <Custom>  
-    <Layout>
-      <SEO title="Accueil" />
-      <HeroScreen /> 
+    <Custom>
+      <Layout>
+        <SEO title="Accueil" />
+        <HeroScreen />
 
-      <StickyNav />
+        <StickyNav />
 
-      <Breakfasts />
+        <Breakfasts />
 
-      <Entry />
+        <Entry />
 
+        <Dishes />
 
-      <Dishes />
+        <Desserts />
 
-      <Desserts />
+        <Boosters />
 
-      <Boosters />
-
-      <Training />
-
-
-
-    </Layout>
+        <Training />
+      </Layout>
     </Custom>
   )
 }

@@ -34,29 +34,21 @@ const BlogPost = props => {
     <Layout>
       <SEO title={props.data.post.title} />
 
-
-      <div className="mask-thumb-cat p-50-0 mb-0">
-      <div className="max-width padding-initial padding-bottom-none padding-top-none  " >
-            <h1 className="fs-48">{props.data.post.title}</h1>
+      <div className="mask-thumb-cat padding-50-0 mb-0">
+        <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
+          <h1 className="fs-48">{props.data.post.title}</h1>
         </div>
       </div>
 
-
-
       <div>
-       
-
         <img
           className=""
           src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
         <div className="max-width padding-initial mt-32 align-justify">
-
-     
-
-        {documentToReactComponents(props.data.post.body.json, options)}      </div>
-
+          {documentToReactComponents(props.data.post.body.json, options)}{" "}
+        </div>
       </div>
       <div className="">
         <div className="max-width padding-initial">
