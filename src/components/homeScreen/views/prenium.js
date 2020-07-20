@@ -9,7 +9,7 @@ const Prenium = () => (
 
     <div className="grp">
       <div className="dif mt-10">
-        <Link to="/" className="button_pw-w  ">
+        <Link to="/addu" className="button_pw-w  ">
           Passer à Kiloka Premium (9.99 € / mois)
         </Link>
       </div>
