@@ -7,9 +7,8 @@ const Legal = ({}) => (
       <span>
         En cliquant sur le bouton d'inscription, vous acceptez les{" "}
         <Link class="font-bold" to="/page/cgu" target="_blank">
-          Conditions générales d'utilisation
-        </Link>{" "}
-        de Kiloka.
+          Conditions générales d'utilisation.
+        </Link>
       </span>
     </p>
     <p class="font-size-16">

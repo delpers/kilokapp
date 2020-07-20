@@ -7,6 +7,7 @@ import Breakfasts from "../components/homeScreen/views/breakfasts"
 import Entry from "../components/homeScreen/views/starters"
 import Dishes from "../components/homeScreen/views/plats"
 import Desserts from "../components/homeScreen/views/desserts"
+import Prenium from "../components/homeScreen/views/prenium"
 import Boosters from "../components/homeScreen/views/boosters"
 import Training from "../components/homeScreen/views/training"
 import styled from "@emotion/styled"
@@ -43,6 +44,8 @@ const HomePage = () => {
         <Dishes />
 
         <Desserts />
+
+        <Prenium />
 
         <Boosters />
 

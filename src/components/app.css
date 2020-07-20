@@ -284,7 +284,6 @@ button {
 }
 .bg_blue {
   background: #fff7ee;
-
   text-align: center;
   padding: 140px 5%;
 }
@@ -411,7 +410,7 @@ button {
   padding-top: 120px;
 }
 .button_pw {
-  background: #50808e;
+  background: #79acd8;
   border: 1px solid transparent;
   padding: 15px 32px !important;
 
@@ -421,6 +420,18 @@ button {
   border-radius: 2px;
   text-align: center;
   color: white !important;
+}
+.button_pw-w {
+  background: #efcc95;
+  border: 1px solid transparent;
+  padding: 15px 32px !important;
+
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 2px;
+  text-align: center;
+  color: initial !important;
 }
 .grp {
   display: grid;
@@ -2437,7 +2448,7 @@ th {
     margin-top: 10px !important;
   }
   .ig {
-    color: #2459f0;
+    color: #79acd8;
   }
   .color-w {
     color: white !important;
@@ -2489,7 +2500,6 @@ th {
   }
   .bg_blue {
     background: #fff7ee;
-
     text-align: center;
     padding: 140px 5%;
   }
@@ -4003,11 +4013,7 @@ th {
     .margin-top-i {
       margin-top: 50px;
     }
-    .bg_blue {
-      background: #fff7ee;
-      text-align: center;
-      padding: 100px 5%;
-    }
+  
     .blockgr {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
