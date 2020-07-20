@@ -14,12 +14,11 @@ const Legal = ({}) => (
     </p>
     <p class="font-size-16">
       <span>
-        Pour en savoir plus sur la façon dont Kiloka utilise vos données
+        Pour en savoir plus sur la façon dont nous utilisons vos données
         personnelles, veuillez consulter la{" "}
         <Link class="font-bold" to="/page/privacy-policy">
-          Politique de confidentialité
-        </Link>{" "}
-        de Kiloka.
+          Politique de confidentialité.
+        </Link>
       </span>
     </p>
   </div>
