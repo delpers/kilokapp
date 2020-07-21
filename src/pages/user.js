@@ -101,6 +101,7 @@ const UserPage = props => {
           <div className="max-width padding-initial padding-bottom-none link justify mtandmb-24 init">
             <h2>Mon compte</h2>
             <div>
+            
               <div className="grd_f">
                 {planUser && planUser.length !== 0 ? (
                   <div className="bg-w grpl">

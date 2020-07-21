@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => {
     <header className="welcome">
       <div className="max-width padding-initial padding-bottom-none padding-top-none header">
         <Link className="logo-home-page" to="/">
-          Name
+          Kiloka
         </Link>
 
         <div class="space"></div>

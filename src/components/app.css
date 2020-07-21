@@ -27,7 +27,7 @@ video {
   font-size: 16px;
 }
 .br6 {
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .font-bold {
   font-weight: bold !important;
@@ -181,7 +181,7 @@ button {
 
 .grd {
   box-shadow: 0 2px 4px 0 rgba(119, 117, 117, 0.1);
-  border-radius: 6px;
+  border-radius: 2px;
   width: 100px;
   height: 100px;
   text-align: center;
@@ -962,7 +962,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
-  background-image: linear-gradient(135deg, #6b73ff 10%, #000dff 100%);
+  background: #79acd9;
 }
 .mt-42 {
   margin-top: 42px;
@@ -992,7 +992,7 @@ button {
 .navLink {
   text-decoration: none;
   font-weight: bold;
-  background: #50808e;
+  background: #79acd9;
   padding: 14px 20px;
   color: white !important;
   border-radius: 2.5px;
@@ -1334,7 +1334,7 @@ span.buttonText {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 2px;
   border: none;
   box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
 }
@@ -1424,7 +1424,7 @@ span.buttonText {
 }
 
 .hero {
-  background: #50808e;
+  background: #79acd9;
   color: white !important;
 }
 
@@ -1550,7 +1550,7 @@ mt-20 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #50808e;
+  background-color: #79acd9;
 }
 .link a {
   color: initial;
@@ -2243,7 +2243,7 @@ th {
     font-size: 16px;
   }
   .br6 {
-    border-radius: 6px;
+    border-radius: 2px;
   }
   .font-bold {
     font-weight: bold !important;
@@ -2397,7 +2397,7 @@ th {
 
   .grd {
     box-shadow: 0 2px 4px 0 rgba(119, 117, 117, 0.1);
-    border-radius: 6px;
+    border-radius: 2px;
     width: 100px;
     height: 100px;
     text-align: center;
@@ -2626,7 +2626,7 @@ th {
     padding-top: 120px;
   }
   .button_pw {
-    background: #50808e;
+    background: #79acd9;
     border: 1px solid transparent;
     padding: 15px 32px !important;
 
@@ -3196,7 +3196,7 @@ th {
   .navLink {
     text-decoration: none;
     font-weight: bold;
-    background: #50808e;
+    background: #79acd9;
     padding: 14px 20px;
     color: white !important;
     border-radius: 2.5px;
@@ -3538,7 +3538,7 @@ th {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 2px;
     border: none;
     box-shadow: rgba(223, 223, 223, 0.5) 0px 1px 2px 0px !important;
   }
@@ -3628,7 +3628,7 @@ th {
   }
 
   .hero {
-    background: #50808e;
+    background: #79acd9;
     color: white !important;
   }
 
@@ -3754,7 +3754,7 @@ th {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #50808e;
+    background-color: #79acd9;
   }
   .link a {
     color: initial;

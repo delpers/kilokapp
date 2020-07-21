@@ -35,7 +35,7 @@ const queries = [
 module.exports = {
   siteMetadata: {
     title: `Kiloka`,
-    description: `- -`,
+    description: `Le bien-être nutritionel pour un mode de vie beaucoup plus sain.`,
     author: `@kilokajs`,
   },
   plugins: [
