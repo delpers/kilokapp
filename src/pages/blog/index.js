@@ -31,35 +31,31 @@ const Blog = () => {
     <Layout>
       <SEO title="Blog" />
 
-      <div className="mask-thumb-cat padding-50-0">
-        <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
-          <h1>Blog</h1>
-        </div>
-      </div>
-
-      <div className="blogPost blogPost-mobile max-width padding-initial">
+      <div className="k-grid" uk-grid>
         {data.blog.edges.map(edge => {
           return (
-            <div className="shadow-sm rounded mb-32" key={edge.node.id}>
-              <img
-                className="featured"
-                src={edge.node.media.secure_url}
+              <div className="card-shadow margin-bottom" key={edge.node.id}>
+
+<div className="uk-card-media-top">
+<img src={edge.node.media.secure_url}
                 alt={edge.node.title}
-              />
-              <Link
+              />            </div>
+
+<div className="uk-card-body">
+                <h3 className="uk-card-title"> <Link
                 className="p-0-24 blog-title font-bold i-link"
                 to={`/blog/${edge.node.slug}/`}
               >
                 {edge.node.title}
-              </Link>
-              <p className="text-gray text-base justify p-0-24">
-                {edge.node.ePost.excerpt}
-              </p>
-              <div className="b-solid-top p-24 text-base font-bold">
+              </Link></h3>
+                <p> {edge.node.ePost.excerpt}</p>
+
                 <Link className="i-link" to={`/blog/${edge.node.slug}/`}>
                   En savoir plus
                 </Link>
-              </div>
+            </div>
+
+
             </div>
           )
         })}

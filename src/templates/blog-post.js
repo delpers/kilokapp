@@ -34,27 +34,35 @@ const BlogPost = props => {
     <Layout>
       <SEO title={props.data.post.title} />
 
-      <div className="mask-thumb-cat padding-50-0 mb-0">
-        <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
-          <h1 className="fs-48">{props.data.post.title}</h1>
-        </div>
-      </div>
 
-      <div>
-        <img
+<article className="uk-article">
+<img
           className=""
           src={props.data.post.picture.secure_url}
           alt={props.data.post.title}
         />
-        <div className="max-width padding-initial mt-32 align-justify">
-          {documentToReactComponents(props.data.post.body.json, options)}{" "}
-        </div>
-      </div>
+
+<h1 className="uk-article-title">{props.data.post.title}</h1>
+
+
+
+    <p className="uk-text-lead">{documentToReactComponents(props.data.post.body.json, options)}</p>
+
+
+</article>
+
+
       <div className="">
         <div className="max-width padding-initial">
           <HyvorTalk.Embed websiteId={277} id={props.data.post.slug} />
         </div>
       </div>
+
+
+
+
+
+
     </Layout>
   )
 }

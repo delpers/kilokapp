@@ -18,7 +18,7 @@ export default function hNavigation() {
       `}
       render={data => (
         <div className="sticky m-b-plus">
-          <nav className="padding-top-qz max-width padding-initial padding-navigation">
+          <nav className="">
             {data.home.pages.map(Pages => (
               <Link
                 className="i-link color-white font-size-16 b-b-g margin-right-qz font-bold"

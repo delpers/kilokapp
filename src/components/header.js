@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="uk-background-default border-bottom">
 
-    <div className="uk-container uk-container-expand">
+    <div className="uk-container uk-container-expand max-width">
 
 <nav className="uk-navbar">
 

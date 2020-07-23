@@ -19,7 +19,53 @@ body {
   font-size: 14px !important;
 }
 
+.m-w {
+  max-width: 1240px;
+
+  margin: 32px auto;
+}
+.max-width {
+  max-width: 1240px;
+
+  margin: 0 auto;
+}
+.p-i {
+  padding: 0 24px;
+}
+
 .bold {
   font-weight: bold;
   color: initial;
 }
+.card-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05) !important;
+}
+.k-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
+  background: transparent;
+}
+.margin-bottom {
+  margin-bottom: 32px;
+}
+  @media only screen and (max-width: 834px) {
+    .k-grid {
+      display: block;
+    }
+  }
+
+  /* override styles when printing */
+  @media print {
+    
+}
+
+
+
+
+
