@@ -24,30 +24,26 @@ export default function Desserts() {
         }
       `}
       render={data => (
-        <div className="max-width padding-initial padding-bottom-none  ">
-          <div className="margin-bottom-card">
-            <h3 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
-              {data.home.title_desserts}
-            </h3>
-            <span className="pl text-gray mw728 ">
-              {data.home.description_desserts}
-            </span>
+        <div className="">
+          <div className="">
+            <h3 className="">{data.home.title_desserts}</h3>
+            <span className="">{data.home.description_desserts}</span>
           </div>
-          <div className="card-home">
+          <div className="">
             {data.dessert.edges.length > 0 ? (
               data.dessert.edges.map((edge, i) => {
                 return (
-                  <div className="card-container nowrap" key={i}>
-                    <div className="display-flex">
+                  <div className="" key={i}>
+                    <div className="">
                       <img
-                        class="featured-card"
+                        class=""
                         src={edge.node.image.secure_url}
                         alt={edge.node.title}
                       />
                     </div>
-                    <div className="card-text nowrap">
+                    <div className="">
                       <Link
-                        className="i-link font-size-16 b-b-g font-bold c-t nowrap"
+                        className=""
                         to={`/desserts/recettes/${edge.node.slug}/`}
                       >
                         {edge.node.title}

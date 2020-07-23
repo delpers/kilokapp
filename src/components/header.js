@@ -6,26 +6,58 @@ import UserContext from "./UserContext"
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
-    <header className="welcome">
-      <div className="max-width padding-initial padding-bottom-none padding-top-none header">
-        <Link className="logo-home-page" to="/">
-          Kiloka
-        </Link>
+    <header className="uk-background-default border-bottom">
 
-        <div class="space"></div>
-        <nav className="right">
-          {" "}
-          {!user && (
-            <Link className="navLink" to="/login">
-              Connexion
+    <div className="uk-container uk-container-expand">
+
+<nav className="uk-navbar">
+
+<div className="uk-navbar-left">
+
+
+  <Link to="/" className="uk-navbar-item uk-logo">Name</Link>
+</div>
+
+<div className="uk-navbar-item">
+
+
+
+
+
+{!user && (
+
+ <Link to="/login"> <button class="uk-button uk-button-primary">  Connexion            </button>
+
+              
             </Link>
+   
+          
           )}
+
+
+
           {user && (
-            <Link className="navLink" to="/user">
-              Mon compte
-            </Link>
+ <Link to="/user"> <button class="uk-button uk-button-primary">  Mon compte            </button>
+
+              
+ </Link>
+
+
+
+
+
+
           )}{" "}
-        </nav>
+
+
+
+</div>
+
+
+</nav>
+
+
+
       </div>
     </header>
   )

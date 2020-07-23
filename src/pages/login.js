@@ -1,26 +1,12 @@
 import React, { useState, useEffect, useContext } from "react"
 import { useForm } from "react-hook-form"
-import * as yup from "yup"
-
 import { login, loginWithGoogle } from "../utils/firebase"
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
-import styled from "@emotion/styled"
+import * as yup from "yup"
 
-const Background = styled.div`
-  background: #ffffff;
-  header {
-    background: white;
-    border-bottom: 1px solid #ededed !important;
-  }
-  @media only screen and (max-width: 480px) {
-    header {
-      display: none !important;
-    }
-  }
-`
 
 const schema = yup.object().shape({
   email: yup
@@ -83,11 +69,10 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <Background>
       <Layout>
         <SEO title="Connexion" />
-        <div className="mtandmb-24">
-          <div className="gr-log">
+        <div className="uk-login-form padding-initial">
+          <div className="uk-margin">
             <div>
               <h2 className="title_ic">Connexion</h2>
 
@@ -96,7 +81,7 @@ const LoginPage = () => {
                   <input
                     type="email"
                     onChange={onChangeInput}
-                    className="form-control"
+                    className="uk-input uk-margin-bottom radius"
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
@@ -110,7 +95,7 @@ const LoginPage = () => {
                   <input
                     type="password"
                     onChange={onChangeInput}
-                    className="form-control"
+                    className="uk-input uk-margin-bottom radius"
                     name="password"
                     placeholder="Saisir votre mot de passe"
                     ref={register({ required: true, minLength: 8 })}
@@ -136,7 +121,7 @@ const LoginPage = () => {
                 <div>
                   <button
                     type="submit"
-                    className="btnlogin"
+                    className="uk-button uk-button-primary uk-margin-bottom radius"
                     onClick={onSubmit}
                     style={{ padding: "0 15px" }}
                   >
@@ -145,7 +130,7 @@ const LoginPage = () => {
                 </div>
 
                 <button
-                  className="googleSignIn"
+                  className="googleSignIn uk-margin-bottom radius"
                   type="button"
                   onClick={loginByGmail}
                 >
@@ -167,7 +152,6 @@ const LoginPage = () => {
           </div>
         </div>
       </Layout>
-    </Background>
   )
 }
 

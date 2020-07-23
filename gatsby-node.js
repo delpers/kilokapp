@@ -142,40 +142,7 @@ exports.createPages = ({ graphql, actions }) => {
             })
           })
 
-          .then(() => {
-            graphql(
-              `
-                {
-                  allContentfulMonth(limit: 1000) {
-                    edges {
-                      node {
-                        id
-                        slug
-                      }
-                    }
-                  }
-                }
-              `
-            ).then(result => {
-              if (result.errors) {
-                reject(result.errors)
-              }
-
-              const mounthTemplate = path.resolve(
-                `./src/templates/calandar-page.js`
-              )
-              req.each(result.data.allContentfulMonth.edges, edge => {
-                createPage({
-                  path: `/calandar/${edge.node.slug}`,
-                  component: slash(mounthTemplate),
-                  context: {
-                    id: edge.node.id,
-                    slug: edge.node.slug,
-                  },
-                })
-              })
-            })
-          })
+      
 
           .then(() => {
             graphql(

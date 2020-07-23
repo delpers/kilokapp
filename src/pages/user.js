@@ -10,20 +10,7 @@ import Audio from "../components/homeScreen/views/audio"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #ffffff;
-  header {
-    position: relative !important;
-    border: 0 !important;
-    background: white;
-    border-bottom: 1px solid #ededed !important;
-  }
-  .welcome {
-    box-shadow: none !important;
-  }
-`
 const STRIPE_PK_KEY = process.env.GATSBY_STRIPE_PUBLIC_KEY
 
 const stripePromise = loadStripe(STRIPE_PK_KEY)
@@ -94,7 +81,6 @@ const UserPage = props => {
     }
   }, [planUser])
   return (
-    <Background>
       <Layout>
         <SEO title="Mon compte" />
         <div>
@@ -208,7 +194,6 @@ const UserPage = props => {
           </div>
         </div>
       </Layout>
-    </Background>
   )
 }
 

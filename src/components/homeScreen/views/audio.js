@@ -17,8 +17,8 @@ export default function Audio() {
       render={data => {
         if (premium)
           return (
-            <div className="dif mt-10 mb-15">
-              <Link to="/audio" className="button_pw  ">
+            <div className="">
+              <Link to="/audio" className="">
                 Bibliothèque numérique
               </Link>
             </div>

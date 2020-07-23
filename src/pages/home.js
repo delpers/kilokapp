@@ -8,50 +8,23 @@ import Entry from "../components/homeScreen/views/starters"
 import Dishes from "../components/homeScreen/views/plats"
 import Desserts from "../components/homeScreen/views/desserts"
 import Boosters from "../components/homeScreen/views/boosters"
-// <Training /> import Training from "../components/homeScreen/views/training"
-import styled from "@emotion/styled"
-
-const Custom = styled.div`
-  header {
-    position: absolute !important;
-    background: none !important;
-    box-shadow: none !important;
-    width: 100%;
-  }.logo-home-page {
-    color: white !important;
-  }.navLink {
-    background: white;
-    padding: 14px 24px;
-    color: #22333b !important;
-  }
-
-`
-
+import Training from "../components/homeScreen/views/training"
 
 const HomePage = () => {
   return (
-    <Custom>  
     <Layout>
       <SEO title="Accueil" />
-      <HeroScreen /> 
 
+      <HeroScreen />
       <StickyNav />
-
       <Breakfasts />
-
       <Entry />
-
       <Dishes />
-
       <Desserts />
-
       <Boosters />
-
-
-
-
+      <Training />
+      
     </Layout>
-    </Custom>
   )
 }
 

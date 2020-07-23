@@ -28,26 +28,19 @@ export default function Boosters() {
       render={data => {
         if (premium)
           return (
-            <div className="max-width padding-initial padding-bottom-none  ">
-              <div className="margin-bottom-card">
-                <h4 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
-                  {data.home.title_boosters}
-                </h4>
-                <span className="pl text-gray mw728 ">
-                  {data.home.description_boosters}
-                </span>
+            <div className="">
+              <div className="">
+                <h4 className="">{data.home.title_boosters}</h4>
+                <span className="">{data.home.description_boosters}</span>
               </div>
 
-              <div className="booster-block">
+              <div className="">
                 {data.booster.edges.length > 0 ? (
                   data.booster.edges.map((edge, i) => {
                     return (
-                      <div
-                        className="display-flex mobile-margin-right-custom"
-                        key={i}
-                      >
+                      <div className="" key={i}>
                         <div
-                          className="media src-mb"
+                          className=""
                           style={{
                             backgroundImage:
                               "url(" + edge.node.picture.secure_url + ")",
@@ -59,10 +52,10 @@ export default function Boosters() {
                             borderRadius: "6px",
                           }}
                         >
-                          <span className="cards-n mr-15mb">
-                            <span className="mt-10-b">
+                          <span className="">
+                            <span className="">
                               <Link
-                                className="i-link font-size-16 b-b-g margin-right-qz font-bold c-u"
+                                className=""
                                 to={`/booster/${edge.node.slug}/`}
                               >
                                 {edge.node.title}

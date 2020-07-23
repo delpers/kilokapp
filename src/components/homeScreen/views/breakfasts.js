@@ -28,31 +28,27 @@ export default function Breakfasts() {
       render={data => {
         if (premium)
           return (
-            <div className="max-width padding-initial padding-bottom-none margin-top-sq">
-              <div className="margin-bottom-card">
-                <h3 className="mw728 margin-bottom-0fs-24 pb-4 title-m title-ble">
-                  {data.home.title_breakfasts}{" "}
-                </h3>
-                <span className="pl text-gray mw728">
-                  {data.home.description_breakfasts}
-                </span>
+            <div className="">
+              <div className="">
+                <h3 className="">{data.home.title_breakfasts} </h3>
+                <span className="">{data.home.description_breakfasts}</span>
               </div>
 
-              <div className="card-home">
+              <div className="">
                 {data.breakfast.edges.length > 0 ? (
                   data.breakfast.edges.map((edge, i) => {
                     return (
-                      <div id="bloc" className="card-container nowrap" key={i}>
-                        <div className="display-flex">
+                      <div id="breakfast" className="" key={i}>
+                        <div className="">
                           <img
-                            class="featured-card"
+                            class=""
                             src={edge.node.image.secure_url}
                             alt={edge.node.title}
                           />
                         </div>
-                        <div className="card-text margin-top-none nowrap">
+                        <div className="">
                           <Link
-                            className="i-link font-size-16 b-b-g font-bold c-t nowrap"
+                            className=""
                             to={`/breakfast/recettes/${edge.node.slug}/`}
                           >
                             {edge.node.title}

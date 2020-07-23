@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -31,18 +30,8 @@ export const query = graphql`
   }
 `
 
-const Background = styled.div`
-  background: #ffffff;
-  header {
-    position: relative !important;
-    background: white;
-    border-bottom: 1px solid #ededed;
-  }
-`
-
 const eRecipes = props => {
   return (
-    <Background>
       <Layout>
         <SEO title={props.data.breakfast.title} />
 
@@ -123,7 +112,6 @@ const eRecipes = props => {
           </div>
         </div>
       </Layout>
-    </Background>
   )
 }
 
