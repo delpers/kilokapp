@@ -81,7 +81,7 @@ const RegisterPage = () => {
         <div className="uk-layout-form padding-initial">
         <div className="uk-margin">
             <div>
-              <h2 className="title_ic">Inscription</h2>
+              <h2 className="bold">Inscription</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
                 <div className="form-group">

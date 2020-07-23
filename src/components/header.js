@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
 <div className="uk-navbar-left">
 
 
-  <Link to="/" className="uk-navbar-item uk-logo">Name</Link>
+  <Link to="/" className="uk-navbar-item uk-logo bold">kiloka.io</Link>
 </div>
 
 <div className="uk-navbar-item">
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
 
 {!user && (
 
- <Link to="/login"> <button class="uk-button uk-button-primary">  Connexion            </button>
+ <Link to="/login"> <button class="uk-button uk-button-default border radius">  Connexion            </button>
 
               
             </Link>
@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => {
 
 
           {user && (
- <Link to="/user"> <button class="uk-button uk-button-primary">  Mon compte            </button>
+ <Link to="/user"> <button class="uk-button uk-button-default border radius">  Mon compte            </button>
 
               
  </Link>
