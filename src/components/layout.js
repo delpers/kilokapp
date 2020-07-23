@@ -26,10 +26,10 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="  border-top footer-padding-grid background-white">
+        <div className="  border-top footer-padding-grid ">
           <footer className="padding-TT font-size-16 max-width padding-initial footer-grid">
-            <div className=" ">
-              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
+            <div className=" margin-bottom ">
+              <div className="  uppercase bold ">
                 Entreprise
               </div>
 
@@ -40,8 +40,8 @@ const Layout = ({ children }) => {
                 Offres d'emploi
               </Link>
             </div>
-            <div className=" ">
-              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
+            <div className=" margin-bottom ">
+              <div className="  uppercase bold ">
                 Communautés
               </div>
 
@@ -49,8 +49,8 @@ const Layout = ({ children }) => {
                 Investisseurs
               </Link>
             </div>
-            <div className=" ">
-              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
+            <div className=" margin-bottom ">
+              <div className="  uppercase  bold ">
                 Liens utiles
               </div>
 
@@ -70,8 +70,8 @@ const Layout = ({ children }) => {
                 Instagram
               </a>
             </div>
-            <div className=" ">
-              <div className="  uppercase font-size-14 bold font-bold mb-32 ">
+            <div className=" margin-bottom ">
+              <div className="  uppercase bold ">
                 Légales
               </div>
               <Link className="i-link    db mb-15" to="/page/privacy-policy">

@@ -95,7 +95,7 @@ const LoginPage = () => {
                   <input
                     type="password"
                     onChange={onChangeInput}
-                    className="uk-input uk-margin-bottom radius"
+                    className="k-input margin-bottom radius"
                     name="password"
                     placeholder="Saisir votre mot de passe"
                     ref={register({ required: true, minLength: 8 })}
@@ -121,7 +121,7 @@ const LoginPage = () => {
                 <div>
                   <button
                     type="submit"
-                    className="uk-button uk-button-primary uk-margin-bottom radius"
+                    className="button-submit "
                     onClick={onSubmit}
                     style={{ padding: "0 15px" }}
                   >
@@ -130,7 +130,7 @@ const LoginPage = () => {
                 </div>
 
                 <button
-                  className="googleSignIn uk-margin-bottom radius"
+                  className="buttonGoogle uk-margin-bottom radius"
                   type="button"
                   onClick={loginByGmail}
                 >

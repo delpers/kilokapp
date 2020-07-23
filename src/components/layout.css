@@ -1,22 +1,81 @@
-@import "../app/css/uikit.css";
-@import "../app/css/uikit.min.css";
-@import "../app/css/uikit-rtl.css";
-@import "../app/css/uikit-rtl.min.css";
 
+
+body {
+  background: #FFFF;
+}
 .border-bottom { border-bottom: 1px solid rgba(0,0,0,.08); }
+.border-top {
+  border-top: 1px solid rgba(0,0,0,.08);
+}
 
-.uk-layout-form {  max-width: 450px; margin: 36px auto;} 
+.uk-layout-form {  border: 1px solid #eaeaea;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 32px 93px 0;
+  max-width: 534px;
+  margin: 40px auto; } 
 
 .padding-initial {
   padding: 32px;
 }
-
+.db {
+  display: block;
+}
 .radius {
   border-radius: 2px;
 }
 
-body {
-  font-size: 14px !important;
+.k-input {
+
+  border: 1px solid #cacaca;
+ 
+}
+
+.button-submit {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-family: ubuntu,arial,sans-serif;
+  font-weight: 500;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #266abd;
+  border-color: #266abd;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+  line-height: 1.5;
+  padding: 14px !important;
+  width: 100%;
+  margin: 0 0 24px;
+}
+.buttonGoogle {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-family: ubuntu,arial,sans-serif;
+  font-weight: 500;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #FFF;
+  border-color: #FFF;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+  line-height: 1.5;
+  padding: 14px !important;
+  width: auto;
+  border: 1px solid #cacaca;
+  margin: 0 0 24px;
 }
 
 .m-w {
@@ -42,7 +101,7 @@ body {
 }
 .k-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
 }
 .footer-grid {
@@ -51,11 +110,20 @@ body {
   grid-gap: 60px;
   background: transparent;
 }
+.i-link {
+  padding-bottom: 8px;
+}
+.uppercase {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
 .margin-bottom {
   margin-bottom: 32px;
 }
   @media only screen and (max-width: 834px) {
     .k-grid {
+      display: block;
+    }.footer-grid {
       display: block;
     }
   }

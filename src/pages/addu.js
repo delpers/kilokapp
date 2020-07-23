@@ -145,7 +145,7 @@ const RegisterPage = () => {
                   </button>
                 </div>
                 <button
-                  className="googleSignIn uk-margin-bottom radius"
+                  className="buttonGoogle uk-margin-bottom radius"
                   type="button"
                   onClick={loginByGmail}
                 >
