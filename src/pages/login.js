@@ -71,7 +71,7 @@ const LoginPage = () => {
   return (
       <Layout>
         <SEO title="Connexion" />
-        <div className="uk-login-form padding-initial">
+        <div className="uk-layout-form padding-initial">
           <div className="uk-margin">
             <div>
               <h2 className="title_ic">Connexion</h2>

@@ -8,20 +8,7 @@ import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import { signup, loginWithGoogle } from "../utils/firebase"
-import styled from "@emotion/styled"
 
-const Background = styled.div`
-  background: #ffffff;
-  header {
-    background: white;
-    border-bottom: 1px solid #ededed !important;
-  }
-  @media only screen and (max-width: 480px) {
-    header {
-      display: none !important;
-    }
-  }
-`
 const schema = yup.object().shape({
   email: yup
     .string()
@@ -89,11 +76,10 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-    <Background>
       <Layout>
         <SEO title="S'inscrire" />
-        <div className="mtandmb-24">
-          <div className="gr-log">
+        <div className="uk-layout-form padding-initial">
+        <div className="uk-margin">
             <div>
               <h2 className="title_ic">Inscription</h2>
 
@@ -101,7 +87,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="email"
-                    className="form-control"
+                    className="uk-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
@@ -115,7 +101,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="password"
-                    className="form-control"
+                    className="uk-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="password"
                     placeholder="Saisir un mot de passe"
@@ -129,7 +115,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="password"
-                    className="form-control"
+                    className="uk-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="confirm_password"
                     placeholder="Confirmez le mot de passe"
@@ -152,14 +138,14 @@ const RegisterPage = () => {
                   <button
                     type="submit"
                     style={{ padding: "0 15px" }}
-                    className="btnlogin"
+                    className="uk-button uk-button-primary uk-margin-bottom radius"
                     onClick={onSubmitRegister}
                   >
                     {loading ? "Chargement..." : "S'inscrire"}
                   </button>
                 </div>
                 <button
-                  className="googleSignIn"
+                  className="googleSignIn uk-margin-bottom radius"
                   type="button"
                   onClick={loginByGmail}
                 >
@@ -184,7 +170,6 @@ const RegisterPage = () => {
           </div>
         </div>
       </Layout>
-    </Background>
   )
 }
 

@@ -5,7 +5,7 @@
 
 .border-bottom { border-bottom: 1px solid rgba(0,0,0,.08); }
 
-.uk-login-form {  max-width: 450px; margin: 36px auto;} 
+.uk-layout-form {  max-width: 450px; margin: 36px auto;} 
 
 .padding-initial {
   padding: 32px;
@@ -13,4 +13,8 @@
 
 .radius {
   border-radius: 2px;
+}
+
+body {
+  font-size: 14px !important;
 }
