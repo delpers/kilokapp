@@ -6,3 +6,9 @@
   font-weight: 500;
   margin-bottom: 24px;
 }
+
+input {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+}
