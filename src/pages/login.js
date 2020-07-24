@@ -71,17 +71,17 @@ const LoginPage = () => {
   return (
       <Layout>
         <SEO title="Connexion" />
-        <div className="uk-layout-form padding-initial">
+        <div className="uk-layout-form ">
           <div className="uk-margin">
             <div>
-              <h2 className="bold">Connexion</h2>
+              <h2 className="medium">Connexion</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                   <input
                     type="email"
                     onChange={onChangeInput}
-                    className="uk-input uk-margin-bottom radius"
+                    className="k-input"
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
@@ -95,7 +95,7 @@ const LoginPage = () => {
                   <input
                     type="password"
                     onChange={onChangeInput}
-                    className="k-input margin-bottom radius"
+                    className="k-input"
                     name="password"
                     placeholder="Saisir votre mot de passe"
                     ref={register({ required: true, minLength: 8 })}
@@ -130,18 +130,15 @@ const LoginPage = () => {
                 </div>
 
                 <button
-                  className="buttonGoogle uk-margin-bottom radius"
+                  className="buttonGoogle width-full"
                   type="button"
                   onClick={loginByGmail}
                 >
-                  <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg"
-                    alt="Google logo"
-                  ></img>
-                  <span class="googleSignIn__text">Continuer avec Google</span>
+              
+                  <span>Continuer avec Google</span>
                 </button>
 
-                <div className=" align-left font-size-16">
+                <div className="align-center size-initial">
                   Vous n'avez pas de compte ?{" "}
                   <a className="font-bold" href="/addu">
                     Inscription

@@ -87,7 +87,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="email"
-                    className="uk-input uk-margin-bottom radius"
+                    className="k-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
@@ -101,7 +101,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="password"
-                    className="uk-input uk-margin-bottom radius"
+                    className="k-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="password"
                     placeholder="Saisir un mot de passe"
@@ -115,7 +115,7 @@ const RegisterPage = () => {
                 <div className="form-group">
                   <input
                     type="password"
-                    className="uk-input uk-margin-bottom radius"
+                    className="k-input uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="confirm_password"
                     placeholder="Confirmez le mot de passe"
@@ -138,7 +138,7 @@ const RegisterPage = () => {
                   <button
                     type="submit"
                     style={{ padding: "0 15px" }}
-                    className="uk-button uk-button-primary uk-margin-bottom radius"
+                    className="button-submit radius"
                     onClick={onSubmitRegister}
                   >
                     {loading ? "Chargement..." : "S'inscrire"}
