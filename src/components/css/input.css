@@ -12,3 +12,5 @@ input {
   -moz-appearance: none !important;
 
 }
+
+input:focus {outline:0 !important;}
