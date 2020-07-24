@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react"
 import { useForm } from "react-hook-form"
 import { login, loginWithGoogle } from "../utils/firebase"
-import { navigate } from "gatsby"
+import { navigate, Link } from "gatsby"
 import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
@@ -71,8 +71,8 @@ const LoginPage = () => {
   return (
       <Layout>
         <SEO title="Connexion" />
-        <div className="uk-layout-form ">
-          <div className="uk-margin">
+        <div className="layout-form ">
+          <div>
             <div>
               <h2 className="medium">Connexion</h2>
 
@@ -81,7 +81,7 @@ const LoginPage = () => {
                   <input
                     type="email"
                     onChange={onChangeInput}
-                    className="k-input"
+                    className="k-input r4"
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
@@ -95,7 +95,7 @@ const LoginPage = () => {
                   <input
                     type="password"
                     onChange={onChangeInput}
-                    className="k-input"
+                    className="k-input r4"
                     name="password"
                     placeholder="Saisir votre mot de passe"
                     ref={register({ required: true, minLength: 8 })}
@@ -121,7 +121,7 @@ const LoginPage = () => {
                 <div>
                   <button
                     type="submit"
-                    className="button-submit "
+                    className="button-submit r4"
                     onClick={onSubmit}
                     style={{ padding: "0 15px" }}
                   >
@@ -130,7 +130,7 @@ const LoginPage = () => {
                 </div>
 
                 <button
-                  className="buttonGoogle width-full"
+                  className="button-google r4 color-gray width-full"
                   type="button"
                   onClick={loginByGmail}
                 >
@@ -140,9 +140,9 @@ const LoginPage = () => {
 
                 <div className="align-center size-initial">
                   Vous n'avez pas de compte ?{" "}
-                  <a className="font-bold" href="/addu">
+                  <Link className="color-blue" to="/addu">
                     Inscription
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>

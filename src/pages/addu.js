@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react"
 import { useForm } from "react-hook-form"
 import * as yup from "yup"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Legal from "../components/legalRegister"
@@ -78,16 +79,13 @@ const RegisterPage = () => {
   return (
       <Layout>
         <SEO title="S'inscrire" />
-        <div className="uk-layout-form padding-initial">
-        <div className="uk-margin">
-            <div>
-              <h2 className="bold">Inscription</h2>
+        <div className="layout-form">
+              <h2 className="medium">Inscription</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
-                <div className="form-group">
                   <input
                     type="email"
-                    className="k-input uk-margin-bottom radius"
+                    className="k-input r4 uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
@@ -97,11 +95,9 @@ const RegisterPage = () => {
                   {errors.email && (
                     <div className="alert">{errors.email.message}</div>
                   )}
-                </div>
-                <div className="form-group">
                   <input
                     type="password"
-                    className="k-input uk-margin-bottom radius"
+                    className="k-input r4 uk-margin-bottom radius"
                     onChange={onChangeInput}
                     name="password"
                     placeholder="Saisir un mot de passe"
@@ -111,11 +107,9 @@ const RegisterPage = () => {
                   {errors.password && (
                     <div className="alert">{errors.password.message}</div>
                   )}
-                </div>
-                <div className="form-group">
                   <input
                     type="password"
-                    className="k-input uk-margin-bottom radius"
+                    className="k-input r4"
                     onChange={onChangeInput}
                     name="confirm_password"
                     placeholder="Confirmez le mot de passe"
@@ -127,7 +121,6 @@ const RegisterPage = () => {
                       {errors.confirm_password.message}
                     </div>
                   )}
-                </div>
                 {errorRegister && (
                   <span className="msg_alert" style={{ color: "red" }}>
                     {errorRegister}
@@ -138,37 +131,32 @@ const RegisterPage = () => {
                   <button
                     type="submit"
                     style={{ padding: "0 15px" }}
-                    className="button-submit radius"
+                    className="button-submit r4"
                     onClick={onSubmitRegister}
                   >
                     {loading ? "Chargement..." : "S'inscrire"}
                   </button>
                 </div>
                 <button
-                  className="buttonGoogle uk-margin-bottom radius"
+                  className="button-google r4 color-gray width-full"
                   type="button"
                   onClick={loginByGmail}
                 >
-                  <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg"
-                    alt="Google logo"
-                  ></img>
-                  <span class="googleSignIn__text">Continuer avec Google</span>
+               
+                  <span>Continuer avec Google</span>
                 </button>
 
                 <Legal />
 
-                <div className=" align-left font-size-16">
+                <div className="size-initial">
                   Vous avez déjà un compte ?{" "}
-                  <a class="font-bold" href="/login">
+                  <Link class="color-blue" to="/login">
                     Se connecter
-                  </a>
-                  .
+                  </Link>
+                  
                 </div>
               </form>
             </div>
-          </div>
-        </div>
       </Layout>
   )
 }

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+  @media only screen and (max-width: 834px) {
+    .k-grid {
+      display: block;
+    }.footer-grid {
+      display: block;
+    }
+  }
+
+  /* override styles when printing */
+  @media print {
+    
+}
+
+
+
+
+

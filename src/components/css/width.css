@@ -1,0 +1,16 @@
+.width-full {
+    width: 100%;
+}
+
+.max-width {
+    max-width: 1240px;
+  
+    margin: 0 auto;
+  }
+
+
+.m-w {
+    max-width: 1240px;
+  
+    margin: 32px auto;
+  }

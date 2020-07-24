@@ -2,23 +2,19 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Legal = ({}) => (
-  <div className="mt-20">
-    <p class="font-size-16">
-      <span>
+  <div>
+    <p className="size-initial">
         En cliquant sur le bouton d'inscription, vous acceptez les{" "}
-        <Link class="font-bold" to="/page/cgu" target="_blank">
+        <Link className="color-blue" to="/page/cgu">
           Conditions générales d'utilisation.
         </Link>
-      </span>
     </p>
-    <p class="font-size-16">
-      <span>
+    <p className="size-initial">
         Pour en savoir plus sur la façon dont nous utilisons vos données
         personnelles, veuillez consulter la{" "}
-        <Link class="font-bold" to="/page/privacy-policy">
+        <Link className="color-blue" to="/page/privacy-policy">
           Politique de confidentialité.
         </Link>
-      </span>
     </p>
   </div>
 )
