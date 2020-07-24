@@ -71,13 +71,10 @@ const LoginPage = () => {
   return (
       <Layout>
         <SEO title="Connexion" />
-        <div className="layout-form ">
-          <div>
-            <div>
+        <div className="layout-form padding">
               <h2 className="medium">Connexion</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-group">
                   <input
                     type="email"
                     onChange={onChangeInput}
@@ -90,8 +87,6 @@ const LoginPage = () => {
                   {errors.email && (
                     <div className="alert">{errors.email.message}</div>
                   )}
-                </div>
-                <div className="form-group">
                   <input
                     type="password"
                     onChange={onChangeInput}
@@ -104,7 +99,6 @@ const LoginPage = () => {
                   {errors.password && (
                     <div className="alert">{errors.password.message}</div>
                   )}
-                </div>
                 {textLoginSubmit.type && (
                   <div
                     className="alert"
@@ -146,8 +140,7 @@ const LoginPage = () => {
                 </div>
               </form>
             </div>
-          </div>
-        </div>
+     
       </Layout>
   )
 }

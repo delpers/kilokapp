@@ -6,6 +6,7 @@ import UserContext from "./UserContext"
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
+
     <header className="uk-background-default border-bottom">
       <div>
         <div class="nav max-width flow-root">
@@ -33,6 +34,7 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
     </header>
+
   )
 }
 

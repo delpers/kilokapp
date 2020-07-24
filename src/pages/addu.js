@@ -79,7 +79,7 @@ const RegisterPage = () => {
   return (
       <Layout>
         <SEO title="S'inscrire" />
-        <div className="layout-form">
+        <div className="layout-form padding">
               <h2 className="medium">Inscription</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
