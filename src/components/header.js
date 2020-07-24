@@ -7,57 +7,30 @@ const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
     <header className="uk-background-default border-bottom">
+      <div>
+        <div class="nav max-width">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <div class="nav-title">
+              <Link to="/" className="uk-navbar-item uk-logo bold">
+                kiloka.io
+              </Link>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
 
-    <div className="uk-container uk-container-expand max-width">
+          <div class="nav-links">
+            {!user && <Link to="/login"> Connexion</Link>}
 
-<nav className="uk-navbar">
-
-<div className="uk-navbar-left">
-
-
-  <Link to="/" className="uk-navbar-item uk-logo bold">kiloka.io</Link>
-</div>
-
-<div className="uk-navbar-item">
-
-
-
-
-
-{!user && (
-
- <Link to="/login"> <button class="uk-button uk-button-default border radius">  Connexion            </button>
-
-              
-            </Link>
-   
-          
-          )}
-
-
-
-          {user && (
- <Link to="/user"> <button class="uk-button uk-button-default border radius">  Mon compte            </button>
-
-              
- </Link>
-
-
-
-
-
-
-          )}{" "}
-
-
-
-</div>
-
-
-</nav>
-
-
-
+            {user && <Link to="/user"> Mon compte</Link>}
+          </div>
+        </div>
       </div>
     </header>
   )
