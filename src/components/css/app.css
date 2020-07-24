@@ -17,7 +17,8 @@ header {
     display: inline-block;
     font-size: 22px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 24px;
+
   }
 
   .nav > .nav-links {
@@ -28,9 +29,9 @@ header {
    
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 14px;
-    text-decoration: none;
-    color: initial;
+padding: 24px;
+color: initial;
+font-size: 16px;
   }
 
   .nav > .nav-btn,

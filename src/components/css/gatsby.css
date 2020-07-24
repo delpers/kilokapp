@@ -1,12 +1,12 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "hindvadodara", sans-serif;
+  font-family: europa, sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "hindvadodara", sans-serif;
+  font-family: europa, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -188,7 +188,6 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }

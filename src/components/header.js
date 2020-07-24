@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="uk-background-default border-bottom">
       <div>
-        <div class="nav max-width">
+        <div class="nav max-width flow-root">
           <input type="checkbox" id="nav-check" />
           <div class="nav-header">
             <div class="nav-title">
@@ -26,9 +26,9 @@ const Header = ({ siteTitle }) => {
           </div>
 
           <div class="nav-links">
-            {!user && <Link to="/login"> Connexion</Link>}
-
-            {user && <Link to="/user"> Mon compte</Link>}
+            {!user && <Link className="color-blue" to="/login"> Connexion</Link>}
+            {!user && <Link className="color-blue"  to="/addu"> S'inscrire</Link>}
+            {user && <Link className="color-blue"  to="/user"> Mon compte</Link>}
           </div>
         </div>
       </div>

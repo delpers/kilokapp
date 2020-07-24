@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="  border-top footer-padding-grid ">
-          <footer className="padding-TT font-size-16 max-width padding-initial footer-grid">
+          <footer className="footer-grid">
             <div className=" margin-bottom ">
               <div className="  uppercase bold ">
                 Entreprise

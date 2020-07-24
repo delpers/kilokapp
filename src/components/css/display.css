@@ -5,4 +5,7 @@
     display: block;
   }
   
-  
+  .flow-root {
+    height: auto;
+    display: flow-root;
+}

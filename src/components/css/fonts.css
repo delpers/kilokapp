@@ -1,25 +1,13 @@
-@font-face {
-  font-family: "hindvadodara", sans-serif;
-  src: url(../fonts/hindvadodara-regular.ttf);
-  font-weight: normal;
-}
+@import url("https://use.typekit.net/gaw5pec.css");
 
-@font-face {
-  font-family: "hindvadodara-medium", sans-serif;
-  src: url(../fonts/hindvadodara-medium.ttf);
-}
 
-@font-face {
-  font-family: "hindvadodara-semi", sans-serif;
-  src: url(../fonts/hindvadodara-semibold.ttf);
-}
 
 a {
   text-decoration: none !important;
 }
 
 .size-initial {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .medium {
