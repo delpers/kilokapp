@@ -26,36 +26,38 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="  border-top footer-padding-grid ">
-          <footer className="footer-grid">
+        <div className=" border-top footer-padding-grid ">
+
+          
+          <footer className="m-w p-i footer-grid">
             <div className=" margin-bottom ">
-              <div className="  uppercase bold ">
+              <div className="  small bold ">
                 Entreprise
               </div>
 
-              <Link className="i-link   db mb-15" to="/page/about">
+              <Link className="i-link   db  " to="/page/about">
                 A propos
               </Link>
-              <Link className="i-link    db mb-15" to="/page/mentions-legales">
+              <Link className="i-link    db  " to="/page/mentions-legales">
                 Offres d'emploi
               </Link>
             </div>
             <div className=" margin-bottom ">
-              <div className="  uppercase bold ">
+              <div className="  small bold ">
                 Communautés
               </div>
 
-              <Link className="i-link   db mb-15" to="/">
+              <Link className="i-link   db  " to="/">
                 Investisseurs
               </Link>
             </div>
             <div className=" margin-bottom ">
-              <div className="  uppercase  bold ">
+              <div className="  small  bold ">
                 Liens utiles
               </div>
 
               <a
-                className="i-link    db mb-15"
+                className="i-link    db  "
                 target="_bank"
                 href="https://www.facebook.com/kilokafr"
               >
@@ -63,7 +65,7 @@ const Layout = ({ children }) => {
               </a>
 
               <a
-                className="i-link    db mb-15"
+                className="i-link    db  "
                 target="_bank"
                 href="https://www.instagram.com/kilokafr/"
               >
@@ -71,16 +73,16 @@ const Layout = ({ children }) => {
               </a>
             </div>
             <div className=" margin-bottom ">
-              <div className="  uppercase bold ">
+              <div className="  small bold ">
                 Légales
               </div>
-              <Link className="i-link    db mb-15" to="/page/privacy-policy">
+              <Link className="i-link    db  " to="/page/privacy-policy">
                 Politique de confidentialité
               </Link>{" "}
-              <Link className="i-link    db mb-15" to="/page/cgu">
+              <Link className="i-link    db  " to="/page/cgu">
                 Conditions générales d'utilisation
               </Link>
-              <Link className="i-link    db mb-15" to="/page/mentions-legales">
+              <Link className="i-link    db  " to="/page/mentions-legales">
                 Légal
               </Link>{" "}
             </div>
@@ -93,8 +95,13 @@ const Layout = ({ children }) => {
                   Kiloka France
                 </a>
               </p>
+
             </div>
+            
           </footer>
+          <div><p className="m-w p-i">Pour votre santé, mangez au moins cinq fruits et légumes par jour. www.mangerbouger.fr</p></div>
+
+          
         </div>
       </>
     )
