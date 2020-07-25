@@ -43,3 +43,10 @@ a {
   font-weight: bold;
   color: initial;
 }
+
+.title-content {
+  border-bottom: 1px solid #e8e9ec;
+  padding-bottom: 14px;
+  font-size: 18px;
+  font-weight: 300;
+}

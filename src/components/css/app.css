@@ -1,5 +1,7 @@
 
-
+body {
+  background: #f7f7f7;
+}
 .nav {
     height: 50px;
     width: 100%;

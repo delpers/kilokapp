@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
 
-    <header className="uk-background-default border-bottom">
+    <header className="uk-background-default border-bottom background-white">
       <div>
         <div class="nav max-width flow-root">
           <input type="checkbox" id="nav-check" />
@@ -29,8 +29,8 @@ const Header = ({ siteTitle }) => {
 
           <div class="nav-links">
             <Navigation />
-            {!user && <Link className="color-blue" to="/login"> Connexion</Link>}
-            {user && <Link className="color-blue"  to="/user"> Mon compte</Link>}
+            {!user && <Link className="color-blue" to="/SignIn"> Connexion</Link>}
+            {user && <Link className="color-blue"  to="/Account"> Mon compte</Link>}
           </div>
         </div>
       </div>

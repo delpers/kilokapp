@@ -6,3 +6,7 @@
   .padding {
     padding: 24px;
   }
+  .padding-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }

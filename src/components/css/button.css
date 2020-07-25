@@ -2,11 +2,11 @@
   position: relative;
   display: inline-block;
   color: #fff;
-  font-weight: 600;
+  font-weight: bold;
   border-width: 1px;
   border-style: solid;
-  background-color: #266abd;
-  border-color: #266abd;
+  background-color: #1593ff;
+  border-color: #1593ff;
   padding: 12px 24px;
   font-size: 16px;
   line-height: 22px;
@@ -14,13 +14,15 @@
   padding: 14px !important;
   width: 100%;
   margin: 0 0 24px;
+  border-radius: 5rem !important;
+
 }
 
 .button-google {
   position: relative;
   display: inline-block;
   color: #000;
-  font-weight: 600;
+  font-weight: bold;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
@@ -32,8 +34,10 @@
   line-height: 1.5;
   padding: 14px !important;
   width: auto;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg)
-    16px center no-repeat;
-  border: 1px solid #cacaca;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg) 16px center no-repeat;
+      background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #e5edec;
   margin: 0 0 24px;
+  background-color: #fff;
+  border-radius: 5rem !important;
 }

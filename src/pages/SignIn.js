@@ -37,7 +37,7 @@ const LoginPage = () => {
     await login(data.email, data.password)
       .then(() => {
         setLoading(false)
-        navigate("/user")
+        navigate("/Account")
       })
       .catch(error => {
         setLoading(false)
@@ -64,7 +64,7 @@ const LoginPage = () => {
   }
   useEffect(() => {
     if (user) {
-      navigate("/user")
+      navigate("/Account")
     }
   }, [user])
 
@@ -72,7 +72,7 @@ const LoginPage = () => {
       <Layout>
         <SEO title="Connexion" />
         <div className="layout-form padding">
-              <h2 className="medium">Connexion</h2>
+              <h2 className="bold">Connexion</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
                   <input
@@ -134,7 +134,7 @@ const LoginPage = () => {
 
                 <div className="align-center size-initial">
                   Vous n'avez pas de compte ?{" "}
-                  <Link className="color-blue" to="/addu">
+                  <Link className="color-blue" to="/SignUp">
                     Inscription
                   </Link>
                 </div>

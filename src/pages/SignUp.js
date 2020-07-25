@@ -73,14 +73,14 @@ const RegisterPage = () => {
 
   useEffect(() => {
     if (user) {
-      navigate("/user")
+      navigate("/Account")
     }
   }, [user])
   return (
       <Layout>
         <SEO title="S'inscrire" />
         <div className="layout-form padding">
-              <h2 className="medium">Inscription</h2>
+              <h2 className="bold">Inscription</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
                   <input
@@ -150,7 +150,7 @@ const RegisterPage = () => {
 
                 <div className="size-initial">
                   Vous avez déjà un compte ?{" "}
-                  <Link class="color-blue" to="/login">
+                  <Link class="color-blue" to="/SignIn">
                     Se connecter
                   </Link>
                   

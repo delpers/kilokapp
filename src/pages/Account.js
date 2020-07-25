@@ -39,8 +39,8 @@ const UserPage = props => {
         ],
 
         mode: "subscription",
-        successUrl: `${process.env.GATSBY_PUBLIC_URL}/user`,
-        cancelUrl: `${process.env.GATSBY_PUBLIC_URL}/user`,
+        successUrl: `${process.env.GATSBY_PUBLIC_URL}/Account`,
+        cancelUrl: `${process.env.GATSBY_PUBLIC_URL}/Account`,
         customerEmail: user.email,
       })
       .catch(error => {
@@ -75,17 +75,17 @@ const UserPage = props => {
   }
   useEffect(() => {
     if (!user) {
-      navigate("/login")
+      navigate("/SignIn")
     } else {
       setEmail(user.email)
     }
   }, [planUser])
   return (
       <Layout>
-        <SEO title="Mon compte" />
-        <div>
-          <div className="max-width padding-initial padding-bottom-none link justify mtandmb-24 init">
-            <h2>Mon compte</h2>
+        <SEO title="Détails du profil" />
+        <div className="background-white padding-content">
+          <div className="max-width p-i">
+            <h2 className="title-content">Détails du profil</h2>
             <div>
             
               <div className="grd_f">
