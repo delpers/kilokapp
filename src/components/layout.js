@@ -28,6 +28,15 @@ const Layout = ({ children }) => {
 
         <div className="footer-padding-grid border-top">
 
+
+        <div>
+              <h1 className="footer_logo m-w p-i">kitchendoor</h1>
+
+            
+
+            </div>
+            
+
           <footer className="m-w p-i footer-grid">
             <div className=" margin-bottom ">
               <div className="  small bold ">
@@ -86,9 +95,10 @@ const Layout = ({ children }) => {
               </Link>{" "}
             </div>
 
-            <div>
-              <p className="">
-              <h1 className="footer_logo m-w">kitchendoor</h1>
+           
+          </footer>
+          <div>
+              <p className="m-w p-i">
 
                 © {new Date().getFullYear()}, {` `}
                 <a className="i-link  " href="https://kitchendoor.io/">
@@ -97,9 +107,8 @@ const Layout = ({ children }) => {
               </p>
 
             </div>
-            
-          </footer>
-          <div className="background-white border-top"><p className="m-w p-i align-center">
+
+          <div className="background-white border-top"><p className="m-w p-i">
           Pour votre santé, mangez au moins cinq fruits et légumes par jour. <Link className="color-blue" to="www.mangerbouger.fr">www.mangerbouger.fr</Link></p></div>
  
           
