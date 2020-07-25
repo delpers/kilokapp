@@ -8,9 +8,6 @@ export const query = graphql`
     breakfast: contentfulCookingBreakfasts(slug: { eq: $slug }) {
       title
       slug
-      childContentfulCookingBreakfastsDescriptionTextNode {
-        description
-      }
       picture: childContentfulCookingBreakfastsFeaturedImageJsonNode {
         secure_url
       }
@@ -35,19 +32,24 @@ const eRecipes = props => {
       <Layout>
         <SEO title={props.data.breakfast.title} />
 
-        <div className="mask-thumb-cat padding-50-0">
-          <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
-            <h1>{props.data.breakfast.title}</h1>
-            <p className="mb-0">
-              {" "}
-              {
-                props.data.breakfast
-                  .childContentfulCookingBreakfastsDescriptionTextNode
-                  .description
-              }
-            </p>
+        <figure
+          className="cover-category"
+          style={{
+            backgroundImage:
+              "url(" + props.data.breakfast.picture.secure_url + ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            borderRadius: "0",
+          }}
+        >
+          <div>
+            <div className="m-w padding-content">
+              <h1 className="name-category">{props.data.breakfast.title}</h1>
+            
+            </div>
           </div>
-        </div>
+        </figure>
         <div>
           <div className="mb-32">
             <div className="initial-grid max-width padding-initial ">

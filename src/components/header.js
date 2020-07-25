@@ -8,8 +8,7 @@ const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
   return (
 
-    <header className="uk-background-default border-bottom background-white">
-      <div>
+    <header className="uk-background-default background-white">
         <div class="nav max-width flow-root">
           <input type="checkbox" id="nav-check" />
           <div class="nav-header">
@@ -33,7 +32,6 @@ const Header = ({ siteTitle }) => {
             {user && <Link to="/Account"> <i class="fas fa-user"></i></Link>}
           </div>
         </div>
-      </div>
     </header>
 
   )

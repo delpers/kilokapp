@@ -1,8 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-
-
 export default function heroScreen() {
   return (
     <StaticQuery
@@ -18,7 +16,6 @@ export default function heroScreen() {
         }
       `}
       render={data => (
-
           <div
             className="hero"
             style={{
@@ -42,7 +39,6 @@ export default function heroScreen() {
               </section>
             </div>
           </div>
-
       )}
     />
   )

@@ -9,7 +9,9 @@ export const query = graphql`
       title
       slug
       backgroundColor
-
+      picture: childContentfulBoostersImageJsonNode {
+        secure_url
+      }
       bList {
         title
         slug
@@ -32,11 +34,24 @@ const BoostersRecipes = props => {
       <Layout>
         <SEO title={props.data.booster.title} />
 
-        <div className="mask-thumb-cat padding-50-0">
-          <div className="max-width padding-initial padding-bottom-none padding-top-none  ">
-            <h1>{props.data.booster.title}</h1>
+        <figure
+          className="cover-category"
+          style={{
+            backgroundImage:
+              "url(" + props.data.booster.picture.secure_url + ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            borderRadius: "0",
+          }}
+        >
+          <div>
+            <div className="m-w padding-content">
+              <h1 className="name-category">{props.data.booster.title}</h1>
+            
+            </div>
           </div>
-        </div>
+        </figure>
         <div>
           <div>
             <div className="rl rl-mobile max-width padding-initial  ">

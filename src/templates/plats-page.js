@@ -12,9 +12,7 @@ export const query = graphql`
       picture: childContentfulCookingPlatsFeaturedImageJsonNode {
         secure_url
       }
-      childContentfulCookingPlatsDescriptionTextNode {
-        description
-      }
+    
       recipesRecettes {
         id
         title
@@ -45,29 +43,24 @@ const pRecipes = props => {
     <Background>
       <Layout>
         <SEO title={props.data.plat.title} />
-        <div
-          className="w-screen "
+        <figure
+          className="cover-category"
           style={{
-            backgroundImage: "url(" + props.data.plat.picture.secure_url + ")",
+            backgroundImage:
+              "url(" + props.data.plat.picture.secure_url + ")",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             borderRadius: "0",
           }}
         >
-          <div className="mask-thumb-cat padding-50-0">
-            <div className="max-width padding-initial padding-bottom-none padding-top-none">
-              <h1>{props.data.plat.title}</h1>
-              <p className="mb-0">
-                {" "}
-                {
-                  props.data.plat.childContentfulCookingPlatsDescriptionTextNode
-                    .description
-                }
-              </p>
+          <div>
+            <div className="m-w padding-content">
+              <h1 className="name-category">{props.data.plat.title}</h1>
+            
             </div>
-          </div>{" "}
-        </div>
+          </div>
+        </figure>
         <div>
           <div className="mb-32">
             <div className="initial-grid max-width padding-initial ">
