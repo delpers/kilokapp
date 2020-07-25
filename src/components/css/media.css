@@ -22,6 +22,16 @@
       line-height: 1.3em;
       letter-spacing: -0.02em;
       padding: 24px 0;
+  } .grid-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    background: transparent;
+  }.training-category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
+    background: transparent;
   }
   }
 

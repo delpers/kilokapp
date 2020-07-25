@@ -30,24 +30,24 @@ export default function Training() {
       render={data => {
         if (premium)
           return (
-            <div className="">
+            <div className="m-w p-i category">
               {premium && (
-                <div className="">
-                  <h2 className="">{data.home.title_trainings}</h2>
+                <div className="group-title">
+                  <h3 className="title-category">{data.home.title_trainings}</h3>
                   <p className="">{data.home.description_trainings}</p>
                 </div>
               )}
 
-              <div className="">
+<div className="training-category">
                 {data.training.edges.length > 0 ? (
                   data.training.edges.map((edge, i) => {
                     return (
-                      <div className="" key={i}>
-                        <img class="" src={edge.node.image.secure_url} alt="" />
+                      <div className="background-white shadow r6" key={i}>
+                        <img class="training-image-category" src={edge.node.image.secure_url} alt="" />
 
                         <div className="">
                           <Link
-                            className=""
+                            className="bold size-card db"
                             to={`/training/${edge.node.slug}/`}
                           >
                             {edge.node.title}

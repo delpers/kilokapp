@@ -28,13 +28,13 @@ export default function Boosters() {
       render={data => {
         if (premium)
           return (
-            <div className="">
-              <div className="">
-                <h4 className="">{data.home.title_boosters}</h4>
+            <div className="m-w p-i category">
+              <div className="group-title">
+                <h3 className="title-category">{data.home.title_boosters}</h3>
                 <span className="">{data.home.description_boosters}</span>
               </div>
 
-              <div className="">
+              <div className="grid-category">
                 {data.booster.edges.length > 0 ? (
                   data.booster.edges.map((edge, i) => {
                     return (
@@ -47,8 +47,8 @@ export default function Boosters() {
                             backgroundPosition: "center",
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
-                            height: "160px",
-                            width: "250px",
+                            height: "130px",
+                            width: "212px",
                             borderRadius: "6px",
                           }}
                         >

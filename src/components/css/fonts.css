@@ -79,3 +79,26 @@ a {
   font-size: 56px;
   max-width: 50%;
 }
+
+.size-card {
+  font-size: 18px;
+  padding: 16px 24px;
+}
+
+.image-category {
+  height: 110px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.title-category {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 0 0 10px 0px;
+  font-weight: 300;
+}
+
+.group-title p {
+  font-size: 18px;
+}

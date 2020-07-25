@@ -1,6 +1,6 @@
 
 body {
-  background: #f7f7f7;
+  background: #FFF;
 }
 .nav {
     height: 50px;
@@ -118,3 +118,19 @@ margin-right: 24px;
   height: 960px;
   object-fit: cover;
 }
+
+.image-category {
+  height: 110px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.training-image-category {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+
+}
+
