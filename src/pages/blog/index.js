@@ -50,7 +50,7 @@ const Blog = () => {
               </Link></h3>
                 <p> {edge.node.ePost.excerpt}</p>
 
-                <Link className="i-link db" to={`/blog/${edge.node.slug}/`}>
+                <Link className="i-link db color-blue bold" to={`/blog/${edge.node.slug}/`}>
                   En savoir plus
                 </Link>
             </div>
