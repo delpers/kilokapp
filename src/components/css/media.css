@@ -27,7 +27,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
     background: transparent;
-  }.training-category {
+  }.image-category {
+    height: 85px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}.training-category {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 32px;
@@ -39,6 +45,11 @@
     padding: 24px;
     display: inline;
     background: white;
+}.size-card {
+  text-align: left;
+  padding-left: 14px;
+  padding-right: 0;
+
 }
   }
 
