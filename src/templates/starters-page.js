@@ -10,9 +10,6 @@ export const query = graphql`
     starter: contentfulCookingStarters(slug: { eq: $slug }) {
       title
       slug
-      childContentfulCookingStartersDescriptionTextNode {
-        description
-      }
       picture: childContentfulCookingStartersFeaturedImageJsonNode {
         secure_url
       }
@@ -47,8 +44,8 @@ const eRecipes = props => {
       <Layout>
         <SEO title={props.data.starter.title} />
 
-        <div
-          className="w-screen "
+        <figure
+          className="cover-category"
           style={{
             backgroundImage:
               "url(" + props.data.starter.picture.secure_url + ")",
@@ -58,20 +55,13 @@ const eRecipes = props => {
             borderRadius: "0",
           }}
         >
-          <div className="mask-thumb-cat padding-50-0">
-            <div className="max-width padding-initial padding-bottom-none padding-top-none">
-              <h1>{props.data.starter.title}</h1>
-              <p className="mb-0">
-                {" "}
-                {
-                  props.data.starter
-                    .childContentfulCookingStartersDescriptionTextNode
-                    .description
-                }
-              </p>
+          <div>
+            <div className="m-w padding-content">
+              <h1 className="name-category">{props.data.starter.title}</h1>
+            
             </div>
-          </div>{" "}
-        </div>
+          </div>
+        </figure>
         <div>
           <div className="mb-32">
             <div className="initial-grid max-width padding-initial ">

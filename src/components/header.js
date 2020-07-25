@@ -14,8 +14,8 @@ const Header = ({ siteTitle }) => {
           <input type="checkbox" id="nav-check" />
           <div class="nav-header">
             <div class="nav-title">
-              <Link to="/" className="uk-navbar-item uk-logo bold">
-                kitchendoor
+              <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo bold">
+                <div className="logo"></div>
               </Link>
             </div>
           </div>
@@ -29,8 +29,8 @@ const Header = ({ siteTitle }) => {
 
           <div class="nav-links">
             <Navigation />
-            {!user && <Link className="color-blue" to="/SignIn"> Connexion</Link>}
-            {user && <Link className="color-blue"  to="/Account"> Mon compte</Link>}
+            {!user && <Link to="/SignIn"> Connexion</Link>}
+            {user && <Link to="/Account"> <i class="fas fa-user"></i></Link>}
           </div>
         </div>
       </div>

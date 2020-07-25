@@ -32,7 +32,14 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 32px;
     background: transparent;
-  }
+  }.name-category {
+    text-align: left;
+    font-size: 36px;
+    color: black;
+    padding: 24px;
+    display: inline;
+    background: white;
+}
   }
 
   /* override styles when printing */

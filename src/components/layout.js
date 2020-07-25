@@ -96,11 +96,11 @@ const Layout = ({ children }) => {
 
 
         <div className="background-white">
-              <div className="m-w p-i">
+              <div className="m-w p-i padding-content">
 
                 © {new Date().getFullYear()}, {` `}
-                <a className="i-link  " href="https://kitchendoor.io/">
-                  Kitchendoor France
+                <a className="i-link  " href="https://kiloka.io/">
+                  Kiloka Nutrition France
                 </a>
               </div>
 

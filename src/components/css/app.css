@@ -2,6 +2,13 @@
 body {
   background: #FFF;
 }
+.logo {
+  background: url(../../images/logo.svg);
+  height: 34px;
+width: 130px;
+background-repeat: no-repeat;
+background-size: contain;
+}
 .nav {
     height: 50px;
     width: 100%;
@@ -28,11 +35,11 @@ body {
    
   .nav > .nav-links > a {
     display: inline-block;
-padding: 24px;
-color: initial;
-font-size: 16px;
-  }
-
+    padding: 33px 15px;
+    color: initial;
+    font-size: 16px;
+    font-weight: bold;
+}
   .nav > .nav-btn,
   .nav > #nav-check {
     display: none;
@@ -95,7 +102,8 @@ margin-right: 24px;
   padding-top: 116px;
   padding-bottom: 116px;
   text-align: left;
-
+  background-color: #ff75710d;
+  margin-bottom: 64px;
 }
 
 
@@ -134,3 +142,15 @@ margin-right: 24px;
 
 }
 
+.cover-category {
+  height: auto;
+}
+
+.name-category {
+  text-align: left;
+  font-size: 74px;
+  color: black;
+  padding: 24px;
+  display: inline;
+  background: white;
+}
