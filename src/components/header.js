@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
 import UserContext from "./UserContext"
+import Navigation from "./homeScreen/links/nav"
 
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
@@ -14,7 +15,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-header">
             <div class="nav-title">
               <Link to="/" className="uk-navbar-item uk-logo bold">
-                kiloka.io
+                kitchendoor
               </Link>
             </div>
           </div>
@@ -27,8 +28,8 @@ const Header = ({ siteTitle }) => {
           </div>
 
           <div class="nav-links">
+            <Navigation />
             {!user && <Link className="color-blue" to="/login"> Connexion</Link>}
-            {!user && <Link className="color-blue"  to="/addu"> S'inscrire</Link>}
             {user && <Link className="color-blue"  to="/user"> Mon compte</Link>}
           </div>
         </div>

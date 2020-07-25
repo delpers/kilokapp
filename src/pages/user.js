@@ -101,9 +101,8 @@ const UserPage = props => {
                         </div>
 
                         <div className="info_mth">
-                          <span className="price">€ {plan.amount / 100}</span>
-
-                          {plan.interval_count + " " + plan.interval}
+                          <span className="price">€ {plan.amount / 100} / {"Mois"}</span>
+                            
                         </div>
                         {plan.user_plan && (
                           <div
@@ -115,7 +114,7 @@ const UserPage = props => {
                               .unix(
                                 plan.user_plan.subscriptions.current_period_end
                               )
-                              .format("ll")}
+                              .format("L")}
                             {plan.user_plan.subscriptions.trial_end &&
                               " (Période d'essai)"}
                             {moment
@@ -134,7 +133,7 @@ const UserPage = props => {
                             className="time_end font-size-16"
                             style={{ color: "#000" }}
                           >
-                            Période d'essai: {plan.trial_period_days} j
+                            Période d'essai de {plan.trial_period_days} {"jours"}
                           </div>
                         )}
                         {premium ? (

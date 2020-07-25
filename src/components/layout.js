@@ -26,9 +26,8 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className=" border-top footer-padding-grid ">
+        <div className="footer-padding-grid border-top">
 
-          
           <footer className="m-w p-i footer-grid">
             <div className=" margin-bottom ">
               <div className="  small bold ">
@@ -89,18 +88,20 @@ const Layout = ({ children }) => {
 
             <div>
               <p className="">
-                {" "}
+              <h1 className="footer_logo m-w">kitchendoor</h1>
+
                 © {new Date().getFullYear()}, {` `}
-                <a className="i-link  " href="https://kiloka.io/">
-                  Kiloka France
+                <a className="i-link  " href="https://kitchendoor.io/">
+                  Kitchendoor France
                 </a>
               </p>
 
             </div>
             
           </footer>
-          <div><p className="m-w p-i">Pour votre santé, mangez au moins cinq fruits et légumes par jour. www.mangerbouger.fr</p></div>
-
+          <div className="background-white border-top"><p className="m-w p-i align-center">
+          Pour votre santé, mangez au moins cinq fruits et légumes par jour. <Link className="color-blue" to="www.mangerbouger.fr">www.mangerbouger.fr</Link></p></div>
+ 
           
         </div>
       </>

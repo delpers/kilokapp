@@ -9,3 +9,7 @@
     height: auto;
     display: flow-root;
 }
+
+.display-grid {
+  display: grid;
+}

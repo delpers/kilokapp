@@ -1,8 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import MediaLinks from "./links"
 
-export default function hNavigation() {
+export default function Navigation() {
   return (
     <StaticQuery
       query={graphql`
@@ -17,8 +16,7 @@ export default function hNavigation() {
         }
       `}
       render={data => (
-        <div className="sticky m-b-plus">
-          <nav className="">
+        <>
             {data.home.pages.map(Pages => (
               <Link
                 className="i-link color-white font-size-16 b-b-g margin-right-qz font-bold"
@@ -29,10 +27,8 @@ export default function hNavigation() {
                 {Pages.title}
               </Link>
             ))}
+        </>
 
-            <MediaLinks />
-          </nav>
-        </div>
       )}
     />
   )
