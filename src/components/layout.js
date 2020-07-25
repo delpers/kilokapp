@@ -88,21 +88,23 @@ const Layout = ({ children }) => {
               </Link>{" "}
             </div>
 
-            <div>
-              <p className="m-w p-i">
-
-                © {new Date().getFullYear()}, {` `}
-                <a className="i-link  " href="https://kitchendoor.io/">
-                  Kitchendoor France
-                </a>
-              </p>
-
-            </div>
           </footer>
     
 
           
         </div>
+
+
+        <div className="background-white">
+              <div className="m-w p-i">
+
+                © {new Date().getFullYear()}, {` `}
+                <a className="i-link  " href="https://kitchendoor.io/">
+                  Kitchendoor France
+                </a>
+              </div>
+
+            </div>
       </>
     )
 }

@@ -31,26 +31,26 @@ const Blog = () => {
     <Layout>
       <SEO title="Blog" />
 
-      <div className="k-grid" uk-grid>
+      <div className="k-grid m-w p-i padding-content">
         {data.blog.edges.map(edge => {
           return (
-              <div className="card-shadow margin-bottom" key={edge.node.id}>
+              <div className="background-white margin-bottom shadow" key={edge.node.id}>
 
-<div className="uk-card-media-top">
+<div>
 <img src={edge.node.media.secure_url}
                 alt={edge.node.title}
               />            </div>
 
-<div className="uk-card-body">
-                <h3 className="uk-card-title"> <Link
-                className="p-0-24 blog-title font-bold i-link"
+<div className="p-i">
+                <h3> <Link
+                className="blog-title"
                 to={`/blog/${edge.node.slug}/`}
               >
                 {edge.node.title}
               </Link></h3>
                 <p> {edge.node.ePost.excerpt}</p>
 
-                <Link className="i-link" to={`/blog/${edge.node.slug}/`}>
+                <Link className="i-link db" to={`/blog/${edge.node.slug}/`}>
                   En savoir plus
                 </Link>
             </div>
