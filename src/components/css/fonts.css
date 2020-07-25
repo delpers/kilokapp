@@ -50,6 +50,32 @@ a {
   font-weight: 300;
 }
 
-.blog-title {
-  
+.article {
+  font-family: "Europa", sans-serif;
+}
+.article p {
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 300;
+  padding: 17px 0;
+  margin: 20px 0;
+  height: auto;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.article h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  padding: 63px 0;
+}
+
+.hero-title {
+  font-size: 56px;
+  max-width: 50%;
 }

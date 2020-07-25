@@ -56,7 +56,7 @@ margin-right: 24px;
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #000;
     }
     .nav > .nav-links {
       position: absolute;
@@ -65,19 +65,20 @@ margin-right: 24px;
       width: 100%;
       background-color: #FFF;
       height: 0px;
-      transition: all 0.3s ease-in;
+      transition: all 0.0s ease-in;
       overflow-y: hidden;
-      top: 80px;
+      top: 79px;
       left: 0px;
-    }
+  }
     .nav > .nav-links > a {
       display: block;
       color: black !important;
       width: 100%;
       padding: 15px 24px;
-      font-size: 36px;
-font-weight: bold;
-    }
+      font-size: 18px;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
@@ -96,10 +97,7 @@ font-weight: bold;
   text-align: left;
 
 }
-.hero-title {
-  font-size: 56px;
-  max-width: 50%;
-}
+
 
 .hero-max-width-sub {
   font-size: 18px;
@@ -111,4 +109,12 @@ font-weight: bold;
 
 .background-white {
   background: #FFF;
+}
+
+
+
+.image-blog {
+  width: 100%;
+  height: 960px;
+  object-fit: cover;
 }
