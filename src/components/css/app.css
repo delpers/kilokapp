@@ -1,11 +1,16 @@
 
 body {
   background: #FFF;
-  margin-top: 32px !important;
+  margin-top: 32px ;
 }
 .logo {
   background: url(../../images/logo.svg);
-  height: 34px;
+  height: 34px;padding: 0;
+  padding-top: 0px;
+width: 100%;
+display: grid;
+padding-top: 220px;
+background: transparent;
 width: 130px;
 background-repeat: no-repeat;
 background-size: contain;

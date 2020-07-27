@@ -79,7 +79,21 @@ a {
   font-size: 56px;
   line-height: 28px;
 }
-
+.hero-category {
+  font-size: 800px;
+  line-height: 28px;
+  font-weight: 300;
+  opacity: 0.025;
+  position: fixed;
+}
+.hero-name {
+  padding: 0;
+    padding-top: 0px;
+width: 100%;
+display: grid;
+padding-top: 0;
+background: transparent;
+}
 .size-card {
   font-size: 18px;
   padding: 16px 24px;

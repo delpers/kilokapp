@@ -2,6 +2,20 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from '@emotion/styled'
+
+const Hero = styled.div`
+  header {
+    position: absolute;
+    z-index: 1000;
+width: 100%;
+background: transparent;
+padding-top: 32px;
+  }
+  body {
+    margin-top: 0 !important;
+  }
+`
 
 export const query = graphql`
   query($slug: String!) {
@@ -31,27 +45,33 @@ export const query = graphql`
 
 const BoostersRecipes = props => {
   return (
+    <Hero>
       <Layout>
         <SEO title={props.data.booster.title} />
+<div style={{backgroundColor: props.data.booster.backgroundColor}}> 
+
 
         <figure
-          className="cover-category"
+          className="cover-category background"
           style={{
             backgroundImage:
               "url(" + props.data.booster.picture.secure_url + ")",
             backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             borderRadius: "0",
+            height: "400px",
           }}
         >
           <div>
-            <div className="m-w padding-content">
-              <h1 className="name-category">{props.data.booster.title}</h1>
+            <div className="hero-name">
+              <h1 className="hero-category">{props.data.booster.title}</h1>
             
             </div>
           </div>
         </figure>
+        </div>
+
         <div>
           <div>
             <div className="rl rl-mobile max-width padding-initial  ">
@@ -109,6 +129,7 @@ const BoostersRecipes = props => {
           </div>
         </div>
       </Layout>
+      </Hero>
   )
 }
 
