@@ -28,8 +28,7 @@ export default function Navigation() {
               </Link>
             ))}
         </>
-
-      )}
-    />
+      )} 
+    /> 
   )
 }

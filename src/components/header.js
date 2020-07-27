@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React, { useContext } from "react"
 import UserContext from "./UserContext"
 import Navigation from "./homeScreen/links/nav"
+import MediaLinks from "./homeScreen/links/links"
 
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
@@ -14,7 +15,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-header">
             <div class="nav-title">
               <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo bold">
-                <div className="logo"></div>
+                <h1>Kiloka</h1>
               </Link>
             </div>
           </div>
@@ -27,9 +28,16 @@ const Header = ({ siteTitle }) => {
           </div>
 
           <div class="nav-links">
+            <MediaLinks />
             <Navigation />
-            {!user && <Link to="/SignIn"> Connexion</Link>}
+            {!user && <Link to="/SignIn">Connexion</Link>}
             {user && <Link to="/Account"> <i class="fas fa-user"></i></Link>}
+            {!user && <Link className="button--prenium" to="/SignIn">S'abonner</Link>}
+
+
+            
+
+
           </div>
         </div>
     </header>

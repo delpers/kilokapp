@@ -6,11 +6,12 @@
 
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 60px;
-    background: transparent;
-    margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  background: transparent;
+  margin-top: 64px;
+  margin-bottom: 64px;
   }
   
   .grid-category {

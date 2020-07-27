@@ -1,6 +1,7 @@
 
 body {
   background: #FFF;
+  margin-top: 32px !important;
 }
 .logo {
   background: url(../../images/logo.svg);
@@ -35,7 +36,7 @@ background-size: contain;
    
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 33px 15px;
+    padding: 36px 16px;
     color: initial;
     font-size: 16px;
     font-weight: bold;
@@ -95,12 +96,10 @@ margin-right: 24px;
     }
 }
 .hero {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   height: inherit;
-  padding-top: 116px;
-  padding-bottom: 116px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   text-align: left;
   background-color: #ff75710d;
   margin-bottom: 64px;

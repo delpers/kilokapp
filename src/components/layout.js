@@ -31,63 +31,12 @@ const Layout = ({ children }) => {
 
 
           <footer className="m-w p-i footer-grid">
-            <div className=" margin-bottom ">
-              <div className="  small bold ">
-                Entreprise
-              </div>
+         
+         
+          <div className="align-center">© {new Date().getFullYear()} Kiloka Nutrition France.  Fait à Saint-Brieuc et São Paulo.</div>
 
-              <Link className="i-link   db  " to="/page/about">
-                A propos
-              </Link>
-              <Link className="i-link    db  " to="/page/mentions-legales">
-                Offres d'emploi
-              </Link>
-            </div>
-            <div className=" margin-bottom ">
-              <div className="  small bold ">
-                Communautés
-              </div>
 
-              <Link className="i-link   db  " to="/">
-                Investisseurs
-              </Link>
-            </div>
-            <div className=" margin-bottom ">
-              <div className="  small  bold ">
-                Liens utiles
-              </div>
-
-              <a
-                className="i-link    db  "
-                target="_bank"
-                href="https://www.facebook.com/kilokafr"
-              >
-                Facebook
-              </a>
-
-              <a
-                className="i-link    db  "
-                target="_bank"
-                href="https://www.instagram.com/kilokafr/"
-              >
-                Instagram
-              </a>
-            </div>
-            <div className=" margin-bottom ">
-              <div className="  small bold ">
-                Légales
-              </div>
-              <Link className="i-link    db  " to="/page/privacy-policy">
-                Politique de confidentialité
-              </Link>{" "}
-              <Link className="i-link    db  " to="/page/cgu">
-                Conditions générales d'utilisation
-              </Link>
-              <Link className="i-link    db  " to="/page/mentions-legales">
-                Légal
-              </Link>{" "}
-            </div>
-
+          <div><Link className="bold" to="/legal" >Légal</Link></div>
           </footer>
     
 
@@ -95,16 +44,6 @@ const Layout = ({ children }) => {
         </div>
 
 
-        <div className="background-white">
-              <div className="m-w p-i padding-content">
-
-                © {new Date().getFullYear()}, {` `}
-                <a className="i-link  " href="https://kiloka.io/">
-                  Kiloka Nutrition France
-                </a>
-              </div>
-
-            </div>
       </>
     )
 }
