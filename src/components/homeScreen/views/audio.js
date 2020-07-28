@@ -17,11 +17,11 @@ export default function Audio() {
       render={data => {
         if (premium)
           return (
-            <div className="">
-              <Link to="/audio" className="">
-                Bibliothèque numérique
-              </Link>
-            </div>
+            <>
+            <Link to="/audio"> <i className="fas fa-volume-up color-green-sup"></i></Link>
+            <Link to="/podcasts"> <i className="fas fa-podcast color-green"></i></Link>
+
+            </>
           )
       }}
     />

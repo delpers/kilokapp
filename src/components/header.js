@@ -4,6 +4,7 @@ import React, { useContext } from "react"
 import UserContext from "./UserContext"
 import Navigation from "./homeScreen/links/nav"
 import MediaLinks from "./homeScreen/links/links"
+import Audio from "./homeScreen/views/audio"
 
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
@@ -30,6 +31,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-links">
             <MediaLinks />
             <Navigation />
+            <Audio />
             {!user && <Link to="/SignIn">Connexion</Link>}
             {!user && <Link className="button--prenium" to="/SignUp">S'abonner</Link>}
             {user && <Link className="button--prenium" to="/Account"> <i class="fas fa-user"></i> Mon compte </Link>}
