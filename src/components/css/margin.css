@@ -7,9 +7,13 @@
     margin-bottom: 0 important;
   }
 
-  .category {margin-bottom: 64px;}
+  .category {margin-bottom: 80px;}
 
 
   .group-title {
     margin-bottom: 32px;
+  }
+
+  .bottom-none {
+    margin-bottom: 0;
   }

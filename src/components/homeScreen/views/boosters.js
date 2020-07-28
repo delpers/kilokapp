@@ -21,7 +21,6 @@ export default function Boosters() {
           }
           home: contentfulHomePage {
             title_boosters
-            description_boosters
           }
         }
       `}
@@ -31,10 +30,9 @@ export default function Boosters() {
             <div className="m-w p-i category">
               <div className="group-title">
                 <h3 className="title-category">{data.home.title_boosters}</h3>
-                <span className="">{data.home.description_boosters}</span>
               </div>
 
-              <div className="grid-category">
+              <div className="grid-nutriments">
                 {data.booster.edges.length > 0 ? (
                   data.booster.edges.map((edge, i) => {
                     return (

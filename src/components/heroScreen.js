@@ -17,10 +17,10 @@ export default function heroScreen() {
             className="hero">
             <div className="m-w p-i">
               <section>
-                <h1 className="hero-title">
+                <h1 className="hero-title bold">
                   {data.contentfulHomePage.titleHome} 
                 </h1>
-                <p className="hero-max-width-sub">
+                <p className="hero-max-width-sub bottom-none">
                   {data.contentfulHomePage.descriptionHome}
                 </p>
               </section>

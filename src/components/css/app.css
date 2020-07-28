@@ -3,6 +3,9 @@ body {
   background: #FFF;
   margin-top: 32px ;
 }
+header {
+  border-bottom: 1px solid #f2f2f2;
+}
 .logo {
   background: url(../../images/logo.svg);
   height: 34px;padding: 0;
@@ -103,10 +106,11 @@ margin-right: 24px;
 .hero {
   flex-direction: row;
   height: inherit;
-  padding-top: 80px;
   padding-bottom: 20px;
   text-align: left;
   margin-bottom: 64px;
+  margin-top: 64px;
+  padding-top: 20px;
 }
 
 
@@ -138,7 +142,7 @@ margin-right: 24px;
 }
 
 .training-image-category {
-  height: 180px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
   border-radius: 6px 6px 0 0;

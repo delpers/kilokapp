@@ -19,7 +19,6 @@ export default function Desserts() {
           }
           home: contentfulHomePage {
             title_desserts
-            description_desserts
           }
         }
       `}
@@ -27,7 +26,6 @@ export default function Desserts() {
         <div className="m-w p-i category">
         <div className="group-title">
             <h3 className="title-category">{data.home.title_desserts}</h3>
-            <span className="">{data.home.description_desserts}</span>
           </div>
           <div className="grid-category">
             {data.dessert.edges.length > 0 ? (

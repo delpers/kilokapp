@@ -14,8 +14,8 @@ const Header = ({ siteTitle }) => {
           <input type="checkbox" id="nav-check" />
           <div class="nav-header">
             <div class="nav-title">
-              <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo bold">
-                <h1>Kiloka</h1>
+              <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo">
+                <h1 className="bottom-none">fresh<span className="color-blue">door</span></h1>
               </Link>
             </div>
           </div>
@@ -31,8 +31,8 @@ const Header = ({ siteTitle }) => {
             <MediaLinks />
             <Navigation />
             {!user && <Link to="/SignIn">Connexion</Link>}
-            {user && <Link to="/Account"> <i class="fas fa-user"></i></Link>}
-            {!user && <Link className="button--prenium" to="/SignIn">S'abonner</Link>}
+            {!user && <Link className="button--prenium" to="/SignUp">S'abonner</Link>}
+            {user && <Link className="button--prenium" to="/Account"> <i class="fas fa-user"></i> Mon compte </Link>}
 
 
             

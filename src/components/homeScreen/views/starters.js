@@ -19,7 +19,6 @@ export default function Entry() {
           }
           home: contentfulHomePage {
             title_straters
-            description_straters
           }
         }
       `}
@@ -27,7 +26,6 @@ export default function Entry() {
         <div className="m-w p-i category">
         <div className="group-title">
             <h3 className="title-category">{data.home.title_straters} </h3>
-            <span className="">{data.home.description_straters}</span>
           </div>
           <div className="grid-category">
             {data.starter.edges.length > 0 ? (

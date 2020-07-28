@@ -23,7 +23,6 @@ export default function Training() {
           }
           home: contentfulHomePage {
             title_trainings
-            description_trainings
           }
         }
       `}
@@ -34,7 +33,6 @@ export default function Training() {
               {premium && (
                 <div className="group-title">
                   <h3 className="title-category">{data.home.title_trainings}</h3>
-                  <p className="">{data.home.description_trainings}</p>
                 </div>
               )}
 

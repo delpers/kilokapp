@@ -21,7 +21,6 @@ export default function Breakfasts() {
           }
           home: contentfulHomePage {
             title_breakfasts
-            description_breakfasts
           }
         }
       `}
@@ -32,7 +31,6 @@ export default function Breakfasts() {
 
               <div className="group-title">
                 <h3 className="title-category">{data.home.title_breakfasts} </h3>
-                <span className="">{data.home.description_breakfasts}</span>
               </div>
 
               <div className="grid-category">

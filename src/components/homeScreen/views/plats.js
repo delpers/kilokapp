@@ -19,7 +19,6 @@ export default function Plats() {
           }
           home: contentfulHomePage {
             title_plats
-            description_plats
           }
         }
       `}
@@ -27,7 +26,6 @@ export default function Plats() {
         <div className="m-w p-i category">
         <div className="group-title">
             <h3 className="title-category">{data.home.title_plats} </h3>
-            <span className="">{data.home.description_plats}</span>
           </div>
           <div className="grid-category">
             {data.plat.edges.length > 0 ? (

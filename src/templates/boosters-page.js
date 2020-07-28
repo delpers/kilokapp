@@ -37,7 +37,7 @@ export const query = graphql`
       }
     }
     home: contentfulHomePage {
-      description_boosters
+      title_boosters
     }
   }
 `
