@@ -42,7 +42,7 @@
   border-radius: 5rem !important;
 }
 
-.button--prenium {
+.button-user {
   background: #2f7de121;
 padding: 16px 32px !important;
 margin-left: 16px;
@@ -51,9 +51,7 @@ color: #2f7de1 !important;
 
 }
 
-.color-green-sup {
-  color: #cfe3d9;
-}
+
 
 
 

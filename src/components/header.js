@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-header">
             <div class="nav-title">
               <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo">
-                <h1 className="bottom-none">fresh<span className="color-blue">door</span></h1>
+                <h1 className="bottom-none weight-clean">freshdoor</h1>
               </Link>
             </div>
           </div>
@@ -33,8 +33,8 @@ const Header = ({ siteTitle }) => {
             <Navigation />
             <Audio />
             {!user && <Link to="/SignIn">Connexion</Link>}
-            {!user && <Link className="button--prenium" to="/SignUp">S'abonner</Link>}
-            {user && <Link className="button--prenium" to="/Account"> <i class="fas fa-user"></i> Mon compte </Link>}
+            {!user && <Link className="button-user" to="/SignUp">S'abonner</Link>}
+            {user && <Link className="button-user" to="/Account"> <i class="fas fa-user"></i> Mon compte </Link>}
 
 
             

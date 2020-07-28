@@ -111,3 +111,7 @@ font-weight: bold;
 .group-title p {
   font-size: 18px;
 }
+
+.weight-clean {
+  font-weight: normal;
+}

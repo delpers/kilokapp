@@ -18,8 +18,8 @@ export default function Audio() {
         if (premium)
           return (
             <>
-            <Link to="/audio"> <i className="fas fa-volume-up color-green-sup"></i></Link>
-            <Link to="/podcasts"> <i className="fas fa-podcast color-green"></i></Link>
+            <Link to="/audio"> <i className="fas fa-volume-up color-audio margin-right-icon"></i> Méditation</Link>
+            <Link to="/podcasts"> <i className="fas fa-podcast color-podcats margin-right-icon"></i> Podcasts</Link>
 
             </>
           )
