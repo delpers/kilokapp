@@ -6,6 +6,26 @@ import Layout from "../components/layout"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import * as yup from "yup"
+import styled from '@emotion/styled'
+
+const Box = styled.div`
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 0px;
+`
+
+const Image = styled.div`
+  
+    background-image: url(https://images.unsplash.com/photo-1535202610320-919f9b13de77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+    height: 100vh;
+    width: 550px;
+    margin-left: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+`
 
 
 const schema = yup.object().shape({
@@ -69,9 +89,18 @@ const LoginPage = () => {
   }, [user])
 
   return (
-      <Layout>
+    <Box>
         <SEO title="Connexion" />
-        <div className="layout-form padding">
+
+
+
+
+        <div>
+
+        <Image />
+
+        </div>
+        <div><div className="layout-form shadow-plus padding">
               <h2 className="bold">Connexion</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
@@ -139,9 +168,8 @@ const LoginPage = () => {
                   </Link>
                 </div>
               </form>
-            </div>
-     
-      </Layout>
+            </div></div>
+     </Box>
   )
 }
 

@@ -1,5 +1,12 @@
 .layout-form {
-    max-width: 480px;
-    margin: 0 auto;
-    background: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background-color: #FFF;
+    border-radius: 0;
 }

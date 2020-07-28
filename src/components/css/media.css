@@ -79,6 +79,17 @@
   margin-bottom: 32px;
   margin-top: 32px;
   padding-top: 20px;
+}.layout-form {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 500px;
+  background-color: #FFF;
+  border-radius: 0;
 }
   }
 
