@@ -34,14 +34,14 @@ const Blog = () => {
       <div className="k-grid m-w p-i padding-content">
         {data.blog.edges.map(edge => {
           return (
-              <div className="background-white margin-bottom shadow" key={edge.node.id}>
+              <div className="background-white margin-bottom k-grid-margin shadow" key={edge.node.id}>
 
 <div>
 <img src={edge.node.media.secure_url}
                 alt={edge.node.title}
               />            </div>
 
-<div className="p-i">
+<div className="padding">
                 <h3> <Link
                 className="blog-title"
                 to={`/blog/${edge.node.slug}/`}

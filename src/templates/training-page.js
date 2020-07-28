@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import ReactFlowPlayer from "react-flow-player";
 
 export const query = graphql`
   query($slug: String!) {
@@ -67,6 +68,18 @@ const cookingRecipe = props => {
                         return (
                           <div>
                             <h4> {mv.title} </h4>
+
+                            <ReactFlowPlayer
+  playerInitScript="http://releases.flowplayer.org/7.2.1/flowplayer.min.js"
+  playerId="reactFlowPlayer"
+  sources={[
+    {
+      type: "video/mp4",
+      src: mv.urlVideo,
+    }
+  ]}
+/>;
+
 
                             <video
                               width="720"

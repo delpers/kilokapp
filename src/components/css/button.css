@@ -5,8 +5,8 @@
   font-weight: bold;
   border-width: 1px;
   border-style: solid;
-  background-color: #2f7de1;
-  border-color: #2f7de1;
+  background-color: #437e7d;
+  border-color: #437e7d;
   padding: 12px 24px;
   font-size: 16px;
   line-height: 22px;
@@ -43,11 +43,11 @@
 }
 
 .button-user {
-  background: #2f7de121;
-padding: 16px 32px !important;
-margin-left: 16px;
-border-radius: 5rem;
-color: #2f7de1 !important;
+  background: #c9ddd35e;
+  padding: 16px 32px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #498483 !important;
 
 }
 

@@ -29,12 +29,13 @@ const Header = ({ siteTitle }) => {
           </div>
 
           <div class="nav-links">
-            <MediaLinks />
             <Navigation />
             <Audio />
+            <MediaLinks />
+
             {!user && <Link to="/SignIn">Connexion</Link>}
-            {!user && <Link className="button-user" to="/SignUp">S'abonner</Link>}
-            {user && <Link className="button-user" to="/Account"> <i class="fas fa-user"></i> Mon compte </Link>}
+            {!user && <Link className="button-user" to="/SignUp">Freshdoor Premium</Link>}
+            {user && <Link className="button-user" to="/Account"> <i class="fas fa-cog"></i> </Link>}
 
 
             

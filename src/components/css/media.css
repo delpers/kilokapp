@@ -8,7 +8,11 @@
 @media only screen and (max-width: 834px) {
     .k-grid {
       display: block;
-    }.footer-grid {
+      padding: 0;
+    }.k-grid-margin {
+      margin-bottom: 0;
+    }
+    .footer-grid {
       display: block;
     }.image-blog {
       width: 100%;
