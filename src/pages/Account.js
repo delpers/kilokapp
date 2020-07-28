@@ -6,7 +6,6 @@ import moment from "moment"
 import _ from "lodash"
 
 import Layout from "../components/layout"
-import Audio from "../components/homeScreen/views/audio"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import { logout } from "../utils/firebase"
@@ -83,18 +82,22 @@ const UserPage = props => {
   return (
       <Layout>
         <SEO title="Détails du profil" />
-        <div className="background-white padding-content">
-          <div className="max-width p-i">
-            <h2 className="title-content">Détails du profil</h2>
-            <div>
-            
+
+
+        <div className="hero">
+        <div className="m-w p-i">
+          <h1 className="hero-title bold bottom-none">Mon compte</h1>
+        </div></div>
+        <div className="m-w p-i">
+
+
               <div className="grd_f">
                 {planUser && planUser.length !== 0 ? (
                   <div className="bg-w grpl">
                     {planUser.map(plan => (
-                      <div key={plan.id} className="mb-10 plan">
+                      <div key={plan.id} className="shadow-plus background-white r6 padding">
                         <span className="badw cw">
-                          {premium ? "Abonnement en cours" : "Formule"}
+                          {premium ? "Mon abonnement" : "Formule"}
                         </span>
                         <div className="fs-28 align-left p-15-0 fw300 padding-top-qz">
                           {plan.product.name}
@@ -143,7 +146,7 @@ const UserPage = props => {
                           ) && (
                             <div className="bay bg-w">
                               <button
-                                className="btnun"
+                                className="button-bad"
                                 onClick={() =>
                                   !premium
                                     ? checkoutSubscribe(plan.id)
@@ -161,7 +164,7 @@ const UserPage = props => {
                         ) : (
                           <div className="bay bg-w">
                             <button
-                              className="btnun"
+                              className="button-user"
                               onClick={() =>
                                 !premium
                                   ? checkoutSubscribe(plan.id)
@@ -178,20 +181,16 @@ const UserPage = props => {
                 ) : null}
 
                 <div>
-                  {user ? <div className="info_mti">E-mail {email}</div> : null}
-
-                  <Audio />
+                  {user ? <div className="shadow-plus background-white r6 padding">E-mail {email}</div> : null}
 
                   {user && (
-                    <button onClick={logoutUser} className="btnlogout">
+                    <button onClick={logoutUser} className="button-exit">
                       Déconnexion
                     </button>
                   )}
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </Layout>
   )
 }

@@ -71,6 +71,14 @@
   color: #2f7de1 !important;
   margin-left: 0;
   background: transparent;
+}.hero {
+  flex-direction: row;
+  height: inherit;
+  padding-bottom: 20px;
+  text-align: left;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  padding-top: 20px;
 }
   }
 

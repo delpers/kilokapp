@@ -47,11 +47,26 @@
   padding: 16px 32px !important;
   margin-left: 16px;
   border-radius: 5rem;
-  color: #498483 !important;
+  color: #0f886f !important;
 
 }
 
 
 
+.button-bad {
+  background: #cf53642b;
+  padding: 12px 26px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #cf5364 !important;
+  border: transparent;
+}
 
-
+.button-exit {
+  background: #90a9c2;
+  padding: 12px 26px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #FFF !important;
+  border: transparent;
+}

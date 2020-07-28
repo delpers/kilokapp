@@ -32,7 +32,7 @@ const Blog = () => {
       <SEO title="Blog" />
 <div className="hero">
         <div className="m-w p-i">
-          <h1 className="hero-title bold color-audio bottom-none">Méditation</h1>
+          <h1 className="hero-title bold bottom-none">Méditation</h1>
         </div></div>
 
       <div className="blogPost blogPost-mobile max-width padding-initial">
