@@ -81,7 +81,7 @@ const UserPage = props => {
   }, [planUser])
   return (
       <Layout>
-        <SEO title="Détails du profil" />
+        <SEO title="Mon compte" />
 
 
         <div className="hero">

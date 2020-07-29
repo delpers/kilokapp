@@ -17,7 +17,7 @@ grid-gap: 0px;
 
 const Image = styled.div`
   
-    background-image: url(https://images.unsplash.com/photo-1535202610320-919f9b13de77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+    background: #e7f1fc;
     height: 100vh;
     width: 550px;
     margin-left: 300px;
@@ -100,14 +100,14 @@ const LoginPage = () => {
         <Image />
 
         </div>
-        <div><div className="layout-form shadow-plus padding">
-              <h2 className="bold">Connexion</h2>
+        <div><div className="layout-form shadow-plus padding r2">
+              <h2 className="bold">Vous connecter à Freshdoor</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
                   <input
                     type="email"
                     onChange={onChangeInput}
-                    className="k-input r4"
+                    className="k-input r6"
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
@@ -119,7 +119,7 @@ const LoginPage = () => {
                   <input
                     type="password"
                     onChange={onChangeInput}
-                    className="k-input r4"
+                    className="k-input r6"
                     name="password"
                     placeholder="Saisir votre mot de passe"
                     ref={register({ required: true, minLength: 8 })}
@@ -148,12 +148,12 @@ const LoginPage = () => {
                     onClick={onSubmit}
                     style={{ padding: "0 15px" }}
                   >
-                    {loading ? "Chargement..." : "Connexion"}
+                    {loading ? "Merci..." : "Connexion"}
                   </button>
                 </div>
 
                 <button
-                  className="button-google r4 color-gray width-full"
+                  className="button-google width-full"
                   type="button"
                   onClick={loginByGmail}
                 >
@@ -163,8 +163,8 @@ const LoginPage = () => {
 
                 <div className="align-center size-initial">
                   Vous n'avez pas de compte ?{" "}
-                  <Link className="color-blue" to="/SignUp">
-                    Inscription
+                  <Link className="bold" to="/SignUp">
+                    S'inscrire
                   </Link>
                 </div>
               </form>

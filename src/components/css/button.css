@@ -1,13 +1,12 @@
 .button-submit {
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: #e7f1fc;
   font-weight: bold;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  background-color: #437e7d;
-  border-color: #437e7d;
-  padding: 12px 24px;
+  background-color: #024c90;
+  border-color: #024c90;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -24,11 +23,10 @@
   color: #000;
   font-weight: bold;
   border-radius: 2px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   background-color: #fff;
   border-color: #fff;
-  padding: 12px 24px;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -36,7 +34,7 @@
   width: auto;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg) 16px center no-repeat;
       background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #e5edec;
+  border: 1px solid #f5f5f5;
   margin: 0 0 24px;
   background-color: #fff;
   border-radius: 5rem !important;
