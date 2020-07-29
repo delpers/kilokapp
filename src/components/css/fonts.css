@@ -115,3 +115,7 @@ font-weight: bold;
 .weight-clean {
   font-weight: normal;
 }
+
+.size-q {
+  font-size: 14px;
+}

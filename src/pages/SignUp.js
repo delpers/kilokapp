@@ -9,6 +9,22 @@ import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import { signup, loginWithGoogle } from "../utils/firebase"
+import styled from '@emotion/styled'
+
+const Box = styled.div`
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 0px;
+`
+
+const Image = styled.div`
+  
+position: absolute;
+bottom: 0;
+margin: 24px;
+  }
+`
 
 const schema = yup.object().shape({
   email: yup
@@ -77,15 +93,16 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-      <Layout>
+      <Box>
         <SEO title="S'inscrire" />
-        <div className="layout-form padding">
+  
+        <div><div className="layout-form shadow-plus padding r2">
               <h2 className="bold">Inscription</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
                   <input
                     type="email"
-                    className="k-input r4 uk-margin-bottom radius"
+                    className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
                     name="email"
                     placeholder="Veuillez saisir votre adresse e-mail"
@@ -97,7 +114,7 @@ const RegisterPage = () => {
                   )}
                   <input
                     type="password"
-                    className="k-input r4 uk-margin-bottom radius"
+                    className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
                     name="password"
                     placeholder="Saisir un mot de passe"
@@ -156,8 +173,16 @@ const RegisterPage = () => {
                   
                 </div>
               </form>
+
+
             </div>
-      </Layout>
+            
+
+            
+            </div>
+
+
+      </Box>
   )
 }
 
