@@ -26,7 +26,7 @@ height: 100vh;
 background-repeat: repeat;
 background-size: cover;
 background-position: center;
-filter: saturate(1.5);
+filter: saturate(156%);
   }
 `
 
@@ -107,7 +107,7 @@ const RegisterPage = () => {
 
       <div>
         <div className="layout-form-signup padding">
-          <h2 className="bold log-title width-mobile align-left">S’inscrire sur Freshdoor</h2>
+          <h2 className="bold log-title width-mobile align-left">S’inscrire sur Doorder</h2>
 
           <form className="margin-none" onSubmit={handleSubmit(onSubmitRegister)}>
             <input

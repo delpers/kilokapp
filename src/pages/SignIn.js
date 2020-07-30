@@ -20,6 +20,7 @@ height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+filter: saturate(156%);
 
   }
 `
@@ -96,7 +97,7 @@ const LoginPage = () => {
       
       <div>
         <div className="layout-form padding">
-          <h2 className="bold log-title width-mobile align-left">Connexion à Freshdoor</h2>
+          <h2 className="bold log-title width-mobile align-left">Connexion à Doorder</h2>
 
           <form className="margin-none" onSubmit={handleSubmit(onSubmit)}>
             <input

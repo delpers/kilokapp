@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-header">
             <div class="nav-title">
               <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo">
-                <h1 className="bottom-none weight-clean">freshdoor</h1>
+                <h1 className="bottom-none bold">Dorder</h1>
               </Link>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => {
             <MediaLinks />
 
             {!user && <Link to="/SignIn">Connexion</Link>}
-            {!user && <Link className="button-user" to="/SignUp">Freshdoor Premium</Link>}
+            {!user && <Link className="button-user" to="/SignUp">Doorder Premium</Link>}
             {user && <Link className="button-user" to="/Account"> <i class="fas fa-cog"></i> </Link>}
 
 
