@@ -3,28 +3,12 @@ import { useForm } from "react-hook-form"
 import * as yup from "yup"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import Legal from "../components/legalRegister"
 import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import { signup, loginWithGoogle } from "../utils/firebase"
-import styled from '@emotion/styled'
 
-const Box = styled.div`
-
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 0px;
-`
-
-const Image = styled.div`
-  
-position: absolute;
-bottom: 0;
-margin: 24px;
-  }
-`
 
 const schema = yup.object().shape({
   email: yup
@@ -93,11 +77,11 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-      <Box>
+      <>
         <SEO title="S'inscrire" />
   
-        <div><div className="layout-form shadow-plus padding r2">
-              <h2 className="bold">Inscription</h2>
+        <div><div className="layout-form-signup shadow-plus padding r2">
+              <h2 className="bold">S’inscrire sur Freshdoor</h2>
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
                   <input
@@ -163,13 +147,15 @@ const RegisterPage = () => {
                   <span>Continuer avec Google</span>
                 </button>
 
-                <Legal />
-
-                <div className="size-initial">
+                <div className="align-center size-initial">
                   Vous avez déjà un compte ?{" "}
-                  <Link class="color-blue" to="/SignIn">
+                  <Link class="bold" to="/SignIn">
                     Se connecter
                   </Link>
+
+                <Legal />
+
+              
                   
                 </div>
               </form>
@@ -182,7 +168,7 @@ const RegisterPage = () => {
             </div>
 
 
-      </Box>
+      </>
   )
 }
 

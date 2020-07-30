@@ -90,6 +90,8 @@
   height: 500px;
   background-color: #FFF;
   border-radius: 0;
+}.layout-form-signup {
+  width: 100%;
 }
   }
 
