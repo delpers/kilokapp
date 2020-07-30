@@ -7,6 +7,7 @@ import Legal from "../components/legalRegister"
 import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 import { signup, loginWithGoogle } from "../utils/firebase"
 import styled from "@emotion/styled"
 

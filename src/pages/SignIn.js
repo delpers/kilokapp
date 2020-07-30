@@ -4,6 +4,7 @@ import { login, loginWithGoogle } from "../utils/firebase"
 import { navigate, Link } from "gatsby"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 import * as yup from "yup"
 import styled from "@emotion/styled"
 
