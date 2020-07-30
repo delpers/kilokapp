@@ -95,6 +95,9 @@
   width: auto;
 }.width-mobile {
   width: 80%;
+}.log-title {
+  font-size: 36px;
+  line-height: 42px;
 }
   }
 
