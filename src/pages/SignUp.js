@@ -159,7 +159,7 @@ const RegisterPage = () => {
                 className="button-submit r4"
                 onClick={onSubmitRegister}
               >
-                {loading ? "Merci !" : "S'inscrire"}
+                {loading ? "Merci!" : "S'inscrire"}
               </button>
             </div>
             <button
