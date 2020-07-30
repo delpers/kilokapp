@@ -89,16 +89,12 @@ const RegisterPage = () => {
 
               <form onSubmit={handleSubmit(onSubmitRegister)}>
 
-              <div class="accordion vertical">
-  <section id="email">
-    <h2><a href="#email">Veuillez saisir votre adresse e-mail</a></h2>
-    <input
+                
+                  <input
                     type="email"
                     className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
                     name="email"
-                    onFocus="this.select()"
-                    autofocus="autofocus"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
                     ref={register({ required: true, minLength: 8 })}
@@ -106,10 +102,7 @@ const RegisterPage = () => {
                   {errors.email && (
                     <div className="alert">{errors.email.message}</div>
                   )}
-  </section>
-  <section id="password">
-    <h2><a href="#password">Saisir un mot de passe</a></h2>
-    <input
+                  <input
                     type="password"
                     className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
@@ -120,11 +113,8 @@ const RegisterPage = () => {
                   />
                   {errors.password && (
                     <div className="alert">{errors.password.message}</div>
-                  )}  </section>
-  <section id="confirm-password">
-    <h2><a href="#confirm-password">Confirmez le mot de passe</a></h2>
- 
-    <input
+                  )}
+                  <input
                     type="password"
                     className="k-input r4"
                     onChange={onChangeInput}
@@ -142,13 +132,7 @@ const RegisterPage = () => {
                   <span className="msg_alert" style={{ color: "red" }}>
                     {errorRegister}
                   </span>
-                )}  </section>
-
-</div>
-
-
-                 
-                
+                )}
 
                 <div>
                   <button
