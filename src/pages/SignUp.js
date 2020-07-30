@@ -83,8 +83,16 @@ const RegisterPage = () => {
         <div><div className="layout-form-signup shadow-plus padding r2">
               <h2 className="bold">S’inscrire sur Freshdoor</h2>
 
+
+
+
+
               <form onSubmit={handleSubmit(onSubmitRegister)}>
-                  <input
+
+              <div class="accordion vertical">
+  <section id="email">
+    <h2><a href="#email">Veuillez saisir votre adresse e-mail</a></h2>
+    <input
                     type="email"
                     className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
@@ -96,7 +104,10 @@ const RegisterPage = () => {
                   {errors.email && (
                     <div className="alert">{errors.email.message}</div>
                   )}
-                  <input
+  </section>
+  <section id="password">
+    <h2><a href="#password">Saisir un mot de passe</a></h2>
+    <input
                     type="password"
                     className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
@@ -107,8 +118,11 @@ const RegisterPage = () => {
                   />
                   {errors.password && (
                     <div className="alert">{errors.password.message}</div>
-                  )}
-                  <input
+                  )}  </section>
+  <section id="confirm-password">
+    <h2><a href="#confirm-password">Confirmez le mot de passe</a></h2>
+ 
+    <input
                     type="password"
                     className="k-input r4"
                     onChange={onChangeInput}
@@ -126,7 +140,13 @@ const RegisterPage = () => {
                   <span className="msg_alert" style={{ color: "red" }}>
                     {errorRegister}
                   </span>
-                )}
+                )}  </section>
+
+</div>
+
+
+                 
+                
 
                 <div>
                   <button
