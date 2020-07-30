@@ -83,13 +83,7 @@ const RegisterPage = () => {
         <div><div className="layout-form-signup shadow-plus padding r2">
               <h2 className="bold">S’inscrire sur Freshdoor</h2>
 
-
-
-
-
               <form onSubmit={handleSubmit(onSubmitRegister)}>
-
-                
                   <input
                     type="email"
                     className="k-input r6 uk-margin-bottom"

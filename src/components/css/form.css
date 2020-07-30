@@ -22,3 +22,13 @@
     background-color: #FFF;
 }
 
+.alert {
+        margin-bottom: 24px;
+        background: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        border: 1px solid #ff000021;
+        background: #ff00000a;
+        color: #b52f2fba;
+    
+}

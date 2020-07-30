@@ -145,6 +145,9 @@ const LoginPage = () => {
                     type="submit"
                     className="button-submit r4"
                     onClick={onSubmit}
+                    data-sitekey="6LdSCLgZAAAAACl1BrZM3k1ykgebrdltQoLzBHUt" 
+                    data-callback='onSubmit' 
+                    data-action='submit'
                     style={{ padding: "0 15px" }}
                   >
                     {loading ? "Merci..." : "Connexion"}
