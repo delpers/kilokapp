@@ -5,6 +5,7 @@
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 24px;
+  border-radius: 5rem !important;
 }
 
 input {

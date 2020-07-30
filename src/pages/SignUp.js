@@ -108,7 +108,7 @@ const RegisterPage = () => {
           <form onSubmit={handleSubmit(onSubmitRegister)}>
             <input
               type="email"
-              className="k-input r6 uk-margin-bottom"
+              className="k-input uk-margin-bottom"
               onChange={onChangeInput}
               name="email"
               placeholder="Veuillez saisir votre adresse e-mail"
@@ -120,7 +120,7 @@ const RegisterPage = () => {
             )}
             <input
               type="password"
-              className="k-input r6 uk-margin-bottom"
+              className="k-input uk-margin-bottom"
               onChange={onChangeInput}
               name="password"
               placeholder="Saisir un mot de passe"
