@@ -101,7 +101,7 @@ const RegisterPage = () => {
     <Box>
       <SEO title="S'inscrire" />
 
-      <div>
+      <div className="none">
         <Image />
       </div>
 
