@@ -15,6 +15,7 @@ export const query = graphql`
         id
         title
         time
+        medicalNumber
         numberOfPersons
         for
         ingredientsNumbers
@@ -32,65 +33,55 @@ const eRecipes = props => {
       <Layout>
         <SEO title={props.data.breakfast.title} />
 
-        <figure
-          className="cover-category"
-          style={{
-            backgroundImage:
-              "url(" + props.data.breakfast.picture.secure_url + ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            borderRadius: "0",
-          }}
-        >
-          <div>
-            <div className="m-w padding-content">
-              <h1 className="name-category">{props.data.breakfast.title}</h1>
-            
-            </div>
-          </div>
-        </figure>
+
+
+        <div class="hero"><div className="m-w p-i"><h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1></div></div>
+
+
+
+
+      
         <div>
           <div className="mb-32">
-            <div className="initial-grid max-width padding-initial ">
+          <div className="k-grid m-w p-i padding-content">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (
-                      <div className="mb-20  bg-w shadow-sm br-4" key={i}>
+                      <div className="background-white margin-bottom k-grid-margin shadow" key={i}>
                         <img
                           className="featured"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />
 
-                        <div className="mt-10 p-15 fs-18 padding-top-none">
+                        <div className="padding">
                           <Link
                             className="i-link fs-18 b-b-g margin-right-qz font-bold mb-15 nowrap"
                             to={`/recette/${edge.slug}/`}
                           >
-                            {edge.title}
+                            <h3>{edge.title}</h3>
                           </Link>
 
                           <div>
                             <div className="t-d float-right mb-15">
-                              <span className="font-size-14 bg-g">
+                              <span className="color-green">
                                 {" "}
                                 <i className="fas fa-check-circle"></i>{" "}
                                 {edge.time} min(s){" "}
                               </span>
                             </div>
                             <div className="bg-w-c pl-0">
-                              <span className="font-size-14 text-gray ">
+                              <span className="">
                                 {" "}
                                 <i className="far fa-user mr-5"></i>{" "}
                                 {edge.numberOfPersons}{" "}
                               </span>
                             </div>
                           </div>
-
+<span>{edge.for}</span>
                           <div className="b-solid-top">
-                            <div className="padding-top-qz ">
-                              <i className="fas fa-file-medical-alt c-g margin-right-qz"></i>
+                            <div className="color-blue">
+                              <i className="fas fa-file-medical-alt"></i> {edge.medicalNumber}
                               {edge.for != null
                                 ? edge.for.map((mv, i) => {
                                     return (

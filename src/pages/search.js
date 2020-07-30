@@ -14,12 +14,10 @@ const SearchPage = () => (
   <Layout>
     <SEO title="Recherche" />
 
-    <div className="mask-thumb-cat padding-50-0">
-      <div className="max-width padding-initial padding-bottom-none padding-top-none">
-        <h1>Que recherchez-vous ?</h1>
-        <p className="mb-0">
-          Recherche des recettes, ainsi que des références.
-        </p>
+    <div className="hero">
+      <div className="m-w p-i">
+        <h1 className="hero-title bold bottom-none">Que recherchez-vous ?</h1>
+
       </div>
     </div>
 

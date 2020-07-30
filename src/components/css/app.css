@@ -165,3 +165,9 @@ margin-right: 24px;
   background: white;
 }
 
+.featured {
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+
+}

@@ -74,7 +74,7 @@ const BoostersRecipes = props => {
 
         <div>
           <div>
-            <div className="rl rl-mobile max-width padding-initial  ">
+            <div className="k-grid m-w p-i padding-content">
               {props.data.booster.bList != null ? (
                 props.data.booster.bList.map((edge, i) => {
                   return (

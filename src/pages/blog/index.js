@@ -37,7 +37,7 @@ const Blog = () => {
               <div className="background-white margin-bottom k-grid-margin shadow" key={edge.node.id}>
 
 <div>
-<img src={edge.node.media.secure_url}
+<img className="featured" src={edge.node.media.secure_url}
                 alt={edge.node.title}
               />            </div>
 
