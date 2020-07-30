@@ -5,27 +5,23 @@ import { navigate, Link } from "gatsby"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
 import * as yup from "yup"
-import styled from '@emotion/styled'
+import styled from "@emotion/styled"
 
 const Box = styled.div`
-
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
 `
 
 const Image = styled.div`
   
-    background: #e7f1fc;
+    background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1596095367/heroImage/mae-mu-8Vh6ulKc50o-unsplash_1_jihmyq.jpg);
     height: 100vh;
-    width: 550px;
-    margin-left: 300px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 `
-
 
 const schema = yup.object().shape({
   email: yup
@@ -89,89 +85,85 @@ const LoginPage = () => {
 
   return (
     <Box>
-        <SEO title="Connexion" />
+      <SEO title="Connexion" />
 
-
-
-
-        <div>
-
+      <div>
         <Image />
+      </div>
+      <div>
+        <div className="layout-form shadow-plus padding r2">
+          <h2 className="bold">Vous connecter à Freshdoor</h2>
 
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <input
+              type="email"
+              onChange={onChangeInput}
+              className="k-input r6"
+              name="email"
+              placeholder="Veuillez saisir votre adresse e-mail"
+              style={{ width: "100%" }}
+              ref={register({ required: true, minLength: 8 })}
+            />
+            {errors.email && (
+              <div className="alert">{errors.email.message}</div>
+            )}
+            <input
+              type="password"
+              onChange={onChangeInput}
+              className="k-input r6"
+              name="password"
+              placeholder="Saisir votre mot de passe"
+              ref={register({ required: true, minLength: 8 })}
+              style={{ width: "100%" }}
+            />
+            {errors.password && (
+              <div className="alert">{errors.password.message}</div>
+            )}
+            {textLoginSubmit.type && (
+              <div
+                className="alert"
+                style={{
+                  color: `${
+                    textLoginSubmit.type === "error" ? "red" : "green"
+                  }`,
+                }}
+              >
+                {textLoginSubmit.message}
+              </div>
+            )}
+
+            <div>
+              <button
+                type="submit"
+                className="button-submit r4"
+                onClick={onSubmit}
+                data-sitekey="6LdSCLgZAAAAACl1BrZM3k1ykgebrdltQoLzBHUt"
+                data-callback="onSubmit"
+                data-action="submit"
+                style={{ padding: "0 15px" }}
+              >
+                {loading ? "Merci..." : "Connexion"}
+              </button>
+            </div>
+
+            <button
+              className="button-google width-full"
+              type="button"
+              onClick={loginByGmail}
+            >
+              <span>Continuer avec Google</span>
+            </button>
+
+            <div className="align-center size-initial">
+              Vous n'avez pas de compte ?{" "}
+              <Link className="bold" to="/SignUp">
+                S'inscrire
+              </Link>
+            </div>
+          </form>
         </div>
-        <div><div className="layout-form shadow-plus padding r2">
-              <h2 className="bold">Vous connecter à Freshdoor</h2>
-
-              <form onSubmit={handleSubmit(onSubmit)}>
-                  <input
-                    type="email"
-                    onChange={onChangeInput}
-                    className="k-input r6"
-                    name="email"
-                    placeholder="Veuillez saisir votre adresse e-mail"
-                    style={{ width: "100%" }}
-                    ref={register({ required: true, minLength: 8 })}
-                  />
-                  {errors.email && (
-                    <div className="alert">{errors.email.message}</div>
-                  )}
-                  <input
-                    type="password"
-                    onChange={onChangeInput}
-                    className="k-input r6"
-                    name="password"
-                    placeholder="Saisir votre mot de passe"
-                    ref={register({ required: true, minLength: 8 })}
-                    style={{ width: "100%" }}
-                  />
-                  {errors.password && (
-                    <div className="alert">{errors.password.message}</div>
-                  )}
-                {textLoginSubmit.type && (
-                  <div
-                    className="alert"
-                    style={{
-                      color: `${
-                        textLoginSubmit.type === "error" ? "red" : "green"
-                      }`,
-                    }}
-                  >
-                    {textLoginSubmit.message}
-                  </div>
-                )}
-
-                <div>
-                  <button
-                    type="submit"
-                    className="button-submit r4"
-                    onClick={onSubmit}
-                    data-sitekey="6LdSCLgZAAAAACl1BrZM3k1ykgebrdltQoLzBHUt" 
-                    data-callback='onSubmit' 
-                    data-action='submit'
-                    style={{ padding: "0 15px" }}
-                  >
-                    {loading ? "Merci..." : "Connexion"}
-                  </button>
-                </div>
-
-                <button
-                  className="button-google width-full"
-                  type="button"
-                  onClick={loginByGmail}
-                >
-              
-                  <span>Continuer avec Google</span>
-                </button>
-
-                <div className="align-center size-initial">
-                  Vous n'avez pas de compte ?{" "}
-                  <Link className="bold" to="/SignUp">
-                    S'inscrire
-                  </Link>
-                </div>
-              </form>
-            </div></div>
-     </Box>
+      </div>
+    </Box>
   )
 }
 
