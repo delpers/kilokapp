@@ -80,19 +80,13 @@
   margin-top: 32px;
   padding-top: 20px;
 }.layout-form {
-  position: fixed;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: auto;
   height: 100vh;
-  background-color: #FFF;
-  border-radius: 0;
 }.layout-form-signup {
-  width: 100%;
-  position: fixed;
+  width: auto;
+  height: 100vh;
+  position: relative;
 }.width-mobile {
   width: 80%;
 }
