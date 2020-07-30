@@ -94,7 +94,7 @@ const LoginPage = () => {
       
       <div className="absolute">
         <div className="layout-form shadow-plus padding">
-          <h2 className="bold padding align-center">Vous connecter à Freshdoor</h2>
+          <h2 className="bold align-left width-mobile">Vous connecter à Freshdoor</h2>
 
           <form onSubmit={handleSubmit(onSubmit)}>
             <input

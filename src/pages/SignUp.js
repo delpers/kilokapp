@@ -103,7 +103,7 @@ const RegisterPage = () => {
 
       <div className="absolute">
         <div className="layout-form-signup shadow-plus padding">
-          <h2 className="bold padding align-center">S’inscrire sur Freshdoor</h2>
+          <h2 className="bold align-left width-mobile">S’inscrire sur Freshdoor</h2>
 
           <form onSubmit={handleSubmit(onSubmitRegister)}>
             <input
