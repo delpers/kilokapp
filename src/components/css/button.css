@@ -1,12 +1,12 @@
 .button-submit {
   position: relative;
   display: inline-block;
-  color: #e7f1fc;
+  color: #FFF;
   font-weight: bold;
   border-width: 2px;
   border-style: solid;
-  background-color: #024c90;
-  border-color: #024c90;
+  background-color: #437e7d;
+  border-color: #437e7d;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -20,7 +20,7 @@
 .button-google {
   position: relative;
   display: inline-block;
-  color: #000;
+  color: #000000b0;
   font-weight: bold;
   border-radius: 2px;
   border-width: 2px;
@@ -34,10 +34,10 @@
   width: auto;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg) 16px center no-repeat;
       background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
   margin: 0 0 24px;
   background-color: #fff;
-  border-radius: 5rem !important;
+  border-radius: 2px !important;
 }
 
 .button-user {

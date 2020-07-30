@@ -12,19 +12,16 @@ import styled from "@emotion/styled"
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 0px;
 `
 
 const Image = styled.div`
   
-    background: #e7f1fc;
-    height: 100vh;
-    width: 550px;
-    margin-left: 300px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+background: #cfe3d9;
+height: 100vh;
+
+
   }
 `
 
@@ -102,9 +99,9 @@ const RegisterPage = () => {
         <Image />
       </div>
 
-      <div>
-        <div className="layout-form-signup shadow-plus padding r2">
-          <h2 className="bold">S’inscrire sur Freshdoor</h2>
+      <div className="absolute">
+        <div className="layout-form-signup shadow-plus padding">
+          <h2 className="bold padding align-center">S’inscrire sur Freshdoor</h2>
 
           <form onSubmit={handleSubmit(onSubmitRegister)}>
             <input

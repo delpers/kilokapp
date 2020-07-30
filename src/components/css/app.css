@@ -6,6 +6,9 @@ body {
 header {
   border-bottom: 1px solid #f2f2f2;
 }
+.absolute {
+  position: absolute;
+}
 .logo {
   background: url(../../images/logo.svg);
   height: 34px;padding: 0;

@@ -9,17 +9,16 @@ import styled from "@emotion/styled"
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 0px;
 `
 
 const Image = styled.div`
   
-    background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1596095367/heroImage/mae-mu-8Vh6ulKc50o-unsplash_1_jihmyq.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+background: #cfe3d9;
+height: 100vh;
+
+
   }
 `
 
@@ -90,9 +89,11 @@ const LoginPage = () => {
       <div>
         <Image />
       </div>
-      <div>
-        <div className="layout-form shadow-plus padding r2">
-          <h2 className="bold">Vous connecter à Freshdoor</h2>
+
+      
+      <div className="absolute">
+        <div className="layout-form shadow-plus padding">
+          <h2 className="bold padding align-center">Vous connecter à Freshdoor</h2>
 
           <form onSubmit={handleSubmit(onSubmit)}>
             <input

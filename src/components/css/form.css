@@ -1,24 +1,27 @@
 .layout-form {
-    position: absolute;
+    position: relative;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 500px;
-    height: 500px;
+    height: 100vh;
+    display: inline-table;
+
     background-color: #FFF;
 }
 
 .layout-form-signup {
-    position: absolute;
+    position: relative;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 500px;
-    height: 650px;
+    height: 100vh;
+    display: inline-table;
     background-color: #FFF;
 }
 

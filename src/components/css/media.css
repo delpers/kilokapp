@@ -80,7 +80,7 @@
   margin-top: 32px;
   padding-top: 20px;
 }.layout-form {
-  position: absolute;
+  position: relative;
   margin: auto;
   top: 0;
   right: 0;
@@ -92,6 +92,7 @@
   border-radius: 0;
 }.layout-form-signup {
   width: 100%;
+  position: relative;
 }
   }
 
