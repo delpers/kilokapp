@@ -80,24 +80,22 @@
   margin-top: 32px;
   padding-top: 20px;
 }.layout-form {
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
+  position: absolute;
+  width: 100%;
 }.layout-form-signup {
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
+  position: absolute;
+  width: 100%;
+  margin-top: 0;
 }.width-mobile {
   width: 80%;
 }.log-title {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 42px;
+  font-weight: bold;
+}.css-pg1c75 {
+  height: 50px !important;
+}.css-67sl2a {
+  display: block !important;
 }
   }
 

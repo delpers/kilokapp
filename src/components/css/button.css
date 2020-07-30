@@ -1,12 +1,12 @@
 .button-submit {
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: #FFF;
   font-weight: bold;
   border-width: 2px;
   border-style: solid;
-  background-color: #024c90;
-  border-color: #024c90;
+  background-color: #333333;
+  border-color: #333333;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -14,9 +14,7 @@
   width: 100%;
   margin: 0 0 24px;
   border-radius: 5rem !important;
-
 }
-
 .button-google {
   position: relative;
   display: inline-block;
@@ -34,7 +32,7 @@
   width: auto;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg) 16px center no-repeat;
       background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #f5f5f5;
+  border: 2px solid #f2f2f2;
   margin: 0 0 24px;
   background-color: #fff;
 }

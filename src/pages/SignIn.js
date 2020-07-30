@@ -10,15 +10,17 @@ import styled from "@emotion/styled"
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
 `
 
 const Image = styled.div`
-  
-background: #cfe3d9;
+background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1589052765/dataBoosters/coeur_illustration_cjztxe.svg);
 height: 100vh;
-
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+filter: saturate(1.5);
 
   }
 `
@@ -84,6 +86,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
+    <>
     <Box>
       <SEO title="Connexion" />
 
@@ -92,11 +95,11 @@ const LoginPage = () => {
       </div>
 
       
-      <div className="absolute">
-        <div className="layout-form shadow-plus padding">
-          <h2 className="bold log-title width-mobile align-left">Vous connecter à Fresh<span className="color-pink">door</span></h2>
+      <div>
+        <div className="layout-form padding">
+          <h2 className="bold log-title width-mobile align-left">Vous connecter à Freshdoor</h2>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form className="margin-none" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="email"
               onChange={onChangeInput}
@@ -144,7 +147,7 @@ const LoginPage = () => {
                 data-action="submit"
                 style={{ padding: "0 15px" }}
               >
-                {loading ? "Merci..." : "Connexion"}
+                {loading ? "Merci !" : "Connexion"}
               </button>
             </div>
 
@@ -166,6 +169,7 @@ const LoginPage = () => {
         </div>
       </div>
     </Box>
+    </>
   )
 }
 

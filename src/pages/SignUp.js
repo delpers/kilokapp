@@ -13,16 +13,20 @@ import styled from "@emotion/styled"
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
+  margin: 0;
+  padding: 0;
 `
 
 const Image = styled.div`
   
-background: #FaFAFA;
+background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1589052547/dataBoosters/longe%CC%81vite%CC%81_illustration_xubnya.svg);
 height: 100vh;
-
-
+background-repeat: repeat;
+background-size: cover;
+background-position: center;
+filter: saturate(1.5);
   }
 `
 
@@ -101,17 +105,17 @@ const RegisterPage = () => {
         <Image />
       </div>
 
-      <div className="absolute">
-        <div className="layout-form-signup shadow-plus padding">
-          <h2 className="bold log-title width-mobile align-left">S’inscrire sur Fresh<span className="color-pink">door</span></h2>
+      <div>
+        <div className="layout-form-signup padding">
+          <h2 className="bold log-title width-mobile align-left">S’inscrire sur Freshdoor</h2>
 
-          <form onSubmit={handleSubmit(onSubmitRegister)}>
+          <form className="margin-none" onSubmit={handleSubmit(onSubmitRegister)}>
             <input
               type="email"
-              className="k-input uk-margin-bottom"
+              className="k-input r6 uk-margin-bottom"
               onChange={onChangeInput}
               name="email"
-              placeholder="Veuillez saisir votre adresse e-mail"
+              placeholder="Saisir votre adresse e-mail"
               style={{ width: "100%" }}
               ref={register({ required: true, minLength: 8 })}
             />
@@ -120,7 +124,7 @@ const RegisterPage = () => {
             )}
             <input
               type="password"
-              className="k-input uk-margin-bottom"
+              className="k-input r6 uk-margin-bottom"
               onChange={onChangeInput}
               name="password"
               placeholder="Saisir un mot de passe"
@@ -155,7 +159,7 @@ const RegisterPage = () => {
                 className="button-submit r4"
                 onClick={onSubmitRegister}
               >
-                {loading ? "Chargement..." : "S'inscrire"}
+                {loading ? "Merci !" : "S'inscrire"}
               </button>
             </div>
             <button

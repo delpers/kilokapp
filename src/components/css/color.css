@@ -20,3 +20,8 @@
 .color-pink {
     color: #d70f64;
 }
+
+.color-register {
+    color: #84d6aa !important;
+    font-weight: bold;
+}
