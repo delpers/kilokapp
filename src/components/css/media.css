@@ -82,6 +82,7 @@
 }.layout-form {
   position: absolute;
   width: 100%;
+  margin-top: 0;
 }.layout-form-signup {
   position: absolute;
   width: 100%;
@@ -95,6 +96,10 @@
 }.css-pg1c75 {
   height: 50px !important;
 }.css-67sl2a {
+  display: block !important;
+}.css-vm9u98 {
+  height: 260px !important;
+}.css-1ghp6xi {
   display: block !important;
 }
   }
