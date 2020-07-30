@@ -18,7 +18,7 @@ const Box = styled.div`
 
 const Image = styled.div`
   
-background: #cfe3d9;
+background: #FaFAFA;
 height: 100vh;
 
 
@@ -92,6 +92,7 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
+    <>
     <Box>
       <SEO title="S'inscrire" />
 
@@ -175,6 +176,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </Box>
+    </>
   )
 }
 
