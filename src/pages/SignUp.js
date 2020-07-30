@@ -97,6 +97,8 @@ const RegisterPage = () => {
                     className="k-input r6 uk-margin-bottom"
                     onChange={onChangeInput}
                     name="email"
+                    onFocus="this.select()"
+                    autofocus="autofocus"
                     placeholder="Veuillez saisir votre adresse e-mail"
                     style={{ width: "100%" }}
                     ref={register({ required: true, minLength: 8 })}
