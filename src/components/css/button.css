@@ -1,12 +1,12 @@
 .button-submit {
   position: relative;
   display: inline-block;
-  color: #FFF;
+  color: #e4f1fb;
   font-weight: bold;
   border-width: 2px;
   border-style: solid;
-  background-color: #333333;
-  border-color: #333333;
+  background-color: #2c5bd2;
+  border-color: #2c5bd2;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -38,11 +38,11 @@
 }
 
 .button-user {
-  background: #c9ddd35e;
+  background: #e4f1fb;
   padding: 16px 32px !important;
   margin-left: 16px;
   border-radius: 6px;
-  color: #0f886f !important;
+  color: #2c5bd2 !important;
 
 }
 

@@ -13,3 +13,8 @@
 .display-grid {
   display: grid;
 }
+
+.block-ruby {
+  display: block ruby;
+}
+

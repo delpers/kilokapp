@@ -35,42 +35,55 @@ const eRecipes = props => {
 
 
 
-        <div class="hero"><div className="m-w p-i"><h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1></div></div>
+        <div class="hero"><div className="m-w p-i">
+          
+          
+          <h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1>
+          
+          </div>
+          
+          
+          </div>
 
-
+         
 
 
       
         <div>
           <div className="mb-32">
-          <div className="k-grid m-w p-i padding-content">
+          <div className="recipes-grid m-w p-i padding-content r2">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (
-                      <div className="background-white margin-bottom k-grid-margin shadow" key={i}>
-                        <img
-                          className="featured"
+                      <div className="border background-white margin-bottom k-grid-margin shadow r6" key={i}>
+                           <img
+                          className="featured-recipes r2"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />
 
-                        <div className="padding">
+
+                        <div className="padding display-grid">
+
+                    
+
+
                           <Link
-                            className="i-link fs-18 b-b-g margin-right-qz font-bold mb-15 nowrap"
+                            className="nowrap"
                             to={`/recette/${edge.slug}/`}
                           >
-                            <h3>{edge.title}</h3>
+                            <h3 className="nowrap">{edge.title}</h3>
                           </Link>
 
-                          <div>
-                            <div className="t-d float-right mb-15">
+                          <div className="block-ruby">
+                            <div>
                               <span className="color-green">
                                 {" "}
                                 <i className="fas fa-check-circle"></i>{" "}
                                 {edge.time} min(s){" "}
                               </span>
                             </div>
-                            <div className="bg-w-c pl-0">
+                            <div className="float-right">
                               <span className="">
                                 {" "}
                                 <i className="far fa-user mr-5"></i>{" "}
@@ -78,10 +91,19 @@ const eRecipes = props => {
                               </span>
                             </div>
                           </div>
+
+
+
+
+<div className="border-bottom"></div>
 <span>{edge.for}</span>
+
+
+
+
                           <div className="b-solid-top">
                             <div className="color-blue">
-                              <i className="fas fa-file-medical-alt"></i> {edge.medicalNumber}
+                              <i className="fas fa-file-medical-alt"></i> <span className="color-initial">{edge.medicalNumber}</span>
                               {edge.for != null
                                 ? edge.for.map((mv, i) => {
                                     return (

@@ -169,5 +169,22 @@ margin-right: 24px;
     height: 230px;
     object-fit: cover;
     width: 100%;
+    filter: saturate(1.6);
 
+}
+.featured-recipes {
+  height: 172px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  filter: saturate(1.5);
+}
+.float-right {
+  float: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
 }
