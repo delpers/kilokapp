@@ -55,7 +55,7 @@ const eRecipes = props => {
                     return (
                       <div className="background-white margin-bottom k-grid-margin" key={i}>
                            <img
-                          className="featured-recipes shadow-plus r6"
+                          className="featured-recipes shadow-plus r2"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />

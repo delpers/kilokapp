@@ -47,7 +47,7 @@ export default function Boosters() {
                             backgroundRepeat: "no-repeat",
                             height: "130px",
                             width: "212px",
-                            borderRadius: "6px",
+                            borderRadius: "12px",
                           }}
                         >
                           <span className="">

@@ -76,8 +76,8 @@ a {
 }
 
 .hero-title {
-  font-size: 56px;
-  line-height: 28px;
+  font-size: 82px;
+  margin-bottom: 0;
 }
 .hero-title-recipes {
   writing-mode: vertical-rl;
@@ -119,12 +119,11 @@ background: transparent;
   font-size: 14px;
 }
 
-
 .title-category {
-  font-size: 36px;
-line-height: 1.25;
-margin: 0 0 10px 0px;
-font-weight: bold;
+  font-size: 46px;
+  line-height: 2.25;
+  margin: 0 0 10px 0px;
+  font-weight: 300;
 }
 
 .group-title p {

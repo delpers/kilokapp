@@ -15,11 +15,12 @@ const HomePage = () => {
       <SEO title="Accueil" />
 
       <HeroScreen />
+      <Boosters />
+
       <Breakfasts />
       <Entry />
       <Dishes />
       <Desserts />
-      <Boosters />
       <Training />
       
     </Layout>

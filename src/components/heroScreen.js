@@ -8,11 +8,14 @@ export default function heroScreen() {
         query {
           contentfulHomePage {
             titleHome
-            descriptionHome
           }
         }
       `}
       render={data => (
+
+
+
+
           <div
             className="hero">
             <div className="m-w p-i">
@@ -20,9 +23,7 @@ export default function heroScreen() {
                 <h1 className="hero-title bold">
                   {data.contentfulHomePage.titleHome} 
                 </h1>
-                <p className="hero-max-width-sub bottom-none">
-                  {data.contentfulHomePage.descriptionHome}
-                </p>
+    
               </section>
             </div>
           </div>
