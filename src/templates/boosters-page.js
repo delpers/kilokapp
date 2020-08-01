@@ -2,20 +2,6 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from '@emotion/styled'
-
-const Hero = styled.div`
-  header {
-    position: absolute;
-    z-index: 1000;
-width: 100%;
-background: transparent;
-padding-top: 32px;
-  }
-  body {
-    margin-top: 0 !important;
-  }
-`
 
 export const query = graphql`
   query($slug: String!) {
@@ -45,44 +31,31 @@ export const query = graphql`
 
 const BoostersRecipes = props => {
   return (
-    <Hero>
       <Layout>
         <SEO title={props.data.booster.title} />
-<div style={{backgroundColor: props.data.booster.backgroundColor}}> 
 
 
-        <figure
-          className="cover-category background"
-          style={{
-            backgroundImage:
-              "url(" + props.data.booster.picture.secure_url + ")",
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            borderRadius: "0",
-            height: "400px",
-          }}
-        >
-          <div>
-            <div className="hero-name">
-              <h1 className="hero-category">{props.data.booster.title}</h1>
-            
-            </div>
-          </div>
-        </figure>
-        </div>
+          
+        <div className="right-hero">
+<h1 class="hero-title-recipes bottom-none">{props.data.booster.title}</h1>
+</div>          
+          
+          
+
+
+
 
         <div>
           <div>
-            <div className="k-grid m-w p-i padding-content">
+            <div className="vegetables-grid m-w p-i padding-content">
               {props.data.booster.bList != null ? (
                 props.data.booster.bList.map((edge, i) => {
                   return (
                     (
                       <div className="   mb-32" key={i}>
-                        <div className="bg-w p-15 shadow-sm br6 dfmb">
+                        <div className="background-white shadow-plus r-12">
                           <div
-                            className="w-screen p-80-0 perfect-bg pbg-m"
+                            className="border-bottom-light"
                             style={{
                               backgroundImage:
                                 "url(" + edge.image.secure_url + ")",
@@ -90,27 +63,30 @@ const BoostersRecipes = props => {
                               backgroundRepeat: "no-repeat",
                               backgroundPosition: "center",
                               margin: "0 10%",
+                              height: "156px",
+                              width: "156px",
+                              margin: "24px",
                             }}
                           >
                             {" "}
                           </div>
 
-                          <div>
+                          <div className="padding-min">
                             <Link
-                              className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
+                              className="nowrap v-title margin-top-5"
                               to={`/recettes/base/${edge.slug}/`}
                             >
                               {edge.title}
                             </Link>
-                            <div className=" p-15 font-size-14 padding-bottom-none">
-                              <span className="">
-                                <i className="fas fa-burn mr-5"></i>{" "}
+                            <div className="margin-top-5 v-size">
+                              <span className="color-black">
+                                <i className="fas fa-burn"></i>{" "}
                                 {edge.calories} <strong>C</strong> · 100 gr.
                               </span>
                             </div>
-                            <div className=" p-15 font-size-14">
+                            <div className="margin-top-5 v-size">
                               <span className="color-black">
-                                <i className="fas fa-check-circle mr-5"></i>{" "}
+                                <i className="fas fa-check-circle"></i>{" "}
                                 {edge.stockage}
                               </span>
                             </div>
@@ -129,7 +105,6 @@ const BoostersRecipes = props => {
           </div>
         </div>
       </Layout>
-      </Hero>
   )
 }
 

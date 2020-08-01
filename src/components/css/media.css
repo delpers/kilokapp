@@ -9,6 +9,9 @@
     .k-grid {
       display: block;
       padding: 0;
+    }.recipes-grid {
+      display: block;
+      padding: 0;
     }.k-grid-margin {
       margin-bottom: 0;
     }

@@ -21,3 +21,13 @@
   .margin-right-icon {
     margin-right: 15px;
   }
+
+  .custom-margin-card {
+    margin-top: calc(-1*48px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .margin-top-5 {
+    margin-top: 5px;
+  }

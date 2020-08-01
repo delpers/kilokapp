@@ -13,14 +13,14 @@
   padding: 14px !important;
   width: 100%;
   margin: 0 0 24px;
-  border-radius: 6px !important;
+  border-radius: 5rem !important;
 }
 .button-google {
   position: relative;
   display: inline-block;
   color: #000000b0;
   font-weight: bold;
-  border-radius: 6px !important;
+  border-radius: 5rem !important;
   border-width: 2px;
   border-style: solid;
   background-color: #fff;
@@ -41,7 +41,7 @@
   background: #e4f1fb;
   padding: 16px 32px !important;
   margin-left: 16px;
-  border-radius: 6px;
+  border-radius: 5rem;
   color: #2c5bd2 !important;
 
 }

@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   if (loading) return <div className="pfl">Chargement...</div>
   else
     return (
-      <>
+      <div className="body">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="">
           <main>{children}</main>
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         </div>
 
 
-      </>
+      </div>
     )
 }
 

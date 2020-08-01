@@ -86,7 +86,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <>
+    <div className="body">
     <Box>
       <SEO title="Connexion" />
 
@@ -97,13 +97,13 @@ const LoginPage = () => {
       
       <div>
         <div className="layout-form padding">
-          <h2 className="bold log-title width-mobile align-left">Connexion à Doorder</h2>
+          <h2 className="bold log-title width-mobile align-left">Connexion à Yudi</h2>
 
           <form className="margin-none" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="email"
               onChange={onChangeInput}
-              className="k-input r6"
+              className="k-input"
               name="email"
               placeholder="Veuillez saisir votre adresse e-mail"
               style={{ width: "100%" }}
@@ -115,7 +115,7 @@ const LoginPage = () => {
             <input
               type="password"
               onChange={onChangeInput}
-              className="k-input r6"
+              className="k-input"
               name="password"
               placeholder="Saisir votre mot de passe"
               ref={register({ required: true, minLength: 8 })}
@@ -140,7 +140,7 @@ const LoginPage = () => {
             <div>
               <button
                 type="submit"
-                className="button-submit r4"
+                className="button-submit"
                 onClick={onSubmit}
                 data-sitekey="6LdSCLgZAAAAACl1BrZM3k1ykgebrdltQoLzBHUt"
                 data-callback="onSubmit"
@@ -169,7 +169,7 @@ const LoginPage = () => {
         </div>
       </div>
     </Box>
-    </>
+    </div>
   )
 }
 

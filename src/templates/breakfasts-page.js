@@ -35,35 +35,33 @@ const eRecipes = props => {
 
 
 
-        <div class="hero"><div className="m-w p-i">
           
           
-          <h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1>
+<div className="right-hero">
+<h1 class="hero-title-recipes bottom-none">{props.data.breakfast.title}</h1>
+</div>          
           
-          </div>
           
-          
-          </div>
 
          
 
 
       
         <div>
-          <div className="mb-32">
-          <div className="recipes-grid m-w p-i padding-content r2">
+          <div>
+          <div className="recipes-grid m-w p-i padding-content">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (
-                      <div className="border background-white margin-bottom k-grid-margin shadow r6" key={i}>
+                      <div className="background-white margin-bottom k-grid-margin" key={i}>
                            <img
-                          className="featured-recipes r2"
+                          className="featured-recipes shadow-plus r6"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />
 
 
-                        <div className="padding display-grid">
+                        <div className="padding display-grid shadow relative custom-margin-card background-white r6">
 
                     
 
@@ -72,7 +70,7 @@ const eRecipes = props => {
                             className="nowrap"
                             to={`/recette/${edge.slug}/`}
                           >
-                            <h3 className="nowrap">{edge.title}</h3>
+                            <h3 className="nowrap title-recipes">{edge.title}</h3>
                           </Link>
 
                           <div className="block-ruby">

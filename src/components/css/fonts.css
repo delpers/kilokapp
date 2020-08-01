@@ -79,7 +79,18 @@ a {
   font-size: 56px;
   line-height: 28px;
 }
-
+.hero-title-recipes {
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+transform: rotate(-90deg);
+margin-top: 214px;
+  font-weight: 300;
+}
+.title-recipes {
+  color: black;
+font-weight: bold;
+font-size: 18px;
+}
 .log-title {
   font-size: 24px;
   line-height: 42px;
@@ -104,7 +115,9 @@ background: transparent;
   font-size: 18px;
   padding: 16px 24px;
 }
-
+.v-size {
+  font-size: 14px;
+}
 
 
 .title-category {
@@ -124,4 +137,13 @@ font-weight: bold;
 
 .size-q {
   font-size: 14px;
+}
+.fixed {
+  position: fixed !important;
+}
+
+.v-title {
+  font-size: 18px;
+  font-weight: 300;
+  color: initial;
 }

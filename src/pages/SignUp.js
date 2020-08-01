@@ -17,6 +17,7 @@ const Box = styled.div`
   grid-gap: 0px;
   margin: 0;
   padding: 0;
+
 `
 
 const Image = styled.div`
@@ -97,7 +98,7 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-    <>
+    <div className="body">
     <Box>
       <SEO title="S'inscrire" />
 
@@ -112,7 +113,7 @@ const RegisterPage = () => {
           <form className="margin-none" onSubmit={handleSubmit(onSubmitRegister)}>
             <input
               type="email"
-              className="k-input r6 uk-margin-bottom"
+              className="k-input uk-margin-bottom"
               onChange={onChangeInput}
               name="email"
               placeholder="Saisir votre adresse e-mail"
@@ -124,7 +125,7 @@ const RegisterPage = () => {
             )}
             <input
               type="password"
-              className="k-input r6 uk-margin-bottom"
+              className="k-input uk-margin-bottom"
               onChange={onChangeInput}
               name="password"
               placeholder="Saisir un mot de passe"
@@ -136,7 +137,7 @@ const RegisterPage = () => {
             )}
             <input
               type="password"
-              className="k-input r4"
+              className="k-input"
               onChange={onChangeInput}
               name="confirm_password"
               placeholder="Confirmez le mot de passe"
@@ -156,14 +157,14 @@ const RegisterPage = () => {
               <button
                 type="submit"
                 style={{ padding: "0 15px" }}
-                className="button-submit r4"
+                className="button-submit"
                 onClick={onSubmitRegister}
               >
                 {loading ? "Merci!" : "S'inscrire"}
               </button>
             </div>
             <button
-              className="button-google r4 color-gray width-full"
+              className="button-google color-gray width-full"
               type="button"
               onClick={loginByGmail}
             >
@@ -181,7 +182,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </Box>
-    </>
+    </div>
   )
 }
 
