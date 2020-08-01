@@ -17,6 +17,12 @@
   border-radius: 6px;
 }
 
-.r-12 {
-  border-radius: 12px;
+.r-10 {
+  border-radius: 10px;
 }
+
+
+.r-10-card {
+  border-radius: 10px 10px 0px 0px ;
+}
+

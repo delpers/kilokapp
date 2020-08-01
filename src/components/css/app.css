@@ -4,10 +4,10 @@ body {
  
 }
 header {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f6f6f6;
 }
 .body {
-  margin: auto 50px;
+  margin: 0 auto;
   background: white;
 }
 .absolute {
@@ -178,12 +178,32 @@ margin-right: 24px;
 
 }
 .featured-recipes {
-  height: 230px;
+  height: 180px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   filter: saturate(1.5);
 }
+
+.filter {
+  content: " ";
+  right: 0;
+  left: 0;
+  top: -51px;
+  bottom: 0;
+  transition: none;
+  background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.9) 60%);
+  width: 100%;
+  display: flow-root list-item;
+  margin-top: calc(-1*48px);
+  z-index: 100000;
+  position: relative;
+  color: white !important;
+  border-radius: 0;
+  padding: 0;
+}
+
+
 
 
 .float-right {

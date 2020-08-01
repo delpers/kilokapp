@@ -34,7 +34,7 @@ const Blog = () => {
       <div className="k-grid m-w p-i padding-content">
         {data.blog.edges.map(edge => {
           return (
-              <div className="background-white margin-bottom k-grid-margin shadow-plus r-12" key={edge.node.id}>
+              <div className="background-white margin-bottom k-grid-margin shadow-plus r-10" key={edge.node.id}>
 
 <div>
 <img className="featured r2" src={edge.node.media.secure_url}

@@ -85,11 +85,30 @@ text-orientation: mixed;
 transform: rotate(-90deg);
 margin-top: 214px;
   font-weight: 300;
+  font-family: Rockwell Extra Bold;
+font-size: 74px;
+opacity: 0.76;
+text-shadow: 0 0.1px 0.8px rgb(0, 0, 0);
+}
+
+.green-point {
+  background: green;
+  border-radius: 5rem;
+  height: 30px;
+  width: 30px;
 }
 .title-recipes {
-  color: black;
+  color: white;
 font-weight: bold;
 font-size: 18px;
+white-space: nowrap;
+text-overflow: ellipsis !important;
+overflow: hidden;
+  padding: 27px 16px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.85);
+  white-space: nowrap;
+  max-width: 260px;
+
 }
 .log-title {
   font-size: 24px;

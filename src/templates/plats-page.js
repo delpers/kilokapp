@@ -43,24 +43,16 @@ const pRecipes = props => {
     <Background>
       <Layout>
         <SEO title={props.data.plat.title} />
-        <figure
-          className="cover-category"
-          style={{
-            backgroundImage:
-              "url(" + props.data.plat.picture.secure_url + ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            borderRadius: "0",
-          }}
-        >
-          <div>
-            <div className="m-w padding-content">
-              <h1 className="name-category">{props.data.plat.title}</h1>
-            
-            </div>
-          </div>
-        </figure>
+    
+          
+        <div className="right-hero">
+<h1 class="hero-title-recipes bottom-none">{props.data.plat.title}</h1>
+</div>          
+          
+
+
+
+
         <div>
           <div className="mb-32">
             <div className="initial-grid max-width padding-initial ">

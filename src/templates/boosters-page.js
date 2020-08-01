@@ -46,14 +46,14 @@ const BoostersRecipes = props => {
 
 
         <div>
-          <div>
+          <div className="background-gray">
             <div className="vegetables-grid m-w p-i padding-content">
               {props.data.booster.bList != null ? (
                 props.data.booster.bList.map((edge, i) => {
                   return (
                     (
                       <div className="   mb-32" key={i}>
-                        <div className="background-white shadow-plus r-12">
+                        <div className="background-white shadow-plus r-10">
                           <div
                             className="border-bottom-light"
                             style={{

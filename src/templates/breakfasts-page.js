@@ -34,7 +34,6 @@ const eRecipes = props => {
         <SEO title={props.data.breakfast.title} />
 
 
-
           
           
 <div className="right-hero">
@@ -48,60 +47,47 @@ const eRecipes = props => {
 
       
         <div>
-          <div>
+          <div className="background-gray">
           <div className="recipes-grid m-w p-i padding-content">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (
-                      <div className="background-white margin-bottom k-grid-margin" key={i}>
+                      <div className="background-white margin-bottom k-grid-margin shadow-plus r-10" key={i}>
                            <img
-                          className="featured-recipes shadow-plus r2"
+                          className="featured-recipes shadow-plus r-10-card"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />
 
 
-                        <div className="padding display-grid shadow relative custom-margin-card background-white r6">
-
-                    
+<div className="filter">
 
 
-                          <Link
-                            className="nowrap"
-                            to={`/recette/${edge.slug}/`}
-                          >
-                            <h3 className="nowrap title-recipes">{edge.title}</h3>
-                          </Link>
-
-                          <div className="block-ruby">
-                            <div>
-                              <span className="color-green">
-                                {" "}
-                                <i className="fas fa-check-circle"></i>{" "}
-                                {edge.time} min(s){" "}
-                              </span>
-                            </div>
-                            <div className="float-right">
-                              <span className="">
-                                {" "}
-                                <i className="far fa-user mr-5"></i>{" "}
-                                {edge.numberOfPersons}{" "}
-                              </span>
-                            </div>
-                          </div>
+<Link
+    className="nowrap"
+    to={`/recette/${edge.slug}/`}
+  >
+    <h3 className="nowrap title-recipes bottom-none color-white">{edge.title}</h3>
+  </Link>
 
 
 
 
-<div className="border-bottom"></div>
-<span>{edge.for}</span>
+</div>
 
 
+                        <div className="recipes-info-grid shadow r-10">
+
+                    <div> <i className="fas fa-check-circle"></i>{" "}
+                                {edge.time} min(s){" "}</div>
+
+                    <div>  <i className="far fa-user mr-5"></i>{" "}
+                                {edge.numberOfPersons}{" "}</div>
 
 
-                          <div className="b-solid-top">
+                    <div>  <div className="b-solid-top">
                             <div className="color-blue">
-                              <i className="fas fa-file-medical-alt"></i> <span className="color-initial">{edge.medicalNumber}</span>
+                              <i className="fas fa-file-medical-alt color-green"></i> <span className="color-initial">{edge.medicalNumber}</span>
                               {edge.for != null
                                 ? edge.for.map((mv, i) => {
                                     return (
@@ -115,7 +101,19 @@ const eRecipes = props => {
                                   })
                                 : null}
                             </div>
-                          </div>
+                          </div></div>
+
+                    <div></div>
+
+
+
+
+
+
+
+
+
+                        
                         </div>
                       </div>
                     )
