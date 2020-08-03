@@ -12,10 +12,11 @@ const Box = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
+  background: white;
 `
 
 const Image = styled.div`
-background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1596095884/heroImage/mae-mu-FZJO5-NFVzI-unsplash_sihis5.jpg);
+background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1589052765/dataBoosters/coeur_illustration_cjztxe.svg);
 height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
@@ -86,18 +87,18 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <div className="body">
-    <Box>
+    <div>
+    <Box className="form-mobile">
       <SEO title="Connexion" />
 
-      <div  className="width-log">
+      <div className="none">
         <Image />
       </div>
 
       
       <div>
         <div className="layout-form padding">
-          <h2 className="bold log-title width-mobile align-left">Connexion à Yudi</h2>
+          <h2 className="bold log-title width-mobile align-left">Connexion</h2>
 
           <form className="margin-none" onSubmit={handleSubmit(onSubmit)}>
             <input
@@ -142,9 +143,6 @@ const LoginPage = () => {
                 type="submit"
                 className="button-submit"
                 onClick={onSubmit}
-                data-sitekey="6LdSCLgZAAAAACl1BrZM3k1ykgebrdltQoLzBHUt"
-                data-callback="onSubmit"
-                data-action="submit"
                 style={{ padding: "0 15px" }}
               >
                 {loading ? "Merci !" : "Connexion"}

@@ -15,8 +15,7 @@ const Box = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
-  margin: 0;
-  padding: 0;
+  background: white;
 
 `
 
@@ -98,8 +97,8 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-    <div className="body">
-    <Box>
+    <div>
+    <Box className="form-mobile">
       <SEO title="S'inscrire" />
 
       <div className="none">
@@ -108,7 +107,7 @@ const RegisterPage = () => {
 
       <div>
         <div className="layout-form-signup padding">
-          <h2 className="bold log-title width-mobile align-left">S’inscrire sur Doorder</h2>
+          <h2 className="bold log-title width-mobile align-left">S’inscrire</h2>
 
           <form className="margin-none" onSubmit={handleSubmit(onSubmitRegister)}>
             <input

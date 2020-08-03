@@ -102,6 +102,8 @@
   width: 100%;
 }.row {
   display: block;
+}.form-mobile {
+  display: block;
 }
   }
 

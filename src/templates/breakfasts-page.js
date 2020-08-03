@@ -87,7 +87,7 @@ const eRecipes = props => {
 
                     <div>  <div className="b-solid-top">
                             <div className="color-blue">
-                              <i className="fas fa-file-medical-alt color-green"></i> <span className="color-initial">{edge.medicalNumber}</span>
+                              <i className="fas fa-file-medical-alt color-blue"></i> <span className="color-initial">{edge.medicalNumber}</span>
                               {edge.for != null
                                 ? edge.for.map((mv, i) => {
                                     return (
