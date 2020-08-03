@@ -1,9 +1,9 @@
 .layout-form {
-    height: 100%;
     background-color: #FFF;
     max-width: 600px;
     margin: 0 auto;
     margin-top: 64px;
+    padding: 64px;
 
 }
 
@@ -12,6 +12,7 @@
     max-width: 600px;
     margin: 0 auto;
     margin-top: 64px;
+    padding: 64px;
 
 
 }
@@ -24,4 +25,8 @@
         background: #ff00000a;
         color: #b52f2fba;
     
+}
+
+.width-log {
+    width: 1270px;
 }

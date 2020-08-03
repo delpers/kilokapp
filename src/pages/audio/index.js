@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
@@ -16,7 +16,6 @@ const Blog = () => {
               id
               slug
               author
-              category
               color
               eAudio: childContentfulAudioAudioJsonNode {
                 secure_url

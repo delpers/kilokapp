@@ -47,14 +47,14 @@ const eRecipes = props => {
 
       
         <div>
-          <div className="background-gray">
+          <div>
           <div className="recipes-grid m-w p-i padding-content">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (
                       <div className="background-white margin-bottom k-grid-margin shadow-plus r-10" key={i}>
                            <img
-                          className="featured-recipes shadow-plus r-10-card"
+                          className="featured-recipes r-10-card"
                           src={edge.image.secure_url}
                           alt={edge.title}
                         />

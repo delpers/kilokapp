@@ -2,6 +2,10 @@ import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import UserContext from "../../../components/UserContext"
 
+function Title(props) {
+  return <h1 className="title-category bold">Éléments nutritifs</h1>
+}
+
 export default function Boosters() {
   const { premium } = useContext(UserContext)
   return (
@@ -19,9 +23,6 @@ export default function Boosters() {
               }
             }
           }
-          home: contentfulHomePage {
-            title_boosters
-          }
         }
       `}
       render={data => {
@@ -29,8 +30,7 @@ export default function Boosters() {
           return (
             <div className="m-w p-i category">
               <div className="group-title">
-                <h3 className="title-category">{data.home.title_boosters}</h3>
-              </div>
+<Title />              </div>
 
               <div className="grid-nutriments">
                 {data.booster.edges.length > 0 ? (

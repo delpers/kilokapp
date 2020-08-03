@@ -78,17 +78,24 @@ a {
 .hero-title {
   font-size: 82px;
   margin-bottom: 0;
+  font-family: Times New Roman, sans-serif;
 }
+
+
+.font-time {
+  font-family: Times New Roman, sans-serif;
+
+}
+
+
 .hero-title-recipes {
   writing-mode: vertical-rl;
 text-orientation: mixed;
 transform: rotate(-90deg);
-margin-top: 214px;
+margin-top: 180px;
   font-weight: 300;
-  font-family: Rockwell Extra Bold;
-font-size: 74px;
-opacity: 0.76;
-text-shadow: 0 0.1px 0.8px rgb(0, 0, 0);
+  font-family: Times New Roman, sans-serif;
+  font-size: 74px;
 }
 
 .green-point {

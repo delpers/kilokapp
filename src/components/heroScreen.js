@@ -1,33 +1,17 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+
+function TitleFrench(props) {
+  return <h1 className="hero-title bold">Santé, forme et bien-être.</h1>
+}
 
 export default function heroScreen() {
   return (
-    <StaticQuery
-      query={graphql`
-        query {
-          contentfulHomePage {
-            titleHome
-          }
-        }
-      `}
-      render={data => (
-
-
-
-
-          <div
-            className="hero">
-            <div className="m-w p-i">
-              <section>
-                <h1 className="hero-title bold">
-                  {data.contentfulHomePage.titleHome} 
-                </h1>
-    
-              </section>
-            </div>
-          </div>
-      )}
-    />
+    <div className="hero">
+      <div className="m-w p-i">
+        <section>
+          <TitleFrench />
+        </section>
+      </div>
+    </div>
   )
 }

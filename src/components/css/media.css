@@ -98,6 +98,10 @@
   font-weight: bold;
 }.none {
   display: none !important;
+}.max-width-780{
+  width: 100%;
+}.row {
+  display: block;
 }
   }
 

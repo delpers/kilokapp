@@ -67,7 +67,7 @@ const cookingRecipe = props => {
      
 
         <div className="sticky">
-          <div className="max-width padding-initial ">
+          <div className="m-w p-i">
 
 
             <span className="i-link font-size-16 b-b-g margin-right-qz color-white font-bold ">
@@ -95,8 +95,33 @@ const cookingRecipe = props => {
         </div>
 
 
+        <div class="right-hero"><h1 class="hero-title-recipes bottom-none color-green bold">
+          
+          
+        Recipes          
+          </h1></div>
 
-        <div className="row max-width pt-0i mt-32">
+
+
+
+        <div class="hero">
+          <div class="m-w p-i">
+            <section><h1 class="hero-title bold">
+              
+              
+              
+            {props.data.contentfulRecipes.title}
+              
+              
+              </h1></section></div></div>
+
+
+
+
+
+
+
+        <div className="row m-w p-i">
           <div> 
           <div className="max-width-780">
 
@@ -106,17 +131,17 @@ const cookingRecipe = props => {
           <div className="sw-recipes mb-32">
 
             <h3 className="i-link b-b-g margin-right-qz font-bold max-width padding-initial bg-w shadow-sm mb-1">
-            {props.data.contentfulRecipes.title}
+            
         
             </h3>
          
 
-            <div className="ir-cards max-width mt-1 ns-print bg-w mb-32 shadow-sm pt-32 pb-32">
+            <div className="grid-list max-width mt-1 ns-print bg-w mb-32 shadow-sm pt-32 pb-32">
               {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                 return (
                   <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c padding-top-none">
-                    <div className="_print_w ns-print">
-                      <h3 className="i-link fs-20 b-b-g margin-right-qz font-bold mb-5 nowrap">
+                    <div className=" padding shadow r10">
+                      <h3 className="font-time">
                         {dataIGRD.title}
                       </h3>
                       <span className="font-size-16 text-gray pr-15">
@@ -142,7 +167,7 @@ const cookingRecipe = props => {
                     className=" bg-w ns-print bg-w-c p-20 mb-1 mbs shadow-sm"
                     key={i}
                   >
-                    <div className="font-size-16 _print_w ns-print  mt-1">
+                    <div className="padding shadow">
                       <h3 className=" i-link fs-20 b-b-g mb-5 fw300 nowrap ">
                         {dataDr.title}
                       </h3>
@@ -169,7 +194,7 @@ const cookingRecipe = props => {
 
           
 
-          <div className="max-width-100p100 bg-w ml-32 sw-recipes shadow-sm">
+          <div className="max-width-400  bg-w ml-32 sw-recipes shadow-sm">
 
             <div  style={{
             backgroundImage:

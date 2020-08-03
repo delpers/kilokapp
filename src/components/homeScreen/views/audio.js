@@ -9,8 +9,7 @@ export default function Audio() {
       query={graphql`
         query {
           home: contentfulHomePage {
-            title_audio
-            description_audio
+            nameValue
           }
         }
       `}

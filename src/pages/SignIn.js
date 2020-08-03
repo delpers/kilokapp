@@ -15,7 +15,7 @@ const Box = styled.div`
 `
 
 const Image = styled.div`
-background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1589052765/dataBoosters/coeur_illustration_cjztxe.svg);
+background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1596095884/heroImage/mae-mu-FZJO5-NFVzI-unsplash_sihis5.jpg);
 height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
@@ -90,7 +90,7 @@ const LoginPage = () => {
     <Box>
       <SEO title="Connexion" />
 
-      <div className="none">
+      <div  className="width-log">
         <Image />
       </div>
 
