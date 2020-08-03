@@ -175,3 +175,8 @@ background: transparent;
   font-size: 24px;
   font-weight: 300;
 }
+
+.size-i-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+} 

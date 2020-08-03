@@ -104,6 +104,10 @@
   display: block;
 }.form-mobile {
   display: block;
+}.grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
 }
   }
 

@@ -132,12 +132,12 @@ const cookingRecipe = props => {
             </h3>
          
 
-            <div className="grid-list bottom-initial-divi ">
+            <div className="grid-list bottom-initial-divi">
               {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                 return (
                   <div id={dataIGRD.id} className="">
-                    <div className="  padding border  r-10">
-                      <h3>
+                    <div className="  padding shadow  r-10">
+                      <h3 className="size-i-item">
                         {dataIGRD.title}
                       </h3>
                       <span className="font-size-16 text-gray pr-15">

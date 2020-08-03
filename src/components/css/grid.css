@@ -16,12 +16,12 @@
 .grid-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 32px;
 }
 .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 32px;
   margin-top: 64px;
 }
   .vegetables-grid {
