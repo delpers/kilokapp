@@ -35,3 +35,12 @@
   .margin-top-none {
     margin-top: 0px !important;
   }
+
+  .bottom-initial {
+    margin-bottom: 64px;
+  }
+
+
+  .bottom-initial-divi {
+    margin-bottom: 32px;
+  }

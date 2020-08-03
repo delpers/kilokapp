@@ -78,7 +78,6 @@ a {
 .hero-title {
   font-size: 82px;
   margin-bottom: 0;
-  font-family: Times New Roman, sans-serif;
 }
 
 
@@ -94,7 +93,6 @@ text-orientation: mixed;
 transform: rotate(-90deg);
 margin-top: 180px;
   font-weight: 300;
-  font-family: Times New Roman, sans-serif;
   font-size: 74px;
 }
 
@@ -171,4 +169,9 @@ background: transparent;
   font-size: 18px;
   font-weight: 300;
   color: initial;
+}
+
+.size-24 {
+  font-size: 24px;
+  font-weight: 300;
 }

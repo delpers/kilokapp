@@ -104,17 +104,6 @@ const cookingRecipe = props => {
 
 
 
-        <div class="hero">
-          <div class="m-w p-i">
-            <section><h1 class="hero-title bold">
-              
-              
-              
-            {props.data.contentfulRecipes.title}
-              
-              
-              </h1></section></div></div>
-
 
 
 
@@ -124,7 +113,14 @@ const cookingRecipe = props => {
         <div className="row m-w p-i">
           <div> 
           <div className="max-width-780">
-
+          <section><h1 class="hero-title bold bottom-initial">
+              
+              
+              
+              {props.data.contentfulRecipes.title}
+                
+                
+                </h1></section>
 <div>
 
 </div>
@@ -136,12 +132,12 @@ const cookingRecipe = props => {
             </h3>
          
 
-            <div className="grid-list max-width mt-1 ns-print bg-w mb-32 shadow-sm pt-32 pb-32">
+            <div className="grid-list bottom-initial-divi ">
               {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                 return (
-                  <div id={dataIGRD.id} className=" bg-w ns-print bg-w-c padding-top-none">
-                    <div className=" padding shadow r10">
-                      <h3 className="font-time">
+                  <div id={dataIGRD.id} className="">
+                    <div className="  padding border  r-10">
+                      <h3>
                         {dataIGRD.title}
                       </h3>
                       <span className="font-size-16 text-gray pr-15">
@@ -155,8 +151,8 @@ const cookingRecipe = props => {
             </div>
 
 
-<div className="sw-recipes">
-            <h3 className="i-link b-b-g margin-right-qz font-bold max-width padding-initial bg-w shadow-sm mb-1">
+<div className="bottom-initial-divi ">
+            <h3 className="title-medium bottom-initial">
             Préparation
             </h3>
             <div className="mt-1 mb-32">
@@ -164,11 +160,11 @@ const cookingRecipe = props => {
                 return (
                   <div
                     id={dataDr.id}
-                    className=" bg-w ns-print bg-w-c p-20 mb-1 mbs shadow-sm"
+                    className=""
                     key={i}
                   >
-                    <div className="padding shadow">
-                      <h3 className=" i-link fs-20 b-b-g mb-5 fw300 nowrap ">
+                    <div className=" border-bottom">
+                      <h3 className=" i-link size-24 nowrap ">
                         {dataDr.title}
                       </h3>
                       <span className="font-size-16 pr-15">

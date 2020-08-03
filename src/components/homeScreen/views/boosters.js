@@ -46,7 +46,7 @@ export default function Boosters() {
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
                             height: "130px",
-                            width: "212px",
+                            width: "205px",
                             borderRadius: "12px",
                           }}
                         >

@@ -116,8 +116,8 @@ margin-right: 24px;
   height: inherit;
   padding-bottom: 20px;
   text-align: left;
-  margin-bottom: 64px;
-  margin-top: 64px;
+  margin-bottom: 89px;
+  margin-top: 89px;
   padding-top: 20px;
 }
 
@@ -227,4 +227,8 @@ margin-top: 0;
 height: auto;
 width: 0;
 position: fixed;
+}
+
+.title-medium {
+  font-size: 74px;
 }
