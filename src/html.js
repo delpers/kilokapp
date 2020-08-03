@@ -8,7 +8,6 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossOrigin="anonymous"></script>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

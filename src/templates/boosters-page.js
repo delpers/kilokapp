@@ -8,7 +8,6 @@ export const query = graphql`
     booster: contentfulBoosters(slug: { eq: $slug }) {
       title
       slug
-      backgroundColor
       picture: childContentfulBoostersImageJsonNode {
         secure_url
       }
