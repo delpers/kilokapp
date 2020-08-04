@@ -87,7 +87,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <div>
+    <Layout>
     <Box className="form-mobile">
       <SEO title="Connexion" />
 
@@ -167,7 +167,7 @@ const LoginPage = () => {
         </div>
       </div>
     </Box>
-    </div>
+    </Layout>
   )
 }
 

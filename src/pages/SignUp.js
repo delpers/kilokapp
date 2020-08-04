@@ -97,7 +97,7 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-    <div>
+    <Layout>
     <Box className="form-mobile">
       <SEO title="S'inscrire" />
 
@@ -181,7 +181,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </Box>
-    </div>
+    </Layout>
   )
 }
 
