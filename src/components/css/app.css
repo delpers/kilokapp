@@ -236,17 +236,10 @@ position: fixed;
   font-size: 42px;
   font-weight: 300;
 }
-.background-blue-light {
-  background: #f4f7fc;
+.background-sticky {
+  background: #e8d0a71c;
 }
 .sticky {
-  position: fixed;
-        z-index: 9999;
-        display: block;
-        background-color: #2069e8;
-        width: 100%;
-        padding: 10px;
-        margin-top: -10px;
-        padding-top:10px
+  padding: 24px;
+ 
 }
-

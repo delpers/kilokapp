@@ -49,26 +49,29 @@ const Background = styled.div`
     position: relative !important;
     border-bottom: 1px solid #f4f5f5;
   }
+  header {
+    border-bottom: 0px !important;
+  }
 `
 const cookingRecipe = props => {
   return (
     <Background>
       <Layout key={props.data.contentfulRecipes.id}>
         <SEO title={props.data.contentfulRecipes.title} />
-<div className="background-blue-light">
+<div className="background-sticky">
         <div className="sticky">
-          <div className="navSticky">
-            <span className="i-link font-size-16 b-b-g margin-right-qz color-white font-bold ">
+          <div className="m-w p-i">
+            <span className="">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
-            <span className="i-link font-size-16 b-b-g margin-right-qz color-white font-bold">
+            <span className="">
               <i className="fas fa-file-medical-alt  margin-right-qz c-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
 
             <div className="t-d float-right mb-15 mt_i5">
-              <span className="font-size-16 bg-wl mr-p color-white">
+              <span className="">
                 <i className="fas fa-check-circle"></i>{" "}
                 {props.data.contentfulRecipes.time} Min(s).
               </span>
@@ -77,7 +80,7 @@ const cookingRecipe = props => {
         </div>
         </div>
         <div class="right-hero">
-          <h1 class="hero-title-recipes bottom-none color-initial bold font-time">
+          <h1 class="hero-title-recipes bottom-none color-initial bold font-time none">
             Recipes
           </h1>
         </div>
@@ -86,13 +89,13 @@ const cookingRecipe = props => {
           <div>
             <div>
               <section>
-                <h1 class="hero-title bold bottom-initial">
+                <h1 class="hero-title bold bottom-initial font-time">
                   {props.data.contentfulRecipes.title}
                 </h1>
               </section>
               <div></div>
               <div className="sw-recipes mb-32">
-              <h3 className="title-medium bottom-initial color-blue">
+              <h3 className="title-medium bottom-initial color-w">
               Ingrédient(s)
             </h3>
                 <div className="grid-list bottom-initial-divi">
