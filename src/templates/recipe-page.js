@@ -49,16 +49,14 @@ const Background = styled.div`
     position: relative !important;
     border-bottom: 1px solid #f4f5f5;
   }
-  header {
-    border-bottom: 0px !important;
-  }
+
 `
 const cookingRecipe = props => {
   return (
     <Background>
       <Layout key={props.data.contentfulRecipes.id}>
         <SEO title={props.data.contentfulRecipes.title} />
-<div className="background-sticky">
+<div className="border-bottom">
         <div className="sticky">
           <div className="m-w p-i">
             <span className="">
@@ -66,7 +64,7 @@ const cookingRecipe = props => {
             </span>
 
             <span className="">
-              <i className="fas fa-file-medical-alt  margin-right-qz c-green"></i>{" "}
+              <i className="fas fa-file-medical-alt color-green"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
 
@@ -95,7 +93,7 @@ const cookingRecipe = props => {
               </section>
               <div></div>
               <div className="sw-recipes mb-32">
-              <h3 className="title-medium bottom-initial color-w">
+              <h3 className="title-medium bottom-initial color-green">
               Ingrédient(s)
             </h3>
                 <div className="grid-list bottom-initial-divi">
