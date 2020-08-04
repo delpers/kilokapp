@@ -4,7 +4,7 @@ import React, { useContext } from "react"
 import UserContext from "./UserContext"
 import Navigation from "./homeScreen/links/nav"
 import MediaLinks from "./homeScreen/links/links"
-import Audio from "./homeScreen/views/audio"
+import CustomLink from "./homeScreen/views/CustomLink"
 
 const Header = ({ siteTitle }) => {
   const { user } = useContext(UserContext)
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
 
           <div class="nav-links">
             <Navigation />
-            <Audio />
+            <CustomLink />
             <MediaLinks />
 
             {!user && <Link to="/SignIn">Connexion</Link>}

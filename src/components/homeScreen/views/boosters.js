@@ -47,13 +47,13 @@ export default function Boosters() {
                             backgroundRepeat: "no-repeat",
                             height: "130px",
                             width: "205px",
-                            borderRadius: "12px",
+                            borderRadius: "10px",
                           }}
                         >
                           <span className="">
-                            <span className="">
+                            <span className="title-booster">
                               <Link
-                                className=""
+                                className="title-booster"
                                 to={`/booster/${edge.node.slug}/`}
                               >
                                 {edge.node.title}

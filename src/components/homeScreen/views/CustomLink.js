@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import UserContext from "../../../components/UserContext"
+import UserContext from "../../UserContext"
 
-export default function Audio() {
+export default function CustomLink() {
   const { premium } = useContext(UserContext)
   return (
     <StaticQuery

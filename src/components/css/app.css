@@ -99,9 +99,12 @@ margin-right: 24px;
       color: black !important;
       width: 100%;
       padding: 15px 24px;
-      font-size: 18px;
-      font-weight: 300;
+      font-size: 24px;
+      padding-right: 0;
+      font-weight: bold;
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }.nav > .nav-links {
+    padding-right: 0;
   }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
