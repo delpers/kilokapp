@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react"
 import { useForm } from "react-hook-form"
-import { login, loginWithGoogle } from "../utils/firebase"
+import { signInUser, loginWithGoogle } from "../utils/firebase"
 import { navigate, Link } from "gatsby"
 import UserContext from "../components/UserContext"
 import SEO from "../components/seo"
@@ -52,7 +52,7 @@ const LoginPage = () => {
   })
   const onSubmit = async data => {
     setLoading(true)
-    await login(data.email, data.password)
+    await signInUser(data.email, data.password)
       .then(() => {
         setLoading(false)
         navigate("/Account")
@@ -87,7 +87,7 @@ const LoginPage = () => {
   }, [user])
 
   return (
-    <Layout>
+    <div>
     <Box className="form-mobile">
       <SEO title="Connexion" />
 
@@ -167,7 +167,7 @@ const LoginPage = () => {
         </div>
       </div>
     </Box>
-    </Layout>
+    </div>
   )
 }
 

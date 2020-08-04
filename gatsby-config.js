@@ -85,15 +85,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-intercom-spa",
-      options: {
-        app_id: "vsun2k49",
-        include_in_development: false,
-        delay_timeout: 0,
-      },
-    },
-
-    {
       resolve: `gatsby-plugin-algolia`,
       options: {
         appId: process.env.ALGOLIA_APP_ID,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext, useCallback } from "react"
+import React, { useEffect, useState, useContext } from "react"
 import { navigate } from "gatsby"
 import { loadStripe } from "@stripe/stripe-js"
 import axios from "axios"

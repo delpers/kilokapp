@@ -8,7 +8,7 @@ import UserContext from "../components/UserContext"
 import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { signup, loginWithGoogle } from "../utils/firebase"
+import { signUpUser, loginWithGoogle } from "../utils/firebase"
 import styled from "@emotion/styled"
 
 const Box = styled.div`
@@ -62,7 +62,7 @@ const RegisterPage = () => {
   })
   const onSubmitRegister = async data => {
     setLoading(true)
-    await signup(data.email, data.password)
+    await signUpUser(data.email, data.password)
       .then(() => {
         setLoading(false)
       })
@@ -97,7 +97,7 @@ const RegisterPage = () => {
     }
   }, [user])
   return (
-    <Layout>
+    <div>
     <Box className="form-mobile">
       <SEO title="S'inscrire" />
 
@@ -181,7 +181,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </Box>
-    </Layout>
+    </div>
   )
 }
 

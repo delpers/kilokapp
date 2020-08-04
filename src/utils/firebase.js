@@ -2,11 +2,11 @@ import firebase from "gatsby-plugin-firebase"
 
 export const auth = firebase.auth
 
-export const signup = (email, password) => {
+export const signUpUser = (email, password) => {
   return auth().createUserWithEmailAndPassword(email, password)
 }
 
-export const login = (email, password) => {
+export const signInUser = (email, password) => {
   return auth().signInWithEmailAndPassword(email, password)
 }
 
