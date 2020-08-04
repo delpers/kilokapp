@@ -12,7 +12,6 @@ export const query = graphql`
       picture: childContentfulCookingPlatsFeaturedImageJsonNode {
         secure_url
       }
-    
       recipesRecettes {
         id
         title
