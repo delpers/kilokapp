@@ -21,7 +21,7 @@
 .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+  grid-gap: 64px;
   margin-top: 64px;
 }
   .vegetables-grid {

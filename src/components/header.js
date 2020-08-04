@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
           <div class="nav-header">
             <div class="nav-title">
               <Link to="/" alt={siteTitle} className="uk-navbar-item uk-logo">
-                <h1 className="bottom-none bold">Pachyra</h1>
+                <h1 className="bottom-none bold">Kiloka</h1>
               </Link>
             </div>
           </div>
