@@ -58,27 +58,27 @@ const cookingRecipe = props => {
         <SEO title={props.data.contentfulRecipes.title} />
 <div className="border-bottom">
         <div className="sticky">
-          <div className="m-w p-i">
-            <span className="">
+          <div className="m-w p-i pn-mobile">
+            <span className=" mr-15">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
 
             <span className="">
-              <i className="fas fa-file-medical-alt color-green"></i>{" "}
+              <i className="fas fa-file-medical-alt color-blue  mr-15"></i>{" "}
               {props.data.contentfulRecipes.medicalNumber}
             </span>
 
             <div className="t-d float-right mb-15 mt_i5">
               <span className="">
-                <i className="fas fa-check-circle"></i>{" "}
-                {props.data.contentfulRecipes.time} Min(s).
+                <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
+                {props.data.contentfulRecipes.time} Mins.
               </span>
             </div>
           </div>
         </div>
         </div>
         <div class="right-hero">
-          <h1 class="hero-title-recipes bottom-none color-initial bold font-time none">
+          <h1 class="hero-title-recipes bottom-none color-initial bold none">
             Recipes
           </h1>
         </div>
@@ -87,13 +87,13 @@ const cookingRecipe = props => {
           <div>
             <div>
               <section>
-                <h1 class="hero-title bold bottom-initial font-time">
+                <h1 class="hero-title bold bottom-initial">
                   {props.data.contentfulRecipes.title}
                 </h1>
               </section>
               <div></div>
               <div className="sw-recipes mb-32">
-              <h3 className="title-medium bottom-initial color-green">
+              <h3 className="title-medium bottom-initial">
               Ingrédient(s)
             </h3>
                 <div className="grid-list bottom-initial-divi">

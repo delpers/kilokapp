@@ -108,6 +108,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
+}.row {
+  margin-top: 20px;
+}.pn-mobile {
+  padding: 0;
+}.bottom-initial {
+  margin-bottom: 32px;
+}.title-medium {
+  font-size: 28px;
+  font-weight: 300;
 }
   }
 
