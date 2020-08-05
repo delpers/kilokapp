@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/gaw5pec.css");
 
+@font-face {
+  font-family: "Oklk";
+  src: url("./fonts/Pacifico-Regular.ttf") format("truetype"),
+ }
 
 
 a {
@@ -41,7 +45,6 @@ a {
 
 .bold {
   font-weight: bold;
-  color: initial;
 }
 
 .title-content {
@@ -82,7 +85,7 @@ a {
 
 
 .font-time {
-  font-family: Times New Roman, sans-serif;
+  font-family: "Oklk", sans-serif;
 
 }
 
@@ -93,7 +96,9 @@ text-orientation: mixed;
 transform: rotate(-90deg);
 margin-top: 180px;
   font-weight: 300;
+
   font-size: 74px;
+  color: #3898ec45 !important;
 }
 
 .green-point {
@@ -168,7 +173,6 @@ background: transparent;
 .v-title {
   font-size: 18px;
   font-weight: 300;
-  color: initial;
 }
 
 .size-24 {
@@ -183,4 +187,14 @@ background: transparent;
 
 .title-booster {
   transform: rotate(90deg) !important;
+}
+.steps-title {
+  font-size: 18px;
+  color: #1f3344d9;
+  margin-bottom: 10px;
+  font-family: "Oklk";
+}
+.steps-para {
+  font-size: 18px;
+  color: #1f3344d9;
 }

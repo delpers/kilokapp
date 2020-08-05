@@ -3,14 +3,14 @@
 }
 
 .color-initial {
-    color: initial;
+    color: #1f3344;
 }
 
 .color-blue {
-    color: #3898ec !important;
+    color: #276ef1 !important;
 }
 .color-blue-plus {
-    color: #3898ec !important;
+    color: #276ef1 !important;
 }
 
 .color-w {
@@ -24,7 +24,7 @@
 }
 
 .color-green {
-    color: #3fc997;
+    color: #addec9;
   }
 .color-pink {
     color: #d70f64;

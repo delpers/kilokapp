@@ -201,7 +201,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: black;
+  color: #1f3344 !important;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

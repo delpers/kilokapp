@@ -37,7 +37,7 @@
   }
 
   .bottom-initial {
-    margin-bottom: 64px;
+    margin-bottom: 42px;
   }
 
 
@@ -48,3 +48,6 @@
   .mr-15 {
     margin-right: 10px;
   }
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}

@@ -98,11 +98,6 @@ const cookingRecipe = props => {
           <div className="m-w p-i pn-mobile">
 
 
-          <span className="mr-15">
-             
-             <a href="#modal-one"><i className="fas fa-camera"></i></a>
-             
-           </span>
 
             <span className=" mr-15">
               {props.data.contentfulRecipes.numberOfPersons}
@@ -115,6 +110,11 @@ const cookingRecipe = props => {
 
             <div className="t-d float-right mb-15 mt_i5">
 
+            <span className="mr-15">
+             
+             <a href="#modal-one"><i className="fas fa-camera mr-15"></i></a>
+             
+           </span>
 
 
 
@@ -131,7 +131,7 @@ const cookingRecipe = props => {
         
         <div className="right-hero">
           <h1 className="hero-title-recipes bottom-none color-initial bold none">
-            Recipes
+            C'est parti !
           </h1>
         </div>
 
@@ -152,7 +152,7 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                     return (
                       <div id={dataIGRD.id} className="">
-                        <div className="  padding shadow  r-10">
+                        <div className="  padding shadow  r-10 border">
                           <h3 className="size-i-item">{dataIGRD.title}</h3>
                           <span className="font-size-16 text-gray pr-15">
                             {dataIGRD.amount}
@@ -177,11 +177,11 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.dRecipe.map((dataDr, i) => {
                     return (
                       <div id={dataDr.id} className="" key={i}>
-                        <div className=" border-bottom">
-                          <h3 className=" i-link size-24 nowrap ">
+                        <div className="shadow padding r-10 margin-bottom-32 border">
+                          <h3 className="steps-title">
                             {dataDr.title}
                           </h3>
-                          <span className="font-size-16 pr-15">
+                          <span className="steps-para">
                             {dataDr.direction.direction}
                           </span>
                         </div>
