@@ -5,8 +5,8 @@
   font-weight: bold;
   border-width: 2px;
   border-style: solid;
-  background-color: #111;
-  border-color: #111;
+  background-color: #1F3344 !important;
+  border-color: #1F3344 !important;
   font-size: 16px;
   line-height: 22px;
   line-height: 1.5;
@@ -38,11 +38,11 @@
 }
 
 .button-user {
-  background: #e4f1fb;
+  background: #1F3344 !important;
   padding: 16px 32px !important;
   margin-left: 16px;
   border-radius: 5rem;
-  color: #2e5ad4 !important;
+  color: #FFF !important;
 }
 
 

@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => {
             <MediaLinks />
 
             {!user && <Link to="/SignIn">Connexion</Link>}
-            {!user && <Link className="button-user" to="/SignUp">Doorder Premium</Link>}
+            {!user && <Link className="button-user" to="/SignUp">Offre Premium</Link>}
             {user && <Link className="button-user" to="/Account">Mon compte </Link>}
 
 

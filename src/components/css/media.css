@@ -117,6 +117,17 @@
 }.title-medium {
   font-size: 28px;
   font-weight: 300;
+}.modal-dialog {
+  background: #fefefe;
+  border-radius: px;
+  margin-left: 0;
+  position: fixed;
+  left: 0;
+  top: -100%;
+  z-index: 11;
+  width: 100%;
+  transform: translate(0, -500%);
+  transition: transform 0.3s ease-out;
 }
   }
 

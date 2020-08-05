@@ -48,6 +48,8 @@ const Background = styled.div`
     background: white !important;
     position: relative !important;
     border-bottom: 1px solid #f4f5f5;
+    box-shadow: none !important;
+
   }
 
 `
@@ -57,8 +59,51 @@ const cookingRecipe = props => {
       <Layout key={props.data.contentfulRecipes.id}>
         <SEO title={props.data.contentfulRecipes.title} />
 <div className="border-bottom">
+
+
+            
+ 
+<div className="modal" id="modal-one" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-header">
+      <h2>{props.data.contentfulRecipes.title}</h2>
+      <a href="#" className="btn-close" aria-hidden="true">×</a>
+    </div>
+    <div className="modal-body">
+    <div
+              style={{
+                backgroundImage:
+                  "url(" +
+                  props.data.contentfulRecipes
+                    .childContentfulRecipesFeaturedImageJsonNode.secure_url +
+                  ")",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPositionX: "bottom",
+                height: "280px",
+              }}
+            ></div>
+
+    </div>
+    <div className="modal-footer">
+      <a href="#" className="btn">Ok</a>
+    </div>
+  </div>
+</div>
+
+
+
         <div className="sticky">
           <div className="m-w p-i pn-mobile">
+
+
+          <span className="mr-15">
+             
+             <a href="#modal-one"><i className="fas fa-camera"></i></a>
+             
+           </span>
+
             <span className=" mr-15">
               {props.data.contentfulRecipes.numberOfPersons}
             </span>
@@ -69,16 +114,23 @@ const cookingRecipe = props => {
             </span>
 
             <div className="t-d float-right mb-15 mt_i5">
+
+
+
+
               <span className="">
                 <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
-                {props.data.contentfulRecipes.time} Mins.
+                Prêt en {props.data.contentfulRecipes.time} minutes.
               </span>
+
+              
             </div>
           </div>
         </div>
         </div>
-        <div class="right-hero">
-          <h1 class="hero-title-recipes bottom-none color-initial bold none">
+        
+        <div className="right-hero">
+          <h1 className="hero-title-recipes bottom-none color-initial bold none">
             Recipes
           </h1>
         </div>
@@ -87,7 +139,7 @@ const cookingRecipe = props => {
           <div>
             <div>
               <section>
-                <h1 class="hero-title bold bottom-initial">
+                <h1 className="hero-title bold bottom-initial">
                   {props.data.contentfulRecipes.title}
                 </h1>
               </section>
@@ -139,20 +191,7 @@ const cookingRecipe = props => {
                 </div>
               </div>
 
-            <div
-              style={{
-                backgroundImage:
-                  "url(" +
-                  props.data.contentfulRecipes
-                    .childContentfulRecipesFeaturedImageJsonNode.secure_url +
-                  ")",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionX: "bottom",
-                height: "280px",
-              }}
-            ></div>
+           
           </div>
 
           <div className="none-print">
@@ -204,6 +243,8 @@ const cookingRecipe = props => {
             </div>
           </div>
         </div>
+        <div>Right</div>
+
       </Layout>
     </Background>
   )
