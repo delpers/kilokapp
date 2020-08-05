@@ -1,7 +1,7 @@
 import React from "react"
 
 function TitleFrench(props) {
-  return <h1 className="hero-title bold font-time">Santé, forme et bien-être.</h1>
+  return <h1 className="hero-title-home bold">Santé, forme et bien-être.</h1>
 }
 
 export default function heroScreen() {

@@ -79,11 +79,14 @@ a {
 }
 
 .hero-title {
-  font-size: 82px;
+  font-size: 57px;
   margin-bottom: 0;
 }
 
-
+.hero-title-home {
+  font-size: 82px;
+  margin-bottom: 0;
+}
 .font-time {
   font-family: "Oklk", sans-serif;
 
@@ -192,7 +195,6 @@ background: transparent;
   font-size: 18px;
   color: #1f3344d9;
   margin-bottom: 10px;
-  font-family: "Oklk";
 }
 .steps-para {
   font-size: 18px;

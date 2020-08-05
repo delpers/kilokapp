@@ -43,12 +43,11 @@ export const query = graphql`
   }
 `
 const Background = styled.div`
-  background: #f7f7f7;
+  background: #FFF;
   header {
     background: white !important;
     position: relative !important;
     border-bottom: 1px solid #f4f5f5;
-    box-shadow: none !important;
 
   }
 
@@ -128,12 +127,7 @@ const cookingRecipe = props => {
           </div>
         </div>
         </div>
-        
-        <div className="right-hero">
-          <h1 className="hero-title-recipes bottom-none color-initial bold none">
-            C'est parti !
-          </h1>
-        </div>
+
 
         <div className="row m-w p-i">
           <div>
@@ -152,7 +146,7 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                     return (
                       <div id={dataIGRD.id} className="">
-                        <div className="  padding shadow  r-10 border">
+                        <div className="  padding shadow  r-10 border ">
                           <h3 className="size-i-item">{dataIGRD.title}</h3>
                           <span className="font-size-16 text-gray pr-15">
                             {dataIGRD.amount}
@@ -166,7 +160,56 @@ const cookingRecipe = props => {
 
               
             </div>
+            <div className="none-print">
+            <div className="vegetables-grid-recipe m-w">
+              {props.data.contentfulRecipes.boosters.map(dataFLC => {
+                return (
+                  <div
+                    className="background-white border r-10"
+                    id={dataFLC.id}
+                  >
+                    <div
+                      className="border-bottom-light margin-top-none bottom-none"
+                      style={{
+                        backgroundImage:
+                          "url(" + dataFLC.image.secure_url + ")",
+                        backgroundSize: "50%",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        margin: "24px",
+                        height: "208px",
+                        width: "208px",
+                      }}
+                    >
+                      {" "}
+                    </div>
+                    <div className="padding-min-recipe">
+                      <Link
+                        to={`/recettes/base/${dataFLC.slug}/`}
+                        alt="Découvrez"
+                        className="nowrap v-title margin-top-5"
+                      >
+                        {dataFLC.title}
+                      </Link>
 
+                      <div className="margin-top-5 v-size">
+                        <span className="">
+                          <i className="fas fa-burn mr-5"></i>{" "}
+                          {dataFLC.calories} <strong>Cal(s)</strong> · 100 gr.
+                        </span>
+                      </div>
+                      <div className="margin-top-5 v-size">
+                        <span className="color-black">
+                          <i className="fas fa-check-circle mr-5"></i>{" "}
+                          {dataFLC.stockage}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
             <div></div>
           </div>
 
@@ -177,7 +220,7 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.dRecipe.map((dataDr, i) => {
                     return (
                       <div id={dataDr.id} className="" key={i}>
-                        <div className="shadow padding r-10 margin-bottom-32 border">
+                        <div className="shadow padding r-10 margin-bottom-32 border sp-mobile">
                           <h3 className="steps-title">
                             {dataDr.title}
                           </h3>
@@ -194,56 +237,8 @@ const cookingRecipe = props => {
            
           </div>
 
-          <div className="none-print">
-            <div className="rl rl-mobile max-width padding-initial  p0-m">
-              {props.data.contentfulRecipes.boosters.map(dataFLC => {
-                return (
-                  <div
-                    className="bg-w p-15 flex-m sw-recipes bm01b mb-32 shadow-sm"
-                    id={dataFLC.id}
-                  >
-                    <div
-                      className="w-screen p-80-0 perfect-bg pbg-m"
-                      style={{
-                        backgroundImage:
-                          "url(" + dataFLC.image.secure_url + ")",
-                        backgroundSize: "50%",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        margin: "0 10%",
-                      }}
-                    >
-                      {" "}
-                    </div>
-                    <div>
-                      <Link
-                        to={`/recettes/base/${dataFLC.slug}/`}
-                        alt="Découvrez"
-                        className="i-link font-size-16 b-b-g margin-right-qz font-bold margin-bottom-0nowrap p-15 padding-bottom-none"
-                      >
-                        {dataFLC.title}
-                      </Link>
-
-                      <div className=" p-15 font-size-14 padding-bottom-none">
-                        <span className="">
-                          <i className="fas fa-burn mr-5"></i>{" "}
-                          {dataFLC.calories} <strong>Cal(s)</strong> · 100 gr.
-                        </span>
-                      </div>
-                      <div className=" p-15 font-size-14">
-                        <span className="color-black">
-                          <i className="fas fa-check-circle mr-5"></i>{" "}
-                          {dataFLC.stockage}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
+       
         </div>
-        <div>Right</div>
 
       </Layout>
     </Background>

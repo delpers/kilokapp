@@ -43,13 +43,13 @@ template {
 }
 a {
   background-color: transparent;
-  color: #535353;
+  color: initial;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  color: #535353;
+  color: initial;
 }
 abbr[title] {
   border-bottom: none;

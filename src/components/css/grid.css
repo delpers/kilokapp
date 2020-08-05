@@ -29,6 +29,11 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 32px;
 }
+.vegetables-grid-recipe {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+}
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
