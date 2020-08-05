@@ -119,7 +119,6 @@
   font-weight: 300;
 }.modal-dialog {
   background: #fefefe;
-  border-radius: px;
   margin-left: 0;
   position: fixed;
   left: 0;
@@ -136,8 +135,21 @@
 
   /* override styles when printing */
   @media print {
-    
+   
 }
+
+@media only screen and (max-width: 800px) {
+
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+}.push-padding-64 {
+  padding-top: 26px !important;
+}
+
+}
+
 
 
 @media only screen and (max-width: 1280px) {
