@@ -36,7 +36,7 @@ const eRecipes = props => {
 
           
           
-<div className="hero">
+<div className="hero none-mobile">
   <div className="m-w p-i">
 <h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1>
 </div>          
@@ -49,7 +49,7 @@ const eRecipes = props => {
       
         <div>
           <div>
-          <div className="recipes-grid m-w p-i padding-content">
+          <div className="recipes-grid m-w p-i padding-content push-padding-64">
               {props.data.breakfast.recipesRecettes != null
                 ? props.data.breakfast.recipesRecettes.map((edge, i) => {
                     return (

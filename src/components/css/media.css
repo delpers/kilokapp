@@ -140,12 +140,20 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
 
 .row {
   margin-bottom: 64px !important;
 }
 .layout-form-signup {
   margin-top: 32px;
+}.grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}.none-mobile {
+  display: none !important;
+}.push-padding-64 {
+  padding-top: 64px;
 }
 }
