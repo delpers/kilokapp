@@ -119,7 +119,7 @@ const cookingRecipe = props => {
 
               <span className="">
                 <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
-                Prêt en {props.data.contentfulRecipes.time} minutes.
+                {props.data.contentfulRecipes.time} minutes.
               </span>
 
               

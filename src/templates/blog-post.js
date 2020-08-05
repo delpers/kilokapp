@@ -34,7 +34,7 @@ const BlogPost = props => {
     <Layout>
       <SEO title={props.data.post.title} />
 
-<div className="background-white">
+<div>
 <div className="m-w p-i article"><h1>{props.data.post.title}</h1>
 </div>
 

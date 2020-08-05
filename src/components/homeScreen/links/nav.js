@@ -19,7 +19,6 @@ export default function Navigation() {
         <>
             {data.home.pages.map(Pages => (
               <Link
-                className="i-link color-white font-size-16 b-b-g margin-right-qz font-bold"
                 to={Pages.url}
                 target="_bank"
                 key={Pages.id}

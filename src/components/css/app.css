@@ -116,11 +116,11 @@ margin-right: 24px;
 .hero {
   flex-direction: row;
   height: inherit;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
-  margin-bottom: 89px;
-  margin-top: 89px;
-  padding-top: 20px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 
@@ -238,7 +238,7 @@ position: fixed;
 
 .sticky {
   padding: 24px;
- 
+ background: #fafafa4f;
 }
 
 .btn {

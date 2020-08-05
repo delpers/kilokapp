@@ -140,6 +140,12 @@
 }
 
 
+@media only screen and (max-width: 800px) {
 
-
-
+.row {
+  margin-bottom: 64px !important;
+}
+.layout-form-signup {
+  margin-top: 32px;
+}
+}
