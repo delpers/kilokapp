@@ -169,7 +169,7 @@ const cookingRecipe = props => {
                     id={dataFLC.id}
                   >
                     <div
-                      className="border-bottom-light margin-top-none bottom-none"
+                      className="border-bottom-light margin-top-none bottom-none boosters-image-tab"
                       style={{
                         backgroundImage:
                           "url(" + dataFLC.image.secure_url + ")",
