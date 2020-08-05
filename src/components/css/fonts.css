@@ -111,16 +111,17 @@ margin-top: 180px;
   width: 30px;
 }
 .title-recipes {
-  color: white;
-font-weight: bold;
-font-size: 18px;
-white-space: nowrap;
-text-overflow: ellipsis !important;
-overflow: hidden;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  overflow: hidden;
   padding: 27px 16px;
-  text-shadow: 0 1px 1px rgba(0,0,0,.85);
+      padding-bottom: 27px;
   white-space: nowrap;
   max-width: 260px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 
 }
 .log-title {
@@ -197,4 +198,8 @@ background: transparent;
 }
 .steps-para {
   font-size: 18px;
+}
+
+.align-right {
+  text-align: right;
 }

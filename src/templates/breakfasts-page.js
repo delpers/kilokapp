@@ -36,10 +36,11 @@ const eRecipes = props => {
 
           
           
-<div className="right-hero">
-<h1 class="hero-title-recipes bottom-none">{props.data.breakfast.title}</h1>
+<div className="hero">
+  <div className="m-w p-i">
+<h1 class="hero-title bold bottom-none">{props.data.breakfast.title}</h1>
 </div>          
-          
+</div>
           
 
          
@@ -60,33 +61,31 @@ const eRecipes = props => {
                         />
 
 
-<div className="filter">
+
+
+
+
 
 
 <Link
     className="nowrap"
     to={`/recette/${edge.slug}/`}
   >
-    <h3 className="nowrap title-recipes bottom-none color-white">{edge.title}</h3>
+    <h3 className="nowrap title-recipes">{edge.title}</h3>
   </Link>
 
-
-
-
-</div>
-
-
-                        <div className="recipes-info-grid shadow r-10">
+                        <div className="recipes-info-grid shadow r-10 padding-recipe-details">
+         
 
                     <div> <i className="fas fa-check-circle"></i>{" "}
-                                {edge.time} min(s){" "}</div>
+                                {edge.time} minutes{" "}</div>
 
-                    <div>  <i className="far fa-user mr-5"></i>{" "}
+                    <div className="align-right">  <i className="far fa-user mr-5"></i>{" "}
                                 {edge.numberOfPersons}{" "}</div>
 
 
                     <div>  <div className="b-solid-top">
-                            <div className="color-blue">
+                            <div className="color-green">
                               <i className="fas fa-file-medical-alt color-green"></i> <span className="color-initial">{edge.medicalNumber}</span>
                               {edge.for != null
                                 ? edge.for.map((mv, i) => {
