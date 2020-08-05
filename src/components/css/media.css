@@ -146,6 +146,9 @@
     grid-gap: 32px;
 }.push-padding-64 {
   padding-top: 26px !important;
+}.featured-recipes {
+  height: 230px;
+
 }
 
 }
