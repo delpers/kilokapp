@@ -233,6 +233,7 @@ position: fixed;
 
 .title-medium {
   font-size: 36px;
+  padding-left: 24px;
   font-weight: 300;
 }
 
