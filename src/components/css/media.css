@@ -207,6 +207,8 @@ overflow-y: scroll;
   height: 208px !important;
   width: 208px !important;
   margin-bottom: 0 !important;
+}.steps-para {
+  font-size: 16px;
 }
 }
 
