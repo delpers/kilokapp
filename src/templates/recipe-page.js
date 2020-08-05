@@ -146,7 +146,7 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.nIngredients.map(dataIGRD => {
                     return (
                       <div id={dataIGRD.id} className="">
-                        <div className="  padding shadow  r-10 border ">
+                        <div className="  padding  r-10 border ">
                           <h3 className="size-i-item">{dataIGRD.title}</h3>
                           <span className="font-size-16 text-gray pr-15">
                             {dataIGRD.amount}
@@ -220,7 +220,7 @@ const cookingRecipe = props => {
                   {props.data.contentfulRecipes.dRecipe.map((dataDr, i) => {
                     return (
                       <div id={dataDr.id} className="" key={i}>
-                        <div className="shadow padding r-10 margin-bottom-32 border sp-mobile">
+                        <div className=" padding r-10 margin-bottom-32 border sp-mobile">
                           <h3 className="steps-title">
                             {dataDr.title}
                           </h3>
