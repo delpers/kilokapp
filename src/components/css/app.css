@@ -239,8 +239,8 @@ position: fixed;
 
 .sticky {
   padding: 24px;
- background: #1f3344;
- color: #FFF;
+ background: #FFF;
+ color: initial;
 }
 
 .btn {

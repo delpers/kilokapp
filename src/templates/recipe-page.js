@@ -47,7 +47,7 @@ const Background = styled.div`
   header {
     background: white !important;
     position: relative !important;
-    border-bottom: 1px solid #f4f5f5;
+    border-bottom: 0;
 
   }
 
@@ -93,44 +93,13 @@ const cookingRecipe = props => {
 
 
 
-        <div className="sticky">
-          <div className="m-w p-i pn-mobile">
-
-
-
-            <span className=" mr-15">
-              {props.data.contentfulRecipes.numberOfPersons}
-            </span>
-
-            <span className="">
-              <i className="fas fa-file-medical-alt color-blue  mr-15"></i>{" "}
-              {props.data.contentfulRecipes.medicalNumber}
-            </span>
-
-            <div className="t-d float-right mb-15 mt_i5">
-
-            <span className="mr-15">
-             
-             <a href="#modal-one"><i className="fas fa-camera mr-15"></i></a>
-             
-           </span>
-
-
-
-              <span className="">
-                <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
-                {props.data.contentfulRecipes.time} minutes.
-              </span>
-
-              
-            </div>
-          </div>
-        </div>
         </div>
 
 
         <div className="row m-w p-i">
+          
           <div>
+            
             <div>
               <section>
                 <h1 className="hero-title bold bottom-initial">
@@ -214,8 +183,45 @@ const cookingRecipe = props => {
           </div>
 
           <div className="w-recipes">
+
+
+          <div className="sticky">
+          <div className="m-w pn-mobile">
+
+
+
+            <span className=" mr-15">
+              {props.data.contentfulRecipes.numberOfPersons}
+            </span>
+
+            <span className="">
+              <i className="fas fa-file-medical-alt color-blue  mr-15"></i>{" "}
+              {props.data.contentfulRecipes.medicalNumber}
+            </span>
+
+            <div className="t-d float-right mb-15 mt_i5">
+
+            <span className="mr-15">
+             
+             <a href="#modal-one"><i className="fas fa-camera mr-15"></i></a>
+             
+           </span>
+
+
+
+              <span className="">
+                <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
+                {props.data.contentfulRecipes.time} minutes.
+              </span>
+
+              
+            </div>
+          </div>
+        </div>
           <div className="bottom-initial-divi">
                 <h3 className="title-medium bottom-initial">Préparation</h3>
+
+                
                 <div className="mt-1 mb-32">
                   {props.data.contentfulRecipes.dRecipe.map((dataDr, i) => {
                     return (
