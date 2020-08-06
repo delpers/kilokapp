@@ -180,7 +180,7 @@ margin-right: 24px;
 
 }
 .featured-recipes {
-  height: 180px;
+  height: 170px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -239,7 +239,8 @@ position: fixed;
 
 .sticky {
   padding: 24px;
- background: #fafafa4f;
+ background: #1f3344;
+ color: white;
 }
 
 .btn {
