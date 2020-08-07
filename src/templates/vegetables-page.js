@@ -17,9 +17,7 @@ export const query = graphql`
         id
         title
         time
-        for
         numberOfPersons
-        ingredientsNumbers
         slug
         childContentfulRecipesFeaturedImageJsonNode {
           secure_url
@@ -99,23 +97,7 @@ const FVegetablesRecipes = props => {
                             </div>
                           </div>
 
-                          <div className="b-solid-top">
-                            <div className="padding-top-qz ">
-                              <i className="fas fa-file-medical-alt c-g margin-right-qz"></i>
-                              {edge.for != null
-                                ? edge.for.map((mv, i) => {
-                                    return (
-                                      <span
-                                        className="font-size-14 text-gray pr-15"
-                                        key={i}
-                                      >
-                                        {mv.for}
-                                      </span>
-                                    )
-                                  })
-                                : null}
-                            </div>
-                          </div>
+                         
                         </div>
                       </div>
                     )

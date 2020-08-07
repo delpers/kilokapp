@@ -54,8 +54,6 @@
   display: block;
 }.vegetables-grid-recipe {
   margin-bottom: 32px;
-}.title-medium {
-  padding-left: 24px;
 }.boosters-image-tab {
   height: 306px !important;
 width: auto !important;
@@ -187,9 +185,6 @@ margin-top: 20px;
 padding: 0;
 }.bottom-initial {
 margin-bottom: 32px;
-}.title-medium {
-font-size: 24px;
-font-weight: 300;
 }.modal-dialog {
 background: #fefefe;
 margin-left: 0;
@@ -214,5 +209,19 @@ overflow-y: scroll;
 
 /* override styles when printing */
 @media print {
- 
+  header {
+    display: none;
+  }
+  .footer-padding-grid  {
+    display: none !important;
+  }
+  .vegetables-grid-recipe {
+    display: none;
+  }.row {
+    display: block;
+  }.hero-title {
+    font-size: 24px;
+  }.title-medium {
+    font-size: 24px;
+  }
 }

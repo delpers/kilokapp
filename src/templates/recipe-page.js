@@ -10,8 +10,6 @@ export const query = graphql`
       title
       slug
       time
-      medicalNumber
-      ingredientsNumbers
       numberOfPersons
       childContentfulRecipesFeaturedImageJsonNode {
         secure_url
@@ -49,6 +47,8 @@ const Background = styled.div`
     position: relative !important;
     border-bottom: 0;
 
+  }.row {
+    margin-top: 24px;
   }
 
 `
@@ -57,8 +57,37 @@ const cookingRecipe = props => {
     <Background>
       <Layout key={props.data.contentfulRecipes.id}>
         <SEO title={props.data.contentfulRecipes.title} />
-<div className="border-bottom">
+<div>
 
+<div className="sticky">
+          <div className="m-w pn-mobile padding">
+
+
+
+            <span className="xl-size mr-15">
+              {props.data.contentfulRecipes.numberOfPersons}
+            </span>
+
+
+            <div className="t-d float-right mb-15 mt_i5">
+
+            <span className="mr-15">
+             
+             <a href="#modal-one"><i className="fas fa-camera mr-15"></i></a>
+             
+           </span>
+
+
+
+              <span className="xl-size">
+                <i className="fas fa-check-circle color-green mr-15"></i>{" "}
+                {props.data.contentfulRecipes.time} minutes.
+              </span>
+
+              
+            </div>
+          </div>
+        </div>
 
             
  
@@ -102,7 +131,7 @@ const cookingRecipe = props => {
             
             <div>
               <section>
-                <h1 className="hero-title bold bottom-initial">
+                <h1 className="hero-title bold font-time bottom-initial">
                   {props.data.contentfulRecipes.title}
                 </h1>
               </section>
@@ -185,39 +214,7 @@ const cookingRecipe = props => {
           <div className="w-recipes">
 
 
-          <div className="sticky">
-          <div className="m-w pn-mobile">
-
-
-
-            <span className=" mr-15">
-              {props.data.contentfulRecipes.numberOfPersons}
-            </span>
-
-            <span className="">
-              <i className="fas fa-file-medical-alt color-blue  mr-15"></i>{" "}
-              {props.data.contentfulRecipes.medicalNumber}
-            </span>
-
-            <div className="t-d float-right mb-15 mt_i5">
-
-            <span className="mr-15">
-             
-             <a href="#modal-one"><i className="fas fa-camera mr-15"></i></a>
-             
-           </span>
-
-
-
-              <span className="">
-                <i className="fas fa-check-circle color-green  mr-15"></i>{" "}
-                {props.data.contentfulRecipes.time} minutes.
-              </span>
-
-              
-            </div>
-          </div>
-        </div>
+         
           <div className="bottom-initial-divi">
                 <h3 className="title-medium bottom-initial">Préparation</h3>
 

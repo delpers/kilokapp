@@ -233,12 +233,13 @@ position: fixed;
 
 .title-medium {
   font-size: 36px;
-  padding-left: 24px;
   font-weight: 300;
 }
 
+
+
 .sticky {
-  padding: 24px;
+  padding-top: 24px;
  background: #FFF;
  color: initial;
 }

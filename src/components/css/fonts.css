@@ -204,3 +204,6 @@ background: transparent;
 .align-right {
   text-align: right;
 }
+.xl-size {
+  font-size: 24px;
+}

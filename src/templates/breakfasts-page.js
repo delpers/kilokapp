@@ -15,10 +15,7 @@ export const query = graphql`
         id
         title
         time
-        medicalNumber
         numberOfPersons
-        for
-        ingredientsNumbers
         slug
         image: childContentfulRecipesFeaturedImageJsonNode {
           secure_url
@@ -77,41 +74,19 @@ const eRecipes = props => {
                         <div className="recipes-info-grid shadow r-10 padding-recipe-details">
          
 
-                    <div> <i className="fas fa-check-circle"></i>{" "}
-                                {edge.time} minutes{" "}</div>
+                    <div> <i className="fas fa-check-circle color-green"></i>{" "}
+                                 {edge.time}'</div>
 
                     <div className="align-right">  <i className="far fa-user mr-5"></i>{" "}
                                 {edge.numberOfPersons}{" "}</div>
 
 
-                    <div>  <div className="b-solid-top">
-                            <div className="color-green">
-                              <i className="fas fa-file-medical-alt color-green"></i> <span className="color-initial">{edge.medicalNumber}</span>
-                              {edge.for != null
-                                ? edge.for.map((mv, i) => {
-                                    return (
-                                      <span
-                                        className="font-size-14 text-gray pr-15"
-                                        key={i}
-                                      >
-                                        {mv.for}
-                                      </span>
-                                    )
-                                  })
-                                : null}
-                            </div>
-                          </div></div>
-
-                    <div></div>
 
 
 
 
 
-
-
-
-
+                            
                         
                         </div>
                       </div>
@@ -119,6 +94,8 @@ const eRecipes = props => {
                   })
                 : null}
             </div>
+
+            
           </div>
         </div>
       </Layout>

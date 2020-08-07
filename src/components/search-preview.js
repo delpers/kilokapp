@@ -39,20 +39,7 @@ const SearchPreview = ({ hit }) => {
                 
               </div>
 
-              <div className="b-solid-top">
-                <div className="padding-top-qz ">
-                  <i className="fas fa-file-medical-alt c-g margin-right-qz"></i>
-                  {hit.for != null
-                    ? hit.for.map((mv, i) => {
-                        return (
-                          <span className="font-size-14 text-gray pr-15" key={i}>
-                            {mv.for}
-                          </span>
-                        )
-                      })
-                    : null}
-                </div>
-              </div>
+            
             </div>
           </div>
         </div>
