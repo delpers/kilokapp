@@ -24,25 +24,28 @@ export default function Entry() {
       `}
       render={data => (
         <div className="m-w p-i category">
-        <div className="group-title">
-            <h3 className="title-category">{data.home.title_straters} </h3>
-          </div>
+   
           <div className="grid-category">
             {data.starter.edges.length > 0 ? (
               data.starter.edges.map((edge, i) => {
                 return (
-                  <div id="breakfast" className="background-white shadow r6" key={i}>
+                  <div id="breakfast" className="background-white shadow r6 border" key={i}>
                           <img
                             class="image-category"
-                            src={edge.node.image.secure_url}
+                            src="https://images.pexels.com/photos/3747433/pexels-photo-3747433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                             alt={edge.node.title}
                           />
                           <Link
                             className="bold size-card db"
                             to={`/recettes/${edge.node.slug}/`}
                           >
-                            {edge.node.title}
+                           Clothing frame
                           </Link>
+                          <p className="description">decorative frame, clothing of different colors.</p>
+                          <span className="price">140 €</span>
+
+                          <span className="">View product <i class="fas fa-external-link-alt"></i></span>
+
                         </div>
                 )
               })

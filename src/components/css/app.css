@@ -145,7 +145,7 @@ margin-right: 24px;
 }
 
 .image-category {
-  height: 110px;
+  height: 140px;
   object-fit: cover;
   width: 100%;
   border-radius: 6px 6px 0 0;
@@ -162,7 +162,11 @@ margin-right: 24px;
 .cover-category {
   height: auto;
 }
-
+.price {
+  color: #03938f;
+  font-weight: bold;
+  padding: 0 24px;
+}
 .name-category {
   text-align: left;
   font-size: 74px;
@@ -171,7 +175,9 @@ margin-right: 24px;
   display: inline;
   background: white;
 }
-
+.description {
+  padding: 0 15px;
+}
 .featured {
     height: 230px;
     object-fit: cover;

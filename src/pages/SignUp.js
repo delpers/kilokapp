@@ -21,7 +21,7 @@ const Box = styled.div`
 
 const Image = styled.div`
   
-background-image: url(https://res.cloudinary.com/kiloka/image/upload/v1589052547/dataBoosters/longe%CC%81vite%CC%81_illustration_xubnya.svg);
+background-image: url(https://res.cloudinary.com/helpquit/image/upload/v1599248328/App/helpquit/Images/pexels-karolina-grabowska-4210339_zyervs.jpg);
 height: 100vh;
 background-repeat: repeat;
 background-size: cover;
