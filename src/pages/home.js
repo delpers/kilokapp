@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import HeroScreen from "../components/heroScreen"
 import Breakfasts from "../components/homeScreen/views/breakfasts"
 import Entry from "../components/homeScreen/views/starters"
-import Dishes from "../components/homeScreen/views/plats"
+import Product from "../components/homeScreen/views/product"
 import Desserts from "../components/homeScreen/views/desserts"
-import Boosters from "../components/homeScreen/views/boosters"
+import Search from "../components/homeScreen/views/search"
 import Training from "../components/homeScreen/views/training"
 
 const HomePage = () => {
@@ -15,13 +15,7 @@ const HomePage = () => {
       <SEO title="Accueil" />
 
       <HeroScreen />
-      <Boosters />
-
-      <Breakfasts />
-      <Entry />
-      <Dishes />
-      <Desserts />
-      <Training />
+     
       
     </Layout>
   )

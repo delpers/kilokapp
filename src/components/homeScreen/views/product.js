@@ -1,12 +1,12 @@
 import React, { useContext } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import UserContext from "../../../components/UserContext"
+import UserContext from "../../UserContext"
 
 function Title(props) {
   return <h1 className="title-category bold">Éléments nutritifs</h1>
 }
 
-export default function Boosters() {
+export default function Product() {
   const { premium } = useContext(UserContext)
   return (
     <StaticQuery

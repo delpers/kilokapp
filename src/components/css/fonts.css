@@ -5,6 +5,10 @@
   src: url("./fonts/Pacifico-Regular.ttf") format("truetype"),
  }
 
+ @font-face {
+  font-family: "Fidena";
+  src: url("./fonts/Fidena.woff") format("truetype"),
+ }
 
 a {
   text-decoration: none !important;
@@ -84,8 +88,9 @@ a {
 }
 
 .hero-title-home {
-  font-size: 82px;
+  font-size: 64px;
   margin-bottom: 0;
+  max-width: 80%;
 }
 .font-time {
   font-family: "Oklk", sans-serif;
@@ -125,10 +130,14 @@ margin-top: 180px;
   
 
 }
-.log-title {
-  font-size: 24px;
-  line-height: 42px;
-  font-weight: bold;
+  .log-title {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: "Fidena";
+    letter-spacing: 1.5px;
+
+
 }
 .hero-category {
   font-size: 800px;
