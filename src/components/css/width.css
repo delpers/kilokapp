@@ -1,0 +1,24 @@
+.width-full {
+    width: 100%;
+}
+
+.max-width {
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  }
+
+
+.m-w {
+    max-width: 1200px;
+  
+    margin: 0px auto;
+  }
+
+  .max-width-400 {
+    max-width: 400px;
+  }
+
+  .max-width-780 {
+    width: 780px;
+  }

@@ -1,0 +1,219 @@
+@import url("https://use.typekit.net/gaw5pec.css");
+
+@font-face {
+  font-family: "Oklk";
+  src: url("./fonts/Pacifico-Regular.ttf") format("truetype"),
+ }
+
+ @font-face {
+  font-family: "Fidena";
+  src: url("./fonts/Fidena.woff") format("truetype"),
+ }
+
+a {
+  text-decoration: none !important;
+}
+
+.size-initial {
+  font-size: 16px;
+}
+
+.medium {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.small {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.17;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.i-link {
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+.title-content {
+  border-bottom: 1px solid #e8e9ec;
+  padding-bottom: 14px;
+  font-weight: 300;
+}
+
+.article {
+  font-family: "Europa", sans-serif;
+}
+.article p {
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 300;
+  padding: 17px 0;
+  margin: 20px 0;
+  height: auto;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.article h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  padding: 63px 0;
+}
+
+.hero-title {
+  font-size: 57px;
+  margin-bottom: 0;
+}
+
+.hero-title-home {
+  font-size: 64px;
+  margin-bottom: 0;
+  max-width: 80%;
+}
+.font-time {
+  font-family: "Oklk", sans-serif;
+
+}
+
+
+.hero-title-recipes {
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+transform: rotate(-90deg);
+margin-top: 180px;
+  font-weight: 300;
+
+  font-size: 74px;
+  color: #3898ec45 !important;
+}
+
+.green-point {
+  background: green;
+  border-radius: 5rem;
+  height: 30px;
+  width: 30px;
+}
+.title-recipes {
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  overflow: hidden;
+  padding: 27px 16px;
+      padding-bottom: 27px;
+  white-space: nowrap;
+  max-width: 260px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+
+}
+  .log-title {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: "Fidena";
+    letter-spacing: 1.5px;
+
+
+
+}
+.hero-category {
+  font-size: 800px;
+  line-height: 28px;
+  font-weight: 300;
+  opacity: 0.025;
+  position: fixed;
+}
+.hero-name {
+  padding: 0;
+    padding-top: 0px;
+width: 100%;
+display: grid;
+padding-top: 0;
+background: transparent;
+}
+.size-card {
+  font-size: 18px;
+  padding: 16px 24px;
+}
+.v-size {
+  font-size: 16px;
+}
+
+.title-category {
+  font-size: 46px;
+  line-height: 2.25;
+  margin: 0 0 10px 0px;
+  font-weight: 300;
+}
+
+.group-title p {
+  font-size: 18px;
+}
+
+.weight-clean {
+  font-weight: normal;
+}
+
+.size-q {
+  font-size: 14px;
+}
+.fixed {
+  position: fixed !important;
+}
+
+.v-title {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.size-24 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.size-i-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.title-booster {
+  transform: rotate(90deg) !important;
+}
+.steps-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.steps-para {
+  font-size: 18px;
+}
+
+.align-right {
+  text-align: right;
+}
+.xl-size {
+  font-size: 24px;
+}

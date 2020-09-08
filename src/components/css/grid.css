@@ -1,0 +1,69 @@
+.k-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+  .recipes-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    font-size: 14px;
+  }
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 64px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+  .vegetables-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 32px;
+}
+.vegetables-grid-recipe {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  background: transparent;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  }
+  
+  .grid-category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
+    background: transparent;
+}
+
+  .grid-nutriments {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 32px;
+    background: transparent;
+  }
+
+  
+  .training-category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+
+ 

@@ -1,0 +1,79 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@stripe/stripe-js": "^1.7.0",
+    "algoliasearch": "^4.2.0",
+    "bluebird": "^3.7.2",
+    "child_process": "^1.0.2",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.15.1",
+    "gatsby": "^2.20.25",
+    "gatsby-cli": "^2.12.65",
+    "gatsby-image": "^2.3.4",
+    "gatsby-plugin-algolia": "^0.9.0",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
+    "gatsby-plugin-intercom-spa": "^0.2.0",
+    "gatsby-plugin-manifest": "^2.3.5",
+    "gatsby-plugin-offline": "^3.1.4",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-source-contentful": "^2.2.9",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-source-stripe": "^3.1.0",
+    "gatsby-transformer-remark": "^2.8.4",
+    "gatsby-transformer-sharp": "^2.4.6",
+    "griffith": "^1.5.3",
+    "hyvor-talk-react": "^1.0.1",
+    "lodash": "^4.17.15",
+    "micro-cors": "^0.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.12.0",
+    "react-flow-player": "^1.2.1",
+    "react-h5-audio-player": "^3.2.0",
+    "react-helmet": "^6.0.0",
+    "react-hook-form": "^5.7.2",
+    "react-instantsearch-dom": "^6.4.0",
+    "react-styled-carousel": "^0.5.1",
+    "socket.io": "^2.3.0",
+    "stripe": "^8.64.0",
+    "vercel": "^19.1.2",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.4",
+    "video.js": "^7.8.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "vercel": "cross-env NODE_ENV=development vercel dev",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

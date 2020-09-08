@@ -1,0 +1,17 @@
+.k-input {
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 5rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+input {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+}
+
+input:focus {outline:0 !important;}

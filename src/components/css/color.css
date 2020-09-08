@@ -1,0 +1,36 @@
+.color-gray {
+    color: #2b2b2b;
+}
+
+.color-initial {
+    color: #1f3344;
+}
+
+.color-blue {
+    color: #7ebcf2 !important;
+}
+.color-blue-plus {
+    color: #7ebcf2 !important;
+}
+
+.color-w {
+    color: #ecae44;
+}
+.color-white {
+    color: white;
+}
+.color-audio {
+    color: #90a9c2;
+}
+
+.color-green {
+    color: #76d5ba;
+  }
+.color-pink {
+    color: #d70f64;
+}
+
+.color-register {
+    color: #84d6aa !important;
+    font-weight: bold;
+}

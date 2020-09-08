@@ -1,0 +1,65 @@
+.button-submit {
+  position: relative;
+  display: inline-block;
+  color: #e4f1fb;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #1F3344 !important;
+  border-color: #1F3344 !important;
+  font-size: 16px;
+  line-height: 22px;
+  line-height: 1.5;
+  padding: 14px !important;
+  width: 100%;
+  margin: 0 0 24px;
+  border-radius: 5rem !important;
+}
+.button-google {
+  position: relative;
+  display: inline-block;
+  color: #000000b0;
+  font-weight: bold;
+  border-radius: 5rem !important;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #fff;
+  border-color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  line-height: 1.5;
+  padding: 14px !important;
+  width: auto;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/G-on-white.svg) 16px center no-repeat;
+      background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #f2f2f2;
+  margin: 0 0 24px;
+  background-color: #fff;
+}
+
+.button-user {
+  background: #e9f3fe !important;
+  padding: 16px 32px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #86bcf2 !important;
+}
+
+
+.button-bad {
+  background: #cf53642b;
+  padding: 12px 26px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #cf5364 !important;
+  border: transparent;
+}
+
+.button-exit {
+  background: #90a9c2;
+  padding: 12px 26px !important;
+  margin-left: 16px;
+  border-radius: 5rem;
+  color: #FFF !important;
+  border: transparent;
+}

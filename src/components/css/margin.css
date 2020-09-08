@@ -1,0 +1,53 @@
+
+.margin-bottom {
+    margin-bottom: 32px;
+  }
+
+  .margin-none {
+    margin-bottom: 0 important;
+  }
+
+  .category {margin-bottom: 80px;}
+
+
+  .group-title {
+    margin-bottom: 32px;
+  }
+
+  .bottom-none {
+    margin-bottom: 0 !important;
+  }
+
+  .margin-right-icon {
+    margin-right: 15px;
+  }
+
+  .custom-margin-card {
+    margin-top: calc(-1*48px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .margin-top-5 {
+    margin-top: 10px;
+  }
+
+  .margin-top-none {
+    margin-top: 0px !important;
+  }
+
+  .bottom-initial {
+    margin-bottom: 42px;
+  }
+
+
+  .bottom-initial-divi {
+    margin-bottom: 32px;
+  }
+
+  .mr-15 {
+    margin-right: 10px;
+  }
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}

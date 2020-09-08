@@ -1,0 +1,27 @@
+
+.p-i {
+    padding: 0 24px;
+  }
+  
+  .padding {
+    padding: 24px;
+  }
+  .padding-content {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+.padding-min {
+  padding: 15px;
+}
+
+.padding-min-recipe {
+  padding: 24px;
+}
+
+.padding-recipe-details {
+  padding: 16px;
+  padding-bottom: 16px;
+padding-bottom: 32px;
+}
+
